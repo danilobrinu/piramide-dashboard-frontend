@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@salesforce-ux/design-system": "^2.7.5",
+    "@salesforce/design-system-react": "^0.9.3",
+    "classnames": "^2.2.6",
+    "moment": "^2.23.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.2"
