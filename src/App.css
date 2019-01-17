@@ -12,6 +12,9 @@ body {
   margin-right: 2px;
 }
 
+.slds-list_horizontal .slds-item_label { width: 50%; }
+.slds-list_horizontal .slds-item_detail { width: 50%; }
+
 .main .slds-tabs_default__content {
   height: calc(100vh - 97px);
   padding: 0;
@@ -28,7 +31,7 @@ body {
   .sidebar-info {
     position: absolute;
     height: 100%;
-    z-index: 9999;
+    z-index: 999;
     margin-right: 0;
   }
 }
