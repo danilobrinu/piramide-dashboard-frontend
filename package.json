@@ -7,7 +7,7 @@
     "@salesforce/design-system-react": "^0.9.3",
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
-    "currency": "^4.1.0",
+    "currency.js": "^1.2.1",
     "moment": "^2.23.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
