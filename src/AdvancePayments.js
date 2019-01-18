@@ -16,6 +16,10 @@ export default class AdvancePayments extends Component {
   render() {
     const { items, selectItem, selectedItem } = this.props;
 
+    if (!items.length) {
+      return <div className="slds-p-around_small">No se ha seleccionado ningún anticipo.</div>
+    }
+
     return (
       <DataTable
         className="slds-max-medium-table_stacked-horizontal"
