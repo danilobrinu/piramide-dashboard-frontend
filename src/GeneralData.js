@@ -5,20 +5,8 @@ import {
   Combobox,
   comboboxFilterAndLimit,
   Datepicker,
-  Icon,
 } from '@salesforce/design-system-react';
-
-const withIcon = (items) => items.map(item => ({
-  ...item,
-  ...{
-    icon: (
-      <Icon
-        category="standard"
-        name={item.type}
-      />
-    ),
-  },
-}));
+import { optionsWithIcon } from './utils/helpers'
 
 class GeneralData extends Component {
   render() {
@@ -50,6 +38,7 @@ class GeneralData extends Component {
       reasonTransfer,
       setReasonTransfer,
       deliveryDate,
+      deliveryDateValidation,
       setDeliveryDate,
       transportDate,
       setTransportDate,
@@ -86,7 +75,7 @@ class GeneralData extends Component {
                 }}
                 options={comboboxFilterAndLimit({
                   inputValue: orderTypeValue,
-                  options: withIcon(orderTypeList),
+                  options: optionsWithIcon(orderTypeList),
                   selection: orderType,
                 })}
                 selection={orderType}
@@ -111,7 +100,7 @@ class GeneralData extends Component {
                 }}
                 options={comboboxFilterAndLimit({
                   inputValue: requesterValue,
-                  options: withIcon(requesterList),
+                  options: optionsWithIcon(requesterList),
                   selection: requester,
                 })}
                 selection={requester}
@@ -136,7 +125,7 @@ class GeneralData extends Component {
                 }}
                 options={comboboxFilterAndLimit({
                   inputValue: receiverValue,
-                  options: withIcon(receiverList),
+                  options: optionsWithIcon(receiverList),
                   selection: receiver,
                 })}
                 selection={receiver}
@@ -161,7 +150,7 @@ class GeneralData extends Component {
                 }}
                 options={comboboxFilterAndLimit({
                   inputValue: paymentConditionValue,
-                  options: withIcon(paymentConditionList),
+                  options: optionsWithIcon(paymentConditionList),
                   selection: paymentCondition,
                 })}
                 selection={paymentCondition}
@@ -178,12 +167,17 @@ class GeneralData extends Component {
                 labels={{
                   label: 'Fecha de entrega',
                   placeholder: 'Elija una Fecha',
+                  abbreviatedWeekDays: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'],
+                  weekDays: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+                  months: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+                  today: 'Hoy día',
                 }}
                 triggerClassName="slds-size_1-of-1"
                 formatter={(date = '') => date && moment(date).format('DD/MM/YYYY')}
                 parser={str => moment(str, 'DD/MM/YYYY').toDate()}
                 onChange={(e, { date }) => setDeliveryDate(e, { date })}
                 value={deliveryDate}
+                dateDisabled={deliveryDateValidation}
                 required
               />
             </div>
@@ -203,7 +197,7 @@ class GeneralData extends Component {
                 }}
                 options={comboboxFilterAndLimit({
                   inputValue: shippingConditionValue,
-                  options: withIcon(shippingConditionList),
+                  options: optionsWithIcon(shippingConditionList),
                   selection: shippingCondition,
                 })}
                 selection={shippingCondition}
@@ -228,7 +222,7 @@ class GeneralData extends Component {
                 }}
                 options={comboboxFilterAndLimit({
                   inputValue: reasonTransferValue,
-                  options: withIcon(reasonTransferList),
+                  options: optionsWithIcon(reasonTransferList),
                   selection: reasonTransfer,
                 })}
                 selection={reasonTransfer}
