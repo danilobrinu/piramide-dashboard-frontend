@@ -69,6 +69,10 @@ export default class Products extends Component {
   render() {
     const { items, selectItem, selectedItems } = this.props;
 
+    if (!items.length) {
+      return <div className="slds-p-around_small">No se han agregado productos al pedido.</div>
+    }
+
     return (
       <DataTable
         className="slds-max-medium-table_stacked-horizontal"
