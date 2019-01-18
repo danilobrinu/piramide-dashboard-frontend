@@ -7,7 +7,8 @@ import {
   ButtonGroup,
 } from '@salesforce/design-system-react';
 import GeneralData from './GeneralData';
-import AdvancePayments from './AdvancePayments';
+// Keep this code - Next Implementation
+// import AdvancePayments from './AdvancePayments';
 import Products from './Products';
 import SidebarInfo from './SidebarInfo';
 import AddProductModal from './AddProductModal';
@@ -41,6 +42,7 @@ class Dashboard extends Component {
       setPaymentCondition,
       // -- Delivery Date
       deliveryDate,
+      deliveryDateValidation,
       setDeliveryDate,
       // -- Transport Date
       transportDate,
@@ -55,14 +57,22 @@ class Dashboard extends Component {
       reasonTransferValue,
       reasonTransfer,
       setReasonTransfer,
+      // Keep this code - Next Implementation
       // AdvancePayments
-      advancePayments,
-      advancePaymentSelected,
-      selectAdvancePayment,
+      // advancePayments,
+      // advancePaymentSelected,
+      // selectAdvancePayment,
       // Products
       products,
       productsSelected,
       selectProducts,
+      // Add Product Modal
+      materialList,
+      materialValue,
+      material,
+      setMaterial,
+      materialQuantity,
+      setMaterialQuantity,
       // Others
       showSidebarInfo,
       setShowSidebarInfo,
@@ -71,6 +81,9 @@ class Dashboard extends Component {
       enabledOrder,
       setEnabledOrder,
       addProductToOrder,
+      // Sale Order
+      simulateSaleOrder,
+      createSaleOrder,
     } = this.props;
 
     return (
@@ -100,7 +113,7 @@ class Dashboard extends Component {
                   }
                   onClick={(e) => setShowAddProductModal(e, { value: true })}
                 />
-                <Button title="Cotizar Pedido" label="Cotizar" />
+                <Button title="Cotizar Pedido" label="Cotizar" onClick={(e) => simulateSaleOrder(e)} />
                 <Button
                   disabled={!enabledOrder}
                   title="Crear Orden"
@@ -110,6 +123,7 @@ class Dashboard extends Component {
                     </span>
                   }
                   variant="brand"
+                  onClick={(e) => createSaleOrder(e)}
                 />
               </ButtonGroup>
               <Button
@@ -126,11 +140,30 @@ class Dashboard extends Component {
           <SidebarInfo
             showSidebarInfo={showSidebarInfo}
             setShowSidebarInfo={setShowSidebarInfo}
+            purchaseOrder={purchaseOrder}
+            orderType={orderType}
+            requester={requester}
+            receiver={receiver}
+            paymentCondition={paymentCondition}
+            shippingCondition={shippingCondition}
+            reasonTransfer={reasonTransfer}
+            deliveryDate={deliveryDate}
+            transportDate={transportDate}
+            // Keep this code - Next Implementation
+            // advancePaymentSelected={advancePaymentSelected}
+            products={products}
           />
           <AddProductModal
+            materialList={materialList}
+            materialValue={materialValue}
+            material={material}
+            setMaterial={setMaterial}
+            materialQuantity={materialQuantity}
+            setMaterialQuantity={setMaterialQuantity}
             showAddProductModal={showAddProductModal}
             setShowAddProductModal={setShowAddProductModal}
             addProductToOrder={addProductToOrder}
+            setEnabledOrder={setEnabledOrder}
           />
           <Tabs className="main">
             <TabsPanel label="Datos Generales">
@@ -156,6 +189,7 @@ class Dashboard extends Component {
                     paymentCondition={paymentCondition}
                     setPaymentCondition={setPaymentCondition}
                     deliveryDate={deliveryDate}
+                    deliveryDateValidation={deliveryDateValidation}
                     setDeliveryDate={setDeliveryDate}
                     transportDate={transportDate}
                     setTransportDate={setTransportDate}
@@ -171,7 +205,7 @@ class Dashboard extends Component {
                 </div>
               </div>
             </TabsPanel>
-            <TabsPanel label="Anticipos">
+            {/* <TabsPanel label="Anticipos">
               <div className="slds-scrollable">
                 <AdvancePayments
                   items={advancePayments}
@@ -179,7 +213,7 @@ class Dashboard extends Component {
                   selectedItem={advancePaymentSelected}
                 />
               </div>
-            </TabsPanel>
+            </TabsPanel> */}
             <TabsPanel label="Productos">
               <div className="slds-scrollable">
                 <Products
