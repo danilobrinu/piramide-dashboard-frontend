@@ -12,9 +12,13 @@ import './App.css';
 window.__INITIAL_STATE__ = window.__INITIAL_STATE__ || {
   // General Data
   purchaseOrder: '',
+  distributionChannel: '10',
   orderTypeList: data.orderTypeList,
   orderTypeValue: '',
   orderType: [],
+  packingConditionList: data.packingConditionList,
+  packingConditionValue: '',
+  packingCondition: [],
   requesterList: data.requesterList,
   requesterValue: '',
   requester: [],
