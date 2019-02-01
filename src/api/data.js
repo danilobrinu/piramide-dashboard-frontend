@@ -50,9 +50,16 @@ export const receiverList = [
 export const shippingConditionList = [
   {
     id: uid(),
-    label: 'Condición de expedición A',
-    subTitle: 'A',
-    code: '4000000007',
+    label: 'Entrega al cliente',
+    subTitle: '-',
+    code: '01',
+    type: 'account',
+  },
+  {
+    id: uid(),
+    label: 'Cliente recoge',
+    subTitle: '-',
+    code: '02',
     type: 'account',
   },
 ];
@@ -133,9 +140,40 @@ export const paymentConditionList = [
 export const reasonTransferList = [
   {
     id: uid(),
-    label: 'Motivo de Traslado A',
-    subTitle: 'A',
-    code: '4000000007',
+    label: 'Venta Sujeta a Confirmación de Cliente',
+    subTitle: '-',
+    code: 'B',
+    type: 'account',
+  },
+  {
+    id: uid(),
+    label: 'Otros: Venta ET',
+    subTitle: '-',
+    code: 'B',
+    type: 'account',
+  },
+  {
+    id: uid(),
+    label: 'Venta',
+    subTitle: '-',
+    code: 'A',
+    type: 'account',
+  },
+];
+
+export const packingConditionList = [
+  {
+    id: uid(),
+    label: 'Entrega en parihuela',
+    subTitle: '-',
+    code: 'ZPNE',
+    type: 'account',
+  },
+  {
+    id: uid(),
+    label: 'Entrega a granel o co zuncho',
+    subTitle: '-',
+    code: 'ZPVN',
     type: 'account',
   },
 ];
