@@ -30,10 +30,12 @@ export default class AddProductModal extends Component {
     const product = {
       id: uid(),
       name: material[0].label,
-      code: material[0].code,
+      code: material[0].value,
+      value: material[0].value,
       weight: 0,
       unity: 'UN',
       amount: 0,
+      igv: 0,
       quantity,
     };
 
@@ -60,9 +62,9 @@ export default class AddProductModal extends Component {
         isOpen={showAddProductModal}
         footer={
           <>
-            <Button label="Cancel" onClick={e => this.cancelOperation(e)} />
+            <Button label="Cancelar" onClick={e => this.cancelOperation(e)} />
             <Button
-              label="Save"
+              label="Guardar"
               variant="brand"
               onClick={e => this.saveOperation(e)}
             />

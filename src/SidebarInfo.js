@@ -25,7 +25,7 @@ export default class SidebarInfo extends Component {
     } = this.props;
 
     const subTotal = lodash.reduce(products, (acc, product) => acc + product.amount, 0);
-    const igv = subTotal * .18;
+    const igv = lodash.reduce(products, (acc, product) => acc + product.igv, 0);
     const total = subTotal + igv;
     const peso = lodash.reduce(products, (acc, product) => acc + product.weight, 0);
 

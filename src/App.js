@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import lodash from 'lodash';
 import moment from 'moment';
 
 import Dashboard from './Dashboard';
@@ -11,7 +12,7 @@ import './App.css';
 
 window.__INITIAL_STATE__ = window.__INITIAL_STATE__ || {
   // General Data
-  purchaseOrder: '',
+  purchaseOrder: '1234567890',
   distributionChannel: '10',
   orderTypeList: data.orderTypeList,
   orderTypeValue: '',
@@ -28,7 +29,7 @@ window.__INITIAL_STATE__ = window.__INITIAL_STATE__ || {
   paymentConditionList: data.paymentConditionList,
   paymentConditionValue: '',
   paymentCondition: [],
-  shippingConditionList: data.paymentConditionList,
+  shippingConditionList: data.shippingConditionList,
   shippingConditionValue: '',
   shippingCondition: [],
   reasonTransferList: data.reasonTransferList,
@@ -53,6 +54,7 @@ window.__INITIAL_STATE__ = window.__INITIAL_STATE__ || {
   showSidebarInfo: false,
   showAddProductModal: false,
   enabledOrder: false,
+  sapDateFormat: 'YYYYMMDD',
 };
 
 class App extends Component {
@@ -80,6 +82,7 @@ class App extends Component {
     this.addProductToOrder = this.addProductToOrder.bind(this);
     this.simulateSaleOrder = this.simulateSaleOrder.bind(this);
     this.createSaleOrder = this.createSaleOrder.bind(this);
+    this.validSimulateSaleOrder = this.validSimulateSaleOrder.bind(this);
   }
 
   componentDidMount() {
@@ -164,8 +167,17 @@ class App extends Component {
     return !current.isBetween(min, max);
   }
 
-  setDeliveryDate(_, { date: deliveryDate }) {
-    this.setState({ deliveryDate });
+  setDeliveryDate(e, { date: deliveryDate }) {
+    const { sapDateFormat } = this.state;
+    const data = {
+      I_FECHA_ENTREGA: moment(deliveryDate).format(sapDateFormat),
+    };
+
+    api.factoryDate(data).then(({ data }) => {
+      const deliveryDate = moment(data, sapDateFormat).toDate();
+      this.setState({ deliveryDate });
+      this.setEnabledOrder(e, { value: false });
+    });
   }
 
   setTransportDate(_, { date: transportDate }) {
@@ -203,7 +215,7 @@ class App extends Component {
     this.setState({ enabledOrder });
   }
 
-  addProductToOrder(_, { product }) {
+  addProductToOrder(e, { product }) {
     const { products } = this.state;
 
     this.setState({
@@ -212,17 +224,173 @@ class App extends Component {
         product,
       ],
     });
+
+    this.setEnabledOrder(e, { value: false });
+  }
+
+  validSimulateSaleOrder() {
+    const {
+      orderType,
+      distributionChannel,
+      deliveryDate,
+      purchaseOrder,
+      requester,
+      receiver,
+      products,
+    } = this.state;
+
+    return (
+      !!orderType.length &&
+      !!distributionChannel.length &&
+      !!deliveryDate &&
+      !!purchaseOrder.length &&
+      !!requester.length &&
+      !!receiver.length &&
+      !!products.length
+    );
   }
 
   simulateSaleOrder(e) {
-    api.simulateSaleOrder().then(() => {
+    const {
+      orderType,
+      distributionChannel,
+      deliveryDate,
+      sapDateFormat,
+      purchaseOrder,
+      requester,
+      receiver,
+      products,
+    } = this.state;
+    const productsToItems = products =>
+      lodash.map(products, (product, index) => {
+        const { value, quantity: qty } = product;
+        const ITEM_NUMBER = lodash.padStart(
+          ((index + 1) * 10).toString(),
+          6,
+          '0'
+        );
+        const MATERIAL = value;
+        const PLANT = '1000';
+        const TARGET_QTY = lodash.padStart((qty * 100).toString(), 20, '0');
+        return {
+          ITEM_NUMBER,
+          MATERIAL,
+          PLANT,
+          TARGET_QTY,
+        };
+      });
+    const data = {
+      I_HEADER: {
+        DOC_TYPE: orderType[0].value,
+        SALES_ORG: '1000',
+        DISTR_CHAN: distributionChannel,
+        REQ_DATE_H: moment(deliveryDate).format(sapDateFormat),
+        PURCH_NO_C: purchaseOrder,
+        SOLICITANTE: requester[0].value,
+        DESTINATARIO: receiver[0].value,
+      },
+      IT_ITEMS: productsToItems(products),
+    };
+
+    if (!this.validSimulateSaleOrder())
+      return alert('Completar los campos que estan como obligatorios');
+
+    api.simulateSaleOrder(data).then(({ data }) => {
+      console.log(
+        data['ET_CONDITION'],
+        lodash.groupBy(data['ET_CONDITION'], 'ITM_NUMBER')
+      );
+
+      lodash.each(
+        lodash.groupBy(data['ET_CONDITION'], 'ITM_NUMBER'),
+        (info, ITM_NUMBER) => {
+          const amount = lodash.find(
+            info,
+            field => field['COND_TYPE'] === 'ZPRB'
+          )['CONDVALUE'];
+          const igv = lodash.find(info, field => field['COND_TYPE'] === 'MWST')[
+            'CONDVALUE'
+          ];
+          const index = +ITM_NUMBER / 10 - 1;
+          const newProducts = products;
+          newProducts[index] = {
+            ...newProducts[index],
+            amount,
+            igv,
+          };
+          this.setState({
+            products: newProducts,
+          });
+        }
+      );
+
+      lodash.each(data['ET_ITEM_WEIGTH'], row => {
+        const { ITM_NUMBER, BRGEW } = row;
+        const index = +ITM_NUMBER / 10 - 1;
+        const weight = BRGEW;
+        const newProducts = products;
+        newProducts[index] = {
+          ...newProducts[index],
+          weight,
+        };
+        this.setState({
+          products: newProducts,
+        });
+      });
+
       this.setEnabledOrder(e, { value: true });
     });
   }
 
   createSaleOrder(e) {
-    api.createSaleOrder().then(() => {
-      console.log('Order has been created');
+    const {
+      orderType,
+      distributionChannel,
+      deliveryDate,
+      sapDateFormat,
+      purchaseOrder,
+      requester,
+      receiver,
+      products,
+      enabledOrder,
+    } = this.state;
+    const productsToItems = products =>
+      lodash.map(products, (product, index) => {
+        const { value, quantity: qty } = product;
+        const ITEM_NUMBER = lodash.padStart(
+          ((index + 1) * 10).toString(),
+          6,
+          '0'
+        );
+        const MATERIAL = value;
+        const PLANT = '1000';
+        const TARGET_QTY = lodash.padStart((qty * 100).toString(), 20, '0');
+        return {
+          ITEM_NUMBER,
+          MATERIAL,
+          PLANT,
+          TARGET_QTY,
+        };
+      });
+    const data = {
+      I_HEADER: {
+        DOC_TYPE: orderType[0].value,
+        SALES_ORG: '1000',
+        DISTR_CHAN: distributionChannel,
+        REQ_DATE_H: moment(deliveryDate).format(sapDateFormat),
+        PURCH_NO_C: purchaseOrder,
+        SOLICITANTE: requester[0].value,
+        DESTINATARIO: receiver[0].value,
+      },
+      IT_ITEMS: productsToItems(products),
+    };
+
+    if (!enabledOrder)
+      return alert('Es necesario cotizar antes de crear el pedido.');
+
+    api.createSaleOrder(data).then(({ data }) => {
+      console.log(data);
+
       this.setEnabledOrder(e, { value: false });
     });
   }
