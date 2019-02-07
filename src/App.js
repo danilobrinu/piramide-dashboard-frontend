@@ -80,6 +80,7 @@ class App extends Component {
     this.setShowAddProductModal = this.setShowAddProductModal.bind(this);
     this.setEnabledOrder = this.setEnabledOrder.bind(this);
     this.addProductToOrder = this.addProductToOrder.bind(this);
+    this.deleteProductFromOrder = this.deleteProductFromOrder.bind(this);
     this.simulateSaleOrder = this.simulateSaleOrder.bind(this);
     this.createSaleOrder = this.createSaleOrder.bind(this);
     this.validSimulateSaleOrder = this.validSimulateSaleOrder.bind(this);
@@ -220,9 +221,19 @@ class App extends Component {
 
     this.setState({
       products: [
-        ...products.map(product => ({ ...product, weight: 0, amount: 0 })),
+        ...lodash.map(products, product => ({ ...product, weight: 0, amount: 0 })),
         product,
       ],
+    });
+
+    this.setEnabledOrder(e, { value: false });
+  }
+
+  deleteProductFromOrder(e, { product }) {
+    const { products } = this.state;
+
+    this.setState({
+      products: [...lodash.filter(products, p => p.id !== product.id)],
     });
 
     this.setEnabledOrder(e, { value: false });
@@ -391,7 +402,7 @@ class App extends Component {
       return alert('Es necesario cotizar antes de crear el pedido.');
 
     api.createSaleOrder(data).then(({ data }) => {
-      console.log(data);
+      alert(`El nro de pedido es ${data}`);
 
       this.setEnabledOrder(e, { value: false });
     });
@@ -420,6 +431,7 @@ class App extends Component {
           setMaterial={this.setMaterial}
           setMaterialQuantity={this.setMaterialQuantity}
           addProductToOrder={this.addProductToOrder}
+          deleteProductFromOrder={this.deleteProductFromOrder}
           simulateSaleOrder={this.simulateSaleOrder}
           createSaleOrder={this.createSaleOrder}
         />
