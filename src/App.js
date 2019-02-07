@@ -4,58 +4,10 @@ import moment from 'moment';
 
 import Dashboard from './Dashboard';
 
-import * as api from './api/mock';
-import * as data from './api/data';
+import * as api from './api';
 import { optionWithIcon } from './utils/helpers';
 
 import './App.css';
-
-window.__INITIAL_STATE__ = window.__INITIAL_STATE__ || {
-  // General Data
-  purchaseOrder: '1234567890',
-  distributionChannel: '10',
-  orderTypeList: data.orderTypeList,
-  orderTypeValue: '',
-  orderType: [],
-  packingConditionList: data.packingConditionList,
-  packingConditionValue: '',
-  packingCondition: [],
-  requesterList: data.requesterList,
-  requesterValue: '',
-  requester: [],
-  receiverList: data.receiverList,
-  receiverValue: '',
-  receiver: [],
-  paymentConditionList: data.paymentConditionList,
-  paymentConditionValue: '',
-  paymentCondition: [],
-  shippingConditionList: data.shippingConditionList,
-  shippingConditionValue: '',
-  shippingCondition: [],
-  reasonTransferList: data.reasonTransferList,
-  reasonTransferValue: '',
-  reasonTransfer: [],
-  transportDate: null,
-  deliveryDate: moment()
-    .add(2, 'days')
-    .toDate(),
-  // Advance Payments
-  advancePayments: [],
-  advancePaymentSelected: [],
-  // Sales Order
-  products: [],
-  productsSelected: [],
-  // Add Product Modal
-  materialList: data.materialList,
-  materialValue: '',
-  material: [],
-  materialQuantity: 1,
-  // Others
-  showSidebarInfo: false,
-  showAddProductModal: false,
-  enabledOrder: false,
-  sapDateFormat: 'YYYYMMDD',
-};
 
 class App extends Component {
   constructor(props) {
