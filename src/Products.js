@@ -62,8 +62,20 @@ export default class Products extends Component {
     console.log(event, data);
   }
 
-  handleRowAction(item, action) {
-    console.log(item, action);
+  handleRowAction(product, action) {
+    const { deleteProductFromOrder } = this.props;
+
+    switch(action.value) {
+      case "1":
+        // edit
+        break;
+      case "2":
+        // delete
+        deleteProductFromOrder({}, { product });
+        break;
+      default:
+        break;
+    }
   }
 
   render() {

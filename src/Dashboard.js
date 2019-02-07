@@ -81,6 +81,7 @@ class Dashboard extends Component {
       enabledOrder,
       setEnabledOrder,
       addProductToOrder,
+      deleteProductFromOrder,
       // Sale Order
       simulateSaleOrder,
       createSaleOrder,
@@ -220,6 +221,7 @@ class Dashboard extends Component {
                   items={products}
                   selectItem={selectProducts}
                   selectedItems={productsSelected}
+                  deleteProductFromOrder={deleteProductFromOrder}
                 />
               </div>
             </TabsPanel>
