@@ -84,6 +84,7 @@ class App extends Component {
     this.simulateSaleOrder = this.simulateSaleOrder.bind(this);
     this.createSaleOrder = this.createSaleOrder.bind(this);
     this.validSimulateSaleOrder = this.validSimulateSaleOrder.bind(this);
+    this.resetSaleOrder = this.resetSaleOrder.bind(this);
   }
 
   componentDidMount() {
@@ -261,6 +262,10 @@ class App extends Component {
     );
   }
 
+  resetSaleOrder(e) {
+    this.setState({ products: [], enabledOrder: false });
+  }
+
   simulateSaleOrder(e) {
     const {
       orderType,
@@ -404,7 +409,7 @@ class App extends Component {
     api.createSaleOrder(data).then(({ data }) => {
       alert(`El nro de pedido es ${data}`);
 
-      this.setEnabledOrder(e, { value: false });
+      this.resetSaleOrder(e);
     });
   }
 
