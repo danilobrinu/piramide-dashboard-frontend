@@ -4,7 +4,7 @@ import moment from 'moment';
 
 import Dashboard from './Dashboard';
 
-import * as api from './api/mock';
+import * as api from './api';
 import * as data from './api/data';
 import { optionWithIcon } from './utils/helpers';
 
