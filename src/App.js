@@ -216,7 +216,7 @@ class App extends Component {
     const productsToItems = products =>
       lodash.map(products, (product, index) => {
         const { value, quantity: qty } = product;
-        const ITEM_NUMBER = lodash.padStart(
+        const ITM_NUMBER = lodash.padStart(
           ((index + 1) * 10).toString(),
           6,
           '0'
@@ -225,7 +225,7 @@ class App extends Component {
         const PLANT = '1000';
         const TARGET_QTY = lodash.padStart((qty * 100).toString(), 20, '0');
         return {
-          ITEM_NUMBER,
+          ITM_NUMBER,
           MATERIAL,
           PLANT,
           TARGET_QTY,
@@ -235,8 +235,8 @@ class App extends Component {
       I_HEADER: {
         DOC_TYPE: orderType[0].value,
         SALES_ORG: '1000',
-        DIVISION: '10',
         DISTR_CHAN: distributionChannel,
+        DIVISION: '10',
         REQ_DATE_H: moment(deliveryDate).format(sapDateFormat),
         PURCH_NO_C: purchaseOrder,
         SOLICITANTE: requester[0].value,
