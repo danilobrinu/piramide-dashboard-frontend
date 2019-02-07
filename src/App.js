@@ -271,7 +271,7 @@ class App extends Component {
         );
         const MATERIAL = value;
         const PLANT = '1000';
-        const TARGET_QTY = lodash.padStart((qty * 100).toString(), 20, '0');
+        const TARGET_QTY = lodash.padStart((qty * 1000).toString(), 20, '0');
         return {
           ITM_NUMBER,
           MATERIAL,
