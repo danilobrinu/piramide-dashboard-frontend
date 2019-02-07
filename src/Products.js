@@ -85,9 +85,6 @@ export default class Products extends Component {
         <DataTableColumn label="Producto" primaryColumn property="name">
           <DataTableCellResponsive />
         </DataTableColumn>
-        <DataTableColumn label="Código" property="code">
-          <DataTableCellResponsive />
-        </DataTableColumn>
         <DataTableColumn label="Cantidad" property="quantity">
           <DataTableCellResponsive />
         </DataTableColumn>
