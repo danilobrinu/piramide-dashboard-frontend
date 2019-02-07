@@ -235,6 +235,7 @@ class App extends Component {
       I_HEADER: {
         DOC_TYPE: orderType[0].value,
         SALES_ORG: '1000',
+        DIVISION: '10',
         DISTR_CHAN: distributionChannel,
         REQ_DATE_H: moment(deliveryDate).format(sapDateFormat),
         PURCH_NO_C: purchaseOrder,
