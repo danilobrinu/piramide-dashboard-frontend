@@ -318,28 +318,40 @@ class App extends Component {
         lodash.groupBy(data['ET_CONDITION'], 'ITM_NUMBER')
       );
 
+      if (!data['ET_CONDITION'].length && !data['ET_ITEM_WEIGTH'].length) {
+        alert(`Los productos selecionados no tienen precio o stock por favor cambiarlos por otros productos.`);
+        return;
+      }
+
       lodash.each(
         lodash.groupBy(data['ET_CONDITION'], 'ITM_NUMBER'),
         (info, ITM_NUMBER) => {
-          const amount = lodash.find(
-            info,
-            field => field['COND_TYPE'] === 'ZPRB'
-          )['CONDVALUE'];
-          const igv = lodash.find(info, field => field['COND_TYPE'] === 'MWST')[
-            'CONDVALUE'
-          ];
-          const index = +ITM_NUMBER / 10 - 1;
-          const newProducts = products;
-          newProducts[index] = {
-            ...newProducts[index],
-            amount,
-            igv,
-          };
-          this.setState({
-            products: newProducts,
-          });
+          try {
+            const amount = lodash.find(
+              info,
+              field => field['COND_TYPE'] === 'ZPRB'
+            )['CONDVALUE'];
+            const igv = lodash.find(
+              info,
+              field => field['COND_TYPE'] === 'MWST'
+            )['CONDVALUE'];
+            const index = +ITM_NUMBER / 10 - 1;
+            const newProducts = products;
+            newProducts[index] = {
+              ...newProducts[index],
+              amount,
+              igv,
+            };
+            this.setState({
+              products: newProducts,
+            });
+          } catch(e) {
+            alert(`El producto nro ${+ITM_NUMBER / 10} no tiene precio o stock por favor cambiarlo por otro producto.`);
+          }
         }
       );
+
+      console.log(data['ET_ITEM_WEIGTH']);
 
       lodash.each(data['ET_ITEM_WEIGTH'], row => {
         const { ITM_NUMBER, BRGEW } = row;
