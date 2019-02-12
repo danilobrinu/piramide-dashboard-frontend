@@ -28,6 +28,8 @@ export default class SidebarInfo extends Component {
     const igv = lodash.reduce(products, (acc, product) => acc + product.igv, 0);
     const total = subTotal + igv;
     const peso = lodash.reduce(products, (acc, product) => acc + product.weight, 0);
+    const PEN = (value, withSymbol = true) => currency(value, { symbol: 'S/.' }).format(withSymbol);
+    const KG = (value) => currency(value, {  pattern: `#!`, symbol: 'Kg', precision: 0 }).format(true);
 
     return (
       <div
@@ -212,28 +214,28 @@ export default class SidebarInfo extends Component {
                 >
                   Subtotal:
                 </dt>
-                <dd className="slds-item_detail">{currency(subTotal).format()}</dd>
+                <dd className="slds-item_detail">{PEN(subTotal)}</dd>
                 <dt
                   className="slds-item_label slds-text-color_weak"
                   title="IGV"
                 >
                   IGV:
                 </dt>
-                <dd className="slds-item_detail">{currency(igv).format()}</dd>
+                <dd className="slds-item_detail">{PEN(igv)}</dd>
                 <dt
                   className="slds-item_label slds-text-color_weak"
                   title="Total de venta"
                 >
                   Total:
                 </dt>
-                <dd className="slds-item_detail">{currency(total).format()}</dd>
+                <dd className="slds-item_detail">{PEN(total)}</dd>
                 <dt
                   className="slds-item_label slds-text-color_weak"
                   title="Total de venta"
                 >
                   Peso:
                 </dt>
-                <dd className="slds-item_detail">{peso}</dd>
+                <dd className="slds-item_detail">{KG(peso)}</dd>
               </dl>
             </div>
           </article>

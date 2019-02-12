@@ -118,11 +118,7 @@ class Dashboard extends Component {
                 <Button
                   disabled={!enabledOrder}
                   title="Crear Orden"
-                  label={
-                    <span>
-                      <span className="slds-show_large">Crear</span> Pedido
-                    </span>
-                  }
+                  label="Grabar"
                   variant="brand"
                   onClick={(e) => createSaleOrder(e)}
                 />
