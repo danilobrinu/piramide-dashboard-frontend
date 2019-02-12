@@ -6,11 +6,17 @@ import {
   comboboxFilterAndLimit,
   Input,
 } from '@salesforce/design-system-react';
-import { uid, optionsWithIcon } from './utils/helpers'
+import { uid, optionsWithIcon } from './utils/helpers';
 
 export default class AddProductModal extends Component {
   cancelOperation(e) {
-    const { setShowAddProductModal } = this.props;
+    const {
+      setMaterial,
+      setMaterialQuantity,
+      setShowAddProductModal,
+    } = this.props;
+    setMaterial(e, {});
+    setMaterialQuantity(e, {});
     setShowAddProductModal(e, { value: false });
   }
 
@@ -82,8 +88,10 @@ export default class AddProductModal extends Component {
                     id="material"
                     events={{
                       onChange: (e, { value }) => setMaterial(e, { value }),
-                      onRequestRemoveSelectedOption: (e, _) => setMaterial(e, {}),
-                      onSelect: (e, { selection }) => setMaterial(e, { selection }),
+                      onRequestRemoveSelectedOption: (e, _) =>
+                        setMaterial(e, {}),
+                      onSelect: (e, { selection }) =>
+                        setMaterial(e, { selection }),
                     }}
                     labels={{
                       label: 'Producto',
