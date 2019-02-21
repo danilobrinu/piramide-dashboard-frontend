@@ -173,7 +173,7 @@ export const packingConditionList = [
   },
   {
     id: uid(),
-    label: 'Entrega a granel o co zuncho',
+    label: 'Entrega a granel o con zuncho',
     subTitle: '-',
     type: 'account',
     value: 'ZPVN',
