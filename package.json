@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@salesforce-ux/design-system": "^2.7.5",
-    "@salesforce/design-system-react": "^0.9.3",
+    "@salesforce-ux/design-system": "2.8.3",
+    "@salesforce/design-system-react": "0.9.4",
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
     "currency.js": "^1.2.1",
