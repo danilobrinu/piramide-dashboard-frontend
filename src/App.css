@@ -14,6 +14,19 @@ body {
 
 .slds-list_horizontal .slds-item_label { width: 50%; }
 .slds-list_horizontal .slds-item_detail { width: 50%; }
+.slds-popover_walkthrough { z-index: auto; }
+.slds-button_icon-size {
+  width: 48px;
+  height: 48px;
+}
+.slds-button[disabled], .slds-button:disabled {
+  background: #c9c7c5;
+  border-color: #c9c7c5;
+  color: #fff;
+}
+.slds-popover_walkthrough th.slds-text-title_caps {
+  color: #2196f3;
+}
 
 .main .slds-tabs_default__content {
   height: calc(100vh - 97px);

@@ -9,56 +9,66 @@ import {
 import { uid, optionsWithIcon } from './utils/helpers';
 
 export default class AddProductModal extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {};
+    this.cancelOperation = this.cancelOperation.bind(this);
+    this.saveOperation = this.saveOperation.bind(this);
+  }
+
   cancelOperation(e) {
     const {
-      setMaterial,
+      materials,
+      setMaterials,
       setMaterialQuantity,
       setShowAddProductModal,
     } = this.props;
-    setMaterial(e, {});
-    setMaterialQuantity(e, {});
-    setShowAddProductModal(e, { value: false });
+    setMaterials({ ...materials, inputValue: '', selection: [] });
+    setMaterialQuantity(1);
+    setShowAddProductModal(false);
   }
 
   saveOperation(e) {
-    if (!this.props.material.length) return;
-
     const {
-      setShowAddProductModal,
-      addProductToOrder,
-      material,
-      setMaterial,
-      materialQuantity: quantity,
+      materials,
+      setMaterials,
+      materialQuantity,
       setMaterialQuantity,
-      setEnabledOrder,
+      products,
+      setProducts,
+      setOrderIsEnabled,
+      setShowAddProductModal,
     } = this.props;
+
+    console.log(this.props);
+
+    if (!materials.selection.length) return;
 
     const product = {
       id: uid(),
-      name: material[0].label,
-      code: material[0].value,
-      value: material[0].value,
+      name: materials.selection[0].label,
+      code: materials.selection[0].value,
+      value: materials.selection[0].value,
       weight: 0,
       unity: 'UN',
       amount: 0,
       igv: 0,
-      quantity,
+      quantity: materialQuantity,
     };
 
-    setMaterial(e, {});
-    setMaterialQuantity(e, {});
-    addProductToOrder(e, { product });
-    setShowAddProductModal(e, { value: false });
-    setEnabledOrder(e, { value: false });
+    setMaterials({ ...materials, inputValue: '', selection: [] });
+    setMaterialQuantity(1);
+    setProducts({ ...products, options: [...products.options, product] });
+    setShowAddProductModal(false);
+    setOrderIsEnabled(false);
   }
 
   render() {
     const {
       showAddProductModal,
-      materialList,
-      materialValue,
-      material,
-      setMaterial,
+      materials,
+      setMaterials,
       materialQuantity,
       setMaterialQuantity,
     } = this.props;
@@ -87,23 +97,28 @@ export default class AddProductModal extends Component {
                   <Combobox
                     id="material"
                     events={{
-                      onChange: (e, { value }) => setMaterial(e, { value }),
-                      onRequestRemoveSelectedOption: (e, _) =>
-                        setMaterial(e, {}),
-                      onSelect: (e, { selection }) =>
-                        setMaterial(e, { selection }),
+                      onChange: (_, { value: inputValue }) =>
+                        setMaterials({ ...materials, inputValue }),
+                      onRequestRemoveSelectedOption: () =>
+                        setMaterials({
+                          ...materials,
+                          inputValue: '',
+                          selection: [],
+                        }),
+                      onSelect: (_, { selection }) =>
+                        setMaterials({ ...materials, selection }),
                     }}
                     labels={{
                       label: 'Producto',
                       placeholder: 'Buscar Producto',
                     }}
                     options={comboboxFilterAndLimit({
-                      inputValue: materialValue,
-                      options: optionsWithIcon(materialList),
-                      selection: material,
+                      inputValue: materials.inputValue,
+                      options: optionsWithIcon(materials.options),
+                      selection: materials.selection,
                     })}
-                    selection={material}
-                    value={materialValue}
+                    selection={materials.selection}
+                    value={materials.inputValue}
                     variant="inline-listbox"
                     menuPosition="relative"
                     required
@@ -115,9 +130,7 @@ export default class AddProductModal extends Component {
                   <Input
                     id="quantity"
                     label="Cantidad"
-                    minValue={1}
-                    maxValue={30000}
-                    onChange={(e, data) => setMaterialQuantity(e, data)}
+                    onChange={(_, { value }) => setMaterialQuantity(value)}
                     step={1}
                     value={materialQuantity}
                     variant="counter"

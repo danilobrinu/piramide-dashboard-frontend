@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import lodash from 'lodash';
 import {
   DataTable,
   DataTableCell,
@@ -53,25 +54,19 @@ export default class Products extends Component {
   constructor(props) {
     super(props);
 
-    this.handleChanged = this.handleChanged.bind(this);
     this.handleRowAction = this.handleRowAction.bind(this);
   }
 
-  handleChanged(event, data) {
-    this.setState({ selection: data.selection });
-    console.log(event, data);
-  }
-
   handleRowAction(product, action) {
-    const { deleteProductFromOrder } = this.props;
+    const { products, setProducts } = this.props;
 
-    switch(action.value) {
-      case "1":
-        // edit
-        break;
-      case "2":
+    switch (action.value) {
+      case '2':
         // delete
-        deleteProductFromOrder({}, { product });
+        setProducts({
+          ...products.options,
+          options: [...lodash.filter(products.options, p => p.id !== product.id)],
+        });
         break;
       default:
         break;
@@ -79,18 +74,24 @@ export default class Products extends Component {
   }
 
   render() {
-    const { items, selectItem, selectedItems } = this.props;
+    const { products, setProducts } = this.props;
 
-    if (!items.length) {
-      return <div className="slds-p-around_small">No se han agregado productos al pedido.</div>
+    if (!products.options.length) {
+      return (
+        <div className="slds-p-around_small">
+          No se han agregado productos al pedido.
+        </div>
+      );
     }
 
     return (
       <DataTable
-        className="slds-max-medium-table_stacked-horizontal"
-        items={items}
-        onRowChange={selectItem}
-        selection={selectedItems}
+        className="slds-max-medium-table_stacked-horizontal slds-text-color_default"
+        items={products.options}
+        onRowChange={(_, { selection }) =>
+          setProducts({ ...products, selection })
+        }
+        selection={products.selection}
         selectRows="checkbox"
         fixedLayout
       >
@@ -112,19 +113,19 @@ export default class Products extends Component {
         <DataTableRowActionsResponsive
           options={[
             {
-              id: 0,
-              label: 'Editar',
-              value: '1',
-            },
-            {
               id: 1,
               label: 'Eliminar',
               value: '2',
             },
           ]}
-          menuPosition="relative"
           onAction={this.handleRowAction}
-          dropdown={<Dropdown length="5" />}
+          dropdown={
+            <Dropdown
+              length="5"
+              menuPosition="relative"
+              nubbinPosition="bottom right"
+            />
+          }
         />
       </DataTable>
     );

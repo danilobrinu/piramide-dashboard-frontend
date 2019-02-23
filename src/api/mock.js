@@ -73,7 +73,7 @@ export const factoryDate = (
   });
 };
 
-export const simulateSaleOrder = (
+export const simulateSalesOrder = (
   input = {
     I_HEADER: {
       DOC_TYPE: 'ZPNE',
@@ -347,13 +347,13 @@ export const simulateSaleOrder = (
       },
       success: true,
     };
-    setTimeout(() => resolve(output), 300);
+    setTimeout(() => resolve(output), Math.floor(Math.random() * 250 + 750));
 
-    console.log('simulateSaleOrder[mock]:', input, output);
+    console.log('simulateSalesOrder[mock]:', input, output);
   });
 };
 
-export const createSaleOrder = (
+export const createSalesOrder = (
   input = {
     I_HEADER: {
       DOC_TYPE: 'ZPNE',
@@ -380,8 +380,41 @@ export const createSaleOrder = (
       data: '197001051',
       success: true,
     };
-    setTimeout(() => resolve(output), 300);
+    setTimeout(() => resolve(output), Math.floor(Math.random() * 750 + 750));
 
-    console.log('createSaleOrder[mock]:', input, output);
+    console.log('createSalesOrder[mock]:', input, output);
+  });
+};
+
+export const createReceiver = (
+  input = {
+    I_HEADER: {
+      DOC_TYPE: 'ZPNE',
+      SALES_ORG: '1000',
+      DISTR_CHAN: '10',
+      DIVISION: '10',
+      REQ_DATE_H: '20181218',
+      PURCH_NO_C: '1234567890',
+      SOLICITANTE: '4000000007',
+      DESTINATARIO: '4000000007',
+    },
+    IT_ITEMS: [
+      {
+        ITM_NUMBER: '000010',
+        MATERIAL: '0400000229',
+        PLANT: '1000',
+        TARGET_QTY: '00000000000000200000',
+      },
+    ],
+  }
+) => {
+  return new Promise((resolve, _) => {
+    const output = {
+      data: '197001051',
+      success: true,
+    };
+    setTimeout(() => resolve(output), Math.floor(Math.random() * 200 + 300));
+
+    console.log('createReceiver[mock]:', input, output);
   });
 };

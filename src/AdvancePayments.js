@@ -14,18 +14,24 @@ DataTableCellResponsive.displayName = DataTableCell.displayName;
 
 export default class AdvancePayments extends Component {
   render() {
-    const { items, selectItem, selectedItem } = this.props;
+    const { advancePayments, setAdvancePayments } = this.props;
 
-    if (!items.length) {
-      return <div className="slds-p-around_small">No se ha seleccionado ningún anticipo.</div>
+    if (!advancePayments.options.length) {
+      return (
+        <div className="slds-p-around_small">
+          No se ha seleccionado ningún anticipo.
+        </div>
+      );
     }
 
     return (
       <DataTable
-        className="slds-max-medium-table_stacked-horizontal"
-        items={items}
-        onRowChange={selectItem}
-        selection={selectedItem}
+        className="slds-max-medium-table_stacked-horizontal slds-text-color_default"
+        items={advancePayments.options}
+        onRowChange={(_, { selection }) =>
+          setAdvancePayments({ ...advancePayments, selection })
+        }
+        selection={advancePayments.selection}
         selectRows="radio"
       >
         <DataTableColumn label="Serie" primaryColumn property="serie">
