@@ -46,7 +46,7 @@ export default class AddProductModal extends Component {
     if (!materials.selection.length) return;
 
     const product = {
-      id: uid(),
+      id: uniqid(),
       name: materials.selection[0].label,
       code: materials.selection[0].value,
       value: materials.selection[0].value,

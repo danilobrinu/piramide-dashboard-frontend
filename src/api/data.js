@@ -2,14 +2,14 @@ import { uid } from '../utils/helpers';
 
 export const orderTypeList = [
   {
-    id: uid(),
+    id: uniqid(),
     label: 'Venta cobro embalaje',
     subTitle: '-',
     type: 'marketing_actions',
     value: 'ZPNE',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'Ped. desp. nacional',
     subTitle: '-',
     type: 'marketing_actions',
@@ -19,7 +19,7 @@ export const orderTypeList = [
 
 export const requesterList = [
   {
-    id: uid(),
+    id: uniqid(),
     label: 'LA VIGA SAC',
     subTitle: 'TOMAS MARSANO 2813, SANTIAGO DE SURCO - LIMA',
     type: 'account',
@@ -35,7 +35,7 @@ export const requesterList = [
 
 export const receiverList = [
   {
-    id: uid(),
+    id: uniqid(),
     label: 'AV. TOMAS MARSANO 2813, SANTIAGO DE SURCO - LIMA',
     subTitle: 'LA VIGA SAC',
     type: 'account',
@@ -51,14 +51,14 @@ export const receiverList = [
 
 export const shippingConditionList = [
   {
-    id: uid(),
+    id: uniqid(),
     label: 'Entrega al cliente',
     subTitle: '-',
     type: 'account',
     value: '01',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'Cliente recoge',
     subTitle: '-',
     type: 'account',
@@ -68,70 +68,70 @@ export const shippingConditionList = [
 
 export const paymentConditionList = [
   {
-    id: uid(),
+    id: uniqid(),
     label: 'CONTADO CONTRA ENTREGA',
     subTitle: '-',
     type: 'currency',
     value: 'C000',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'FACTURA 5 DIAS',
     subTitle: '-',
     type: 'currency',
     value: 'C005',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'FACTURA 7 DIAS',
     subTitle: '-',
     type: 'currency',
     value: 'C007',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'FACTURA 10 DIAS',
     subTitle: '-',
     type: 'currency',
     value: 'C010',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'FACTURA 15 DIAS',
     subTitle: '-',
     type: 'currency',
     value: 'C015',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'FACTURA 30 DIAS',
     subTitle: '-',
     type: 'currency',
     value: 'C030',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'FACTURA 45 DIAS',
     subTitle: '-',
     type: 'currency',
     value: 'C045',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'FACTURA 60 DIAS',
     subTitle: '-',
     type: 'currency',
     value: 'C060',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'FACTURA 75 DIAS',
     subTitle: '-',
     type: 'currency',
     value: 'C075',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'FACTURA 90 DIAS',
     subTitle: '-',
     type: 'currency',
@@ -141,21 +141,21 @@ export const paymentConditionList = [
 
 export const reasonTransferList = [
   {
-    id: uid(),
+    id: uniqid(),
     label: 'Venta Sujeta a Confirmación de Cliente',
     subTitle: '-',
     type: 'account',
     value: 'B',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'Otros: Venta ET',
     subTitle: '-',
     type: 'account',
     value: 'M',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'Venta',
     subTitle: '-',
     type: 'account',
@@ -165,14 +165,14 @@ export const reasonTransferList = [
 
 export const packingConditionList = [
   {
-    id: uid(),
+    id: uniqid(),
     label: 'Entrega en parihuela',
     subTitle: '-',
     type: 'account',
     value: 'ZPNE',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'Entrega a granel o con zuncho',
     subTitle: '-',
     type: 'account',
@@ -213,7 +213,7 @@ export const advancePayments = [
 
 export const materialList = [
   {
-    id: uid(),
+    id: uniqid(),
     label: 'HUECO 12 PIRAMIDE',
     subTitle: '-',
     type: 'product_item',
@@ -223,7 +223,7 @@ export const materialList = [
     MATERIAL_DESC: 'HUECO 12 PIRAMIDE',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'HUECO 15 LISO - PIRAMIDE NUEVO',
     subTitle: '-',
     type: 'product_item',
@@ -233,7 +233,7 @@ export const materialList = [
     MATERIAL_DESC: 'HUECO 15 LISO - PIRAMIDE NUEVO',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'HUECO 12 P1',
     subTitle: '-',
     type: 'product_item',
@@ -243,7 +243,7 @@ export const materialList = [
     MATERIAL_DESC: 'HUECO 12 P1',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'CARAVISTA 06',
     subTitle: '-',
     type: 'product_item',
@@ -253,7 +253,7 @@ export const materialList = [
     MATERIAL_DESC: 'CARAVISTA 06',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'BANDEJA 25L P1',
     subTitle: '-',
     type: 'product_item',
@@ -263,7 +263,7 @@ export const materialList = [
     MATERIAL_DESC: 'BANDEJA 25L P1',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'BOVEDILLA 15 P1',
     subTitle: '-',
     type: 'product_item',
@@ -273,7 +273,7 @@ export const materialList = [
     MATERIAL_DESC: 'BOVEDILLA 15 P1',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'PANDERETA LISA HERCULES 2.2',
     subTitle: '-',
     type: 'product_item',
@@ -283,7 +283,7 @@ export const materialList = [
     MATERIAL_DESC: 'PANDERETA LISA HERCULES 2.2',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'PASTELERO P1',
     subTitle: '-',
     type: 'product_item',
@@ -293,7 +293,7 @@ export const materialList = [
     MATERIAL_DESC: 'PASTELERO P1',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'HUECO 08 P1',
     subTitle: '-',
     type: 'product_item',
@@ -303,7 +303,7 @@ export const materialList = [
     MATERIAL_DESC: 'HUECO 08 P1',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'KING KONG 18H PIRAMIDE P1',
     subTitle: '-',
     type: 'product_item',
@@ -313,7 +313,7 @@ export const materialList = [
     MATERIAL_DESC: 'KING KONG 18H PIRAMIDE P1',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'CARAVISTA 09 P1',
     subTitle: '-',
     type: 'product_item',
@@ -323,7 +323,7 @@ export const materialList = [
     MATERIAL_DESC: 'CARAVISTA 09 P1',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'KING KONG 18H PIRAMIDE P1',
     subTitle: '-',
     type: 'product_item',
@@ -333,7 +333,7 @@ export const materialList = [
     MATERIAL_DESC: 'KING KONG 18H PIRAMIDE P1',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'HUECO 15 LISO - PIRAMIDE SDD',
     subTitle: '-',
     type: 'product_item',
@@ -343,7 +343,7 @@ export const materialList = [
     MATERIAL_DESC: 'HUECO 15 LISO - PIRAMIDE SDD',
   },
   {
-    id: uid(),
+    id: uniqid(),
     label: 'LADRILLO',
     subTitle: '-',
     type: 'product_item',
@@ -353,3 +353,9 @@ export const materialList = [
     MATERIAL_DESC: 'LADRILLO',
   },
 ];
+
+const departmentList = [];
+
+const provinceList = [];
+
+const districtList = [];

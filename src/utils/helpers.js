@@ -17,5 +17,5 @@ export const optionWithIcon = item => ({
   },
 });
 
-export const uid = () =>
+export const uniqid = () =>
   (+new Date() * Math.random()).toString(16).replace('.', '');

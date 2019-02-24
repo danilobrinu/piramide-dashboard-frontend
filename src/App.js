@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import lodash from 'lodash';
-import classnames from 'classnames';
 import moment from 'moment';
 import {
   Input,
@@ -17,11 +16,12 @@ import {
 
 import * as api from './api/mock';
 import * as data from './api/data';
-import { optionsWithIcon, optionWithIcon } from './utils/helpers';
+import { optionsWithIcon, optionWithIcon, uid } from './utils/helpers';
 
 import AdvancePayments from './AdvancePayments';
 import AddProductModal from './AddProductModal';
 import Products from './Products';
+import Notifications from './Notifications';
 
 import './App.css';
 
@@ -96,7 +96,7 @@ const App = () => {
   const [paymentCondition, setPaymentCondition] = useState({
     inputValue: '',
     options: data.paymentConditionList,
-    selection: [optionWithIcon(data.paymentConditionList[0])],
+    selection: [],
   });
   const [advancePayments, setAdvancePayments] = useState({
     options: data.advancePayments,
@@ -151,6 +151,13 @@ const App = () => {
     selection: [],
   });
   const [receiverReference, setReceiverReference] = useState('');
+  // Alerts
+  const [notifications, setNotifications] = useState([]);
+  const closeNotification = notification => {
+    setNotifications(
+      lodash.filter(notifications, n => n.id !== notification.id)
+    );
+  };
   // Steps
   const nextStep = () => setCurrentStep(currentStep + 1);
   const prevStep = () => setCurrentStep(currentStep - 1);
@@ -170,7 +177,7 @@ const App = () => {
       };
     });
   const simulateSalesOrder = () => {
-    // if (!stepsIsComplete()) {
+    // if (!validateAllSteps()) {
     //   alert('Por favor completar todos los pasos con la información necesaria');
     // }
 
@@ -205,6 +212,7 @@ const App = () => {
         lodash.groupBy(data['ET_CONDITION'], 'ITM_NUMBER'),
         (info, ITM_NUMBER) => {
           try {
+            const index = +ITM_NUMBER / 10 - 1;
             const amount = lodash.find(
               info,
               field => field['COND_TYPE'] === 'ZPRB'
@@ -213,14 +221,18 @@ const App = () => {
               info,
               field => field['COND_TYPE'] === 'MWST'
             )['CONDVALUE'];
-            const index = +ITM_NUMBER / 10 - 1;
-            const newProducts = products.options;
-            newProducts[index] = {
-              ...newProducts[index],
-              amount,
-              igv,
-            };
-            setProducts({ ...products, options: newProducts });
+            const options = lodash.map(products.options, (product, key) => {
+              if (index !== key) return product;
+              return {
+                ...product,
+                amount,
+                igv,
+              };
+            });
+            setProducts({
+              ...products,
+              options,
+            });
           } catch (e) {
             alert(
               `El producto nro ${+ITM_NUMBER /
@@ -236,12 +248,17 @@ const App = () => {
         const { ITM_NUMBER, BRGEW } = row;
         const index = +ITM_NUMBER / 10 - 1;
         const weight = BRGEW;
-        const newProducts = products.options;
-        newProducts[index] = {
-          ...newProducts[index],
-          weight,
-        };
-        setProducts({ ...products, options: newProducts });
+        const options = lodash.map(products.options, (product, key) => {
+          if (index !== key) return product;
+          return {
+            ...product,
+            weight,
+          };
+        });
+        setProducts({
+          ...products,
+          options,
+        });
       });
 
       setOrderIsEnabled(true);
@@ -288,29 +305,184 @@ const App = () => {
     }
   };
   // Check Steps
-  const stepsIsComplete = () => {
-    const step1IsValid = () => {
-      return !!requester.selection.length;
+  const validateAllSteps = () => {
+    setNotifications([]);
+
+    const validateStep1 = () => {
+      let valid = !!requester.selection.length;
+
+      if (!valid) {
+        setNotifications(current => [
+          ...current,
+          {
+            id: uniqid(),
+            title: 'El paso 1 no se ha completado',
+            description: 'Es necesario completar los campos',
+            type: 'return_order',
+          },
+        ]);
+      }
+
+      return valid;
     };
-    const step2IsValid = () => {};
-    const step3IsValid = () => {};
-    const step4IsValid = () => {};
-    const step5IsValid = () => {};
+    const validateStep2 = () => {
+      if (!shippingCondition.selection.length) {
+        setNotifications(current => [
+          ...current,
+          {
+            id: uniqid(),
+            title: 'El paso 2 no se ha completado',
+            description: 'Es necesario completar los campos',
+            type: 'return_order',
+          },
+        ]);
+
+        return false;
+      }
+
+      let valid = true;
+
+      switch (shippingCondition.selection[0].value) {
+        case '01':
+          switch (receiverCondition) {
+            case '01':
+              valid = !!requester.selection.length;
+              break;
+            case '02':
+              valid =
+                !!receiverDocument.length &&
+                !!receiverName.length &&
+                !!receiverStreet.length &&
+                !!receiverDoor.length &&
+                !!receiverDepartment.selection.length &&
+                !!receiverProvince.selection.length &&
+                !!receiverDistrict.selection.length &&
+                !!receiverReference.length;
+              break;
+            default:
+              valid = true;
+              break;
+          }
+          break;
+        case '02':
+          valid =
+            !!vehiclePlate.length &&
+            !!vehicleGrossWeight &&
+            !!vehicleTare.length &&
+            !!vehicleDriver.length &&
+            !!vehicleLicense.length;
+          break;
+        default:
+          valid = true;
+          break;
+      }
+
+      if (!valid) {
+        setNotifications(current => [
+          ...current,
+          {
+            id: uniqid(),
+            title: 'El paso 2 no se ha completado',
+            description: 'Es necesario completar los campos',
+            type: 'return_order',
+          },
+        ]);
+      }
+
+      return valid;
+    };
+    const validateStep3 = () => {
+      const valid = !!orderType.selection.length;
+
+      if (!valid) {
+        setNotifications(current => [
+          ...current,
+          {
+            id: uniqid(),
+            title: 'El paso 3 no se ha completado',
+            description: 'Es necesario completar los campos',
+            type: 'return_order',
+          },
+        ]);
+      }
+
+      return valid;
+    };
+    const validateStep4 = () => {
+      if (!paymentCondition.selection.length) {
+        setNotifications(current => [
+          ...current,
+          {
+            id: uniqid(),
+            title: 'El paso 4 no se ha completado',
+            description: 'Es necesario completar los campos',
+            type: 'return_order',
+          },
+        ]);
+
+        return false;
+      }
+
+      let valid = true;
+
+      switch (paymentCondition.selection[0].length) {
+        case 'C000':
+          valid = !!advancePayments.selection.length;
+          break;
+        default:
+          valid = true;
+          break;
+      }
+
+      if (!valid) {
+        setNotifications(current => [
+          ...current,
+          {
+            id: uniqid(),
+            title: 'El paso 4 no se ha completado',
+            description: 'Es necesario completar los campos',
+            type: 'return_order',
+          },
+        ]);
+      }
+
+      return valid;
+    };
+    const validateStep5 = () => {
+      const valid =
+        !!purchaseOrder.length &&
+        !!deliveryDate &&
+        (shippingCondition.selection[0] === '02' ? !!deliveryHour : true);
+
+      if (!valid) {
+        setNotifications(current => [
+          ...current,
+          {
+            id: uniqid(),
+            title: 'El paso 5 no se ha completado',
+            description: 'Es necesario completar los campos',
+            type: 'return_order',
+          },
+        ]);
+      }
+
+      return valid;
+    };
+
+    const step1IsValid = validateStep1();
+    const step2IsValid = validateStep2();
+    const step3IsValid = validateStep3();
+    const step4IsValid = validateStep4();
+    const step5IsValid = validateStep5();
 
     return (
-      !!orderType.selection.length &&
-      !!distributionChannel.length &&
-      !!deliveryDate &&
-      !!purchaseOrder.length &&
-      !!requester.selection.length &&
-      !!receiver.selection.length &&
-      !!products.options.length
+      step1IsValid &&
+      step2IsValid &&
+      step3IsValid &&
+      step4IsValid &&
+      step5IsValid
     );
   };
-
-  useEffect(() => {
-    console.log(products);
-  }, [products.options]);
 
   return (
     <div className="slds-grid" style={{ height: '100vh' }}>
@@ -481,6 +653,26 @@ const App = () => {
                             </div>
                           </div>
                         </fieldset>
+                        {receiverCondition === '01' && (
+                          <fieldset className="slds-form-element slds-form_compound">
+                            <legend className="slds-form-element__legend slds-form-element__label slds-text-color_inverse">
+                              Dirección del Solicitante
+                            </legend>
+                            <div className="slds-form-element__control">
+                              <div className="slds-form-element__row">
+                                <div className="slds-form-element">
+                                  <div className="slds-form-element__control">
+                                    <span className="slds-form-element__static slds-text-color_inverse">
+                                      {!!requester.selection.length
+                                        ? requester.selection[0].subTitle
+                                        : 'No ha seleccionado ningun Solicitante'}
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </fieldset>
+                        )}
                         {receiverCondition === '02' && (
                           <fieldset className="slds-form-element slds-form_compound">
                             <legend className="slds-form-element__legend slds-form-element__label slds-text-color_inverse">
@@ -927,9 +1119,13 @@ const App = () => {
                           <div className="slds-form-element__row">
                             <div className="slds-form-element slds-text-color_default slds-size_1-of-1">
                               <Timepicker
+                                id="delivery-hour"
                                 placeholder="Seleccione una hora"
                                 onDateChange={date => setDeliveryHour(date)}
-                                strValue=""
+                                strValue={
+                                  deliveryHour &&
+                                  moment(deliveryHour).format('HH:mm A')
+                                }
                                 value={deliveryHour}
                               />
                             </div>
@@ -966,7 +1162,7 @@ const App = () => {
                     className="slds-col_bump-left"
                     label="Validar"
                     variant="success"
-                    onClick={() => setProducts({ options: [''] })}
+                    onClick={validateAllSteps}
                   />
                 )}
               </div>
@@ -1088,6 +1284,10 @@ const App = () => {
         showAddProductModal={showAddProductModal}
         setShowAddProductModal={setShowAddProductModal}
         setOrderIsEnabled={setOrderIsEnabled}
+      />
+      <Notifications
+        notifications={notifications}
+        closeNotification={closeNotification}
       />
     </div>
   );
