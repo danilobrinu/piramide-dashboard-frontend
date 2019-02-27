@@ -11,6 +11,11 @@ body {
   height: auto;
   margin-right: 2px;
 }
+.navbar {
+  height: 56px;
+  padding: 4px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .18);
+}
 
 .slds-list_horizontal .slds-item_label { width: 50%; }
 .slds-list_horizontal .slds-item_detail { width: 50%; }
@@ -26,6 +31,12 @@ body {
 }
 .slds-popover_walkthrough th.slds-text-title_caps {
   color: #2196f3;
+}
+.logo-container {
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
 }
 
 .main .slds-tabs_default__content {
