@@ -6,7 +6,7 @@ import {
   comboboxFilterAndLimit,
   Input,
 } from '@salesforce/design-system-react';
-import { uid, optionsWithIcon } from './utils/helpers';
+import { optionsWithIcon, uniqid } from './utils/helpers';
 
 export default class AddProductModal extends Component {
   constructor(props) {
@@ -17,7 +17,7 @@ export default class AddProductModal extends Component {
     this.saveOperation = this.saveOperation.bind(this);
   }
 
-  cancelOperation(e) {
+  cancelOperation() {
     const {
       materials,
       setMaterials,
@@ -29,7 +29,7 @@ export default class AddProductModal extends Component {
     setShowAddProductModal(false);
   }
 
-  saveOperation(e) {
+  saveOperation() {
     const {
       materials,
       setMaterials,
@@ -78,15 +78,15 @@ export default class AddProductModal extends Component {
         isOpen={showAddProductModal}
         footer={
           <>
-            <Button label="Cancelar" onClick={e => this.cancelOperation(e)} />
+            <Button label="Cancelar" onClick={this.cancelOperation} />
             <Button
               label="Guardar"
               variant="brand"
-              onClick={e => this.saveOperation(e)}
+              onClick={this.saveOperation}
             />
           </>
         }
-        onRequestClose={e => this.cancelOperation(e)}
+        onRequestClose={this.cancelOperation}
         title="Agregar Producto"
       >
         <section className="slds-p-around_large">
