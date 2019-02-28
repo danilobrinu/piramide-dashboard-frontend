@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import lodash from 'lodash';
 import moment from 'moment';
 // API Data and Helpers
-import * as api from './api/mock';
-import * as data from './api/data';
+import * as api from './api';
 import { uniqid, optionsWithIcon, optionWithIcon } from './utils/helpers';
 // Components
 import Navbar from './Navbar';
@@ -17,63 +16,6 @@ import Notifications from './Notifications';
 // Resources
 import './App.css';
 import { ReactComponent as Logo } from './logo.svg';
-
-window.__INITIAL_STATE__ = window.__INITIAL_STATE__ || {
-  steps: [
-    {
-      title: 'Solicitante',
-    },
-    {
-      title: 'Condición de entrega',
-    },
-    {
-      title: 'Clase de pedido',
-    },
-    {
-      title: 'Condición de Pago',
-    },
-    {
-      title: 'Datos Generales',
-    },
-  ],
-  distributionChannel: '10',
-  requesterList: data.requesterList,
-  shippingConditionList: data.shippingConditionList,
-  orderTypeList: data.orderTypeList,
-  paymentConditionList: data.paymentConditionList,
-  reasonTransferList: data.reasonTransferList,
-  advancePayments: [],
-  departmentList: data.departmentList,
-  provinceList: data.provinceList,
-  districtList: data.districtList,
-  materialList: data.materialList,
-  abbreviatedWeekDays: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'],
-  weekDays: [
-    'Domingo',
-    'Lunes',
-    'Martes',
-    'Miércoles',
-    'Jueves',
-    'Viernes',
-    'Sábado',
-  ],
-  months: [
-    'Enero',
-    'Febrero',
-    'Marzo',
-    'Abril',
-    'Mayo',
-    'Junio',
-    'Julio',
-    'Agosto',
-    'Septiembre',
-    'Octubre',
-    'Noviembre',
-    'Diciembre',
-  ],
-  today: 'Hoy día',
-  sapDateFormat: 'YYYYMMDD',
-};
 
 const App = () => {
   const steps = window.__INITIAL_STATE__.steps;
