@@ -50,9 +50,9 @@ window.__INITIAL_STATE__ = window.__INITIAL_STATE__ || {
   orderTypeList: data.orderTypeList,
   paymentConditionList: data.paymentConditionList,
   advancePayments: [],
-  departments: data.departmentList,
-  provinces: data.provinceList,
-  districts: data.districtList,
+  departmentList: data.departmentList,
+  provinceList: data.provinceList,
+  districtList: data.districtList,
   materialList: data.materialList,
   abbreviatedWeekDays: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'],
   weekDays: [
@@ -151,7 +151,7 @@ const App = () => {
   const [receiverDoor, setReceiverDoor] = useState('');
   const [receiverDepartment, setReceiverDepartment] = useState({
     inputValue: '',
-    options: data.departmentList,
+    options: window.__INITIAL_STATE__.departmentList,
     selection: [],
   });
   const [receiverProvince, setReceiverProvince] = useState({
@@ -640,7 +640,10 @@ const App = () => {
     const REGION = receiverDepartment.selection[0].REGIO;
     const inputValue = '';
     const options = optionsWithIcon(
-      lodash.filter(data.provinceList, province => province.REGION === REGION)
+      lodash.filter(
+        window.__INITIAL_STATE__.provinceList,
+        province => province.REGION === REGION
+      )
     );
     const selection = [];
 
@@ -658,7 +661,7 @@ const App = () => {
     const inputValue = '';
     const options = optionsWithIcon(
       lodash.filter(
-        data.districtList,
+        window.__INITIAL_STATE__.districtList,
         district => district.CITY_CODE === CITY_CODE
       )
     );
@@ -1355,7 +1358,11 @@ const App = () => {
               <h2 className="slds-text-heading_medium">Pedido</h2>
             </header>
             <div className="slds-popover__body">
-              <Products products={products} setProducts={setProducts} />
+              <Products
+                products={products}
+                setProducts={setProducts}
+                setOrderIsEnabled={setOrderIsEnabled}
+              />
             </div>
             <footer className="slds-popover__footer">
               <div className="slds-grid slds-grid_vertical-align-center">

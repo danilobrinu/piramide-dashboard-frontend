@@ -58,15 +58,18 @@ export default class Products extends Component {
   }
 
   handleRowAction(product, action) {
-    const { products, setProducts } = this.props;
+    const { products, setProducts, setOrderIsEnabled } = this.props;
 
     switch (action.value) {
       case '2':
         // delete
         setProducts({
           ...products.options,
-          options: [...lodash.filter(products.options, p => p.id !== product.id)],
+          options: [
+            ...lodash.filter(products.options, p => p.id !== product.id),
+          ],
         });
+        setOrderIsEnabled(false);
         break;
       default:
         break;

@@ -41,8 +41,6 @@ export default class AddProductModal extends Component {
       setShowAddProductModal,
     } = this.props;
 
-    console.log(this.props);
-
     if (!materials.selection.length) return;
 
     const product = {

@@ -19,7 +19,7 @@ export default class AdvancePayments extends Component {
     if (!advancePayments.options.length) {
       return (
         <div className="slds-p-around_small">
-          No se ha seleccionado ningún anticipo.
+          No hay anticipos, pero puede realizar el pedido sin determinar el anticipo.
         </div>
       );
     }
