@@ -16,7 +16,7 @@ import {
 
 import * as api from './api/mock';
 import * as data from './api/data';
-import { optionsWithIcon, optionWithIcon, uid } from './utils/helpers';
+import { uniqid, optionsWithIcon, optionWithIcon } from './utils/helpers';
 
 import AdvancePayments from './AdvancePayments';
 import AddProductModal from './AddProductModal';
@@ -24,82 +24,96 @@ import Products from './Products';
 import Notifications from './Notifications';
 
 import './App.css';
+import { ReactComponent as Logo } from './logo.svg';
 
-const steps = [
-  {
-    title: 'Solicitante',
-  },
-  {
-    title: 'Condición de entrega',
-  },
-  {
-    title: 'Clase de pedido',
-  },
-  {
-    title: 'Condición de Pago',
-  },
-  {
-    title: 'Datos Generales',
-  },
-];
-const abbreviatedWeekDays = ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'];
-const weekDays = [
-  'Domingo',
-  'Lunes',
-  'Martes',
-  'Miércoles',
-  'Jueves',
-  'Viernes',
-  'Sábado',
-];
-const months = [
-  'Enero',
-  'Febrero',
-  'Marzo',
-  'Abril',
-  'Mayo',
-  'Junio',
-  'Julio',
-  'Agosto',
-  'Septiembre',
-  'Octubre',
-  'Noviembre',
-  'Diciembre',
-];
-const today = 'Hoy día';
+window.__INITIAL_STATE__ = window.__INITIAL_STATE__ || {
+  steps: [
+    {
+      title: 'Solicitante',
+    },
+    {
+      title: 'Condición de entrega',
+    },
+    {
+      title: 'Clase de pedido',
+    },
+    {
+      title: 'Condición de Pago',
+    },
+    {
+      title: 'Datos Generales',
+    },
+  ],
+  distributionChannel: '10',
+  requesterList: data.requesterList,
+  shippingConditionList: data.shippingConditionList,
+  orderTypeList: data.orderTypeList,
+  paymentConditionList: data.paymentConditionList,
+  advancePayments: data.advancePayments,
+  departments: data.departmentList,
+  provinces: data.provinceList,
+  districts: data.districtList,
+  materialList: data.materialList,
+  abbreviatedWeekDays: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'],
+  weekDays: [
+    'Domingo',
+    'Lunes',
+    'Martes',
+    'Miércoles',
+    'Jueves',
+    'Viernes',
+    'Sábado',
+  ],
+  months: [
+    'Enero',
+    'Febrero',
+    'Marzo',
+    'Abril',
+    'Mayo',
+    'Junio',
+    'Julio',
+    'Agosto',
+    'Septiembre',
+    'Octubre',
+    'Noviembre',
+    'Diciembre',
+  ],
+  today: 'Hoy día',
+  sapDateFormat: 'YYYYMMDD',
+};
 
 const App = () => {
-  const distributionChannel = '10';
-  const sapDateFormat = 'YYYYMMDD';
+  const steps = window.__INITIAL_STATE__.steps;
+  const abbreviatedWeekDays = window.__INITIAL_STATE__.abbreviatedWeekDays;
+  const weekDays = window.__INITIAL_STATE__.weekDays;
+  const months = window.__INITIAL_STATE__.months;
+  const today = window.__INITIAL_STATE__.today;
+  const distributionChannel = window.__INITIAL_STATE__.distributionChannel;
+  const sapDateFormat = window.__INITIAL_STATE__.sapDateFormat;
   const [currentStep, setCurrentStep] = useState(0);
   const [requester, setRequester] = useState({
     inputValue: '',
-    options: data.requesterList,
-    selection: [optionWithIcon(data.requesterList[0])],
-  });
-  const [receiver, setReceiver] = useState({
-    inputValue: '',
-    options: data.receiverList,
-    selection: [],
+    options: window.__INITIAL_STATE__.requesterList,
+    selection: [optionWithIcon(window.__INITIAL_STATE__.requesterList[0])],
   });
   const [receiverCondition, setReceiverCondition] = useState('01');
   const [shippingCondition, setShippingCondition] = useState({
     inputValue: '',
-    options: data.shippingConditionList,
+    options: window.__INITIAL_STATE__.shippingConditionList,
     selection: [],
   });
   const [orderType, setOrderType] = useState({
     inputValue: '',
-    options: data.packingConditionList,
+    options: window.__INITIAL_STATE__.orderTypeList,
     selection: [],
   });
   const [paymentCondition, setPaymentCondition] = useState({
     inputValue: '',
-    options: data.paymentConditionList,
+    options: window.__INITIAL_STATE__.paymentConditionList,
     selection: [],
   });
   const [advancePayments, setAdvancePayments] = useState({
-    options: data.advancePayments,
+    options: window.__INITIAL_STATE__.advancePayments,
     selection: [],
   });
   const [purchaseOrder, setPurchaseOrder] = useState('');
@@ -113,7 +127,7 @@ const App = () => {
   };
   const [materials, setMaterials] = useState({
     inputValue: '',
-    options: data.materialList,
+    options: window.__INITIAL_STATE__.materialList,
     selection: [],
   });
   const [materialQuantity, setMaterialQuantity] = useState(1);
@@ -137,7 +151,7 @@ const App = () => {
   const [receiverDoor, setReceiverDoor] = useState('');
   const [receiverDepartment, setReceiverDepartment] = useState({
     inputValue: '',
-    options: [],
+    options: data.departmentList,
     selection: [],
   });
   const [receiverProvince, setReceiverProvince] = useState({
@@ -162,7 +176,7 @@ const App = () => {
   const nextStep = () => setCurrentStep(currentStep + 1);
   const prevStep = () => setCurrentStep(currentStep - 1);
   // Simulate Sales Order
-  const productsToITItems = products =>
+  const productsToIT_ITEMS = products =>
     lodash.map(products, (product, index) => {
       const { value, quantity: qty } = product;
       const ITM_NUMBER = lodash.padStart(((index + 1) * 10).toString(), 6, '0');
@@ -177,9 +191,7 @@ const App = () => {
       };
     });
   const simulateSalesOrder = () => {
-    // if (!validateAllSteps()) {
-    //   alert('Por favor completar todos los pasos con la información necesaria');
-    // }
+    if (!validateAllSteps()) return;
 
     const salesOrder = {
       I_HEADER: {
@@ -192,7 +204,7 @@ const App = () => {
         SOLICITANTE: requester.selection[0].value,
         DESTINATARIO: requester.selection[0].value,
       },
-      IT_ITEMS: productsToITItems(products.options),
+      IT_ITEMS: productsToIT_ITEMS(products.options),
     };
 
     api.simulateSalesOrder(salesOrder).then(({ data }) => {
@@ -266,6 +278,8 @@ const App = () => {
   };
   // Create Sales Order
   const createSalesOrder = () => {
+    if (!orderIsEnabled) return;
+
     let salesOrder = {
       I_HEADER: {
         DOC_TYPE: orderType.selection[0].value,
@@ -277,18 +291,56 @@ const App = () => {
         SOLICITANTE: requester.selection[0].value,
         DESTINATARIO: requester.selection[0].value,
       },
-      IT_ITEMS: productsToITItems(products),
+      IT_ITEMS: productsToIT_ITEMS(products),
     };
 
-    // if (paymentCondition.selection[0].value === 'C000') {
-    //   salesOrder['I_ANTICIPO'] = advancePayments.selection[0].value;
-    // }
+    if (
+      paymentCondition.selection[0].value === 'C000' &&
+      !!advancePayments.selection.length
+    ) {
+      salesOrder['I_ANTICIPO'] = advancePayments.selection[0].value;
+    }
 
     if (shippingCondition.selection[0].value === '01') {
-      api.createSalesOrder(salesOrder).then(({ data }) => {
-        alert(`El nro de pedido es ${data}`);
-      });
+      if (receiverCondition === '01') {
+        api.createSalesOrder(salesOrder).then(({ data: salesOrderID }) => {
+          console.log(salesOrderID);
+        });
+      } else {
+        const receiver = {
+          PI_PERSONALDATA: {
+            FIRSTNAME: '',
+            LASTNAME: '',
+            CITY: receiverDepartment.selection[0].value,
+            DISTRICT: receiverDistrict.selection[0].value,
+            STREET: receiverStreet,
+            HOUSE_NO: receiverDoor,
+            COUNTRY: 'PE',
+            REGION: receiverProvince.selection[0].code,
+            LANGU_P: 'ES',
+            CURRENCY: 'PEN',
+          },
+          PI_OPT_PERSONALDATA: {
+            TRANSPZONE: '',
+          },
+          PI_COPYREFERENCE: {
+            SALESORG: '1000',
+            DISTR_CHAN: distributionChannel,
+            DIVISION: 'XX',
+            REF_CUSTMR: '0020001841',
+          },
+        };
+
+        api.createReceiver(receiver).then(({ data: destinatarioID }) => {
+          salesOrder['DESTINATARIO'] = destinatarioID;
+
+          api.createSalesOrder().then(({ data: salesOrderID }) => {
+            console.log(salesOrderID);
+          });
+        });
+      }
     } else {
+      salesOrder['DESTINATARIO'] = '0020001841';
       salesOrder['I_VEHICLE'] = {
         TNDR_TRKID: vehiclePlate,
         BRUTO: vehicleGrossWeight,
@@ -299,8 +351,8 @@ const App = () => {
       };
       salesOrder['I_REQ_TIME'] = moment(deliveryHour).format('HH:mm:ss');
 
-      api.createSalesOrder(salesOrder).then(() => {
-        alert(`El nro de pedido es 197001051`);
+      api.createSalesOrder(salesOrder).then(({ data: salesOrderID }) => {
+        alert(`El nro de pedido es ${salesOrderID}`);
       });
     }
   };
@@ -427,7 +479,7 @@ const App = () => {
 
       switch (paymentCondition.selection[0].length) {
         case 'C000':
-          valid = !!advancePayments.selection.length;
+          valid = true;
           break;
         default:
           valid = true;
@@ -474,27 +526,69 @@ const App = () => {
     const step3IsValid = validateStep3();
     const step4IsValid = validateStep4();
     const step5IsValid = validateStep5();
-
-    return (
+    const isValid =
       step1IsValid &&
       step2IsValid &&
       step3IsValid &&
       step4IsValid &&
-      step5IsValid
-    );
+      step5IsValid;
+
+    if (isValid) {
+      setNotifications(current => [
+        ...current,
+        {
+          id: uniqid(),
+          title: 'Todo esta completo',
+          description: 'Ya puede agregar productos a su pedido',
+          type: 'reward',
+        },
+      ]);
+    }
+
+    return isValid;
   };
+
+  useEffect(() => {
+    // Filter Province List
+    if (!receiverDepartment.selection.length) return;
+
+    const REGION = receiverDepartment.selection[0].REGIO;
+    const inputValue = '';
+    const options = optionsWithIcon(
+      lodash.filter(data.provinceList, province => province.REGION === REGION)
+    );
+    const selection = [];
+
+    setReceiverProvince({ inputValue, options, selection });
+  }, [
+    (!!receiverDepartment.selection.length || '') &&
+      receiverDepartment.selection[0].id,
+  ]);
+
+  useEffect(() => {
+    // Filter District List
+    if (!receiverProvince.selection.length) return;
+
+    const CITY_CODE = receiverProvince.selection[0].CITY_CODE;
+    const inputValue = '';
+    const options = optionsWithIcon(
+      lodash.filter(
+        data.districtList,
+        district => district.CITY_CODE === CITY_CODE
+      )
+    );
+    const selection = [];
+
+    setReceiverDistrict({ inputValue, options, selection });
+  }, [
+    (receiverProvince.selection.length || '') &&
+      receiverProvince.selection[0].id,
+  ]);
 
   return (
     <div className="slds-grid" style={{ height: '100vh' }}>
       <div className="slds-col">
-        <div
-          className="slds-grid 	slds-grid_align-spread"
-          style={{
-            height: 56,
-            padding: 4,
-            boxShadow: '0 0 2px rgba(0,0,0,.18)',
-          }}
-        >
+        <div className="slds-grid slds-grid_align-spread navbar">
           <Button
             className="slds-button_icon-size"
             iconCategory="standard"
@@ -502,6 +596,9 @@ const App = () => {
             iconSize="large"
             variant="icon"
           />
+          <div className="logo-container">
+            <Logo />
+          </div>
           <Dropdown
             iconCategory="utility"
             iconName="user"
@@ -683,7 +780,7 @@ const App = () => {
                                 <Input
                                   id="receiver-document"
                                   className="slds-text-color_default slds-size_1-of-1"
-                                  maxLength="20"
+                                  maxLength="11"
                                   placeholder="DNI o RUC"
                                   value={receiverDocument}
                                   onInput={({ target: { value } }) =>
@@ -696,7 +793,6 @@ const App = () => {
                                 <Input
                                   id="receiver-name"
                                   className="slds-text-color_default slds-size_1-of-1"
-                                  maxLength="20"
                                   placeholder="Nombre"
                                   value={receiverName}
                                   onInput={({ target: { value } }) =>
@@ -709,7 +805,6 @@ const App = () => {
                                 <Input
                                   id="receiver-street"
                                   className="slds-text-color_default slds-size_1-of-1"
-                                  maxLength="20"
                                   placeholder="Calle"
                                   value={receiverStreet}
                                   onInput={({ target: { value } }) =>
@@ -722,7 +817,6 @@ const App = () => {
                                 <Input
                                   id="receiver-document"
                                   className="slds-text-color_default slds-size_1-of-1"
-                                  maxLength="20"
                                   placeholder="Nro de puerta"
                                   value={receiverDoor}
                                   onInput={({ target: { value } }) =>
@@ -858,7 +952,6 @@ const App = () => {
                                 <Input
                                   id="receiver-reference"
                                   className="slds-text-color_default slds-size_1-of-1"
-                                  maxLength="20"
                                   placeholder="Referencia"
                                   value={receiverReference}
                                   onInput={({ target: { value } }) =>
@@ -883,6 +976,7 @@ const App = () => {
                             <Input
                               id="vehicle-plate"
                               className="slds-text-color_default slds-size_1-of-2"
+                              maxLength="7"
                               placeholder="Placa"
                               value={vehiclePlate}
                               onInput={({ target: { value } }) =>
@@ -909,10 +1003,13 @@ const App = () => {
                               id="vehicle-tare"
                               className="slds-text-color_default slds-size_1-of-1"
                               placeholder="Tara"
+                              minValue={1}
+                              maxValue={30000}
                               value={vehicleTare}
                               onInput={({ target: { value } }) =>
                                 setVehicleTare(value)
                               }
+                              variant="counter"
                               required
                             />
                           </div>
