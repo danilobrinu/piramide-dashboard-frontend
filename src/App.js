@@ -49,7 +49,7 @@ window.__INITIAL_STATE__ = window.__INITIAL_STATE__ || {
   shippingConditionList: data.shippingConditionList,
   orderTypeList: data.orderTypeList,
   paymentConditionList: data.paymentConditionList,
-  advancePayments: data.advancePayments,
+  advancePayments: [],
   departments: data.departmentList,
   provinces: data.provinceList,
   districts: data.districtList,
@@ -176,7 +176,7 @@ const App = () => {
   const nextStep = () => setCurrentStep(currentStep + 1);
   const prevStep = () => setCurrentStep(currentStep - 1);
   // Simulate Sales Order
-  const productsToIT_ITEMS = products =>
+  const toItems = products =>
     lodash.map(products, (product, index) => {
       const { value, quantity: qty } = product;
       const ITM_NUMBER = lodash.padStart(((index + 1) * 10).toString(), 6, '0');
@@ -191,7 +191,29 @@ const App = () => {
       };
     });
   const simulateSalesOrder = () => {
-    if (!validateAllSteps()) return;
+    if (!validateAllSteps()) {
+      setNotifications(current => [
+        ...current,
+        {
+          id: uniqid(),
+          title: 'La cotización no se ha realizado satisfactoriamente',
+          description: 'Para cotizar es necesario completar todos los pasos',
+          type: 'first_non_empty',
+        },
+      ]);
+
+      return;
+    }
+
+    setNotifications(current => [
+      ...current,
+      {
+        id: uniqid(),
+        title: 'Realizando cotización',
+        description: 'Esta operación puede tomar unos minutos',
+        type: 'business_hours',
+      },
+    ]);
 
     const salesOrder = {
       I_HEADER: {
@@ -204,8 +226,9 @@ const App = () => {
         SOLICITANTE: requester.selection[0].value,
         DESTINATARIO: requester.selection[0].value,
       },
-      IT_ITEMS: productsToIT_ITEMS(products.options),
+      IT_ITEMS: toItems(products.options),
     };
+    let errors = [];
 
     api.simulateSalesOrder(salesOrder).then(({ data }) => {
       console.log(
@@ -214,9 +237,15 @@ const App = () => {
       );
 
       if (!data['ET_CONDITION'].length && !data['ET_ITEM_WEIGTH'].length) {
-        alert(
-          'Los productos selecionados no tienen precio o stock por favor cambiarlos por otros productos.'
-        );
+        setNotifications(current => [
+          ...current,
+          {
+            id: uniqid(),
+            title: 'La cotización tuvo algunos problemas',
+            description: 'Los productos selecionados no tienen precio o stock.',
+            type: 'first_non_empty',
+          },
+        ]);
         return;
       }
 
@@ -225,55 +254,100 @@ const App = () => {
         (info, ITM_NUMBER) => {
           try {
             const index = +ITM_NUMBER / 10 - 1;
-            const amount = lodash.find(
-              info,
-              field => field['COND_TYPE'] === 'ZPRB'
-            )['CONDVALUE'];
-            const igv = lodash.find(
-              info,
-              field => field['COND_TYPE'] === 'MWST'
-            )['CONDVALUE'];
-            const options = lodash.map(products.options, (product, key) => {
-              if (index !== key) return product;
+            const amount = +lodash.find(info, { COND_TYPE: 'ZPRB' }).CONDVALUE;
+            const igv = +lodash.find(info, { COND_TYPE: 'MWST' }).CONDVALUE;
+            setProducts(current => {
+              const options = lodash.map(current.options, (product, key) => {
+                if (index !== key) return product;
+                return {
+                  ...product,
+                  amount,
+                  igv,
+                };
+              });
               return {
-                ...product,
-                amount,
-                igv,
+                ...current,
+                options,
               };
             });
-            setProducts({
-              ...products,
-              options,
-            });
           } catch (e) {
-            alert(
-              `El producto nro ${+ITM_NUMBER /
-                10} no tiene precio o stock por favor cambiarlo por otro producto.`
-            );
+            const index = +ITM_NUMBER / 10 - 1;
+            const product = products.options[index];
+            errors = [
+              ...errors,
+              {
+                id: uniqid(),
+                title: `El producto ${product.label} no tiene stock o precio`,
+                description: 'No se pudo determinar el monto e IGV',
+                type: 'first_non_empty',
+              },
+            ];
           }
         }
       );
 
       console.log(data['ET_ITEM_WEIGTH']);
 
-      lodash.each(data['ET_ITEM_WEIGTH'], row => {
-        const { ITM_NUMBER, BRGEW } = row;
-        const index = +ITM_NUMBER / 10 - 1;
-        const weight = BRGEW;
-        const options = lodash.map(products.options, (product, key) => {
-          if (index !== key) return product;
-          return {
-            ...product,
-            weight,
-          };
-        });
-        setProducts({
-          ...products,
-          options,
-        });
+      lodash.each(data['ET_ITEM_WEIGTH'], info => {
+        try {
+          const { ITM_NUMBER, BRGEW } = info;
+          const index = +ITM_NUMBER / 10 - 1;
+          const weight = +BRGEW;
+          setProducts(current => {
+            const options = lodash.map(current.options, (product, key) => {
+              if (index !== key) return product;
+              return {
+                ...product,
+                weight,
+              };
+            });
+            return {
+              ...current,
+              options,
+            };
+          });
+        } catch (e) {
+          const { ITM_NUMBER } = info;
+          const index = +ITM_NUMBER / 10 - 1;
+          const product = products.options[index];
+          errors = [
+            ...errors,
+            {
+              id: uniqid(),
+              title: `El producto ${product.label} no tiene peso`,
+              description: 'No se pudo determinar el peso',
+              type: 'first_non_empty',
+            },
+          ];
+        }
       });
 
-      setOrderIsEnabled(true);
+      const hasErrors = !!errors.length;
+
+      if (hasErrors) {
+        setNotifications(current => [
+          ...current,
+          {
+            id: uniqid(),
+            title: 'La cotización no se ha realizado satisfactoriamente',
+            description: 'Algunos productos no tienen stock, precio o peso',
+            type: 'first_non_empty',
+          },
+          ...errors,
+        ]);
+      } else {
+        setNotifications(current => [
+          ...current,
+          {
+            id: uniqid(),
+            title: 'La cotización se ha realizado satisfactoriamente',
+            description: 'Ya puede proceder a crear el pedido',
+            type: 'approval',
+          },
+        ]);
+      }
+
+      setOrderIsEnabled(!hasErrors);
     });
   };
   // Create Sales Order
@@ -291,7 +365,7 @@ const App = () => {
         SOLICITANTE: requester.selection[0].value,
         DESTINATARIO: requester.selection[0].value,
       },
-      IT_ITEMS: productsToIT_ITEMS(products),
+      IT_ITEMS: toItems(products),
     };
 
     if (
@@ -357,13 +431,11 @@ const App = () => {
     }
   };
   // Check Steps
-  const validateAllSteps = () => {
-    setNotifications([]);
-
+  const validateAllSteps = (notifications = false) => {
     const validateStep1 = () => {
       let valid = !!requester.selection.length;
 
-      if (!valid) {
+      if (!valid && notifications) {
         setNotifications(current => [
           ...current,
           {
@@ -379,15 +451,17 @@ const App = () => {
     };
     const validateStep2 = () => {
       if (!shippingCondition.selection.length) {
-        setNotifications(current => [
-          ...current,
-          {
-            id: uniqid(),
-            title: 'El paso 2 no se ha completado',
-            description: 'Es necesario completar los campos',
-            type: 'return_order',
-          },
-        ]);
+        if (notifications) {
+          setNotifications(current => [
+            ...current,
+            {
+              id: uniqid(),
+              title: 'El paso 2 no se ha completado',
+              description: 'Es necesario completar los campos',
+              type: 'return_order',
+            },
+          ]);
+        }
 
         return false;
       }
@@ -429,7 +503,7 @@ const App = () => {
           break;
       }
 
-      if (!valid) {
+      if (!valid && notifications) {
         setNotifications(current => [
           ...current,
           {
@@ -446,7 +520,7 @@ const App = () => {
     const validateStep3 = () => {
       const valid = !!orderType.selection.length;
 
-      if (!valid) {
+      if (!valid && notifications) {
         setNotifications(current => [
           ...current,
           {
@@ -462,15 +536,17 @@ const App = () => {
     };
     const validateStep4 = () => {
       if (!paymentCondition.selection.length) {
-        setNotifications(current => [
-          ...current,
-          {
-            id: uniqid(),
-            title: 'El paso 4 no se ha completado',
-            description: 'Es necesario completar los campos',
-            type: 'return_order',
-          },
-        ]);
+        if (notifications) {
+          setNotifications(current => [
+            ...current,
+            {
+              id: uniqid(),
+              title: 'El paso 4 no se ha completado',
+              description: 'Es necesario completar los campos',
+              type: 'return_order',
+            },
+          ]);
+        }
 
         return false;
       }
@@ -486,7 +562,7 @@ const App = () => {
           break;
       }
 
-      if (!valid) {
+      if (!valid && notifications) {
         setNotifications(current => [
           ...current,
           {
@@ -506,7 +582,7 @@ const App = () => {
         !!deliveryDate &&
         (shippingCondition.selection[0] === '02' ? !!deliveryHour : true);
 
-      if (!valid) {
+      if (!valid && notifications) {
         setNotifications(current => [
           ...current,
           {
@@ -533,7 +609,7 @@ const App = () => {
       step4IsValid &&
       step5IsValid;
 
-    if (isValid) {
+    if (isValid && notifications) {
       setNotifications(current => [
         ...current,
         {
@@ -546,6 +622,15 @@ const App = () => {
     }
 
     return isValid;
+  };
+
+  const handleMenuUser = option => {
+    switch (option.value) {
+      case '00':
+      default:
+        window.location.href = '/logout';
+        break;
+    }
   };
 
   useEffect(() => {
@@ -606,12 +691,8 @@ const App = () => {
             buttonVariant="icon"
             buttonClassName="slds-button_icon-size"
             nubbinPosition="top right"
-            onSelect={() => {}}
-            options={[
-              { label: 'Perfil', value: '01' },
-              { type: 'divider' },
-              { label: 'Cerrar Sesión', value: '00' },
-            ]}
+            onSelect={handleMenuUser}
+            options={[{ label: 'Cerrar Sesión', value: '00' }]}
           />
         </div>
         <div className="slds-m-around_small">
@@ -1259,7 +1340,7 @@ const App = () => {
                     className="slds-col_bump-left"
                     label="Validar"
                     variant="success"
-                    onClick={validateAllSteps}
+                    onClick={() => validateAllSteps(true)}
                   />
                 )}
               </div>
