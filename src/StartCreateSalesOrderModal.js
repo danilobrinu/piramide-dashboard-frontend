@@ -2,18 +2,18 @@ import React from 'react';
 import { Modal } from '@salesforce/design-system-react';
 
 const StartCreateSalesOrderModal = props => {
-  const { startCreateOrderModal } = props;
+  const { startCreateSalesOrderModal } = props;
 
   return (
     <Modal
       dismissible={false}
-      isOpen={startCreateOrderModal.open}
-      prompt={startCreateOrderModal.promptType}
+      isOpen={startCreateSalesOrderModal.open}
+      prompt={startCreateSalesOrderModal.promptType}
       size="medium"
-      title={startCreateOrderModal.title}
+      title={startCreateSalesOrderModal.title}
     >
       <div className="slds-m-around_medium">
-        {startCreateOrderModal.description}
+        {startCreateSalesOrderModal.description}
       </div>
     </Modal>
   );

@@ -9,6 +9,10 @@ const OverviewOrder = props => {
     purchaseOrder,
     orderType,
     requester,
+    receiverCondition,
+    receiverStreet,
+    receiverDistrict,
+    receiverProvince,
     paymentCondition,
     shippingCondition,
     deliveryDate,
@@ -16,14 +20,18 @@ const OverviewOrder = props => {
     advancePayments,
   } = props;
   const subTotal = lodash.reduce(
-    products,
+    products.options,
     (acc, product) => acc + product.amount,
     0
   );
-  const igv = lodash.reduce(products, (acc, product) => acc + product.igv, 0);
+  const igv = lodash.reduce(
+    products.options,
+    (acc, product) => acc + product.igv,
+    0
+  );
   const total = subTotal + igv;
-  const peso = lodash.reduce(
-    products,
+  const weight = lodash.reduce(
+    products.options,
     (acc, product) => acc + product.weight,
     0
   );
@@ -51,7 +59,7 @@ const OverviewOrder = props => {
               Clase de Pedido:
             </dt>
             <dd className="slds-item_detail">
-              {orderType.length ? orderType[0].label : ''}
+              {!!orderType.selection.length ? orderType.selection[0].label : ''}
             </dd>
             <dt
               className="slds-item_label slds-text-color_weak"
@@ -60,7 +68,7 @@ const OverviewOrder = props => {
               Solicitante:
             </dt>
             <dd className="slds-item_detail">
-              {requester.length ? requester[0].label : ''}
+              {!!requester.selection.length ? requester.selection[0].label : ''}
             </dd>
             <dt
               className="slds-item_label slds-text-color_weak"
@@ -68,9 +76,25 @@ const OverviewOrder = props => {
             >
               Destinatario:
             </dt>
-            {/* <dd className="slds-item_detail">
-              {receiver.length ? receiver[0].label : ''}
-            </dd> */}
+            <dd className="slds-item_detail">
+              {!!shippingCondition.selection.length
+                ? shippingCondition.selection[0].value === '01'
+                  ? receiverCondition === '01'
+                    ? !!requester.selection.length
+                      ? requester.selection[0].label
+                      : ''
+                    : `${receiverStreet}, ${
+                        !!receiverDistrict.selection.length
+                          ? receiverDistrict.selection[0].label
+                          : ''
+                      } - ${
+                        !!receiverProvince.selection.length
+                          ? receiverProvince.selection[0].label
+                          : ''
+                      }`
+                  : 'Piramide'
+                : ''}
+            </dd>
             <dt
               className="slds-item_label slds-text-color_weak"
               title="Total de venta"
@@ -78,7 +102,9 @@ const OverviewOrder = props => {
               Condición de pago:
             </dt>
             <dd className="slds-item_detail">
-              {paymentCondition.length ? paymentCondition[0].label : ''}
+              {!!paymentCondition.selection.length
+                ? paymentCondition.selection[0].label
+                : ''}
             </dd>
             <dt
               className="slds-item_label slds-text-color_weak"
@@ -87,7 +113,7 @@ const OverviewOrder = props => {
               Fecha de entrega:
             </dt>
             <dd className="slds-item_detail">
-              {deliveryDate ? moment(deliveryDate).format('DD/MM/YYYY') : ''}
+              {!!deliveryDate ? moment(deliveryDate).format('DD/MM/YYYY') : ''}
             </dd>
             <dt
               className="slds-item_label slds-text-color_weak"
@@ -96,7 +122,9 @@ const OverviewOrder = props => {
               Condición de expedición:
             </dt>
             <dd className="slds-item_detail">
-              {shippingCondition.length ? shippingCondition[0].label : ''}
+              {!!shippingCondition.selection.length
+                ? shippingCondition.selection[0].label
+                : ''}
             </dd>
             <dt
               className="slds-item_label slds-text-color_weak"
@@ -104,9 +132,7 @@ const OverviewOrder = props => {
             >
               Motivo de traslado:
             </dt>
-            {/* <dd className="slds-item_detail">
-              {reasonTransfer.length ? reasonTransfer[0].label : ''}
-            </dd> */}
+            <dd className="slds-item_detail" />
             <dt
               className="slds-item_label slds-text-color_weak"
               title="Hora de Cita"
@@ -114,7 +140,7 @@ const OverviewOrder = props => {
               Hora de Cita:
             </dt>
             <dd className="slds-item_detail">
-              {deliveryHour ? moment(deliveryHour).format('HH:mm') : ''}
+              {!!deliveryHour ? moment(deliveryHour).format('HH:mm') : ''}
             </dd>
           </dl>
         </div>
@@ -126,7 +152,7 @@ const OverviewOrder = props => {
         >
           <a href="#top">Anticipo</a>
         </h2>
-        {advancePayments.selection.length ? (
+        {!!advancePayments.selection.length ? (
           <div className="slds-tile__detail">
             <dl className="slds-list_horizontal slds-wrap">
               <dt
@@ -201,7 +227,7 @@ const OverviewOrder = props => {
             >
               Peso:
             </dt>
-            <dd className="slds-item_detail">{KG(peso)}</dd>
+            <dd className="slds-item_detail">{KG(weight)}</dd>
           </dl>
         </div>
       </article>

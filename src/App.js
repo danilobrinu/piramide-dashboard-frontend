@@ -418,6 +418,11 @@ const App = () => {
               open: true,
             }));
           }
+
+          setStartCreateSalesOrderModal(current => ({
+            ...current,
+            open: false,
+          }));
         });
       } else {
         const receiver = {
@@ -464,6 +469,11 @@ const App = () => {
                 open: true,
               }));
             }
+
+            setStartCreateSalesOrderModal(current => ({
+              ...current,
+              open: false,
+            }));
           });
         });
       }
@@ -496,6 +506,11 @@ const App = () => {
             open: true,
           }));
         }
+
+        setStartCreateSalesOrderModal(current => ({
+          ...current,
+          open: false,
+        }));
       });
     }
   };
@@ -811,6 +826,8 @@ const App = () => {
             simulateSalesOrder={simulateSalesOrder}
             createSalesOrder={createSalesOrder}
             setShowAddProductModal={setShowAddProductModal}
+            overviewSalesOrderModal={overviewSalesOrderModal}
+            setOverviewSalesOrderModal={setOverviewSalesOrderModal}
             orderIsEnabled={orderIsEnabled}
             setOrderIsEnabled={setOrderIsEnabled}
           />
@@ -843,12 +860,17 @@ const App = () => {
         purchaseOrder={purchaseOrder}
         orderType={orderType}
         requester={requester}
+        receiverCondition={receiverCondition}
+        receiverStreet={receiverStreet}
+        receiverDistrict={receiverDistrict}
+        receiverProvince={receiverProvince}
         paymentCondition={paymentCondition}
         shippingCondition={shippingCondition}
         reasonTransfer={reasonTransfer}
         deliveryDate={deliveryDate}
         deliveryHour={deliveryHour}
         advancePayments={advancePayments}
+        salesOrderDoc={salesOrderDoc}
       />
       <OverviewSalesOrderModal
         overviewSalesOrderModal={overviewSalesOrderModal}
@@ -857,6 +879,10 @@ const App = () => {
         purchaseOrder={purchaseOrder}
         orderType={orderType}
         requester={requester}
+        receiverCondition={receiverCondition}
+        receiverStreet={receiverStreet}
+        receiverDistrict={receiverDistrict}
+        receiverProvince={receiverProvince}
         paymentCondition={paymentCondition}
         shippingCondition={shippingCondition}
         reasonTransfer={reasonTransfer}

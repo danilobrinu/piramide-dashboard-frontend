@@ -10,9 +10,13 @@ const Order = props => {
     simulateSalesOrder,
     createSalesOrder,
     setShowAddProductModal,
+    overviewSalesOrderModal,
+    setOverviewSalesOrderModal,
     orderIsEnabled,
     setOrderIsEnabled,
   } = props;
+  const handleClick = () =>
+    setOverviewSalesOrderModal({ ...overviewSalesOrderModal, open: true });
 
   return (
     <section
@@ -28,6 +32,7 @@ const Order = props => {
             iconSize="large"
             variant="icon"
             inverse
+            onClick={handleClick}
           />
         </div>
       </header>
