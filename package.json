@@ -4,14 +4,14 @@
   "private": true,
   "dependencies": {
     "@salesforce-ux/design-system": "2.8.3",
-    "@salesforce/design-system-react": "0.9.4",
+    "@salesforce/design-system-react": "^0.9.5",
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
     "currency.js": "^1.2.1",
     "lodash": "^4.17.11",
-    "moment": "^2.23.0",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
+    "moment": "^2.24.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
     "react-scripts": "^2.1.5"
   },
   "scripts": {
