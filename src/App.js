@@ -227,7 +227,7 @@ const App = () => {
               };
             });
           } catch (e) {
-            const index = +ITM_NUMBER / 10 - 1;
+            const index = +ITM_NUMBER / 10;
             errors = [
               ...errors,
               {
@@ -261,7 +261,7 @@ const App = () => {
           });
         } catch (e) {
           const { ITM_NUMBER } = info;
-          const index = +ITM_NUMBER / 10 - 1;
+          const index = +ITM_NUMBER / 10;
           errors = [
             ...errors,
             {
