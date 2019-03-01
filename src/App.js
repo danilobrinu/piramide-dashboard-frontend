@@ -15,7 +15,7 @@ import AddProductModal from './AddProductModal';
 import Notifications from './Notifications';
 // Resources
 import './App.css';
-import { ReactComponent as Logo } from './logo.svg';
+import logo from './logo.svg';
 
 const App = () => {
   const steps = window.__INITIAL_STATE__.steps;
@@ -747,7 +747,10 @@ const App = () => {
   return (
     <div className="slds-grid" style={{ height: '100vh' }}>
       <div className="slds-col">
-        <Navbar logo={<Logo />} handleMenuUser={handleMenuUser} />
+        <Navbar
+          logo={<img src={logo} alt="Piramide Logo" />}
+          handleMenuUser={handleMenuUser}
+        />
         <div className="slds-m-around_small">
           {/* Order Info */}
           <Steps
