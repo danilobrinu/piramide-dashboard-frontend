@@ -660,6 +660,51 @@ const App = () => {
   };
 
   useEffect(() => {
+    if (!shippingCondition.selection.length) return;
+
+    switch (shippingCondition.selection[0].value) {
+      case '01':
+        console.log(receiverCondition);
+        switch (receiverCondition) {
+          case '02':
+            setReasonTransfer(current => ({
+              ...current,
+              selection: lodash.filter(
+                reasonTransfer.options,
+                reason => reason.value === 'M'
+              ),
+            }));
+            break;
+          case '01':
+          default:
+            setReasonTransfer(current => ({
+              ...current,
+              selection: lodash.filter(
+                reasonTransfer.options,
+                reason => reason.value === 'B'
+              ),
+            }));
+            break;
+        }
+        break;
+      case '02':
+      default:
+        setReasonTransfer(current => ({
+          ...current,
+          selection: lodash.filter(
+            reasonTransfer.options,
+            reason => reason.value === 'A'
+          ),
+        }));
+        break;
+    }
+  }, [
+    (!!shippingCondition.selection.length || '') &&
+      shippingCondition.selection[0].id,
+    receiverCondition,
+  ]);
+
+  useEffect(() => {
     // Filter Province List
     if (!receiverDepartment.selection.length) return;
 
