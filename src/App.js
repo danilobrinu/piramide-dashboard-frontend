@@ -192,18 +192,13 @@ const App = () => {
     let errors = [];
 
     api.simulateSalesOrder(salesOrder).then(({ data }) => {
-      // console.log(
-      //   data['ET_CONDITION'],
-      //   lodash.groupBy(data['ET_CONDITION'], 'ITM_NUMBER')
-      // );
-
-      if (!data['ET_CONDITION'].length && !data['ET_ITEM_WEIGTH'].length) {
+      if (!data['ET_CONDITION'].length || !data['ET_ITEM_WEIGTH'].length) {
         setNotifications(current => [
           ...current,
           {
             id: uniqid(),
             title: 'La cotización tuvo algunos problemas',
-            description: 'Los productos selecionados no tienen precio o stock.',
+            description: 'Los productos selecionados no tienen precio, stock o peso.',
             type: 'first_non_empty',
           },
         ]);
@@ -233,12 +228,11 @@ const App = () => {
             });
           } catch (e) {
             const index = +ITM_NUMBER / 10 - 1;
-            const product = products.options[index];
             errors = [
               ...errors,
               {
                 id: uniqid(),
-                title: `El producto ${product.label} no tiene stock o precio`,
+                title: `El producto Nro: ${index} no tiene stock o precio`,
                 description: 'No se pudo determinar el monto e IGV',
                 type: 'first_non_empty',
               },
@@ -246,8 +240,6 @@ const App = () => {
           }
         }
       );
-
-      // console.log(data['ET_ITEM_WEIGTH']);
 
       lodash.each(data['ET_ITEM_WEIGTH'], info => {
         try {
@@ -270,12 +262,11 @@ const App = () => {
         } catch (e) {
           const { ITM_NUMBER } = info;
           const index = +ITM_NUMBER / 10 - 1;
-          const product = products.options[index];
           errors = [
             ...errors,
             {
               id: uniqid(),
-              title: `El producto ${product.label} no tiene peso`,
+              title: `El producto Nro: ${index} no tiene peso`,
               description: 'No se pudo determinar el peso',
               type: 'first_non_empty',
             },
