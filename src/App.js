@@ -713,7 +713,6 @@ const App = () => {
 
     switch (shippingCondition.selection[0].value) {
       case '01':
-        console.log(receiverCondition);
         switch (receiverCondition) {
           case '02':
             setReasonTransfer(current => ({
