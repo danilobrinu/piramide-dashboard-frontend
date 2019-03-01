@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-export const simulateSaleOrder = input =>
+export const simulateSalesOrder = input =>
   axios.post('/order/simulate', input).then(({ data }) => data);
 
-export const createSaleOrder = input =>
+export const createSalesOrder = input =>
   axios.post('/order/new', input).then(({ data }) => data);
 
 export const factoryDate = input =>

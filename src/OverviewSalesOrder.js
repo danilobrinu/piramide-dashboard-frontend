@@ -15,6 +15,7 @@ const OverviewOrder = props => {
     receiverProvince,
     paymentCondition,
     shippingCondition,
+    reasonTransfer,
     deliveryDate,
     deliveryHour,
     advancePayments,
@@ -132,7 +133,9 @@ const OverviewOrder = props => {
             >
               Motivo de traslado:
             </dt>
-            <dd className="slds-item_detail" />
+            <dd className="slds-item_detail">
+              {!!reasonTransfer.selection.length ? reasonTransfer.selection[0].label : ''}
+            </dd>
             <dt
               className="slds-item_label slds-text-color_weak"
               title="Hora de Cita"

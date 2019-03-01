@@ -40,12 +40,12 @@ const OverviewSalesOrderModal = props => {
           purchaseOrder={purchaseOrder}
           orderType={orderType}
           requester={requester}
-          receiverCondition={receiverCondition}
           receiverStreet={receiverStreet}
           receiverDistrict={receiverDistrict}
           receiverProvince={receiverProvince}
           paymentCondition={paymentCondition}
           shippingCondition={shippingCondition}
+          receiverCondition={receiverCondition}
           reasonTransfer={reasonTransfer}
           deliveryDate={deliveryDate}
           deliveryHour={deliveryHour}
