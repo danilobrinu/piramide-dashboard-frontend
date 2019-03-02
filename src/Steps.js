@@ -455,10 +455,8 @@ const Steps = props => {
                         placeholder="Tara"
                         minValue={1}
                         maxValue={30000}
+                        onChange={(_, { value }) => setVehicleTare(value)}
                         value={vehicleTare}
-                        onInput={({ target: { value } }) =>
-                          setVehicleTare(value)
-                        }
                         variant="counter"
                         required
                       />

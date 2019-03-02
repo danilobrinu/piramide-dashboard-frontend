@@ -336,7 +336,7 @@ const App = () => {
         SOLICITANTE: requester.selection[0].value,
         DESTINATARIO: requester.selection[0].value,
       },
-      IT_ITEMS: toItems(products),
+      IT_ITEMS: toItems(products.options),
     };
 
     if (
