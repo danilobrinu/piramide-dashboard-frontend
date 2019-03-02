@@ -241,14 +241,12 @@ const App = () => {
               };
             });
           } catch (e) {
-            const position = +ITM_NUMBER / 10;
-            const index = position - 1;
-            const product = products.options[index];
+            const index = +ITM_NUMBER / 10;
             errors = [
               ...errors,
               {
                 id: uniqid(),
-                title: `El producto Nro: ${product.label}[POS: ${index}] no tiene stock o precio`,
+                title: `El producto Nro: ${index} no tiene stock o precio`,
                 description: 'No se pudo determinar el monto e IGV',
                 type: 'first_non_empty',
               },
@@ -277,14 +275,12 @@ const App = () => {
           });
         } catch (e) {
           const { ITM_NUMBER } = info;
-          const position = +ITM_NUMBER / 10;
-          const index = position - 1;
-          const product = products.options[index];
+          const index = +ITM_NUMBER / 10 - 1;
           errors = [
             ...errors,
             {
               id: uniqid(),
-              title: `El producto ${product.label}[POS ${position}] no tiene peso`,
+              title: `El producto Nro: ${index} no tiene peso`,
               description: 'No se pudo determinar el peso',
               type: 'first_non_empty',
             },
