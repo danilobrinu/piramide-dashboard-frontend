@@ -21,7 +21,6 @@ const FinishCreateSalesOrderModal = props => {
     deliveryDate,
     deliveryHour,
     advancePayments,
-    salesOrderDoc,
   } = props;
   const handleClose = () =>
     setFinishCreateOrderModal({

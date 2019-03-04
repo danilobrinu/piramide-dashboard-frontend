@@ -172,8 +172,6 @@ const App = () => {
   // Steps
   const nextStep = () => setCurrentStep(currentStep + 1);
   const prevStep = () => setCurrentStep(currentStep - 1);
-  // Sales Order Doc
-  const [salesOrderDoc, setSalesOrderDoc] = useState('');
   // Sales Order Modals
   const [startCreateSalesOrderModal, setStartCreateSalesOrderModal] = useState({
     title: 'Creando Pedido',
@@ -408,7 +406,6 @@ const App = () => {
       if (receiverCondition === '01') {
         api.createSalesOrder(salesOrder).then(({ data: salesOrderDoc }) => {
           if (salesOrderDoc) {
-            setSalesOrderDoc(salesOrderDoc);
             setFinishCreateOrderModal(current => ({
               ...current,
               title: `Pedido #${salesOrderDoc}`,
@@ -447,12 +444,7 @@ const App = () => {
           PI_OPT_PERSONALDATA: {
             TRANSPZONE: '',
           },
-          PI_COPYREFERENCE: {
-            SALESORG: '1000',
-            DISTR_CHAN: distributionChannel,
-            DIVISION: 'XX',
-            REF_CUSTMR: '0020001841',
-          },
+          I_VTWEG: distributionChannel,
         };
 
         api.createReceiver(receiver).then(({ data: destinatarioID }) => {
@@ -460,7 +452,6 @@ const App = () => {
 
           api.createSalesOrder(salesOrder).then(({ data: salesOrderDoc }) => {
             if (salesOrderDoc) {
-              setSalesOrderDoc(salesOrderDoc);
               setFinishCreateOrderModal(current => ({
                 ...current,
                 title: `Pedido #${salesOrderDoc}`,
@@ -498,7 +489,6 @@ const App = () => {
 
       api.createSalesOrder(salesOrder).then(({ data: salesOrderDoc }) => {
         if (salesOrderDoc) {
-          setSalesOrderDoc(salesOrderDoc);
           setFinishCreateOrderModal(current => ({
             ...current,
             title: `Pedido #${salesOrderDoc}`,
@@ -925,7 +915,6 @@ const App = () => {
         deliveryDate={deliveryDate}
         deliveryHour={deliveryHour}
         advancePayments={advancePayments}
-        salesOrderDoc={salesOrderDoc}
       />
       <OverviewSalesOrderModal
         overviewSalesOrderModal={overviewSalesOrderModal}
