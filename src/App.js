@@ -291,9 +291,8 @@ const App = () => {
           ...current,
           {
             id: uniqid(),
-            title: 'La cotización tuvo algunos problemas',
-            description:
-              'Los productos selecionados no tienen precio, stock o peso.',
+            title: 'La cotización tuvo algunos problemas.',
+            description: 'Los productos del pedido no tienen precio, stock o peso.',
             type: 'first_non_empty',
           },
         ]);
@@ -327,8 +326,8 @@ const App = () => {
               ...errors,
               {
                 id: uniqid(),
-                title: `El producto Nro: ${index} no tiene stock o precio`,
-                description: 'No se pudo determinar el monto e IGV',
+                title: `El producto Nro: ${index} no tiene stock o precio.`,
+                description: 'No se pudo determinar el monto e IGV.',
                 type: 'first_non_empty',
               },
             ];
@@ -361,8 +360,8 @@ const App = () => {
             ...errors,
             {
               id: uniqid(),
-              title: `El producto Nro: ${index} no tiene peso`,
-              description: 'No se pudo determinar el peso',
+              title: `El producto Nro: ${index} no tiene peso.`,
+              description: 'No se pudo determinar el peso.',
               type: 'first_non_empty',
             },
           ];
@@ -376,8 +375,8 @@ const App = () => {
           ...current,
           {
             id: uniqid(),
-            title: 'La cotización no se ha realizado satisfactoriamente',
-            description: 'Algunos productos no tienen stock, precio o peso',
+            title: 'La cotización no se ha realizado satisfactoriamente.',
+            description: 'Algunos productos no tienen stock, precio o peso.',
             type: 'first_non_empty',
           },
           ...errors,
@@ -387,8 +386,8 @@ const App = () => {
           ...current,
           {
             id: uniqid(),
-            title: 'La cotización se ha realizado satisfactoriamente',
-            description: 'Ya puede proceder a crear el pedido',
+            title: 'La cotización se ha realizado satisfactoriamente.',
+            description: 'Ya puede proceder a crear el pedido.',
             type: 'approval',
           },
         ]);
@@ -435,14 +434,14 @@ const App = () => {
               ...current,
               title: `Pedido #${salesOrderDoc}`,
               promptType: 'success',
-              description: 'El pedido se ha creado satisfactoriamente',
+              description: 'El pedido se ha creado satisfactoriamente.',
               open: true,
             }));
           } else {
             setFinishCreateOrderModal(current => ({
               ...current,
               promptType: 'error',
-              description: 'El pedido no se ha creado satisfactoriamente',
+              description: 'El pedido no se ha creado satisfactoriamente.',
               open: true,
             }));
           }
@@ -472,31 +471,48 @@ const App = () => {
           },
         };
 
-        api.createReceiver(receiver).then(({ data: destinatarioID }) => {
-          salesOrder['DESTINATARIO'] = destinatarioID;
+        api.createReceiver(receiver).then(({ data: receiverDoc }) => {
+          if (!receiverDoc) {
+            setStartCreateSalesOrderModal(current => ({
+              ...current,
+              open: false,
+            }));
+
+            setFinishCreateOrderModal(current => ({
+              ...current,
+              promptType: 'error',
+              description: 'El pedido no se ha creado satisfactoriamente.' +
+                           'No se pudo crear el destinatario.',
+              open: true,
+            }));
+
+            return;
+          }
+
+          salesOrder['DESTINATARIO'] = receiverDoc;
 
           api.createSalesOrder(salesOrder).then(({ data: salesOrderDoc }) => {
+            setStartCreateSalesOrderModal(current => ({
+              ...current,
+              open: false,
+            }));
+
             if (salesOrderDoc) {
               setFinishCreateOrderModal(current => ({
                 ...current,
                 title: `Pedido #${salesOrderDoc}`,
                 promptType: 'success',
-                description: 'El pedido se ha creado satisfactoriamente',
+                description: 'El pedido se ha creado satisfactoriamente.',
                 open: true,
               }));
             } else {
               setFinishCreateOrderModal(current => ({
                 ...current,
                 promptType: 'error',
-                description: 'El pedido no se ha creado satisfactoriamente',
+                description: 'El pedido no se ha creado satisfactoriamente.',
                 open: true,
               }));
             }
-
-            setStartCreateSalesOrderModal(current => ({
-              ...current,
-              open: false,
-            }));
           });
         });
       }
@@ -513,27 +529,27 @@ const App = () => {
       salesOrder['I_REQ_TIME'] = moment(deliveryHour).format('HH:mm:ss');
 
       api.createSalesOrder(salesOrder).then(({ data: salesOrderDoc }) => {
+        setStartCreateSalesOrderModal(current => ({
+          ...current,
+          open: false,
+        }));
+
         if (salesOrderDoc) {
           setFinishCreateOrderModal(current => ({
             ...current,
             title: `Pedido #${salesOrderDoc}`,
             promptType: 'success',
-            description: 'El pedido se ha creado satisfactoriamente',
+            description: 'El pedido se ha creado satisfactoriamente.',
             open: true,
           }));
         } else {
           setFinishCreateOrderModal(current => ({
             ...current,
             promptType: 'error',
-            description: 'El pedido no se ha creado satisfactoriamente',
+            description: 'El pedido no se ha creado satisfactoriamente.',
             open: true,
           }));
         }
-
-        setStartCreateSalesOrderModal(current => ({
-          ...current,
-          open: false,
-        }));
       });
     }
   };
@@ -547,8 +563,8 @@ const App = () => {
           ...current,
           {
             id: uniqid(),
-            title: 'El paso 1 no se ha completado',
-            description: 'Es necesario completar los campos',
+            title: 'El paso 1 no se ha completado.',
+            description: 'Es necesario completar los campos.',
             type: 'return_order',
           },
         ]);
@@ -563,8 +579,8 @@ const App = () => {
             ...current,
             {
               id: uniqid(),
-              title: 'El paso 2 no se ha completado',
-              description: 'Es necesario completar los campos',
+              title: 'El paso 2 no se ha completado.',
+              description: 'Es necesario completar los campos.',
               type: 'return_order',
             },
           ]);
@@ -615,8 +631,8 @@ const App = () => {
           ...current,
           {
             id: uniqid(),
-            title: 'El paso 2 no se ha completado',
-            description: 'Es necesario completar los campos',
+            title: 'El paso 2 no se ha completado.',
+            description: 'Es necesario completar los campos.',
             type: 'return_order',
           },
         ]);
@@ -632,8 +648,8 @@ const App = () => {
           ...current,
           {
             id: uniqid(),
-            title: 'El paso 3 no se ha completado',
-            description: 'Es necesario completar los campos',
+            title: 'El paso 3 no se ha completado.',
+            description: 'Es necesario completar los campos.',
             type: 'return_order',
           },
         ]);
@@ -648,8 +664,8 @@ const App = () => {
             ...current,
             {
               id: uniqid(),
-              title: 'El paso 4 no se ha completado',
-              description: 'Es necesario completar los campos',
+              title: 'El paso 4 no se ha completado.',
+              description: 'Es necesario completar los campos.',
               type: 'return_order',
             },
           ]);
@@ -674,8 +690,8 @@ const App = () => {
           ...current,
           {
             id: uniqid(),
-            title: 'El paso 4 no se ha completado',
-            description: 'Es necesario completar los campos',
+            title: 'El paso 4 no se ha completado.',
+            description: 'Es necesario completar los campos.',
             type: 'return_order',
           },
         ]);
@@ -694,8 +710,8 @@ const App = () => {
           ...current,
           {
             id: uniqid(),
-            title: 'El paso 5 no se ha completado',
-            description: 'Es necesario completar los campos',
+            title: 'El paso 5 no se ha completado.',
+            description: 'Es necesario completar los campos.',
             type: 'return_order',
           },
         ]);
@@ -721,8 +737,8 @@ const App = () => {
         ...current,
         {
           id: uniqid(),
-          title: 'Todo esta completo',
-          description: 'Ya puede agregar productos a su pedido',
+          title: 'Todo esta completo.',
+          description: 'Ya puede agregar productos a su pedido.',
           type: 'reward',
         },
       ]);
