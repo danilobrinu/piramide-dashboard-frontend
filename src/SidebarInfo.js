@@ -120,7 +120,7 @@ export default class SidebarInfo extends Component {
                   className="slds-item_label slds-text-color_weak"
                   title="Total de venta"
                 >
-                  Condición de expedición:
+                  Condición de Entrega:
                 </dt>
                 <dd className="slds-item_detail">
                   {shippingCondition.length ? shippingCondition[0].label : ''}
