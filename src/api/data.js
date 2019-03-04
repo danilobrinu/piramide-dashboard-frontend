@@ -35,14 +35,14 @@ export const receiverList = [
 export const shippingConditionList = [
   {
     id: uniqid(),
-    label: 'Entrega al cliente',
+    label: 'ENTREGA AL CLIENTE',
     subTitle: '-',
     type: 'account',
     value: '01',
   },
   {
     id: uniqid(),
-    label: 'Cliente recoge',
+    label: 'CLIENTE RECOGE',
     subTitle: '-',
     type: 'account',
     value: '02',
@@ -125,21 +125,21 @@ export const paymentConditionList = [
 export const reasonTransferList = [
   {
     id: uniqid(),
-    label: 'Venta Sujeta a Confirmación de Cliente',
+    label: 'VENTA SUJETA A CONFIRMACIÓN DE CLIENTE',
     subTitle: '-',
     type: 'account',
     value: 'B',
   },
   {
     id: uniqid(),
-    label: 'Otros: Venta ET',
+    label: 'OTROS: VENTA ET',
     subTitle: '-',
     type: 'account',
     value: 'M',
   },
   {
     id: uniqid(),
-    label: 'Venta',
+    label: 'VENTA',
     subTitle: '-',
     type: 'account',
     value: 'A',
@@ -149,14 +149,14 @@ export const reasonTransferList = [
 export const orderTypeList = [
   {
     id: uniqid(),
-    label: 'Entrega en parihuela',
+    label: 'ENTREGA EN PARIHUELA',
     subTitle: '-',
     type: 'account',
     value: 'ZPNE',
   },
   {
     id: uniqid(),
-    label: 'Entrega a granel o con zuncho',
+    label: 'ENTREGA A GRANEL O CON ZUNCHO',
     subTitle: '-',
     type: 'account',
     value: 'ZPVN',
@@ -4746,7 +4746,7 @@ export const districtList = [
     label: 'ACO',
     subTitle: '-',
     type: 'account',
-    value: 'ACO',,
+    value: 'ACO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5040,7 +5040,7 @@ export const districtList = [
     label: 'UCO',
     subTitle: '-',
     type: 'account',
-    value: 'UCO',,
+    value: 'UCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -8092,7 +8092,7 @@ export const districtList = [
     label: 'AYO',
     subTitle: '-',
     type: 'account',
-    value: 'AYO',,
+    value: 'AYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -16198,7 +16198,7 @@ export const districtList = [
     label: 'ICA',
     subTitle: '-',
     type: 'account',
-    value: 'ICA',,
+    value: 'ICA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -17206,7 +17206,7 @@ export const districtList = [
     label: 'ACO',
     subTitle: '-',
     type: 'account',
-    value: 'ACO',,
+    value: 'ACO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -20244,7 +20244,7 @@ export const districtList = [
     label: 'ATE',
     subTitle: '-',
     type: 'account',
-    value: 'ATE',,
+    value: 'ATE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -23716,7 +23716,7 @@ export const districtList = [
     label: 'ILO',
     subTitle: '-',
     type: 'account',
-    value: 'ILO',,
+    value: 'ILO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -27902,7 +27902,7 @@ export const districtList = [
     label: 'ITE',
     subTitle: '-',
     type: 'account',
-    value: 'ITE',,
+    value: 'ITE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',

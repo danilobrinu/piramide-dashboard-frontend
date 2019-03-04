@@ -514,7 +514,7 @@ const Steps = props => {
                         setOrderType({ ...orderType, selection }),
                     }}
                     labels={{
-                      placeholder: 'Buscar Solicitante',
+                      placeholder: 'Buscar Clase de Pedido',
                       noOptionsFound: 'No se encontraron coincidencias',
                     }}
                     options={comboboxFilterAndLimit({
