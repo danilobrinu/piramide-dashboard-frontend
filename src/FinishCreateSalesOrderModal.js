@@ -46,10 +46,6 @@ const FinishCreateSalesOrderModal = props => {
       title={finishCreateOrderModal.title}
     >
       <div className="slds-m-around_medium">
-        {finishCreateOrderModal.description}
-        {finishCreateOrderModal.promptType === 'success' && (
-          <div>Nro de Orden: {salesOrderDoc}</div>
-        )}
         {finishCreateOrderModal.promptType === 'success' && (
           <OverviewSalesOrder
             products={products}

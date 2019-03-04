@@ -191,7 +191,6 @@ const App = () => {
   });
   const [overviewSalesOrderModal, setOverviewSalesOrderModal] = useState({
     title: 'Resumen del Pedido',
-    promptType: 'success',
     open: false,
   });
   // Simulate Sales Order
@@ -270,7 +269,8 @@ const App = () => {
           {
             id: uniqid(),
             title: 'La cotización tuvo algunos problemas',
-            description: 'Los productos selecionados no tienen precio, stock o peso.',
+            description:
+              'Los productos selecionados no tienen precio, stock o peso.',
             type: 'first_non_empty',
           },
         ]);
@@ -411,6 +411,7 @@ const App = () => {
             setSalesOrderDoc(salesOrderDoc);
             setFinishCreateOrderModal(current => ({
               ...current,
+              title: `Pedido #${salesOrderDoc}`,
               promptType: 'success',
               description: 'El pedido se ha creado satisfactoriamente',
               open: true,
@@ -462,6 +463,7 @@ const App = () => {
               setSalesOrderDoc(salesOrderDoc);
               setFinishCreateOrderModal(current => ({
                 ...current,
+                title: `Pedido #${salesOrderDoc}`,
                 promptType: 'success',
                 description: 'El pedido se ha creado satisfactoriamente',
                 open: true,
@@ -499,6 +501,7 @@ const App = () => {
           setSalesOrderDoc(salesOrderDoc);
           setFinishCreateOrderModal(current => ({
             ...current,
+            title: `Pedido #${salesOrderDoc}`,
             promptType: 'success',
             description: 'El pedido se ha creado satisfactoriamente',
             open: true,

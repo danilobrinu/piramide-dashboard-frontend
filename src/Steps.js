@@ -74,7 +74,7 @@ const Steps = props => {
 
   return (
     <section
-      className="slds-popover slds-popover_walkthrough slds-size_12-of-12"
+      className="slds-popover slds-popover_walkthrough slds-popover_walkthrough-alt slds-size_12-of-12"
       role="dialog"
     >
       <header className="slds-popover__header slds-p-vertical_medium">

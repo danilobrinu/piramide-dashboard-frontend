@@ -27,31 +27,27 @@ const OverviewSalesOrderModal = props => {
 
   return (
     <Modal
-      dismissible={true}
       onRequestClose={handleClose}
       isOpen={overviewSalesOrderModal.open}
-      prompt={overviewSalesOrderModal.promptType}
       size="medium"
       title={overviewSalesOrderModal.title}
     >
-      <div className="slds-m-around_medium">
-        <OverviewSalesOrder
-          products={products}
-          purchaseOrder={purchaseOrder}
-          orderType={orderType}
-          requester={requester}
-          receiverStreet={receiverStreet}
-          receiverDistrict={receiverDistrict}
-          receiverProvince={receiverProvince}
-          paymentCondition={paymentCondition}
-          shippingCondition={shippingCondition}
-          receiverCondition={receiverCondition}
-          reasonTransfer={reasonTransfer}
-          deliveryDate={deliveryDate}
-          deliveryHour={deliveryHour}
-          advancePayments={advancePayments}
-        />
-      </div>
+      <OverviewSalesOrder
+        products={products}
+        purchaseOrder={purchaseOrder}
+        orderType={orderType}
+        requester={requester}
+        receiverStreet={receiverStreet}
+        receiverDistrict={receiverDistrict}
+        receiverProvince={receiverProvince}
+        paymentCondition={paymentCondition}
+        shippingCondition={shippingCondition}
+        receiverCondition={receiverCondition}
+        reasonTransfer={reasonTransfer}
+        deliveryDate={deliveryDate}
+        deliveryHour={deliveryHour}
+        advancePayments={advancePayments}
+      />
     </Modal>
   );
 };
