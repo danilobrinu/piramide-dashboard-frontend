@@ -126,7 +126,7 @@ const OverviewOrder = props => {
           </div>
           <div className="slds-grid slds-wrap">
             <span className="slds-truncate slds-text-title_bold">
-              Condición de Expedición
+              Condición de Entrega
             </span>
             <span className="slds-truncate slds-col_bump-left">
               {shippingConditionDesc}
