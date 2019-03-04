@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@salesforce/design-system-react';
+import { Button, Tooltip } from '@salesforce/design-system-react';
 
 import Products from './Products';
 
@@ -20,20 +20,22 @@ const Order = props => {
 
   return (
     <section
-      className="slds-popover slds-popover_walkthrough slds-size_12-of-12 slds-m-top_small"
+      className="slds-popover slds-popover_walkthrough slds-popover_walkthrough-alt slds-size_12-of-12 slds-m-top_small"
       role="dialog"
     >
       <header className="slds-popover__header slds-p-vertical_medium">
         <div className="slds-grid slds-grid_align-spread">
           <h2 className="slds-text-heading_medium">Pedido</h2>
-          <Button
-            iconCategory="action"
-            iconName="info"
-            iconSize="large"
-            variant="icon"
-            inverse
-            onClick={handleClick}
-          />
+          <Tooltip align="left" content="Resumen del Pedido">
+            <Button
+              iconCategory="action"
+              iconName="info"
+              iconSize="large"
+              variant="icon"
+              inverse
+              onClick={handleClick}
+            />
+          </Tooltip>
         </div>
       </header>
       <div className="slds-popover__body">

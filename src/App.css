@@ -16,6 +16,12 @@ body {
   padding: 4px;
   box-shadow: 0 0 2px rgba(0, 0, 0, .18);
 }
+.slds-popover_walkthrough .slds-popover__header {
+  background-image: none;
+}
+.slds-modal_prompt .slds-modal__content {
+  padding: 0;
+}
 
 .slds-list_horizontal .slds-item_label { width: 50%; }
 .slds-list_horizontal .slds-item_detail { width: 50%; }
