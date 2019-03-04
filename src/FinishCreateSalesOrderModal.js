@@ -23,13 +23,13 @@ const FinishCreateSalesOrderModal = props => {
     advancePayments,
   } = props;
   const handleClose = () =>
-    setFinishCreateOrderModal({
-      ...finishCreateOrderModal,
+    setFinishCreateOrderModal(current => ({
+      ...current,
       open: false,
-    });
+    }));
   const handleNewSalesOrder = () => {
     handleClose();
-    setTimeout(() => window.location.reload(), 500);
+    setTimeout(() => window.location.reload(), 300);
   };
 
   return (
@@ -37,7 +37,14 @@ const FinishCreateSalesOrderModal = props => {
       dismissible={false}
       onRequestClose={handleClose}
       footer={
-        <Button label="Realizar otro pedido" onClick={handleNewSalesOrder} />
+        finishCreateOrderModal.promptType === 'success' ? (
+          <Button
+            label="Click para realizar otro pedido"
+            onClick={handleNewSalesOrder}
+          />
+        ) : (
+          <Button label="Cerrar" onClick={handleClose} />
+        )
       }
       isOpen={finishCreateOrderModal.open}
       prompt={finishCreateOrderModal.promptType}
@@ -45,6 +52,8 @@ const FinishCreateSalesOrderModal = props => {
       title={finishCreateOrderModal.title}
     >
       <div className="slds-m-around_medium">
+        {finishCreateOrderModal.promptType !== 'success' &&
+          finishCreateOrderModal.description}
         {finishCreateOrderModal.promptType === 'success' && (
           <OverviewSalesOrder
             products={products}
