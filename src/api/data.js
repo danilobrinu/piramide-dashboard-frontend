@@ -2744,7 +2744,7 @@ export const districtList = [
     label: 'CHACHAPOYAS',
     subTitle: '-',
     type: 'account',
-    value: '00010101',
+    value: 'CHACHAPOYAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -2758,7 +2758,7 @@ export const districtList = [
     label: 'ASUNCION',
     subTitle: '-',
     type: 'account',
-    value: '00010102',
+    value: 'ASUNCION',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -2772,7 +2772,7 @@ export const districtList = [
     label: 'BALSAS',
     subTitle: '-',
     type: 'account',
-    value: '00010103',
+    value: 'BALSAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -2786,7 +2786,7 @@ export const districtList = [
     label: 'CHETO',
     subTitle: '-',
     type: 'account',
-    value: '00010104',
+    value: 'CHETO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -2800,7 +2800,7 @@ export const districtList = [
     label: 'CHILIQUIN',
     subTitle: '-',
     type: 'account',
-    value: '00010105',
+    value: 'CHILIQUIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -2814,7 +2814,7 @@ export const districtList = [
     label: 'CHUQUIBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00010106',
+    value: 'CHUQUIBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -2828,7 +2828,7 @@ export const districtList = [
     label: 'GRANADA',
     subTitle: '-',
     type: 'account',
-    value: '00010107',
+    value: 'GRANADA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -2842,7 +2842,7 @@ export const districtList = [
     label: 'HUANCAS',
     subTitle: '-',
     type: 'account',
-    value: '00010108',
+    value: 'HUANCAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -2856,7 +2856,7 @@ export const districtList = [
     label: 'LA JALCA',
     subTitle: '-',
     type: 'account',
-    value: '00010109',
+    value: 'LA JALCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -2870,7 +2870,7 @@ export const districtList = [
     label: 'LEIMEBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00010110',
+    value: 'LEIMEBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -2884,7 +2884,7 @@ export const districtList = [
     label: 'LEVANTO',
     subTitle: '-',
     type: 'account',
-    value: '00010111',
+    value: 'LEVANTO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -2898,7 +2898,7 @@ export const districtList = [
     label: 'MAGDALENA',
     subTitle: '-',
     type: 'account',
-    value: '00010112',
+    value: 'MAGDALENA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -2912,7 +2912,7 @@ export const districtList = [
     label: 'MARISCAL CASTILLA',
     subTitle: '-',
     type: 'account',
-    value: '00010113',
+    value: 'MARISCAL CASTILLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -2926,7 +2926,7 @@ export const districtList = [
     label: 'MOLINOPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00010114',
+    value: 'MOLINOPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -2940,7 +2940,7 @@ export const districtList = [
     label: 'MONTEVIDEO',
     subTitle: '-',
     type: 'account',
-    value: '00010115',
+    value: 'MONTEVIDEO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -2954,7 +2954,7 @@ export const districtList = [
     label: 'OLLEROS',
     subTitle: '-',
     type: 'account',
-    value: '00010116',
+    value: 'OLLEROS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -2968,7 +2968,7 @@ export const districtList = [
     label: 'QUINJALCA',
     subTitle: '-',
     type: 'account',
-    value: '00010117',
+    value: 'QUINJALCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -2982,7 +2982,7 @@ export const districtList = [
     label: 'SAN FRANCISCO DE DAGUAS',
     subTitle: '-',
     type: 'account',
-    value: '00010118',
+    value: 'SAN FRANCISCO DE DAGUAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -2996,7 +2996,7 @@ export const districtList = [
     label: 'SAN ISIDRO DE MAINO',
     subTitle: '-',
     type: 'account',
-    value: '00010119',
+    value: 'SAN ISIDRO DE MAINO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3010,7 +3010,7 @@ export const districtList = [
     label: 'SOLOCO',
     subTitle: '-',
     type: 'account',
-    value: '00010120',
+    value: 'SOLOCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3024,7 +3024,7 @@ export const districtList = [
     label: 'SONCHE',
     subTitle: '-',
     type: 'account',
-    value: '00010121',
+    value: 'SONCHE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3038,7 +3038,7 @@ export const districtList = [
     label: 'BAGUA',
     subTitle: '-',
     type: 'account',
-    value: '00010201',
+    value: 'BAGUA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3052,7 +3052,7 @@ export const districtList = [
     label: 'ARAMANGO',
     subTitle: '-',
     type: 'account',
-    value: '00010202',
+    value: 'ARAMANGO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3066,7 +3066,7 @@ export const districtList = [
     label: 'COPALLIN',
     subTitle: '-',
     type: 'account',
-    value: '00010203',
+    value: 'COPALLIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3080,7 +3080,7 @@ export const districtList = [
     label: 'EL PARCO',
     subTitle: '-',
     type: 'account',
-    value: '00010204',
+    value: 'EL PARCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3094,7 +3094,7 @@ export const districtList = [
     label: 'IMAZA',
     subTitle: '-',
     type: 'account',
-    value: '00010205',
+    value: 'IMAZA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3108,7 +3108,7 @@ export const districtList = [
     label: 'LA PECA',
     subTitle: '-',
     type: 'account',
-    value: '00010206',
+    value: 'LA PECA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3122,7 +3122,7 @@ export const districtList = [
     label: 'JUMBILLA',
     subTitle: '-',
     type: 'account',
-    value: '00010301',
+    value: 'JUMBILLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3136,7 +3136,7 @@ export const districtList = [
     label: 'CHISQUILLA',
     subTitle: '-',
     type: 'account',
-    value: '00010302',
+    value: 'CHISQUILLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3150,7 +3150,7 @@ export const districtList = [
     label: 'CHURUJA',
     subTitle: '-',
     type: 'account',
-    value: '00010303',
+    value: 'CHURUJA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3164,7 +3164,7 @@ export const districtList = [
     label: 'COROSHA',
     subTitle: '-',
     type: 'account',
-    value: '00010304',
+    value: 'COROSHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3178,7 +3178,7 @@ export const districtList = [
     label: 'CUISPES',
     subTitle: '-',
     type: 'account',
-    value: '00010305',
+    value: 'CUISPES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3192,7 +3192,7 @@ export const districtList = [
     label: 'FLORIDA',
     subTitle: '-',
     type: 'account',
-    value: '00010306',
+    value: 'FLORIDA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3206,7 +3206,7 @@ export const districtList = [
     label: 'JAZAN',
     subTitle: '-',
     type: 'account',
-    value: '00010307',
+    value: 'JAZAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3220,7 +3220,7 @@ export const districtList = [
     label: 'RECTA',
     subTitle: '-',
     type: 'account',
-    value: '00010308',
+    value: 'RECTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3234,7 +3234,7 @@ export const districtList = [
     label: 'SAN CARLOS',
     subTitle: '-',
     type: 'account',
-    value: '00010309',
+    value: 'SAN CARLOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3248,7 +3248,7 @@ export const districtList = [
     label: 'SHIPASBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00010310',
+    value: 'SHIPASBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3262,7 +3262,7 @@ export const districtList = [
     label: 'VALERA',
     subTitle: '-',
     type: 'account',
-    value: '00010311',
+    value: 'VALERA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3276,7 +3276,7 @@ export const districtList = [
     label: 'YAMBRASBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00010312',
+    value: 'YAMBRASBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3290,7 +3290,7 @@ export const districtList = [
     label: 'NIEVA',
     subTitle: '-',
     type: 'account',
-    value: '00010401',
+    value: 'NIEVA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3304,7 +3304,7 @@ export const districtList = [
     label: 'EL CENEPA',
     subTitle: '-',
     type: 'account',
-    value: '00010402',
+    value: 'EL CENEPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3318,7 +3318,7 @@ export const districtList = [
     label: 'RIO SANTIAGO',
     subTitle: '-',
     type: 'account',
-    value: '00010403',
+    value: 'RIO SANTIAGO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3332,7 +3332,7 @@ export const districtList = [
     label: 'LAMUD',
     subTitle: '-',
     type: 'account',
-    value: '00010501',
+    value: 'LAMUD',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3346,7 +3346,7 @@ export const districtList = [
     label: 'CAMPORREDONDO',
     subTitle: '-',
     type: 'account',
-    value: '00010502',
+    value: 'CAMPORREDONDO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3360,7 +3360,7 @@ export const districtList = [
     label: 'COCABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00010503',
+    value: 'COCABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3374,7 +3374,7 @@ export const districtList = [
     label: 'COLCAMAR',
     subTitle: '-',
     type: 'account',
-    value: '00010504',
+    value: 'COLCAMAR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3388,7 +3388,7 @@ export const districtList = [
     label: 'CONILA',
     subTitle: '-',
     type: 'account',
-    value: '00010505',
+    value: 'CONILA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3402,7 +3402,7 @@ export const districtList = [
     label: 'INGUILPATA',
     subTitle: '-',
     type: 'account',
-    value: '00010506',
+    value: 'INGUILPATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3416,7 +3416,7 @@ export const districtList = [
     label: 'LONGUITA',
     subTitle: '-',
     type: 'account',
-    value: '00010507',
+    value: 'LONGUITA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3430,7 +3430,7 @@ export const districtList = [
     label: 'LONYA CHICO',
     subTitle: '-',
     type: 'account',
-    value: '00010508',
+    value: 'LONYA CHICO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3444,7 +3444,7 @@ export const districtList = [
     label: 'LUYA',
     subTitle: '-',
     type: 'account',
-    value: '00010509',
+    value: 'LUYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3458,7 +3458,7 @@ export const districtList = [
     label: 'LUYA VIEJO',
     subTitle: '-',
     type: 'account',
-    value: '00010510',
+    value: 'LUYA VIEJO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3472,7 +3472,7 @@ export const districtList = [
     label: 'MARIA',
     subTitle: '-',
     type: 'account',
-    value: '00010511',
+    value: 'MARIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3486,7 +3486,7 @@ export const districtList = [
     label: 'OCALLI',
     subTitle: '-',
     type: 'account',
-    value: '00010512',
+    value: 'OCALLI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3500,7 +3500,7 @@ export const districtList = [
     label: 'OCUMAL',
     subTitle: '-',
     type: 'account',
-    value: '00010513',
+    value: 'OCUMAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3514,7 +3514,7 @@ export const districtList = [
     label: 'PISUQUIA',
     subTitle: '-',
     type: 'account',
-    value: '00010514',
+    value: 'PISUQUIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3528,7 +3528,7 @@ export const districtList = [
     label: 'PROVIDENCIA',
     subTitle: '-',
     type: 'account',
-    value: '00010515',
+    value: 'PROVIDENCIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3542,7 +3542,7 @@ export const districtList = [
     label: 'SAN CRISTOBAL',
     subTitle: '-',
     type: 'account',
-    value: '00010516',
+    value: 'SAN CRISTOBAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3556,7 +3556,7 @@ export const districtList = [
     label: 'SAN FRANCISCO DEL YESO',
     subTitle: '-',
     type: 'account',
-    value: '00010517',
+    value: 'SAN FRANCISCO DEL YESO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3570,7 +3570,7 @@ export const districtList = [
     label: 'SAN JERONIMO',
     subTitle: '-',
     type: 'account',
-    value: '00010518',
+    value: 'SAN JERONIMO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3584,7 +3584,7 @@ export const districtList = [
     label: 'SAN JUAN DE LOPECANCHA',
     subTitle: '-',
     type: 'account',
-    value: '00010519',
+    value: 'SAN JUAN DE LOPECANCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3598,7 +3598,7 @@ export const districtList = [
     label: 'SANTA CATALINA',
     subTitle: '-',
     type: 'account',
-    value: '00010520',
+    value: 'SANTA CATALINA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3612,7 +3612,7 @@ export const districtList = [
     label: 'SANTO TOMAS',
     subTitle: '-',
     type: 'account',
-    value: '00010521',
+    value: 'SANTO TOMAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3626,7 +3626,7 @@ export const districtList = [
     label: 'TINGO',
     subTitle: '-',
     type: 'account',
-    value: '00010522',
+    value: 'TINGO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3640,7 +3640,7 @@ export const districtList = [
     label: 'TRITA',
     subTitle: '-',
     type: 'account',
-    value: '00010523',
+    value: 'TRITA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3654,7 +3654,7 @@ export const districtList = [
     label: 'SAN NICOLAS',
     subTitle: '-',
     type: 'account',
-    value: '00010601',
+    value: 'SAN NICOLAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3668,7 +3668,7 @@ export const districtList = [
     label: 'CHIRIMOTO',
     subTitle: '-',
     type: 'account',
-    value: '00010602',
+    value: 'CHIRIMOTO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3682,7 +3682,7 @@ export const districtList = [
     label: 'COCHAMAL',
     subTitle: '-',
     type: 'account',
-    value: '00010603',
+    value: 'COCHAMAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3696,7 +3696,7 @@ export const districtList = [
     label: 'HUAMBO',
     subTitle: '-',
     type: 'account',
-    value: '00010604',
+    value: 'HUAMBO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3710,7 +3710,7 @@ export const districtList = [
     label: 'LIMABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00010605',
+    value: 'LIMABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3724,7 +3724,7 @@ export const districtList = [
     label: 'LONGAR',
     subTitle: '-',
     type: 'account',
-    value: '00010606',
+    value: 'LONGAR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3738,7 +3738,7 @@ export const districtList = [
     label: 'MARISCAL BENAVIDES',
     subTitle: '-',
     type: 'account',
-    value: '00010607',
+    value: 'MARISCAL BENAVIDES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3752,7 +3752,7 @@ export const districtList = [
     label: 'MILPUC',
     subTitle: '-',
     type: 'account',
-    value: '00010608',
+    value: 'MILPUC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3766,7 +3766,7 @@ export const districtList = [
     label: 'OMIA',
     subTitle: '-',
     type: 'account',
-    value: '00010609',
+    value: 'OMIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3780,7 +3780,7 @@ export const districtList = [
     label: 'SANTA ROSA',
     subTitle: '-',
     type: 'account',
-    value: '00010610',
+    value: 'SANTA ROSA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3794,7 +3794,7 @@ export const districtList = [
     label: 'TOTORA',
     subTitle: '-',
     type: 'account',
-    value: '00010611',
+    value: 'TOTORA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3808,7 +3808,7 @@ export const districtList = [
     label: 'VISTA ALEGRE',
     subTitle: '-',
     type: 'account',
-    value: '00010612',
+    value: 'VISTA ALEGRE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3822,7 +3822,7 @@ export const districtList = [
     label: 'BAGUA GRANDE',
     subTitle: '-',
     type: 'account',
-    value: '00010701',
+    value: 'BAGUA GRANDE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3836,7 +3836,7 @@ export const districtList = [
     label: 'CAJARURO',
     subTitle: '-',
     type: 'account',
-    value: '00010702',
+    value: 'CAJARURO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3850,7 +3850,7 @@ export const districtList = [
     label: 'CUMBA',
     subTitle: '-',
     type: 'account',
-    value: '00010703',
+    value: 'CUMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3864,7 +3864,7 @@ export const districtList = [
     label: 'EL MILAGRO',
     subTitle: '-',
     type: 'account',
-    value: '00010704',
+    value: 'EL MILAGRO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3878,7 +3878,7 @@ export const districtList = [
     label: 'JAMALCA',
     subTitle: '-',
     type: 'account',
-    value: '00010705',
+    value: 'JAMALCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3892,7 +3892,7 @@ export const districtList = [
     label: 'LONYA GRANDE',
     subTitle: '-',
     type: 'account',
-    value: '00010706',
+    value: 'LONYA GRANDE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3906,7 +3906,7 @@ export const districtList = [
     label: 'YAMON',
     subTitle: '-',
     type: 'account',
-    value: '00010707',
+    value: 'YAMON',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '01',
@@ -3920,7 +3920,7 @@ export const districtList = [
     label: 'HUARAZ',
     subTitle: '-',
     type: 'account',
-    value: '00020101',
+    value: 'HUARAZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -3934,7 +3934,7 @@ export const districtList = [
     label: 'COCHABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00020102',
+    value: 'COCHABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -3948,7 +3948,7 @@ export const districtList = [
     label: 'COLCABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00020103',
+    value: 'COLCABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -3962,7 +3962,7 @@ export const districtList = [
     label: 'HUANCHAY',
     subTitle: '-',
     type: 'account',
-    value: '00020104',
+    value: 'HUANCHAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -3976,7 +3976,7 @@ export const districtList = [
     label: 'INDEPENDENCIA',
     subTitle: '-',
     type: 'account',
-    value: '00020105',
+    value: 'INDEPENDENCIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -3990,7 +3990,7 @@ export const districtList = [
     label: 'JANGAS',
     subTitle: '-',
     type: 'account',
-    value: '00020106',
+    value: 'JANGAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4004,7 +4004,7 @@ export const districtList = [
     label: 'LA LIBERTAD',
     subTitle: '-',
     type: 'account',
-    value: '00020107',
+    value: 'LA LIBERTAD',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4018,7 +4018,7 @@ export const districtList = [
     label: 'OLLEROS',
     subTitle: '-',
     type: 'account',
-    value: '00020108',
+    value: 'OLLEROS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4032,7 +4032,7 @@ export const districtList = [
     label: 'PAMPAS',
     subTitle: '-',
     type: 'account',
-    value: '00020109',
+    value: 'PAMPAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4046,7 +4046,7 @@ export const districtList = [
     label: 'PARIACOTO',
     subTitle: '-',
     type: 'account',
-    value: '00020110',
+    value: 'PARIACOTO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4060,7 +4060,7 @@ export const districtList = [
     label: 'PIRA',
     subTitle: '-',
     type: 'account',
-    value: '00020111',
+    value: 'PIRA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4074,7 +4074,7 @@ export const districtList = [
     label: 'TARICA',
     subTitle: '-',
     type: 'account',
-    value: '00020112',
+    value: 'TARICA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4088,7 +4088,7 @@ export const districtList = [
     label: 'AIJA',
     subTitle: '-',
     type: 'account',
-    value: '00020201',
+    value: 'AIJA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4102,7 +4102,7 @@ export const districtList = [
     label: 'CORIS',
     subTitle: '-',
     type: 'account',
-    value: '00020202',
+    value: 'CORIS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4116,7 +4116,7 @@ export const districtList = [
     label: 'HUACLLAN',
     subTitle: '-',
     type: 'account',
-    value: '00020203',
+    value: 'HUACLLAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4130,7 +4130,7 @@ export const districtList = [
     label: 'LA MERCED',
     subTitle: '-',
     type: 'account',
-    value: '00020204',
+    value: 'LA MERCED',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4144,7 +4144,7 @@ export const districtList = [
     label: 'SUCCHA',
     subTitle: '-',
     type: 'account',
-    value: '00020205',
+    value: 'SUCCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4158,7 +4158,7 @@ export const districtList = [
     label: 'LLAMELLIN',
     subTitle: '-',
     type: 'account',
-    value: '00020301',
+    value: 'LLAMELLIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4172,7 +4172,7 @@ export const districtList = [
     label: 'ACZO',
     subTitle: '-',
     type: 'account',
-    value: '00020302',
+    value: 'ACZO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4186,7 +4186,7 @@ export const districtList = [
     label: 'CHACCHO',
     subTitle: '-',
     type: 'account',
-    value: '00020303',
+    value: 'CHACCHO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4200,7 +4200,7 @@ export const districtList = [
     label: 'CHINGAS',
     subTitle: '-',
     type: 'account',
-    value: '00020304',
+    value: 'CHINGAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4214,7 +4214,7 @@ export const districtList = [
     label: 'MIRGAS',
     subTitle: '-',
     type: 'account',
-    value: '00020305',
+    value: 'MIRGAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4228,7 +4228,7 @@ export const districtList = [
     label: 'SAN JUAN DE RONTOY',
     subTitle: '-',
     type: 'account',
-    value: '00020306',
+    value: 'SAN JUAN DE RONTOY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4242,7 +4242,7 @@ export const districtList = [
     label: 'CHACAS',
     subTitle: '-',
     type: 'account',
-    value: '00020401',
+    value: 'CHACAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4256,7 +4256,7 @@ export const districtList = [
     label: 'ACOCHACA',
     subTitle: '-',
     type: 'account',
-    value: '00020402',
+    value: 'ACOCHACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4270,7 +4270,7 @@ export const districtList = [
     label: 'CHIQUIAN',
     subTitle: '-',
     type: 'account',
-    value: '00020501',
+    value: 'CHIQUIAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4284,7 +4284,7 @@ export const districtList = [
     label: 'ABELARDO PARDO LEZAMETA',
     subTitle: '-',
     type: 'account',
-    value: '00020502',
+    value: 'ABELARDO PARDO LEZAMETA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4298,7 +4298,7 @@ export const districtList = [
     label: 'ANTONIO RAYMONDI',
     subTitle: '-',
     type: 'account',
-    value: '00020503',
+    value: 'ANTONIO RAYMONDI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4312,7 +4312,7 @@ export const districtList = [
     label: 'AQUIA',
     subTitle: '-',
     type: 'account',
-    value: '00020504',
+    value: 'AQUIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4326,7 +4326,7 @@ export const districtList = [
     label: 'CAJACAY',
     subTitle: '-',
     type: 'account',
-    value: '00020505',
+    value: 'CAJACAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4340,7 +4340,7 @@ export const districtList = [
     label: 'CANIS',
     subTitle: '-',
     type: 'account',
-    value: '00020506',
+    value: 'CANIS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4354,7 +4354,7 @@ export const districtList = [
     label: 'COLQUIOC',
     subTitle: '-',
     type: 'account',
-    value: '00020507',
+    value: 'COLQUIOC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4368,7 +4368,7 @@ export const districtList = [
     label: 'HUALLANCA',
     subTitle: '-',
     type: 'account',
-    value: '00020508',
+    value: 'HUALLANCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4382,7 +4382,7 @@ export const districtList = [
     label: 'HUASTA',
     subTitle: '-',
     type: 'account',
-    value: '00020509',
+    value: 'HUASTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4396,7 +4396,7 @@ export const districtList = [
     label: 'HUAYLLACAYAN',
     subTitle: '-',
     type: 'account',
-    value: '00020510',
+    value: 'HUAYLLACAYAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4410,7 +4410,7 @@ export const districtList = [
     label: 'LA PRIMAVERA',
     subTitle: '-',
     type: 'account',
-    value: '00020511',
+    value: 'LA PRIMAVERA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4424,7 +4424,7 @@ export const districtList = [
     label: 'MANGAS',
     subTitle: '-',
     type: 'account',
-    value: '00020512',
+    value: 'MANGAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4438,7 +4438,7 @@ export const districtList = [
     label: 'PACLLON',
     subTitle: '-',
     type: 'account',
-    value: '00020513',
+    value: 'PACLLON',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4452,7 +4452,7 @@ export const districtList = [
     label: 'SAN MIGUEL DE CORPANQUI',
     subTitle: '-',
     type: 'account',
-    value: '00020514',
+    value: 'SAN MIGUEL DE CORPANQUI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4466,7 +4466,7 @@ export const districtList = [
     label: 'TICLLOS',
     subTitle: '-',
     type: 'account',
-    value: '00020515',
+    value: 'TICLLOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4480,7 +4480,7 @@ export const districtList = [
     label: 'CARHUAZ',
     subTitle: '-',
     type: 'account',
-    value: '00020601',
+    value: 'CARHUAZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4494,7 +4494,7 @@ export const districtList = [
     label: 'ACOPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00020602',
+    value: 'ACOPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4508,7 +4508,7 @@ export const districtList = [
     label: 'AMASHCA',
     subTitle: '-',
     type: 'account',
-    value: '00020603',
+    value: 'AMASHCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4522,7 +4522,7 @@ export const districtList = [
     label: 'ANTA',
     subTitle: '-',
     type: 'account',
-    value: '00020604',
+    value: 'ANTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4536,7 +4536,7 @@ export const districtList = [
     label: 'ATAQUERO',
     subTitle: '-',
     type: 'account',
-    value: '00020605',
+    value: 'ATAQUERO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4550,7 +4550,7 @@ export const districtList = [
     label: 'MARCARA',
     subTitle: '-',
     type: 'account',
-    value: '00020606',
+    value: 'MARCARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4564,7 +4564,7 @@ export const districtList = [
     label: 'PARIAHUANCA',
     subTitle: '-',
     type: 'account',
-    value: '00020607',
+    value: 'PARIAHUANCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4578,7 +4578,7 @@ export const districtList = [
     label: 'SAN MIGUEL DE ACO',
     subTitle: '-',
     type: 'account',
-    value: '00020608',
+    value: 'SAN MIGUEL DE ACO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4592,7 +4592,7 @@ export const districtList = [
     label: 'SHILLA',
     subTitle: '-',
     type: 'account',
-    value: '00020609',
+    value: 'SHILLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4606,7 +4606,7 @@ export const districtList = [
     label: 'TINCO',
     subTitle: '-',
     type: 'account',
-    value: '00020610',
+    value: 'TINCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4620,7 +4620,7 @@ export const districtList = [
     label: 'YUNGAR',
     subTitle: '-',
     type: 'account',
-    value: '00020611',
+    value: 'YUNGAR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4634,7 +4634,7 @@ export const districtList = [
     label: 'SAN LUIS',
     subTitle: '-',
     type: 'account',
-    value: '00020701',
+    value: 'SAN LUIS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4648,7 +4648,7 @@ export const districtList = [
     label: 'SAN NICOLAS',
     subTitle: '-',
     type: 'account',
-    value: '00020702',
+    value: 'SAN NICOLAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4662,7 +4662,7 @@ export const districtList = [
     label: 'YAUYA',
     subTitle: '-',
     type: 'account',
-    value: '00020703',
+    value: 'YAUYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4676,7 +4676,7 @@ export const districtList = [
     label: 'CASMA',
     subTitle: '-',
     type: 'account',
-    value: '00020801',
+    value: 'CASMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4690,7 +4690,7 @@ export const districtList = [
     label: 'BUENA VISTA ALTA',
     subTitle: '-',
     type: 'account',
-    value: '00020802',
+    value: 'BUENA VISTA ALTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4704,7 +4704,7 @@ export const districtList = [
     label: 'COMANDANTE NOEL',
     subTitle: '-',
     type: 'account',
-    value: '00020803',
+    value: 'COMANDANTE NOEL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4718,7 +4718,7 @@ export const districtList = [
     label: 'YAUTAN',
     subTitle: '-',
     type: 'account',
-    value: '00020804',
+    value: 'YAUTAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4732,7 +4732,7 @@ export const districtList = [
     label: 'CORONGO',
     subTitle: '-',
     type: 'account',
-    value: '00020901',
+    value: 'CORONGO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4746,7 +4746,7 @@ export const districtList = [
     label: 'ACO',
     subTitle: '-',
     type: 'account',
-    value: '00020902',
+    value: 'ACO',,
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4760,7 +4760,7 @@ export const districtList = [
     label: 'BAMBAS',
     subTitle: '-',
     type: 'account',
-    value: '00020903',
+    value: 'BAMBAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4774,7 +4774,7 @@ export const districtList = [
     label: 'CUSCA',
     subTitle: '-',
     type: 'account',
-    value: '00020904',
+    value: 'CUSCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4788,7 +4788,7 @@ export const districtList = [
     label: 'LA PAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00020905',
+    value: 'LA PAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4802,7 +4802,7 @@ export const districtList = [
     label: 'YANAC',
     subTitle: '-',
     type: 'account',
-    value: '00020906',
+    value: 'YANAC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4816,7 +4816,7 @@ export const districtList = [
     label: 'YUPAN',
     subTitle: '-',
     type: 'account',
-    value: '00020907',
+    value: 'YUPAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4830,7 +4830,7 @@ export const districtList = [
     label: 'HUARI',
     subTitle: '-',
     type: 'account',
-    value: '00021001',
+    value: 'HUARI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4844,7 +4844,7 @@ export const districtList = [
     label: 'ANRA',
     subTitle: '-',
     type: 'account',
-    value: '00021002',
+    value: 'ANRA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4858,7 +4858,7 @@ export const districtList = [
     label: 'CAJAY',
     subTitle: '-',
     type: 'account',
-    value: '00021003',
+    value: 'CAJAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4872,7 +4872,7 @@ export const districtList = [
     label: 'CHAVIN DE HUANTAR',
     subTitle: '-',
     type: 'account',
-    value: '00021004',
+    value: 'CHAVIN DE HUANTAR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4886,7 +4886,7 @@ export const districtList = [
     label: 'HUACACHI',
     subTitle: '-',
     type: 'account',
-    value: '00021005',
+    value: 'HUACACHI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4900,7 +4900,7 @@ export const districtList = [
     label: 'HUACCHIS',
     subTitle: '-',
     type: 'account',
-    value: '00021006',
+    value: 'HUACCHIS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4914,7 +4914,7 @@ export const districtList = [
     label: 'HUACHIS',
     subTitle: '-',
     type: 'account',
-    value: '00021007',
+    value: 'HUACHIS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4928,7 +4928,7 @@ export const districtList = [
     label: 'HUANTAR',
     subTitle: '-',
     type: 'account',
-    value: '00021008',
+    value: 'HUANTAR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4942,7 +4942,7 @@ export const districtList = [
     label: 'MASIN',
     subTitle: '-',
     type: 'account',
-    value: '00021009',
+    value: 'MASIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4956,7 +4956,7 @@ export const districtList = [
     label: 'PAUCAS',
     subTitle: '-',
     type: 'account',
-    value: '00021010',
+    value: 'PAUCAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4970,7 +4970,7 @@ export const districtList = [
     label: 'PONTO',
     subTitle: '-',
     type: 'account',
-    value: '00021011',
+    value: 'PONTO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4984,7 +4984,7 @@ export const districtList = [
     label: 'RAHUAPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00021012',
+    value: 'RAHUAPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -4998,7 +4998,7 @@ export const districtList = [
     label: 'RAPAYAN',
     subTitle: '-',
     type: 'account',
-    value: '00021013',
+    value: 'RAPAYAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5012,7 +5012,7 @@ export const districtList = [
     label: 'SAN MARCOS',
     subTitle: '-',
     type: 'account',
-    value: '00021014',
+    value: 'SAN MARCOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5026,7 +5026,7 @@ export const districtList = [
     label: 'SAN PEDRO DE CHANA',
     subTitle: '-',
     type: 'account',
-    value: '00021015',
+    value: 'SAN PEDRO DE CHANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5040,7 +5040,7 @@ export const districtList = [
     label: 'UCO',
     subTitle: '-',
     type: 'account',
-    value: '00021016',
+    value: 'UCO',,
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5054,7 +5054,7 @@ export const districtList = [
     label: 'HUARMEY',
     subTitle: '-',
     type: 'account',
-    value: '00021101',
+    value: 'HUARMEY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5068,7 +5068,7 @@ export const districtList = [
     label: 'COCHAPETI',
     subTitle: '-',
     type: 'account',
-    value: '00021102',
+    value: 'COCHAPETI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5082,7 +5082,7 @@ export const districtList = [
     label: 'CULEBRAS',
     subTitle: '-',
     type: 'account',
-    value: '00021103',
+    value: 'CULEBRAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5096,7 +5096,7 @@ export const districtList = [
     label: 'HUAYAN',
     subTitle: '-',
     type: 'account',
-    value: '00021104',
+    value: 'HUAYAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5110,7 +5110,7 @@ export const districtList = [
     label: 'MALVAS',
     subTitle: '-',
     type: 'account',
-    value: '00021105',
+    value: 'MALVAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5124,7 +5124,7 @@ export const districtList = [
     label: 'CARAZ',
     subTitle: '-',
     type: 'account',
-    value: '00021201',
+    value: 'CARAZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5138,7 +5138,7 @@ export const districtList = [
     label: 'HUALLANCA',
     subTitle: '-',
     type: 'account',
-    value: '00021202',
+    value: 'HUALLANCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5152,7 +5152,7 @@ export const districtList = [
     label: 'HUATA',
     subTitle: '-',
     type: 'account',
-    value: '00021203',
+    value: 'HUATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5166,7 +5166,7 @@ export const districtList = [
     label: 'HUAYLAS',
     subTitle: '-',
     type: 'account',
-    value: '00021204',
+    value: 'HUAYLAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5180,7 +5180,7 @@ export const districtList = [
     label: 'MATO',
     subTitle: '-',
     type: 'account',
-    value: '00021205',
+    value: 'MATO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5194,7 +5194,7 @@ export const districtList = [
     label: 'PAMPAROMAS',
     subTitle: '-',
     type: 'account',
-    value: '00021206',
+    value: 'PAMPAROMAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5208,7 +5208,7 @@ export const districtList = [
     label: 'PUEBLO LIBRE',
     subTitle: '-',
     type: 'account',
-    value: '00021207',
+    value: 'PUEBLO LIBRE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5222,7 +5222,7 @@ export const districtList = [
     label: 'SANTA CRUZ',
     subTitle: '-',
     type: 'account',
-    value: '00021208',
+    value: 'SANTA CRUZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5236,7 +5236,7 @@ export const districtList = [
     label: 'SANTO TORIBIO',
     subTitle: '-',
     type: 'account',
-    value: '00021209',
+    value: 'SANTO TORIBIO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5250,7 +5250,7 @@ export const districtList = [
     label: 'YURACMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00021210',
+    value: 'YURACMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5264,7 +5264,7 @@ export const districtList = [
     label: 'PISCOBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00021301',
+    value: 'PISCOBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5278,7 +5278,7 @@ export const districtList = [
     label: 'CASCA',
     subTitle: '-',
     type: 'account',
-    value: '00021302',
+    value: 'CASCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5292,7 +5292,7 @@ export const districtList = [
     label: 'ELEAZAR GUZMAN BARRON',
     subTitle: '-',
     type: 'account',
-    value: '00021303',
+    value: 'ELEAZAR GUZMAN BARRON',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5306,7 +5306,7 @@ export const districtList = [
     label: 'FIDEL OLIVAS ESCUDERO',
     subTitle: '-',
     type: 'account',
-    value: '00021304',
+    value: 'FIDEL OLIVAS ESCUDERO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5320,7 +5320,7 @@ export const districtList = [
     label: 'LLAMA',
     subTitle: '-',
     type: 'account',
-    value: '00021305',
+    value: 'LLAMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5334,7 +5334,7 @@ export const districtList = [
     label: 'LLUMPA',
     subTitle: '-',
     type: 'account',
-    value: '00021306',
+    value: 'LLUMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5348,7 +5348,7 @@ export const districtList = [
     label: 'LUCMA',
     subTitle: '-',
     type: 'account',
-    value: '00021307',
+    value: 'LUCMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5362,7 +5362,7 @@ export const districtList = [
     label: 'MUSGA',
     subTitle: '-',
     type: 'account',
-    value: '00021308',
+    value: 'MUSGA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5376,7 +5376,7 @@ export const districtList = [
     label: 'OCROS',
     subTitle: '-',
     type: 'account',
-    value: '00021401',
+    value: 'OCROS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5390,7 +5390,7 @@ export const districtList = [
     label: 'ACAS',
     subTitle: '-',
     type: 'account',
-    value: '00021402',
+    value: 'ACAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5404,7 +5404,7 @@ export const districtList = [
     label: 'CAJAMARQUILLA',
     subTitle: '-',
     type: 'account',
-    value: '00021403',
+    value: 'CAJAMARQUILLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5418,7 +5418,7 @@ export const districtList = [
     label: 'CARHUAPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00021404',
+    value: 'CARHUAPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5432,7 +5432,7 @@ export const districtList = [
     label: 'COCHAS',
     subTitle: '-',
     type: 'account',
-    value: '00021405',
+    value: 'COCHAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5446,7 +5446,7 @@ export const districtList = [
     label: 'CONGAS',
     subTitle: '-',
     type: 'account',
-    value: '00021406',
+    value: 'CONGAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5460,7 +5460,7 @@ export const districtList = [
     label: 'LLIPA',
     subTitle: '-',
     type: 'account',
-    value: '00021407',
+    value: 'LLIPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5474,7 +5474,7 @@ export const districtList = [
     label: 'SAN CRISTOBAL DE RAJAN',
     subTitle: '-',
     type: 'account',
-    value: '00021408',
+    value: 'SAN CRISTOBAL DE RAJAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5488,7 +5488,7 @@ export const districtList = [
     label: 'SAN PEDRO',
     subTitle: '-',
     type: 'account',
-    value: '00021409',
+    value: 'SAN PEDRO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5502,7 +5502,7 @@ export const districtList = [
     label: 'SANTIAGO DE CHILCAS',
     subTitle: '-',
     type: 'account',
-    value: '00021410',
+    value: 'SANTIAGO DE CHILCAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5516,7 +5516,7 @@ export const districtList = [
     label: 'CABANA',
     subTitle: '-',
     type: 'account',
-    value: '00021501',
+    value: 'CABANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5530,7 +5530,7 @@ export const districtList = [
     label: 'BOLOGNESI',
     subTitle: '-',
     type: 'account',
-    value: '00021502',
+    value: 'BOLOGNESI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5544,7 +5544,7 @@ export const districtList = [
     label: 'CONCHUCOS',
     subTitle: '-',
     type: 'account',
-    value: '00021503',
+    value: 'CONCHUCOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5558,7 +5558,7 @@ export const districtList = [
     label: 'HUACASCHUQUE',
     subTitle: '-',
     type: 'account',
-    value: '00021504',
+    value: 'HUACASCHUQUE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5572,7 +5572,7 @@ export const districtList = [
     label: 'HUANDOVAL',
     subTitle: '-',
     type: 'account',
-    value: '00021505',
+    value: 'HUANDOVAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5586,7 +5586,7 @@ export const districtList = [
     label: 'LACABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00021506',
+    value: 'LACABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5600,7 +5600,7 @@ export const districtList = [
     label: 'LLAPO',
     subTitle: '-',
     type: 'account',
-    value: '00021507',
+    value: 'LLAPO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5614,7 +5614,7 @@ export const districtList = [
     label: 'PALLASCA',
     subTitle: '-',
     type: 'account',
-    value: '00021508',
+    value: 'PALLASCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5628,7 +5628,7 @@ export const districtList = [
     label: 'PAMPAS',
     subTitle: '-',
     type: 'account',
-    value: '00021509',
+    value: 'PAMPAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5642,7 +5642,7 @@ export const districtList = [
     label: 'SANTA ROSA',
     subTitle: '-',
     type: 'account',
-    value: '00021510',
+    value: 'SANTA ROSA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5656,7 +5656,7 @@ export const districtList = [
     label: 'TAUCA',
     subTitle: '-',
     type: 'account',
-    value: '00021511',
+    value: 'TAUCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5670,7 +5670,7 @@ export const districtList = [
     label: 'POMABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00021601',
+    value: 'POMABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5684,7 +5684,7 @@ export const districtList = [
     label: 'HUAYLLAN',
     subTitle: '-',
     type: 'account',
-    value: '00021602',
+    value: 'HUAYLLAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5698,7 +5698,7 @@ export const districtList = [
     label: 'PAROBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00021603',
+    value: 'PAROBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5712,7 +5712,7 @@ export const districtList = [
     label: 'QUINUABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00021604',
+    value: 'QUINUABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5726,7 +5726,7 @@ export const districtList = [
     label: 'RECUAY',
     subTitle: '-',
     type: 'account',
-    value: '00021701',
+    value: 'RECUAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5740,7 +5740,7 @@ export const districtList = [
     label: 'CATAC',
     subTitle: '-',
     type: 'account',
-    value: '00021702',
+    value: 'CATAC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5754,7 +5754,7 @@ export const districtList = [
     label: 'COTAPARACO',
     subTitle: '-',
     type: 'account',
-    value: '00021703',
+    value: 'COTAPARACO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5768,7 +5768,7 @@ export const districtList = [
     label: 'HUAYLLAPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00021704',
+    value: 'HUAYLLAPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5782,7 +5782,7 @@ export const districtList = [
     label: 'LLACLLIN',
     subTitle: '-',
     type: 'account',
-    value: '00021705',
+    value: 'LLACLLIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5796,7 +5796,7 @@ export const districtList = [
     label: 'MARCA',
     subTitle: '-',
     type: 'account',
-    value: '00021706',
+    value: 'MARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5810,7 +5810,7 @@ export const districtList = [
     label: 'PAMPAS CHICO',
     subTitle: '-',
     type: 'account',
-    value: '00021707',
+    value: 'PAMPAS CHICO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5824,7 +5824,7 @@ export const districtList = [
     label: 'PARARIN',
     subTitle: '-',
     type: 'account',
-    value: '00021708',
+    value: 'PARARIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5838,7 +5838,7 @@ export const districtList = [
     label: 'TAPACOCHA',
     subTitle: '-',
     type: 'account',
-    value: '00021709',
+    value: 'TAPACOCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5852,7 +5852,7 @@ export const districtList = [
     label: 'TICAPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00021710',
+    value: 'TICAPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5866,7 +5866,7 @@ export const districtList = [
     label: 'CHIMBOTE',
     subTitle: '-',
     type: 'account',
-    value: '00021801',
+    value: 'CHIMBOTE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5880,7 +5880,7 @@ export const districtList = [
     label: 'CACERES DEL PERU',
     subTitle: '-',
     type: 'account',
-    value: '00021802',
+    value: 'CACERES DEL PERU',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5894,7 +5894,7 @@ export const districtList = [
     label: 'COISHCO',
     subTitle: '-',
     type: 'account',
-    value: '00021803',
+    value: 'COISHCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5908,7 +5908,7 @@ export const districtList = [
     label: 'MACATE',
     subTitle: '-',
     type: 'account',
-    value: '00021804',
+    value: 'MACATE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5922,7 +5922,7 @@ export const districtList = [
     label: 'MORO',
     subTitle: '-',
     type: 'account',
-    value: '00021805',
+    value: 'MORO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5936,7 +5936,7 @@ export const districtList = [
     label: 'NEPEÑA',
     subTitle: '-',
     type: 'account',
-    value: '00021806',
+    value: 'NEPEÑA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5950,7 +5950,7 @@ export const districtList = [
     label: 'SAMANCO',
     subTitle: '-',
     type: 'account',
-    value: '00021807',
+    value: 'SAMANCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5964,7 +5964,7 @@ export const districtList = [
     label: 'SANTA',
     subTitle: '-',
     type: 'account',
-    value: '00021808',
+    value: 'SANTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5978,7 +5978,7 @@ export const districtList = [
     label: 'NUEVO CHIMBOTE',
     subTitle: '-',
     type: 'account',
-    value: '00021809',
+    value: 'NUEVO CHIMBOTE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -5992,7 +5992,7 @@ export const districtList = [
     label: 'SIHUAS',
     subTitle: '-',
     type: 'account',
-    value: '00021901',
+    value: 'SIHUAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -6006,7 +6006,7 @@ export const districtList = [
     label: 'ACOBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00021902',
+    value: 'ACOBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -6020,7 +6020,7 @@ export const districtList = [
     label: 'ALFONSO UGARTE',
     subTitle: '-',
     type: 'account',
-    value: '00021903',
+    value: 'ALFONSO UGARTE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -6034,7 +6034,7 @@ export const districtList = [
     label: 'CASHAPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00021904',
+    value: 'CASHAPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -6048,7 +6048,7 @@ export const districtList = [
     label: 'CHINGALPO',
     subTitle: '-',
     type: 'account',
-    value: '00021905',
+    value: 'CHINGALPO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -6062,7 +6062,7 @@ export const districtList = [
     label: 'HUAYLLABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00021906',
+    value: 'HUAYLLABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -6076,7 +6076,7 @@ export const districtList = [
     label: 'QUICHES',
     subTitle: '-',
     type: 'account',
-    value: '00021907',
+    value: 'QUICHES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -6090,7 +6090,7 @@ export const districtList = [
     label: 'RAGASH',
     subTitle: '-',
     type: 'account',
-    value: '00021908',
+    value: 'RAGASH',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -6104,7 +6104,7 @@ export const districtList = [
     label: 'SAN JUAN',
     subTitle: '-',
     type: 'account',
-    value: '00021909',
+    value: 'SAN JUAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -6118,7 +6118,7 @@ export const districtList = [
     label: 'SICSIBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00021910',
+    value: 'SICSIBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -6132,7 +6132,7 @@ export const districtList = [
     label: 'YUNGAY',
     subTitle: '-',
     type: 'account',
-    value: '00022001',
+    value: 'YUNGAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -6146,7 +6146,7 @@ export const districtList = [
     label: 'CASCAPARA',
     subTitle: '-',
     type: 'account',
-    value: '00022002',
+    value: 'CASCAPARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -6160,7 +6160,7 @@ export const districtList = [
     label: 'MANCOS',
     subTitle: '-',
     type: 'account',
-    value: '00022003',
+    value: 'MANCOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -6174,7 +6174,7 @@ export const districtList = [
     label: 'MATACOTO',
     subTitle: '-',
     type: 'account',
-    value: '00022004',
+    value: 'MATACOTO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -6188,7 +6188,7 @@ export const districtList = [
     label: 'QUILLO',
     subTitle: '-',
     type: 'account',
-    value: '00022005',
+    value: 'QUILLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -6202,7 +6202,7 @@ export const districtList = [
     label: 'RANRAHIRCA',
     subTitle: '-',
     type: 'account',
-    value: '00022006',
+    value: 'RANRAHIRCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -6216,7 +6216,7 @@ export const districtList = [
     label: 'SHUPLUY',
     subTitle: '-',
     type: 'account',
-    value: '00022007',
+    value: 'SHUPLUY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -6230,7 +6230,7 @@ export const districtList = [
     label: 'YANAMA',
     subTitle: '-',
     type: 'account',
-    value: '00022008',
+    value: 'YANAMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '02',
@@ -6244,7 +6244,7 @@ export const districtList = [
     label: 'ABANCAY',
     subTitle: '-',
     type: 'account',
-    value: '00030101',
+    value: 'ABANCAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6258,7 +6258,7 @@ export const districtList = [
     label: 'CHACOCHE',
     subTitle: '-',
     type: 'account',
-    value: '00030102',
+    value: 'CHACOCHE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6272,7 +6272,7 @@ export const districtList = [
     label: 'CIRCA',
     subTitle: '-',
     type: 'account',
-    value: '00030103',
+    value: 'CIRCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6286,7 +6286,7 @@ export const districtList = [
     label: 'CURAHUASI',
     subTitle: '-',
     type: 'account',
-    value: '00030104',
+    value: 'CURAHUASI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6300,7 +6300,7 @@ export const districtList = [
     label: 'HUANIPACA',
     subTitle: '-',
     type: 'account',
-    value: '00030105',
+    value: 'HUANIPACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6314,7 +6314,7 @@ export const districtList = [
     label: 'LAMBRAMA',
     subTitle: '-',
     type: 'account',
-    value: '00030106',
+    value: 'LAMBRAMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6328,7 +6328,7 @@ export const districtList = [
     label: 'PICHIRHUA',
     subTitle: '-',
     type: 'account',
-    value: '00030107',
+    value: 'PICHIRHUA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6342,7 +6342,7 @@ export const districtList = [
     label: 'SAN PEDRO DE CACHORA',
     subTitle: '-',
     type: 'account',
-    value: '00030108',
+    value: 'SAN PEDRO DE CACHORA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6356,7 +6356,7 @@ export const districtList = [
     label: 'TAMBURCO',
     subTitle: '-',
     type: 'account',
-    value: '00030109',
+    value: 'TAMBURCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6370,7 +6370,7 @@ export const districtList = [
     label: 'ANDAHUAYLAS',
     subTitle: '-',
     type: 'account',
-    value: '00030201',
+    value: 'ANDAHUAYLAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6384,7 +6384,7 @@ export const districtList = [
     label: 'ANDARAPA',
     subTitle: '-',
     type: 'account',
-    value: '00030202',
+    value: 'ANDARAPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6398,7 +6398,7 @@ export const districtList = [
     label: 'CHIARA',
     subTitle: '-',
     type: 'account',
-    value: '00030203',
+    value: 'CHIARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6412,7 +6412,7 @@ export const districtList = [
     label: 'HUANCARAMA',
     subTitle: '-',
     type: 'account',
-    value: '00030204',
+    value: 'HUANCARAMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6426,7 +6426,7 @@ export const districtList = [
     label: 'HUANCARAY',
     subTitle: '-',
     type: 'account',
-    value: '00030205',
+    value: 'HUANCARAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6440,7 +6440,7 @@ export const districtList = [
     label: 'HUAYANA',
     subTitle: '-',
     type: 'account',
-    value: '00030206',
+    value: 'HUAYANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6454,7 +6454,7 @@ export const districtList = [
     label: 'KISHUARA',
     subTitle: '-',
     type: 'account',
-    value: '00030207',
+    value: 'KISHUARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6468,7 +6468,7 @@ export const districtList = [
     label: 'PACOBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00030208',
+    value: 'PACOBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6482,7 +6482,7 @@ export const districtList = [
     label: 'PACUCHA',
     subTitle: '-',
     type: 'account',
-    value: '00030209',
+    value: 'PACUCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6496,7 +6496,7 @@ export const districtList = [
     label: 'PAMPACHIRI',
     subTitle: '-',
     type: 'account',
-    value: '00030210',
+    value: 'PAMPACHIRI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6510,7 +6510,7 @@ export const districtList = [
     label: 'POMACOCHA',
     subTitle: '-',
     type: 'account',
-    value: '00030211',
+    value: 'POMACOCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6524,7 +6524,7 @@ export const districtList = [
     label: 'SAN ANTONIO DE CACHI',
     subTitle: '-',
     type: 'account',
-    value: '00030212',
+    value: 'SAN ANTONIO DE CACHI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6538,7 +6538,7 @@ export const districtList = [
     label: 'SAN JERONIMO',
     subTitle: '-',
     type: 'account',
-    value: '00030213',
+    value: 'SAN JERONIMO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6552,7 +6552,7 @@ export const districtList = [
     label: 'SAN MIGUEL DE CHACCRAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00030214',
+    value: 'SAN MIGUEL DE CHACCRAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6566,7 +6566,7 @@ export const districtList = [
     label: 'SANTA MARIA DE CHICMO',
     subTitle: '-',
     type: 'account',
-    value: '00030215',
+    value: 'SANTA MARIA DE CHICMO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6580,7 +6580,7 @@ export const districtList = [
     label: 'TALAVERA',
     subTitle: '-',
     type: 'account',
-    value: '00030216',
+    value: 'TALAVERA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6594,7 +6594,7 @@ export const districtList = [
     label: 'TUMAY HUARACA',
     subTitle: '-',
     type: 'account',
-    value: '00030217',
+    value: 'TUMAY HUARACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6608,7 +6608,7 @@ export const districtList = [
     label: 'TURPO',
     subTitle: '-',
     type: 'account',
-    value: '00030218',
+    value: 'TURPO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6622,7 +6622,7 @@ export const districtList = [
     label: 'KAQUIABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00030219',
+    value: 'KAQUIABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6636,7 +6636,7 @@ export const districtList = [
     label: 'ANTABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00030301',
+    value: 'ANTABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6650,7 +6650,7 @@ export const districtList = [
     label: 'EL ORO',
     subTitle: '-',
     type: 'account',
-    value: '00030302',
+    value: 'EL ORO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6664,7 +6664,7 @@ export const districtList = [
     label: 'HUAQUIRCA',
     subTitle: '-',
     type: 'account',
-    value: '00030303',
+    value: 'HUAQUIRCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6678,7 +6678,7 @@ export const districtList = [
     label: 'JUAN ESPINOZA MEDRANO',
     subTitle: '-',
     type: 'account',
-    value: '00030304',
+    value: 'JUAN ESPINOZA MEDRANO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6692,7 +6692,7 @@ export const districtList = [
     label: 'OROPESA',
     subTitle: '-',
     type: 'account',
-    value: '00030305',
+    value: 'OROPESA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6706,7 +6706,7 @@ export const districtList = [
     label: 'PACHACONAS',
     subTitle: '-',
     type: 'account',
-    value: '00030306',
+    value: 'PACHACONAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6720,7 +6720,7 @@ export const districtList = [
     label: 'SABAINO',
     subTitle: '-',
     type: 'account',
-    value: '00030307',
+    value: 'SABAINO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6734,7 +6734,7 @@ export const districtList = [
     label: 'CHALHUANCA',
     subTitle: '-',
     type: 'account',
-    value: '00030401',
+    value: 'CHALHUANCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6748,7 +6748,7 @@ export const districtList = [
     label: 'CAPAYA',
     subTitle: '-',
     type: 'account',
-    value: '00030402',
+    value: 'CAPAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6762,7 +6762,7 @@ export const districtList = [
     label: 'CARAYBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00030403',
+    value: 'CARAYBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6776,7 +6776,7 @@ export const districtList = [
     label: 'CHAPIMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00030404',
+    value: 'CHAPIMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6790,7 +6790,7 @@ export const districtList = [
     label: 'COLCABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00030405',
+    value: 'COLCABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6804,7 +6804,7 @@ export const districtList = [
     label: 'COTARUSE',
     subTitle: '-',
     type: 'account',
-    value: '00030406',
+    value: 'COTARUSE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6818,7 +6818,7 @@ export const districtList = [
     label: 'HUAYLLO',
     subTitle: '-',
     type: 'account',
-    value: '00030407',
+    value: 'HUAYLLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6832,7 +6832,7 @@ export const districtList = [
     label: 'JUSTO APU SAHUARAURA',
     subTitle: '-',
     type: 'account',
-    value: '00030408',
+    value: 'JUSTO APU SAHUARAURA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6846,7 +6846,7 @@ export const districtList = [
     label: 'LUCRE',
     subTitle: '-',
     type: 'account',
-    value: '00030409',
+    value: 'LUCRE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6860,7 +6860,7 @@ export const districtList = [
     label: 'POCOHUANCA',
     subTitle: '-',
     type: 'account',
-    value: '00030410',
+    value: 'POCOHUANCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6874,7 +6874,7 @@ export const districtList = [
     label: 'SAN JUAN DE CHACÑA',
     subTitle: '-',
     type: 'account',
-    value: '00030411',
+    value: 'SAN JUAN DE CHACÑA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6888,7 +6888,7 @@ export const districtList = [
     label: 'SAÑAYCA',
     subTitle: '-',
     type: 'account',
-    value: '00030412',
+    value: 'SAÑAYCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6902,7 +6902,7 @@ export const districtList = [
     label: 'SORAYA',
     subTitle: '-',
     type: 'account',
-    value: '00030413',
+    value: 'SORAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6916,7 +6916,7 @@ export const districtList = [
     label: 'TAPAIRIHUA',
     subTitle: '-',
     type: 'account',
-    value: '00030414',
+    value: 'TAPAIRIHUA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6930,7 +6930,7 @@ export const districtList = [
     label: 'TINTAY',
     subTitle: '-',
     type: 'account',
-    value: '00030415',
+    value: 'TINTAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6944,7 +6944,7 @@ export const districtList = [
     label: 'TORAYA',
     subTitle: '-',
     type: 'account',
-    value: '00030416',
+    value: 'TORAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6958,7 +6958,7 @@ export const districtList = [
     label: 'YANACA',
     subTitle: '-',
     type: 'account',
-    value: '00030417',
+    value: 'YANACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6972,7 +6972,7 @@ export const districtList = [
     label: 'TAMBOBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00030501',
+    value: 'TAMBOBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -6986,7 +6986,7 @@ export const districtList = [
     label: 'COTABAMBAS',
     subTitle: '-',
     type: 'account',
-    value: '00030502',
+    value: 'COTABAMBAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7000,7 +7000,7 @@ export const districtList = [
     label: 'COYLLURQUI',
     subTitle: '-',
     type: 'account',
-    value: '00030503',
+    value: 'COYLLURQUI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7014,7 +7014,7 @@ export const districtList = [
     label: 'HAQUIRA',
     subTitle: '-',
     type: 'account',
-    value: '00030504',
+    value: 'HAQUIRA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7028,7 +7028,7 @@ export const districtList = [
     label: 'MARA',
     subTitle: '-',
     type: 'account',
-    value: '00030505',
+    value: 'MARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7042,7 +7042,7 @@ export const districtList = [
     label: 'CHALLHUAHUACHO',
     subTitle: '-',
     type: 'account',
-    value: '00030506',
+    value: 'CHALLHUAHUACHO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7056,7 +7056,7 @@ export const districtList = [
     label: 'CHINCHEROS',
     subTitle: '-',
     type: 'account',
-    value: '00030601',
+    value: 'CHINCHEROS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7070,7 +7070,7 @@ export const districtList = [
     label: 'ANCO_HUALLO',
     subTitle: '-',
     type: 'account',
-    value: '00030602',
+    value: 'ANCO_HUALLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7084,7 +7084,7 @@ export const districtList = [
     label: 'COCHARCAS',
     subTitle: '-',
     type: 'account',
-    value: '00030603',
+    value: 'COCHARCAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7098,7 +7098,7 @@ export const districtList = [
     label: 'HUACCANA',
     subTitle: '-',
     type: 'account',
-    value: '00030604',
+    value: 'HUACCANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7112,7 +7112,7 @@ export const districtList = [
     label: 'OCOBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00030605',
+    value: 'OCOBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7126,7 +7126,7 @@ export const districtList = [
     label: 'ONGOY',
     subTitle: '-',
     type: 'account',
-    value: '00030606',
+    value: 'ONGOY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7140,7 +7140,7 @@ export const districtList = [
     label: 'URANMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00030607',
+    value: 'URANMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7154,7 +7154,7 @@ export const districtList = [
     label: 'RANRACANCHA',
     subTitle: '-',
     type: 'account',
-    value: '00030608',
+    value: 'RANRACANCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7168,7 +7168,7 @@ export const districtList = [
     label: 'CHUQUIBAMBILLA',
     subTitle: '-',
     type: 'account',
-    value: '00030701',
+    value: 'CHUQUIBAMBILLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7182,7 +7182,7 @@ export const districtList = [
     label: 'CURPAHUASI',
     subTitle: '-',
     type: 'account',
-    value: '00030702',
+    value: 'CURPAHUASI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7196,7 +7196,7 @@ export const districtList = [
     label: 'GAMARRA',
     subTitle: '-',
     type: 'account',
-    value: '00030703',
+    value: 'GAMARRA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7210,7 +7210,7 @@ export const districtList = [
     label: 'HUAYLLATI',
     subTitle: '-',
     type: 'account',
-    value: '00030704',
+    value: 'HUAYLLATI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7224,7 +7224,7 @@ export const districtList = [
     label: 'MAMARA',
     subTitle: '-',
     type: 'account',
-    value: '00030705',
+    value: 'MAMARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7238,7 +7238,7 @@ export const districtList = [
     label: 'MICAELA BASTIDAS',
     subTitle: '-',
     type: 'account',
-    value: '00030706',
+    value: 'MICAELA BASTIDAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7252,7 +7252,7 @@ export const districtList = [
     label: 'PATAYPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00030707',
+    value: 'PATAYPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7266,7 +7266,7 @@ export const districtList = [
     label: 'PROGRESO',
     subTitle: '-',
     type: 'account',
-    value: '00030708',
+    value: 'PROGRESO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7280,7 +7280,7 @@ export const districtList = [
     label: 'SAN ANTONIO',
     subTitle: '-',
     type: 'account',
-    value: '00030709',
+    value: 'SAN ANTONIO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7294,7 +7294,7 @@ export const districtList = [
     label: 'SANTA ROSA',
     subTitle: '-',
     type: 'account',
-    value: '00030710',
+    value: 'SANTA ROSA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7308,7 +7308,7 @@ export const districtList = [
     label: 'TURPAY',
     subTitle: '-',
     type: 'account',
-    value: '00030711',
+    value: 'TURPAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7322,7 +7322,7 @@ export const districtList = [
     label: 'VILCABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00030712',
+    value: 'VILCABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7336,7 +7336,7 @@ export const districtList = [
     label: 'VIRUNDO',
     subTitle: '-',
     type: 'account',
-    value: '00030713',
+    value: 'VIRUNDO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7350,7 +7350,7 @@ export const districtList = [
     label: 'CURASCO',
     subTitle: '-',
     type: 'account',
-    value: '00030714',
+    value: 'CURASCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '03',
@@ -7364,7 +7364,7 @@ export const districtList = [
     label: 'AREQUIPA',
     subTitle: '-',
     type: 'account',
-    value: '00040101',
+    value: 'AREQUIPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7378,7 +7378,7 @@ export const districtList = [
     label: 'ALTO SELVA ALEGRE',
     subTitle: '-',
     type: 'account',
-    value: '00040102',
+    value: 'ALTO SELVA ALEGRE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7392,7 +7392,7 @@ export const districtList = [
     label: 'CAYMA',
     subTitle: '-',
     type: 'account',
-    value: '00040103',
+    value: 'CAYMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7406,7 +7406,7 @@ export const districtList = [
     label: 'CERRO COLORADO',
     subTitle: '-',
     type: 'account',
-    value: '00040104',
+    value: 'CERRO COLORADO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7420,7 +7420,7 @@ export const districtList = [
     label: 'CHARACATO',
     subTitle: '-',
     type: 'account',
-    value: '00040105',
+    value: 'CHARACATO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7434,7 +7434,7 @@ export const districtList = [
     label: 'CHIGUATA',
     subTitle: '-',
     type: 'account',
-    value: '00040106',
+    value: 'CHIGUATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7448,7 +7448,7 @@ export const districtList = [
     label: 'JACOBO HUNTER',
     subTitle: '-',
     type: 'account',
-    value: '00040107',
+    value: 'JACOBO HUNTER',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7462,7 +7462,7 @@ export const districtList = [
     label: 'LA JOYA',
     subTitle: '-',
     type: 'account',
-    value: '00040108',
+    value: 'LA JOYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7476,7 +7476,7 @@ export const districtList = [
     label: 'MARIANO MELGAR',
     subTitle: '-',
     type: 'account',
-    value: '00040109',
+    value: 'MARIANO MELGAR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7490,7 +7490,7 @@ export const districtList = [
     label: 'MIRAFLORES',
     subTitle: '-',
     type: 'account',
-    value: '00040110',
+    value: 'MIRAFLORES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7504,7 +7504,7 @@ export const districtList = [
     label: 'MOLLEBAYA',
     subTitle: '-',
     type: 'account',
-    value: '00040111',
+    value: 'MOLLEBAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7518,7 +7518,7 @@ export const districtList = [
     label: 'PAUCARPATA',
     subTitle: '-',
     type: 'account',
-    value: '00040112',
+    value: 'PAUCARPATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7532,7 +7532,7 @@ export const districtList = [
     label: 'POCSI',
     subTitle: '-',
     type: 'account',
-    value: '00040113',
+    value: 'POCSI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7546,7 +7546,7 @@ export const districtList = [
     label: 'POLOBAYA',
     subTitle: '-',
     type: 'account',
-    value: '00040114',
+    value: 'POLOBAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7560,7 +7560,7 @@ export const districtList = [
     label: 'QUEQUEÑA',
     subTitle: '-',
     type: 'account',
-    value: '00040115',
+    value: 'QUEQUEÑA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7574,7 +7574,7 @@ export const districtList = [
     label: 'SABANDIA',
     subTitle: '-',
     type: 'account',
-    value: '00040116',
+    value: 'SABANDIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7588,7 +7588,7 @@ export const districtList = [
     label: 'SACHACA',
     subTitle: '-',
     type: 'account',
-    value: '00040117',
+    value: 'SACHACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7602,7 +7602,7 @@ export const districtList = [
     label: 'SAN JUAN DE SIGUAS',
     subTitle: '-',
     type: 'account',
-    value: '00040118',
+    value: 'SAN JUAN DE SIGUAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7616,7 +7616,7 @@ export const districtList = [
     label: 'SAN JUAN DE TARUCANI',
     subTitle: '-',
     type: 'account',
-    value: '00040119',
+    value: 'SAN JUAN DE TARUCANI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7630,7 +7630,7 @@ export const districtList = [
     label: 'SANTA ISABEL DE SIGUAS',
     subTitle: '-',
     type: 'account',
-    value: '00040120',
+    value: 'SANTA ISABEL DE SIGUAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7644,7 +7644,7 @@ export const districtList = [
     label: 'SANTA RITA DE SIGUAS',
     subTitle: '-',
     type: 'account',
-    value: '00040121',
+    value: 'SANTA RITA DE SIGUAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7658,7 +7658,7 @@ export const districtList = [
     label: 'SOCABAYA',
     subTitle: '-',
     type: 'account',
-    value: '00040122',
+    value: 'SOCABAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7672,7 +7672,7 @@ export const districtList = [
     label: 'TIABAYA',
     subTitle: '-',
     type: 'account',
-    value: '00040123',
+    value: 'TIABAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7686,7 +7686,7 @@ export const districtList = [
     label: 'UCHUMAYO',
     subTitle: '-',
     type: 'account',
-    value: '00040124',
+    value: 'UCHUMAYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7700,7 +7700,7 @@ export const districtList = [
     label: 'VITOR',
     subTitle: '-',
     type: 'account',
-    value: '00040125',
+    value: 'VITOR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7714,7 +7714,7 @@ export const districtList = [
     label: 'YANAHUARA',
     subTitle: '-',
     type: 'account',
-    value: '00040126',
+    value: 'YANAHUARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7728,7 +7728,7 @@ export const districtList = [
     label: 'YARABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00040127',
+    value: 'YARABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7742,7 +7742,7 @@ export const districtList = [
     label: 'YURA',
     subTitle: '-',
     type: 'account',
-    value: '00040128',
+    value: 'YURA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7756,7 +7756,7 @@ export const districtList = [
     label: 'JOSE LUIS BUSTAMANTE Y RIVERO',
     subTitle: '-',
     type: 'account',
-    value: '00040129',
+    value: 'JOSE LUIS BUSTAMANTE Y RIVERO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7770,7 +7770,7 @@ export const districtList = [
     label: 'CAMANA',
     subTitle: '-',
     type: 'account',
-    value: '00040201',
+    value: 'CAMANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7784,7 +7784,7 @@ export const districtList = [
     label: 'JOSE MARIA QUIMPER',
     subTitle: '-',
     type: 'account',
-    value: '00040202',
+    value: 'JOSE MARIA QUIMPER',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7798,7 +7798,7 @@ export const districtList = [
     label: 'MARIANO NICOLAS VALCARCEL',
     subTitle: '-',
     type: 'account',
-    value: '00040203',
+    value: 'MARIANO NICOLAS VALCARCEL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7812,7 +7812,7 @@ export const districtList = [
     label: 'MARISCAL CACERES',
     subTitle: '-',
     type: 'account',
-    value: '00040204',
+    value: 'MARISCAL CACERES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7826,7 +7826,7 @@ export const districtList = [
     label: 'NICOLAS DE PIEROLA',
     subTitle: '-',
     type: 'account',
-    value: '00040205',
+    value: 'NICOLAS DE PIEROLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7840,7 +7840,7 @@ export const districtList = [
     label: 'OCOÑA',
     subTitle: '-',
     type: 'account',
-    value: '00040206',
+    value: 'OCOÑA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7854,7 +7854,7 @@ export const districtList = [
     label: 'QUILCA',
     subTitle: '-',
     type: 'account',
-    value: '00040207',
+    value: 'QUILCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7868,7 +7868,7 @@ export const districtList = [
     label: 'SAMUEL PASTOR',
     subTitle: '-',
     type: 'account',
-    value: '00040208',
+    value: 'SAMUEL PASTOR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7882,7 +7882,7 @@ export const districtList = [
     label: 'CARAVELI',
     subTitle: '-',
     type: 'account',
-    value: '00040301',
+    value: 'CARAVELI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7896,7 +7896,7 @@ export const districtList = [
     label: 'ACARI',
     subTitle: '-',
     type: 'account',
-    value: '00040302',
+    value: 'ACARI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7910,7 +7910,7 @@ export const districtList = [
     label: 'ATICO',
     subTitle: '-',
     type: 'account',
-    value: '00040303',
+    value: 'ATICO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7924,7 +7924,7 @@ export const districtList = [
     label: 'ATIQUIPA',
     subTitle: '-',
     type: 'account',
-    value: '00040304',
+    value: 'ATIQUIPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7938,7 +7938,7 @@ export const districtList = [
     label: 'BELLA UNION',
     subTitle: '-',
     type: 'account',
-    value: '00040305',
+    value: 'BELLA UNION',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7952,7 +7952,7 @@ export const districtList = [
     label: 'CAHUACHO',
     subTitle: '-',
     type: 'account',
-    value: '00040306',
+    value: 'CAHUACHO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7966,7 +7966,7 @@ export const districtList = [
     label: 'CHALA',
     subTitle: '-',
     type: 'account',
-    value: '00040307',
+    value: 'CHALA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7980,7 +7980,7 @@ export const districtList = [
     label: 'CHAPARRA',
     subTitle: '-',
     type: 'account',
-    value: '00040308',
+    value: 'CHAPARRA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -7994,7 +7994,7 @@ export const districtList = [
     label: 'HUANUHUANU',
     subTitle: '-',
     type: 'account',
-    value: '00040309',
+    value: 'HUANUHUANU',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8008,7 +8008,7 @@ export const districtList = [
     label: 'JAQUI',
     subTitle: '-',
     type: 'account',
-    value: '00040310',
+    value: 'JAQUI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8022,7 +8022,7 @@ export const districtList = [
     label: 'LOMAS',
     subTitle: '-',
     type: 'account',
-    value: '00040311',
+    value: 'LOMAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8036,7 +8036,7 @@ export const districtList = [
     label: 'QUICACHA',
     subTitle: '-',
     type: 'account',
-    value: '00040312',
+    value: 'QUICACHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8050,7 +8050,7 @@ export const districtList = [
     label: 'YAUCA',
     subTitle: '-',
     type: 'account',
-    value: '00040313',
+    value: 'YAUCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8064,7 +8064,7 @@ export const districtList = [
     label: 'APLAO',
     subTitle: '-',
     type: 'account',
-    value: '00040401',
+    value: 'APLAO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8078,7 +8078,7 @@ export const districtList = [
     label: 'ANDAGUA',
     subTitle: '-',
     type: 'account',
-    value: '00040402',
+    value: 'ANDAGUA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8092,7 +8092,7 @@ export const districtList = [
     label: 'AYO',
     subTitle: '-',
     type: 'account',
-    value: '00040403',
+    value: 'AYO',,
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8106,7 +8106,7 @@ export const districtList = [
     label: 'CHACHAS',
     subTitle: '-',
     type: 'account',
-    value: '00040404',
+    value: 'CHACHAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8120,7 +8120,7 @@ export const districtList = [
     label: 'CHILCAYMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00040405',
+    value: 'CHILCAYMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8134,7 +8134,7 @@ export const districtList = [
     label: 'CHOCO',
     subTitle: '-',
     type: 'account',
-    value: '00040406',
+    value: 'CHOCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8148,7 +8148,7 @@ export const districtList = [
     label: 'HUANCARQUI',
     subTitle: '-',
     type: 'account',
-    value: '00040407',
+    value: 'HUANCARQUI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8162,7 +8162,7 @@ export const districtList = [
     label: 'MACHAGUAY',
     subTitle: '-',
     type: 'account',
-    value: '00040408',
+    value: 'MACHAGUAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8176,7 +8176,7 @@ export const districtList = [
     label: 'ORCOPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00040409',
+    value: 'ORCOPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8190,7 +8190,7 @@ export const districtList = [
     label: 'PAMPACOLCA',
     subTitle: '-',
     type: 'account',
-    value: '00040410',
+    value: 'PAMPACOLCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8204,7 +8204,7 @@ export const districtList = [
     label: 'TIPAN',
     subTitle: '-',
     type: 'account',
-    value: '00040411',
+    value: 'TIPAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8218,7 +8218,7 @@ export const districtList = [
     label: 'UÑON',
     subTitle: '-',
     type: 'account',
-    value: '00040412',
+    value: 'UÑON',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8232,7 +8232,7 @@ export const districtList = [
     label: 'URACA',
     subTitle: '-',
     type: 'account',
-    value: '00040413',
+    value: 'URACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8246,7 +8246,7 @@ export const districtList = [
     label: 'VIRACO',
     subTitle: '-',
     type: 'account',
-    value: '00040414',
+    value: 'VIRACO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8260,7 +8260,7 @@ export const districtList = [
     label: 'CHIVAY',
     subTitle: '-',
     type: 'account',
-    value: '00040501',
+    value: 'CHIVAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8274,7 +8274,7 @@ export const districtList = [
     label: 'ACHOMA',
     subTitle: '-',
     type: 'account',
-    value: '00040502',
+    value: 'ACHOMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8288,7 +8288,7 @@ export const districtList = [
     label: 'CABANACONDE',
     subTitle: '-',
     type: 'account',
-    value: '00040503',
+    value: 'CABANACONDE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8302,7 +8302,7 @@ export const districtList = [
     label: 'CALLALLI',
     subTitle: '-',
     type: 'account',
-    value: '00040504',
+    value: 'CALLALLI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8316,7 +8316,7 @@ export const districtList = [
     label: 'CAYLLOMA',
     subTitle: '-',
     type: 'account',
-    value: '00040505',
+    value: 'CAYLLOMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8330,7 +8330,7 @@ export const districtList = [
     label: 'COPORAQUE',
     subTitle: '-',
     type: 'account',
-    value: '00040506',
+    value: 'COPORAQUE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8344,7 +8344,7 @@ export const districtList = [
     label: 'HUAMBO',
     subTitle: '-',
     type: 'account',
-    value: '00040507',
+    value: 'HUAMBO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8358,7 +8358,7 @@ export const districtList = [
     label: 'HUANCA',
     subTitle: '-',
     type: 'account',
-    value: '00040508',
+    value: 'HUANCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8372,7 +8372,7 @@ export const districtList = [
     label: 'ICHUPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00040509',
+    value: 'ICHUPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8386,7 +8386,7 @@ export const districtList = [
     label: 'LARI',
     subTitle: '-',
     type: 'account',
-    value: '00040510',
+    value: 'LARI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8400,7 +8400,7 @@ export const districtList = [
     label: 'LLUTA',
     subTitle: '-',
     type: 'account',
-    value: '00040511',
+    value: 'LLUTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8414,7 +8414,7 @@ export const districtList = [
     label: 'MACA',
     subTitle: '-',
     type: 'account',
-    value: '00040512',
+    value: 'MACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8428,7 +8428,7 @@ export const districtList = [
     label: 'MADRIGAL',
     subTitle: '-',
     type: 'account',
-    value: '00040513',
+    value: 'MADRIGAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8442,7 +8442,7 @@ export const districtList = [
     label: 'SAN ANTONIO DE CHUCA',
     subTitle: '-',
     type: 'account',
-    value: '00040514',
+    value: 'SAN ANTONIO DE CHUCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8456,7 +8456,7 @@ export const districtList = [
     label: 'SIBAYO',
     subTitle: '-',
     type: 'account',
-    value: '00040515',
+    value: 'SIBAYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8470,7 +8470,7 @@ export const districtList = [
     label: 'TAPAY',
     subTitle: '-',
     type: 'account',
-    value: '00040516',
+    value: 'TAPAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8484,7 +8484,7 @@ export const districtList = [
     label: 'TISCO',
     subTitle: '-',
     type: 'account',
-    value: '00040517',
+    value: 'TISCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8498,7 +8498,7 @@ export const districtList = [
     label: 'TUTI',
     subTitle: '-',
     type: 'account',
-    value: '00040518',
+    value: 'TUTI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8512,7 +8512,7 @@ export const districtList = [
     label: 'YANQUE',
     subTitle: '-',
     type: 'account',
-    value: '00040519',
+    value: 'YANQUE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8526,7 +8526,7 @@ export const districtList = [
     label: 'MAJES',
     subTitle: '-',
     type: 'account',
-    value: '00040520',
+    value: 'MAJES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8540,7 +8540,7 @@ export const districtList = [
     label: 'CHUQUIBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00040601',
+    value: 'CHUQUIBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8554,7 +8554,7 @@ export const districtList = [
     label: 'ANDARAY',
     subTitle: '-',
     type: 'account',
-    value: '00040602',
+    value: 'ANDARAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8568,7 +8568,7 @@ export const districtList = [
     label: 'CAYARANI',
     subTitle: '-',
     type: 'account',
-    value: '00040603',
+    value: 'CAYARANI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8582,7 +8582,7 @@ export const districtList = [
     label: 'CHICHAS',
     subTitle: '-',
     type: 'account',
-    value: '00040604',
+    value: 'CHICHAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8596,7 +8596,7 @@ export const districtList = [
     label: 'IRAY',
     subTitle: '-',
     type: 'account',
-    value: '00040605',
+    value: 'IRAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8610,7 +8610,7 @@ export const districtList = [
     label: 'RIO GRANDE',
     subTitle: '-',
     type: 'account',
-    value: '00040606',
+    value: 'RIO GRANDE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8624,7 +8624,7 @@ export const districtList = [
     label: 'SALAMANCA',
     subTitle: '-',
     type: 'account',
-    value: '00040607',
+    value: 'SALAMANCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8638,7 +8638,7 @@ export const districtList = [
     label: 'YANAQUIHUA',
     subTitle: '-',
     type: 'account',
-    value: '00040608',
+    value: 'YANAQUIHUA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8652,7 +8652,7 @@ export const districtList = [
     label: 'MOLLENDO',
     subTitle: '-',
     type: 'account',
-    value: '00040701',
+    value: 'MOLLENDO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8666,7 +8666,7 @@ export const districtList = [
     label: 'COCACHACRA',
     subTitle: '-',
     type: 'account',
-    value: '00040702',
+    value: 'COCACHACRA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8680,7 +8680,7 @@ export const districtList = [
     label: 'DEAN VALDIVIA',
     subTitle: '-',
     type: 'account',
-    value: '00040703',
+    value: 'DEAN VALDIVIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8694,7 +8694,7 @@ export const districtList = [
     label: 'ISLAY',
     subTitle: '-',
     type: 'account',
-    value: '00040704',
+    value: 'ISLAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8708,7 +8708,7 @@ export const districtList = [
     label: 'MEJIA',
     subTitle: '-',
     type: 'account',
-    value: '00040705',
+    value: 'MEJIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8722,7 +8722,7 @@ export const districtList = [
     label: 'PUNTA DE BOMBON',
     subTitle: '-',
     type: 'account',
-    value: '00040706',
+    value: 'PUNTA DE BOMBON',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8736,7 +8736,7 @@ export const districtList = [
     label: 'COTAHUASI',
     subTitle: '-',
     type: 'account',
-    value: '00040801',
+    value: 'COTAHUASI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8750,7 +8750,7 @@ export const districtList = [
     label: 'ALCA',
     subTitle: '-',
     type: 'account',
-    value: '00040802',
+    value: 'ALCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8764,7 +8764,7 @@ export const districtList = [
     label: 'CHARCANA',
     subTitle: '-',
     type: 'account',
-    value: '00040803',
+    value: 'CHARCANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8778,7 +8778,7 @@ export const districtList = [
     label: 'HUAYNACOTAS',
     subTitle: '-',
     type: 'account',
-    value: '00040804',
+    value: 'HUAYNACOTAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8792,7 +8792,7 @@ export const districtList = [
     label: 'PAMPAMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00040805',
+    value: 'PAMPAMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8806,7 +8806,7 @@ export const districtList = [
     label: 'PUYCA',
     subTitle: '-',
     type: 'account',
-    value: '00040806',
+    value: 'PUYCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8820,7 +8820,7 @@ export const districtList = [
     label: 'QUECHUALLA',
     subTitle: '-',
     type: 'account',
-    value: '00040807',
+    value: 'QUECHUALLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8834,7 +8834,7 @@ export const districtList = [
     label: 'SAYLA',
     subTitle: '-',
     type: 'account',
-    value: '00040808',
+    value: 'SAYLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8848,7 +8848,7 @@ export const districtList = [
     label: 'TAURIA',
     subTitle: '-',
     type: 'account',
-    value: '00040809',
+    value: 'TAURIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8862,7 +8862,7 @@ export const districtList = [
     label: 'TOMEPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00040810',
+    value: 'TOMEPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8876,7 +8876,7 @@ export const districtList = [
     label: 'TORO',
     subTitle: '-',
     type: 'account',
-    value: '00040811',
+    value: 'TORO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '04',
@@ -8890,7 +8890,7 @@ export const districtList = [
     label: 'AYACUCHO',
     subTitle: '-',
     type: 'account',
-    value: '00050101',
+    value: 'AYACUCHO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -8904,7 +8904,7 @@ export const districtList = [
     label: 'ACOCRO',
     subTitle: '-',
     type: 'account',
-    value: '00050102',
+    value: 'ACOCRO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -8918,7 +8918,7 @@ export const districtList = [
     label: 'ACOS VINCHOS',
     subTitle: '-',
     type: 'account',
-    value: '00050103',
+    value: 'ACOS VINCHOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -8932,7 +8932,7 @@ export const districtList = [
     label: 'CARMEN ALTO',
     subTitle: '-',
     type: 'account',
-    value: '00050104',
+    value: 'CARMEN ALTO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -8946,7 +8946,7 @@ export const districtList = [
     label: 'CHIARA',
     subTitle: '-',
     type: 'account',
-    value: '00050105',
+    value: 'CHIARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -8960,7 +8960,7 @@ export const districtList = [
     label: 'OCROS',
     subTitle: '-',
     type: 'account',
-    value: '00050106',
+    value: 'OCROS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -8974,7 +8974,7 @@ export const districtList = [
     label: 'PACAYCASA',
     subTitle: '-',
     type: 'account',
-    value: '00050107',
+    value: 'PACAYCASA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -8988,7 +8988,7 @@ export const districtList = [
     label: 'QUINUA',
     subTitle: '-',
     type: 'account',
-    value: '00050108',
+    value: 'QUINUA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9002,7 +9002,7 @@ export const districtList = [
     label: 'SAN JOSE DE TICLLAS',
     subTitle: '-',
     type: 'account',
-    value: '00050109',
+    value: 'SAN JOSE DE TICLLAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9016,7 +9016,7 @@ export const districtList = [
     label: 'SAN JUAN BAUTISTA',
     subTitle: '-',
     type: 'account',
-    value: '00050110',
+    value: 'SAN JUAN BAUTISTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9030,7 +9030,7 @@ export const districtList = [
     label: 'SANTIAGO DE PISCHA',
     subTitle: '-',
     type: 'account',
-    value: '00050111',
+    value: 'SANTIAGO DE PISCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9044,7 +9044,7 @@ export const districtList = [
     label: 'SOCOS',
     subTitle: '-',
     type: 'account',
-    value: '00050112',
+    value: 'SOCOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9058,7 +9058,7 @@ export const districtList = [
     label: 'TAMBILLO',
     subTitle: '-',
     type: 'account',
-    value: '00050113',
+    value: 'TAMBILLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9072,7 +9072,7 @@ export const districtList = [
     label: 'VINCHOS',
     subTitle: '-',
     type: 'account',
-    value: '00050114',
+    value: 'VINCHOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9086,7 +9086,7 @@ export const districtList = [
     label: 'JESUS NAZARENO',
     subTitle: '-',
     type: 'account',
-    value: '00050115',
+    value: 'JESUS NAZARENO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9100,7 +9100,7 @@ export const districtList = [
     label: 'CANGALLO',
     subTitle: '-',
     type: 'account',
-    value: '00050201',
+    value: 'CANGALLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9114,7 +9114,7 @@ export const districtList = [
     label: 'CHUSCHI',
     subTitle: '-',
     type: 'account',
-    value: '00050202',
+    value: 'CHUSCHI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9128,7 +9128,7 @@ export const districtList = [
     label: 'LOS MOROCHUCOS',
     subTitle: '-',
     type: 'account',
-    value: '00050203',
+    value: 'LOS MOROCHUCOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9142,7 +9142,7 @@ export const districtList = [
     label: 'MARIA PARADO DE BELLIDO',
     subTitle: '-',
     type: 'account',
-    value: '00050204',
+    value: 'MARIA PARADO DE BELLIDO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9156,7 +9156,7 @@ export const districtList = [
     label: 'PARAS',
     subTitle: '-',
     type: 'account',
-    value: '00050205',
+    value: 'PARAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9170,7 +9170,7 @@ export const districtList = [
     label: 'TOTOS',
     subTitle: '-',
     type: 'account',
-    value: '00050206',
+    value: 'TOTOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9184,7 +9184,7 @@ export const districtList = [
     label: 'SANCOS',
     subTitle: '-',
     type: 'account',
-    value: '00050301',
+    value: 'SANCOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9198,7 +9198,7 @@ export const districtList = [
     label: 'CARAPO',
     subTitle: '-',
     type: 'account',
-    value: '00050302',
+    value: 'CARAPO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9212,7 +9212,7 @@ export const districtList = [
     label: 'SACSAMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00050303',
+    value: 'SACSAMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9226,7 +9226,7 @@ export const districtList = [
     label: 'SANTIAGO DE LUCANAMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00050304',
+    value: 'SANTIAGO DE LUCANAMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9240,7 +9240,7 @@ export const districtList = [
     label: 'HUANTA',
     subTitle: '-',
     type: 'account',
-    value: '00050401',
+    value: 'HUANTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9254,7 +9254,7 @@ export const districtList = [
     label: 'AYAHUANCO',
     subTitle: '-',
     type: 'account',
-    value: '00050402',
+    value: 'AYAHUANCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9268,7 +9268,7 @@ export const districtList = [
     label: 'HUAMANGUILLA',
     subTitle: '-',
     type: 'account',
-    value: '00050403',
+    value: 'HUAMANGUILLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9282,7 +9282,7 @@ export const districtList = [
     label: 'IGUAIN',
     subTitle: '-',
     type: 'account',
-    value: '00050404',
+    value: 'IGUAIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9296,7 +9296,7 @@ export const districtList = [
     label: 'LURICOCHA',
     subTitle: '-',
     type: 'account',
-    value: '00050405',
+    value: 'LURICOCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9310,7 +9310,7 @@ export const districtList = [
     label: 'SANTILLANA',
     subTitle: '-',
     type: 'account',
-    value: '00050406',
+    value: 'SANTILLANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9324,7 +9324,7 @@ export const districtList = [
     label: 'SIVIA',
     subTitle: '-',
     type: 'account',
-    value: '00050407',
+    value: 'SIVIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9338,7 +9338,7 @@ export const districtList = [
     label: 'LLOCHEGUA',
     subTitle: '-',
     type: 'account',
-    value: '00050408',
+    value: 'LLOCHEGUA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9352,7 +9352,7 @@ export const districtList = [
     label: 'SAN MIGUEL',
     subTitle: '-',
     type: 'account',
-    value: '00050501',
+    value: 'SAN MIGUEL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9366,7 +9366,7 @@ export const districtList = [
     label: 'ANCO',
     subTitle: '-',
     type: 'account',
-    value: '00050502',
+    value: 'ANCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9380,7 +9380,7 @@ export const districtList = [
     label: 'AYNA',
     subTitle: '-',
     type: 'account',
-    value: '00050503',
+    value: 'AYNA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9394,7 +9394,7 @@ export const districtList = [
     label: 'CHILCAS',
     subTitle: '-',
     type: 'account',
-    value: '00050504',
+    value: 'CHILCAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9408,7 +9408,7 @@ export const districtList = [
     label: 'CHUNGUI',
     subTitle: '-',
     type: 'account',
-    value: '00050505',
+    value: 'CHUNGUI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9422,7 +9422,7 @@ export const districtList = [
     label: 'LUIS CARRANZA',
     subTitle: '-',
     type: 'account',
-    value: '00050506',
+    value: 'LUIS CARRANZA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9436,7 +9436,7 @@ export const districtList = [
     label: 'SANTA ROSA',
     subTitle: '-',
     type: 'account',
-    value: '00050507',
+    value: 'SANTA ROSA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9450,7 +9450,7 @@ export const districtList = [
     label: 'TAMBO',
     subTitle: '-',
     type: 'account',
-    value: '00050508',
+    value: 'TAMBO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9464,7 +9464,7 @@ export const districtList = [
     label: 'PUQUIO',
     subTitle: '-',
     type: 'account',
-    value: '00050601',
+    value: 'PUQUIO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9478,7 +9478,7 @@ export const districtList = [
     label: 'AUCARA',
     subTitle: '-',
     type: 'account',
-    value: '00050602',
+    value: 'AUCARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9492,7 +9492,7 @@ export const districtList = [
     label: 'CABANA',
     subTitle: '-',
     type: 'account',
-    value: '00050603',
+    value: 'CABANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9506,7 +9506,7 @@ export const districtList = [
     label: 'CARMEN SALCEDO',
     subTitle: '-',
     type: 'account',
-    value: '00050604',
+    value: 'CARMEN SALCEDO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9520,7 +9520,7 @@ export const districtList = [
     label: 'CHAVIÑA',
     subTitle: '-',
     type: 'account',
-    value: '00050605',
+    value: 'CHAVIÑA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9534,7 +9534,7 @@ export const districtList = [
     label: 'CHIPAO',
     subTitle: '-',
     type: 'account',
-    value: '00050606',
+    value: 'CHIPAO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9548,7 +9548,7 @@ export const districtList = [
     label: 'HUAC-HUAS',
     subTitle: '-',
     type: 'account',
-    value: '00050607',
+    value: 'HUAC-HUAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9562,7 +9562,7 @@ export const districtList = [
     label: 'LARAMATE',
     subTitle: '-',
     type: 'account',
-    value: '00050608',
+    value: 'LARAMATE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9576,7 +9576,7 @@ export const districtList = [
     label: 'LEONCIO PRADO',
     subTitle: '-',
     type: 'account',
-    value: '00050609',
+    value: 'LEONCIO PRADO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9590,7 +9590,7 @@ export const districtList = [
     label: 'LLAUTA',
     subTitle: '-',
     type: 'account',
-    value: '00050610',
+    value: 'LLAUTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9604,7 +9604,7 @@ export const districtList = [
     label: 'LUCANAS',
     subTitle: '-',
     type: 'account',
-    value: '00050611',
+    value: 'LUCANAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9618,7 +9618,7 @@ export const districtList = [
     label: 'OCAÑA',
     subTitle: '-',
     type: 'account',
-    value: '00050612',
+    value: 'OCAÑA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9632,7 +9632,7 @@ export const districtList = [
     label: 'OTOCA',
     subTitle: '-',
     type: 'account',
-    value: '00050613',
+    value: 'OTOCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9646,7 +9646,7 @@ export const districtList = [
     label: 'SAISA',
     subTitle: '-',
     type: 'account',
-    value: '00050614',
+    value: 'SAISA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9660,7 +9660,7 @@ export const districtList = [
     label: 'SAN CRISTOBAL',
     subTitle: '-',
     type: 'account',
-    value: '00050615',
+    value: 'SAN CRISTOBAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9674,7 +9674,7 @@ export const districtList = [
     label: 'SAN JUAN',
     subTitle: '-',
     type: 'account',
-    value: '00050616',
+    value: 'SAN JUAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9688,7 +9688,7 @@ export const districtList = [
     label: 'SAN PEDRO',
     subTitle: '-',
     type: 'account',
-    value: '00050617',
+    value: 'SAN PEDRO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9702,7 +9702,7 @@ export const districtList = [
     label: 'SAN PEDRO DE PALCO',
     subTitle: '-',
     type: 'account',
-    value: '00050618',
+    value: 'SAN PEDRO DE PALCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9716,7 +9716,7 @@ export const districtList = [
     label: 'SANCOS',
     subTitle: '-',
     type: 'account',
-    value: '00050619',
+    value: 'SANCOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9730,7 +9730,7 @@ export const districtList = [
     label: 'SANTA ANA DE HUAYCAHUACHO',
     subTitle: '-',
     type: 'account',
-    value: '00050620',
+    value: 'SANTA ANA DE HUAYCAHUACHO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9744,7 +9744,7 @@ export const districtList = [
     label: 'SANTA LUCIA',
     subTitle: '-',
     type: 'account',
-    value: '00050621',
+    value: 'SANTA LUCIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9758,7 +9758,7 @@ export const districtList = [
     label: 'CORACORA',
     subTitle: '-',
     type: 'account',
-    value: '00050701',
+    value: 'CORACORA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9772,7 +9772,7 @@ export const districtList = [
     label: 'CHUMPI',
     subTitle: '-',
     type: 'account',
-    value: '00050702',
+    value: 'CHUMPI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9786,7 +9786,7 @@ export const districtList = [
     label: 'CORONEL CASTAÑEDA',
     subTitle: '-',
     type: 'account',
-    value: '00050703',
+    value: 'CORONEL CASTAÑEDA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9800,7 +9800,7 @@ export const districtList = [
     label: 'PACAPAUSA',
     subTitle: '-',
     type: 'account',
-    value: '00050704',
+    value: 'PACAPAUSA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9814,7 +9814,7 @@ export const districtList = [
     label: 'PULLO',
     subTitle: '-',
     type: 'account',
-    value: '00050705',
+    value: 'PULLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9828,7 +9828,7 @@ export const districtList = [
     label: 'PUYUSCA',
     subTitle: '-',
     type: 'account',
-    value: '00050706',
+    value: 'PUYUSCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9842,7 +9842,7 @@ export const districtList = [
     label: 'SAN FRANCISCO DE RAVACAYCO',
     subTitle: '-',
     type: 'account',
-    value: '00050707',
+    value: 'SAN FRANCISCO DE RAVACAYCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9856,7 +9856,7 @@ export const districtList = [
     label: 'UPAHUACHO',
     subTitle: '-',
     type: 'account',
-    value: '00050708',
+    value: 'UPAHUACHO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9870,7 +9870,7 @@ export const districtList = [
     label: 'PAUSA',
     subTitle: '-',
     type: 'account',
-    value: '00050801',
+    value: 'PAUSA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9884,7 +9884,7 @@ export const districtList = [
     label: 'COLTA',
     subTitle: '-',
     type: 'account',
-    value: '00050802',
+    value: 'COLTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9898,7 +9898,7 @@ export const districtList = [
     label: 'CORCULLA',
     subTitle: '-',
     type: 'account',
-    value: '00050803',
+    value: 'CORCULLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9912,7 +9912,7 @@ export const districtList = [
     label: 'LAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00050804',
+    value: 'LAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9926,7 +9926,7 @@ export const districtList = [
     label: 'MARCABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00050805',
+    value: 'MARCABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9940,7 +9940,7 @@ export const districtList = [
     label: 'OYOLO',
     subTitle: '-',
     type: 'account',
-    value: '00050806',
+    value: 'OYOLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9954,7 +9954,7 @@ export const districtList = [
     label: 'PARARCA',
     subTitle: '-',
     type: 'account',
-    value: '00050807',
+    value: 'PARARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9968,7 +9968,7 @@ export const districtList = [
     label: 'SAN JAVIER DE ALPABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00050808',
+    value: 'SAN JAVIER DE ALPABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9982,7 +9982,7 @@ export const districtList = [
     label: 'SAN JOSE DE USHUA',
     subTitle: '-',
     type: 'account',
-    value: '00050809',
+    value: 'SAN JOSE DE USHUA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -9996,7 +9996,7 @@ export const districtList = [
     label: 'SARA SARA',
     subTitle: '-',
     type: 'account',
-    value: '00050810',
+    value: 'SARA SARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10010,7 +10010,7 @@ export const districtList = [
     label: 'QUEROBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00050901',
+    value: 'QUEROBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10024,7 +10024,7 @@ export const districtList = [
     label: 'BELEN',
     subTitle: '-',
     type: 'account',
-    value: '00050902',
+    value: 'BELEN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10038,7 +10038,7 @@ export const districtList = [
     label: 'CHALCOS',
     subTitle: '-',
     type: 'account',
-    value: '00050903',
+    value: 'CHALCOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10052,7 +10052,7 @@ export const districtList = [
     label: 'CHILCAYOC',
     subTitle: '-',
     type: 'account',
-    value: '00050904',
+    value: 'CHILCAYOC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10066,7 +10066,7 @@ export const districtList = [
     label: 'HUACAÑA',
     subTitle: '-',
     type: 'account',
-    value: '00050905',
+    value: 'HUACAÑA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10080,7 +10080,7 @@ export const districtList = [
     label: 'MORCOLLA',
     subTitle: '-',
     type: 'account',
-    value: '00050906',
+    value: 'MORCOLLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10094,7 +10094,7 @@ export const districtList = [
     label: 'PAICO',
     subTitle: '-',
     type: 'account',
-    value: '00050907',
+    value: 'PAICO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10108,7 +10108,7 @@ export const districtList = [
     label: 'SAN PEDRO DE LARCAY',
     subTitle: '-',
     type: 'account',
-    value: '00050908',
+    value: 'SAN PEDRO DE LARCAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10122,7 +10122,7 @@ export const districtList = [
     label: 'SAN SALVADOR DE QUIJE',
     subTitle: '-',
     type: 'account',
-    value: '00050909',
+    value: 'SAN SALVADOR DE QUIJE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10136,7 +10136,7 @@ export const districtList = [
     label: 'SANTIAGO DE PAUCARAY',
     subTitle: '-',
     type: 'account',
-    value: '00050910',
+    value: 'SANTIAGO DE PAUCARAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10150,7 +10150,7 @@ export const districtList = [
     label: 'SORAS',
     subTitle: '-',
     type: 'account',
-    value: '00050911',
+    value: 'SORAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10164,7 +10164,7 @@ export const districtList = [
     label: 'HUANCAPI',
     subTitle: '-',
     type: 'account',
-    value: '00051001',
+    value: 'HUANCAPI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10178,7 +10178,7 @@ export const districtList = [
     label: 'ALCAMENCA',
     subTitle: '-',
     type: 'account',
-    value: '00051002',
+    value: 'ALCAMENCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10192,7 +10192,7 @@ export const districtList = [
     label: 'APONGO',
     subTitle: '-',
     type: 'account',
-    value: '00051003',
+    value: 'APONGO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10206,7 +10206,7 @@ export const districtList = [
     label: 'ASQUIPATA',
     subTitle: '-',
     type: 'account',
-    value: '00051004',
+    value: 'ASQUIPATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10220,7 +10220,7 @@ export const districtList = [
     label: 'CANARIA',
     subTitle: '-',
     type: 'account',
-    value: '00051005',
+    value: 'CANARIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10234,7 +10234,7 @@ export const districtList = [
     label: 'CAYARA',
     subTitle: '-',
     type: 'account',
-    value: '00051006',
+    value: 'CAYARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10248,7 +10248,7 @@ export const districtList = [
     label: 'COLCA',
     subTitle: '-',
     type: 'account',
-    value: '00051007',
+    value: 'COLCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10262,7 +10262,7 @@ export const districtList = [
     label: 'HUAMANQUIQUIA',
     subTitle: '-',
     type: 'account',
-    value: '00051008',
+    value: 'HUAMANQUIQUIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10276,7 +10276,7 @@ export const districtList = [
     label: 'HUANCARAYLLA',
     subTitle: '-',
     type: 'account',
-    value: '00051009',
+    value: 'HUANCARAYLLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10290,7 +10290,7 @@ export const districtList = [
     label: 'HUAYA',
     subTitle: '-',
     type: 'account',
-    value: '00051010',
+    value: 'HUAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10304,7 +10304,7 @@ export const districtList = [
     label: 'SARHUA',
     subTitle: '-',
     type: 'account',
-    value: '00051011',
+    value: 'SARHUA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10318,7 +10318,7 @@ export const districtList = [
     label: 'VILCANCHOS',
     subTitle: '-',
     type: 'account',
-    value: '00051012',
+    value: 'VILCANCHOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10332,7 +10332,7 @@ export const districtList = [
     label: 'VILCAS HUAMAN',
     subTitle: '-',
     type: 'account',
-    value: '00051101',
+    value: 'VILCAS HUAMAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10346,7 +10346,7 @@ export const districtList = [
     label: 'ACCOMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00051102',
+    value: 'ACCOMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10360,7 +10360,7 @@ export const districtList = [
     label: 'CARHUANCA',
     subTitle: '-',
     type: 'account',
-    value: '00051103',
+    value: 'CARHUANCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10374,7 +10374,7 @@ export const districtList = [
     label: 'CONCEPCION',
     subTitle: '-',
     type: 'account',
-    value: '00051104',
+    value: 'CONCEPCION',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10388,7 +10388,7 @@ export const districtList = [
     label: 'HUAMBALPA',
     subTitle: '-',
     type: 'account',
-    value: '00051105',
+    value: 'HUAMBALPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10402,7 +10402,7 @@ export const districtList = [
     label: 'INDEPENDENCIA',
     subTitle: '-',
     type: 'account',
-    value: '00051106',
+    value: 'INDEPENDENCIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10416,7 +10416,7 @@ export const districtList = [
     label: 'SAURAMA',
     subTitle: '-',
     type: 'account',
-    value: '00051107',
+    value: 'SAURAMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10430,7 +10430,7 @@ export const districtList = [
     label: 'VISCHONGO',
     subTitle: '-',
     type: 'account',
-    value: '00051108',
+    value: 'VISCHONGO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '05',
@@ -10444,7 +10444,7 @@ export const districtList = [
     label: 'CAJAMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00060101',
+    value: 'CAJAMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10458,7 +10458,7 @@ export const districtList = [
     label: 'ASUNCION',
     subTitle: '-',
     type: 'account',
-    value: '00060102',
+    value: 'ASUNCION',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10472,7 +10472,7 @@ export const districtList = [
     label: 'CHETILLA',
     subTitle: '-',
     type: 'account',
-    value: '00060103',
+    value: 'CHETILLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10486,7 +10486,7 @@ export const districtList = [
     label: 'COSPAN',
     subTitle: '-',
     type: 'account',
-    value: '00060104',
+    value: 'COSPAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10500,7 +10500,7 @@ export const districtList = [
     label: 'ENCAÑADA',
     subTitle: '-',
     type: 'account',
-    value: '00060105',
+    value: 'ENCAÑADA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10514,7 +10514,7 @@ export const districtList = [
     label: 'JESUS',
     subTitle: '-',
     type: 'account',
-    value: '00060106',
+    value: 'JESUS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10528,7 +10528,7 @@ export const districtList = [
     label: 'LLACANORA',
     subTitle: '-',
     type: 'account',
-    value: '00060107',
+    value: 'LLACANORA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10542,7 +10542,7 @@ export const districtList = [
     label: 'LOS BAÑOS DEL INC',
     subTitle: '-',
     type: 'account',
-    value: '00060108',
+    value: 'LOS BAÑOS DEL INCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10556,7 +10556,7 @@ export const districtList = [
     label: 'MAGDALENA',
     subTitle: '-',
     type: 'account',
-    value: '00060109',
+    value: 'MAGDALENA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10570,7 +10570,7 @@ export const districtList = [
     label: 'MATARA',
     subTitle: '-',
     type: 'account',
-    value: '00060110',
+    value: 'MATARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10584,7 +10584,7 @@ export const districtList = [
     label: 'NAMORA',
     subTitle: '-',
     type: 'account',
-    value: '00060111',
+    value: 'NAMORA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10598,7 +10598,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00060112',
+    value: 'SAN JUAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10612,7 +10612,7 @@ export const districtList = [
     label: 'CAJABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00060201',
+    value: 'CAJABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10626,7 +10626,7 @@ export const districtList = [
     label: 'CACHACHI',
     subTitle: '-',
     type: 'account',
-    value: '00060202',
+    value: 'CACHACHI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10640,7 +10640,7 @@ export const districtList = [
     label: 'CONDEBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00060203',
+    value: 'CONDEBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10654,7 +10654,7 @@ export const districtList = [
     label: 'SITACOCHA',
     subTitle: '-',
     type: 'account',
-    value: '00060204',
+    value: 'SITACOCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10668,7 +10668,7 @@ export const districtList = [
     label: 'CELENDIN',
     subTitle: '-',
     type: 'account',
-    value: '00060301',
+    value: 'CELENDIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10682,7 +10682,7 @@ export const districtList = [
     label: 'CHUMUCH',
     subTitle: '-',
     type: 'account',
-    value: '00060302',
+    value: 'CHUMUCH',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10696,7 +10696,7 @@ export const districtList = [
     label: 'CORTEGANA',
     subTitle: '-',
     type: 'account',
-    value: '00060303',
+    value: 'CORTEGANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10710,7 +10710,7 @@ export const districtList = [
     label: 'HUASMIN',
     subTitle: '-',
     type: 'account',
-    value: '00060304',
+    value: 'HUASMIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10724,7 +10724,7 @@ export const districtList = [
     label: 'JORGE CHAVEZ',
     subTitle: '-',
     type: 'account',
-    value: '00060305',
+    value: 'JORGE CHAVEZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10738,7 +10738,7 @@ export const districtList = [
     label: 'JOSE GALVEZ',
     subTitle: '-',
     type: 'account',
-    value: '00060306',
+    value: 'JOSE GALVEZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10752,7 +10752,7 @@ export const districtList = [
     label: 'MIGUEL IGLESIAS',
     subTitle: '-',
     type: 'account',
-    value: '00060307',
+    value: 'MIGUEL IGLESIAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10766,7 +10766,7 @@ export const districtList = [
     label: 'OXAMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00060308',
+    value: 'OXAMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10780,7 +10780,7 @@ export const districtList = [
     label: 'SOROCHUCO',
     subTitle: '-',
     type: 'account',
-    value: '00060309',
+    value: 'SOROCHUCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10794,7 +10794,7 @@ export const districtList = [
     label: 'SUCRE',
     subTitle: '-',
     type: 'account',
-    value: '00060310',
+    value: 'SUCRE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10808,7 +10808,7 @@ export const districtList = [
     label: 'UTCO',
     subTitle: '-',
     type: 'account',
-    value: '00060311',
+    value: 'UTCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10822,7 +10822,7 @@ export const districtList = [
     label: 'LA LIBERTAD DE PALLAN',
     subTitle: '-',
     type: 'account',
-    value: '00060312',
+    value: 'LA LIBERTAD DE PALLAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10836,7 +10836,7 @@ export const districtList = [
     label: 'CHOTA',
     subTitle: '-',
     type: 'account',
-    value: '00060401',
+    value: 'CHOTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10850,7 +10850,7 @@ export const districtList = [
     label: 'ANGUIA',
     subTitle: '-',
     type: 'account',
-    value: '00060402',
+    value: 'ANGUIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10864,7 +10864,7 @@ export const districtList = [
     label: 'CHADIN',
     subTitle: '-',
     type: 'account',
-    value: '00060403',
+    value: 'CHADIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10878,7 +10878,7 @@ export const districtList = [
     label: 'CHIGUIRIP',
     subTitle: '-',
     type: 'account',
-    value: '00060404',
+    value: 'CHIGUIRIP',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10892,7 +10892,7 @@ export const districtList = [
     label: 'CHIMBAN',
     subTitle: '-',
     type: 'account',
-    value: '00060405',
+    value: 'CHIMBAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10906,7 +10906,7 @@ export const districtList = [
     label: 'CHOROPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00060406',
+    value: 'CHOROPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10920,7 +10920,7 @@ export const districtList = [
     label: 'COCHABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00060407',
+    value: 'COCHABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10934,7 +10934,7 @@ export const districtList = [
     label: 'CONCHAN',
     subTitle: '-',
     type: 'account',
-    value: '00060408',
+    value: 'CONCHAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10948,7 +10948,7 @@ export const districtList = [
     label: 'HUAMBOS',
     subTitle: '-',
     type: 'account',
-    value: '00060409',
+    value: 'HUAMBOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10962,7 +10962,7 @@ export const districtList = [
     label: 'LAJAS',
     subTitle: '-',
     type: 'account',
-    value: '00060410',
+    value: 'LAJAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10976,7 +10976,7 @@ export const districtList = [
     label: 'LLAMA',
     subTitle: '-',
     type: 'account',
-    value: '00060411',
+    value: 'LLAMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -10990,7 +10990,7 @@ export const districtList = [
     label: 'MIRACOSTA',
     subTitle: '-',
     type: 'account',
-    value: '00060412',
+    value: 'MIRACOSTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11004,7 +11004,7 @@ export const districtList = [
     label: 'PACCHA',
     subTitle: '-',
     type: 'account',
-    value: '00060413',
+    value: 'PACCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11018,7 +11018,7 @@ export const districtList = [
     label: 'PION',
     subTitle: '-',
     type: 'account',
-    value: '00060414',
+    value: 'PION',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11032,7 +11032,7 @@ export const districtList = [
     label: 'QUEROCOTO',
     subTitle: '-',
     type: 'account',
-    value: '00060415',
+    value: 'QUEROCOTO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11046,7 +11046,7 @@ export const districtList = [
     label: 'SAN JUAN DE LICUPIS',
     subTitle: '-',
     type: 'account',
-    value: '00060416',
+    value: 'SAN JUAN DE LICUPIS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11060,7 +11060,7 @@ export const districtList = [
     label: 'TACABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00060417',
+    value: 'TACABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11074,7 +11074,7 @@ export const districtList = [
     label: 'TOCMOCHE',
     subTitle: '-',
     type: 'account',
-    value: '00060418',
+    value: 'TOCMOCHE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11088,7 +11088,7 @@ export const districtList = [
     label: 'CHALAMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00060419',
+    value: 'CHALAMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11102,7 +11102,7 @@ export const districtList = [
     label: 'CONTUMAZA',
     subTitle: '-',
     type: 'account',
-    value: '00060501',
+    value: 'CONTUMAZA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11116,7 +11116,7 @@ export const districtList = [
     label: 'CHILETE',
     subTitle: '-',
     type: 'account',
-    value: '00060502',
+    value: 'CHILETE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11130,7 +11130,7 @@ export const districtList = [
     label: 'CUPISNIQUE',
     subTitle: '-',
     type: 'account',
-    value: '00060503',
+    value: 'CUPISNIQUE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11144,7 +11144,7 @@ export const districtList = [
     label: 'GUZMANGO',
     subTitle: '-',
     type: 'account',
-    value: '00060504',
+    value: 'GUZMANGO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11158,7 +11158,7 @@ export const districtList = [
     label: 'SAN BENITO',
     subTitle: '-',
     type: 'account',
-    value: '00060505',
+    value: 'SAN BENITO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11172,7 +11172,7 @@ export const districtList = [
     label: 'SANTA CRUZ DE TOLED',
     subTitle: '-',
     type: 'account',
-    value: '00060506',
+    value: 'SANTA CRUZ DE TOLED',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11186,7 +11186,7 @@ export const districtList = [
     label: 'TANTARICA',
     subTitle: '-',
     type: 'account',
-    value: '00060507',
+    value: 'TANTARICA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11200,7 +11200,7 @@ export const districtList = [
     label: 'YONAN',
     subTitle: '-',
     type: 'account',
-    value: '00060508',
+    value: 'YONAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11214,7 +11214,7 @@ export const districtList = [
     label: 'CUTERVO',
     subTitle: '-',
     type: 'account',
-    value: '00060601',
+    value: 'CUTERVO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11228,7 +11228,7 @@ export const districtList = [
     label: 'CALLAYUC',
     subTitle: '-',
     type: 'account',
-    value: '00060602',
+    value: 'CALLAYUC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11242,7 +11242,7 @@ export const districtList = [
     label: 'CHOROS',
     subTitle: '-',
     type: 'account',
-    value: '00060603',
+    value: 'CHOROS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11256,7 +11256,7 @@ export const districtList = [
     label: 'CUJILLO',
     subTitle: '-',
     type: 'account',
-    value: '00060604',
+    value: 'CUJILLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11270,7 +11270,7 @@ export const districtList = [
     label: 'LA RAMADA',
     subTitle: '-',
     type: 'account',
-    value: '00060605',
+    value: 'LA RAMADA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11284,7 +11284,7 @@ export const districtList = [
     label: 'PIMPINGOS',
     subTitle: '-',
     type: 'account',
-    value: '00060606',
+    value: 'PIMPINGOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11298,7 +11298,7 @@ export const districtList = [
     label: 'QUEROCOTILLO',
     subTitle: '-',
     type: 'account',
-    value: '00060607',
+    value: 'QUEROCOTILLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11312,7 +11312,7 @@ export const districtList = [
     label: 'SAN ANDRES DE CUTERVO',
     subTitle: '-',
     type: 'account',
-    value: '00060608',
+    value: 'SAN ANDRES DE CUTERVO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11326,7 +11326,7 @@ export const districtList = [
     label: 'SAN JUAN DE CUTERVO',
     subTitle: '-',
     type: 'account',
-    value: '00060609',
+    value: 'SAN JUAN DE CUTERVO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11340,7 +11340,7 @@ export const districtList = [
     label: 'SAN LUIS DE LUCMA',
     subTitle: '-',
     type: 'account',
-    value: '00060610',
+    value: 'SAN LUIS DE LUCMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11354,7 +11354,7 @@ export const districtList = [
     label: 'SANTA CRUZ',
     subTitle: '-',
     type: 'account',
-    value: '00060611',
+    value: 'SANTA CRUZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11368,7 +11368,7 @@ export const districtList = [
     label: 'SANTO DOMINGO DE LA CAPILLA',
     subTitle: '-',
     type: 'account',
-    value: '00060612',
+    value: 'SANTO DOMINGO DE LA CAPILLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11382,7 +11382,7 @@ export const districtList = [
     label: 'SANTO TOMAS',
     subTitle: '-',
     type: 'account',
-    value: '00060613',
+    value: 'SANTO TOMAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11396,7 +11396,7 @@ export const districtList = [
     label: 'SOCOTA',
     subTitle: '-',
     type: 'account',
-    value: '00060614',
+    value: 'SOCOTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11410,7 +11410,7 @@ export const districtList = [
     label: 'TORIBIO CASANOVA',
     subTitle: '-',
     type: 'account',
-    value: '00060615',
+    value: 'TORIBIO CASANOVA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11424,7 +11424,7 @@ export const districtList = [
     label: 'BAMBAMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00060701',
+    value: 'BAMBAMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11438,7 +11438,7 @@ export const districtList = [
     label: 'CHUGUR',
     subTitle: '-',
     type: 'account',
-    value: '00060702',
+    value: 'CHUGUR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11452,7 +11452,7 @@ export const districtList = [
     label: 'HUALGAYOC',
     subTitle: '-',
     type: 'account',
-    value: '00060703',
+    value: 'HUALGAYOC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11466,7 +11466,7 @@ export const districtList = [
     label: 'JAEN',
     subTitle: '-',
     type: 'account',
-    value: '00060801',
+    value: 'JAEN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11480,7 +11480,7 @@ export const districtList = [
     label: 'BELLAVISTA',
     subTitle: '-',
     type: 'account',
-    value: '00060802',
+    value: 'BELLAVISTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11494,7 +11494,7 @@ export const districtList = [
     label: 'CHONTALI',
     subTitle: '-',
     type: 'account',
-    value: '00060803',
+    value: 'CHONTALI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11508,7 +11508,7 @@ export const districtList = [
     label: 'COLASAY',
     subTitle: '-',
     type: 'account',
-    value: '00060804',
+    value: 'COLASAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11522,7 +11522,7 @@ export const districtList = [
     label: 'HUABAL',
     subTitle: '-',
     type: 'account',
-    value: '00060805',
+    value: 'HUABAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11536,7 +11536,7 @@ export const districtList = [
     label: 'LAS PIRIAS',
     subTitle: '-',
     type: 'account',
-    value: '00060806',
+    value: 'LAS PIRIAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11550,7 +11550,7 @@ export const districtList = [
     label: 'POMAHUACA',
     subTitle: '-',
     type: 'account',
-    value: '00060807',
+    value: 'POMAHUACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11564,7 +11564,7 @@ export const districtList = [
     label: 'PUCARA',
     subTitle: '-',
     type: 'account',
-    value: '00060808',
+    value: 'PUCARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11578,7 +11578,7 @@ export const districtList = [
     label: 'SALLIQUE',
     subTitle: '-',
     type: 'account',
-    value: '00060809',
+    value: 'SALLIQUE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11592,7 +11592,7 @@ export const districtList = [
     label: 'SAN FELIPE',
     subTitle: '-',
     type: 'account',
-    value: '00060810',
+    value: 'SAN FELIPE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11606,7 +11606,7 @@ export const districtList = [
     label: 'SAN JOSE DEL ALTO',
     subTitle: '-',
     type: 'account',
-    value: '00060811',
+    value: 'SAN JOSE DEL ALTO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11620,7 +11620,7 @@ export const districtList = [
     label: 'SANTA ROSA',
     subTitle: '-',
     type: 'account',
-    value: '00060812',
+    value: 'SANTA ROSA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11634,7 +11634,7 @@ export const districtList = [
     label: 'SAN IGNACIO',
     subTitle: '-',
     type: 'account',
-    value: '00060901',
+    value: 'SAN IGNACIO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11648,7 +11648,7 @@ export const districtList = [
     label: 'CHIRINOS',
     subTitle: '-',
     type: 'account',
-    value: '00060902',
+    value: 'CHIRINOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11662,7 +11662,7 @@ export const districtList = [
     label: 'HUARANGO',
     subTitle: '-',
     type: 'account',
-    value: '00060903',
+    value: 'HUARANGO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11676,7 +11676,7 @@ export const districtList = [
     label: 'LA COIPA',
     subTitle: '-',
     type: 'account',
-    value: '00060904',
+    value: 'LA COIPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11690,7 +11690,7 @@ export const districtList = [
     label: 'NAMBALLE',
     subTitle: '-',
     type: 'account',
-    value: '00060905',
+    value: 'NAMBALLE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11704,7 +11704,7 @@ export const districtList = [
     label: 'SAN JOSE DE LOURDES',
     subTitle: '-',
     type: 'account',
-    value: '00060906',
+    value: 'SAN JOSE DE LOURDES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11718,7 +11718,7 @@ export const districtList = [
     label: 'TABACONAS',
     subTitle: '-',
     type: 'account',
-    value: '00060907',
+    value: 'TABACONAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11732,7 +11732,7 @@ export const districtList = [
     label: 'PEDRO GALVEZ',
     subTitle: '-',
     type: 'account',
-    value: '00061001',
+    value: 'PEDRO GALVEZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11746,7 +11746,7 @@ export const districtList = [
     label: 'CHANCAY',
     subTitle: '-',
     type: 'account',
-    value: '00061002',
+    value: 'CHANCAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11760,7 +11760,7 @@ export const districtList = [
     label: 'EDUARDO VILLANUEVA',
     subTitle: '-',
     type: 'account',
-    value: '00061003',
+    value: 'EDUARDO VILLANUEVA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11774,7 +11774,7 @@ export const districtList = [
     label: 'GREGORIO PITA',
     subTitle: '-',
     type: 'account',
-    value: '00061004',
+    value: 'GREGORIO PITA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11788,7 +11788,7 @@ export const districtList = [
     label: 'ICHOCAN',
     subTitle: '-',
     type: 'account',
-    value: '00061005',
+    value: 'ICHOCAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11802,7 +11802,7 @@ export const districtList = [
     label: 'JOSE MANUEL QUIROZ',
     subTitle: '-',
     type: 'account',
-    value: '00061006',
+    value: 'JOSE MANUEL QUIROZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11816,7 +11816,7 @@ export const districtList = [
     label: 'JOSE SABOGAL',
     subTitle: '-',
     type: 'account',
-    value: '00061007',
+    value: 'JOSE SABOGAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11830,7 +11830,7 @@ export const districtList = [
     label: 'SAN MIGUEL',
     subTitle: '-',
     type: 'account',
-    value: '00061101',
+    value: 'SAN MIGUEL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11844,7 +11844,7 @@ export const districtList = [
     label: 'BOLIVAR',
     subTitle: '-',
     type: 'account',
-    value: '00061102',
+    value: 'BOLIVAR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11858,7 +11858,7 @@ export const districtList = [
     label: 'CALQUIS',
     subTitle: '-',
     type: 'account',
-    value: '00061103',
+    value: 'CALQUIS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11872,7 +11872,7 @@ export const districtList = [
     label: 'CATILLUC',
     subTitle: '-',
     type: 'account',
-    value: '00061104',
+    value: 'CATILLUC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11886,7 +11886,7 @@ export const districtList = [
     label: 'EL PRADO',
     subTitle: '-',
     type: 'account',
-    value: '00061105',
+    value: 'EL PRADO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11900,7 +11900,7 @@ export const districtList = [
     label: 'LA FLORIDA',
     subTitle: '-',
     type: 'account',
-    value: '00061106',
+    value: 'LA FLORIDA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11914,7 +11914,7 @@ export const districtList = [
     label: 'LLAPA',
     subTitle: '-',
     type: 'account',
-    value: '00061107',
+    value: 'LLAPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11928,7 +11928,7 @@ export const districtList = [
     label: 'NANCHOC',
     subTitle: '-',
     type: 'account',
-    value: '00061108',
+    value: 'NANCHOC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11942,7 +11942,7 @@ export const districtList = [
     label: 'NIEPOS',
     subTitle: '-',
     type: 'account',
-    value: '00061109',
+    value: 'NIEPOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11956,7 +11956,7 @@ export const districtList = [
     label: 'SAN GREGORIO',
     subTitle: '-',
     type: 'account',
-    value: '00061110',
+    value: 'SAN GREGORIO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11970,7 +11970,7 @@ export const districtList = [
     label: 'SAN SILVESTRE DE COCHAN',
     subTitle: '-',
     type: 'account',
-    value: '00061111',
+    value: 'SAN SILVESTRE DE COCHAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11984,7 +11984,7 @@ export const districtList = [
     label: 'TONGOD',
     subTitle: '-',
     type: 'account',
-    value: '00061112',
+    value: 'TONGOD',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -11998,7 +11998,7 @@ export const districtList = [
     label: 'UNION AGUA BLANCA',
     subTitle: '-',
     type: 'account',
-    value: '00061113',
+    value: 'UNION AGUA BLANCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -12012,7 +12012,7 @@ export const districtList = [
     label: 'SAN PABLO',
     subTitle: '-',
     type: 'account',
-    value: '00061201',
+    value: 'SAN PABLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -12026,7 +12026,7 @@ export const districtList = [
     label: 'SAN BERNARDINO',
     subTitle: '-',
     type: 'account',
-    value: '00061202',
+    value: 'SAN BERNARDINO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -12040,7 +12040,7 @@ export const districtList = [
     label: 'SAN LUIS',
     subTitle: '-',
     type: 'account',
-    value: '00061203',
+    value: 'SAN LUIS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -12054,7 +12054,7 @@ export const districtList = [
     label: 'TUMBADEN',
     subTitle: '-',
     type: 'account',
-    value: '00061204',
+    value: 'TUMBADEN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -12068,7 +12068,7 @@ export const districtList = [
     label: 'SANTA CRUZ',
     subTitle: '-',
     type: 'account',
-    value: '00061301',
+    value: 'SANTA CRUZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -12082,7 +12082,7 @@ export const districtList = [
     label: 'ANDABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00061302',
+    value: 'ANDABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -12096,7 +12096,7 @@ export const districtList = [
     label: 'CATACHE',
     subTitle: '-',
     type: 'account',
-    value: '00061303',
+    value: 'CATACHE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -12110,7 +12110,7 @@ export const districtList = [
     label: 'CHANCAYBAÑOS',
     subTitle: '-',
     type: 'account',
-    value: '00061304',
+    value: 'CHANCAYBAÑOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -12124,7 +12124,7 @@ export const districtList = [
     label: 'LA ESPERANZA',
     subTitle: '-',
     type: 'account',
-    value: '00061305',
+    value: 'LA ESPERANZA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -12138,7 +12138,7 @@ export const districtList = [
     label: 'NINABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00061306',
+    value: 'NINABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -12152,7 +12152,7 @@ export const districtList = [
     label: 'PULAN',
     subTitle: '-',
     type: 'account',
-    value: '00061307',
+    value: 'PULAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -12166,7 +12166,7 @@ export const districtList = [
     label: 'SAUCEPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00061308',
+    value: 'SAUCEPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -12180,7 +12180,7 @@ export const districtList = [
     label: 'SEXI',
     subTitle: '-',
     type: 'account',
-    value: '00061309',
+    value: 'SEXI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -12194,7 +12194,7 @@ export const districtList = [
     label: 'UTICYACU',
     subTitle: '-',
     type: 'account',
-    value: '00061310',
+    value: 'UTICYACU',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -12208,7 +12208,7 @@ export const districtList = [
     label: 'YAUYUCAN',
     subTitle: '-',
     type: 'account',
-    value: '00061311',
+    value: 'YAUYUCAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '06',
@@ -12222,7 +12222,7 @@ export const districtList = [
     label: 'CALLAO',
     subTitle: '-',
     type: 'account',
-    value: '00070101',
+    value: 'CALLAO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '07',
@@ -12236,7 +12236,7 @@ export const districtList = [
     label: 'BELLAVISTA',
     subTitle: '-',
     type: 'account',
-    value: '00070102',
+    value: 'BELLAVISTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '07',
@@ -12250,7 +12250,7 @@ export const districtList = [
     label: 'CARMEN DE LA LEGUA REYNOSO',
     subTitle: '-',
     type: 'account',
-    value: '00070103',
+    value: 'CARMEN DE LA LEGUA REYNOSO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '07',
@@ -12264,7 +12264,7 @@ export const districtList = [
     label: 'LA',
     subTitle: '-',
     type: 'account',
-    value: '00070104',
+    value: 'LA PERLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '07',
@@ -12278,7 +12278,7 @@ export const districtList = [
     label: 'LA',
     subTitle: '-',
     type: 'account',
-    value: '00070105',
+    value: 'LA PUNTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '07',
@@ -12292,7 +12292,7 @@ export const districtList = [
     label: 'VENTANILLA',
     subTitle: '-',
     type: 'account',
-    value: '00070106',
+    value: 'VENTANILLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '07',
@@ -12306,7 +12306,7 @@ export const districtList = [
     label: 'CUSCO',
     subTitle: '-',
     type: 'account',
-    value: '00080101',
+    value: 'CUSCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12320,7 +12320,7 @@ export const districtList = [
     label: 'CCORCA',
     subTitle: '-',
     type: 'account',
-    value: '00080102',
+    value: 'CCORCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12334,7 +12334,7 @@ export const districtList = [
     label: 'POROY',
     subTitle: '-',
     type: 'account',
-    value: '00080103',
+    value: 'POROY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12348,7 +12348,7 @@ export const districtList = [
     label: 'SAN JERONIMO',
     subTitle: '-',
     type: 'account',
-    value: '00080104',
+    value: 'SAN JERONIMO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12362,7 +12362,7 @@ export const districtList = [
     label: 'SAN SEBASTIAN',
     subTitle: '-',
     type: 'account',
-    value: '00080105',
+    value: 'SAN SEBASTIAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12376,7 +12376,7 @@ export const districtList = [
     label: 'SANTIAGO',
     subTitle: '-',
     type: 'account',
-    value: '00080106',
+    value: 'SANTIAGO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12390,7 +12390,7 @@ export const districtList = [
     label: 'SAYLLA',
     subTitle: '-',
     type: 'account',
-    value: '00080107',
+    value: 'SAYLLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12404,7 +12404,7 @@ export const districtList = [
     label: 'WANCHAQ',
     subTitle: '-',
     type: 'account',
-    value: '00080108',
+    value: 'WANCHAQ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12418,7 +12418,7 @@ export const districtList = [
     label: 'ACOMAYO',
     subTitle: '-',
     type: 'account',
-    value: '00080201',
+    value: 'ACOMAYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12432,7 +12432,7 @@ export const districtList = [
     label: 'ACOPIA',
     subTitle: '-',
     type: 'account',
-    value: '00080202',
+    value: 'ACOPIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12446,7 +12446,7 @@ export const districtList = [
     label: 'ACOS',
     subTitle: '-',
     type: 'account',
-    value: '00080203',
+    value: 'ACOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12460,7 +12460,7 @@ export const districtList = [
     label: 'MOSOC LLACTA',
     subTitle: '-',
     type: 'account',
-    value: '00080204',
+    value: 'MOSOC LLACTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12474,7 +12474,7 @@ export const districtList = [
     label: 'POMACANCHI',
     subTitle: '-',
     type: 'account',
-    value: '00080205',
+    value: 'POMACANCHI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12488,7 +12488,7 @@ export const districtList = [
     label: 'RONDOCAN',
     subTitle: '-',
     type: 'account',
-    value: '00080206',
+    value: 'RONDOCAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12502,7 +12502,7 @@ export const districtList = [
     label: 'SANGARARA',
     subTitle: '-',
     type: 'account',
-    value: '00080207',
+    value: 'SANGARARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12516,7 +12516,7 @@ export const districtList = [
     label: 'ANTA',
     subTitle: '-',
     type: 'account',
-    value: '00080301',
+    value: 'ANTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12530,7 +12530,7 @@ export const districtList = [
     label: 'ANCAHUASI',
     subTitle: '-',
     type: 'account',
-    value: '00080302',
+    value: 'ANCAHUASI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12544,7 +12544,7 @@ export const districtList = [
     label: 'CACHIMAYO',
     subTitle: '-',
     type: 'account',
-    value: '00080303',
+    value: 'CACHIMAYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12558,7 +12558,7 @@ export const districtList = [
     label: 'CHINCHAYPUJIO',
     subTitle: '-',
     type: 'account',
-    value: '00080304',
+    value: 'CHINCHAYPUJIO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12572,7 +12572,7 @@ export const districtList = [
     label: 'HUAROCONDO',
     subTitle: '-',
     type: 'account',
-    value: '00080305',
+    value: 'HUAROCONDO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12586,7 +12586,7 @@ export const districtList = [
     label: 'LIMATAMBO',
     subTitle: '-',
     type: 'account',
-    value: '00080306',
+    value: 'LIMATAMBO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12600,7 +12600,7 @@ export const districtList = [
     label: 'MOLLEPATA',
     subTitle: '-',
     type: 'account',
-    value: '00080307',
+    value: 'MOLLEPATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12614,7 +12614,7 @@ export const districtList = [
     label: 'PUCYURA',
     subTitle: '-',
     type: 'account',
-    value: '00080308',
+    value: 'PUCYURA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12628,7 +12628,7 @@ export const districtList = [
     label: 'ZURITE',
     subTitle: '-',
     type: 'account',
-    value: '00080309',
+    value: 'ZURITE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12642,7 +12642,7 @@ export const districtList = [
     label: 'CALCA',
     subTitle: '-',
     type: 'account',
-    value: '00080401',
+    value: 'CALCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12656,7 +12656,7 @@ export const districtList = [
     label: 'COYA',
     subTitle: '-',
     type: 'account',
-    value: '00080402',
+    value: 'COYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12670,7 +12670,7 @@ export const districtList = [
     label: 'LAMAY',
     subTitle: '-',
     type: 'account',
-    value: '00080403',
+    value: 'LAMAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12684,7 +12684,7 @@ export const districtList = [
     label: 'LARES',
     subTitle: '-',
     type: 'account',
-    value: '00080404',
+    value: 'LARES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12698,7 +12698,7 @@ export const districtList = [
     label: 'PISAC',
     subTitle: '-',
     type: 'account',
-    value: '00080405',
+    value: 'PISAC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12712,7 +12712,7 @@ export const districtList = [
     label: 'SAN SALVADOR',
     subTitle: '-',
     type: 'account',
-    value: '00080406',
+    value: 'SAN SALVADOR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12726,7 +12726,7 @@ export const districtList = [
     label: 'TARAY',
     subTitle: '-',
     type: 'account',
-    value: '00080407',
+    value: 'TARAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12740,7 +12740,7 @@ export const districtList = [
     label: 'YANATILE',
     subTitle: '-',
     type: 'account',
-    value: '00080408',
+    value: 'YANATILE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12754,7 +12754,7 @@ export const districtList = [
     label: 'YANAOCA',
     subTitle: '-',
     type: 'account',
-    value: '00080501',
+    value: 'YANAOCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12768,7 +12768,7 @@ export const districtList = [
     label: 'CHECCA',
     subTitle: '-',
     type: 'account',
-    value: '00080502',
+    value: 'CHECCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12782,7 +12782,7 @@ export const districtList = [
     label: 'KUNTURKANKI',
     subTitle: '-',
     type: 'account',
-    value: '00080503',
+    value: 'KUNTURKANKI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12796,7 +12796,7 @@ export const districtList = [
     label: 'LANGUI',
     subTitle: '-',
     type: 'account',
-    value: '00080504',
+    value: 'LANGUI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12810,7 +12810,7 @@ export const districtList = [
     label: 'LAYO',
     subTitle: '-',
     type: 'account',
-    value: '00080505',
+    value: 'LAYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12824,7 +12824,7 @@ export const districtList = [
     label: 'PAMPAMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00080506',
+    value: 'PAMPAMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12838,7 +12838,7 @@ export const districtList = [
     label: 'QUEHUE',
     subTitle: '-',
     type: 'account',
-    value: '00080507',
+    value: 'QUEHUE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12852,7 +12852,7 @@ export const districtList = [
     label: 'TUPAC AMARU',
     subTitle: '-',
     type: 'account',
-    value: '00080508',
+    value: 'TUPAC AMARU',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12866,7 +12866,7 @@ export const districtList = [
     label: 'SICUANI',
     subTitle: '-',
     type: 'account',
-    value: '00080601',
+    value: 'SICUANI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12880,7 +12880,7 @@ export const districtList = [
     label: 'CHECACUPE',
     subTitle: '-',
     type: 'account',
-    value: '00080602',
+    value: 'CHECACUPE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12894,7 +12894,7 @@ export const districtList = [
     label: 'COMBAPATA',
     subTitle: '-',
     type: 'account',
-    value: '00080603',
+    value: 'COMBAPATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12908,7 +12908,7 @@ export const districtList = [
     label: 'MARANGANI',
     subTitle: '-',
     type: 'account',
-    value: '00080604',
+    value: 'MARANGANI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12922,7 +12922,7 @@ export const districtList = [
     label: 'PITUMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00080605',
+    value: 'PITUMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12936,7 +12936,7 @@ export const districtList = [
     label: 'SAN PABLO',
     subTitle: '-',
     type: 'account',
-    value: '00080606',
+    value: 'SAN PABLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12950,7 +12950,7 @@ export const districtList = [
     label: 'SAN PEDRO',
     subTitle: '-',
     type: 'account',
-    value: '00080607',
+    value: 'SAN PEDRO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12964,7 +12964,7 @@ export const districtList = [
     label: 'TINTA',
     subTitle: '-',
     type: 'account',
-    value: '00080608',
+    value: 'TINTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12978,7 +12978,7 @@ export const districtList = [
     label: 'SANTO TOMAS',
     subTitle: '-',
     type: 'account',
-    value: '00080701',
+    value: 'SANTO TOMAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -12992,7 +12992,7 @@ export const districtList = [
     label: 'CAPACMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00080702',
+    value: 'CAPACMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13006,7 +13006,7 @@ export const districtList = [
     label: 'CHAMACA',
     subTitle: '-',
     type: 'account',
-    value: '00080703',
+    value: 'CHAMACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13020,7 +13020,7 @@ export const districtList = [
     label: 'COLQUEMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00080704',
+    value: 'COLQUEMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13034,7 +13034,7 @@ export const districtList = [
     label: 'LIVITACA',
     subTitle: '-',
     type: 'account',
-    value: '00080705',
+    value: 'LIVITACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13048,7 +13048,7 @@ export const districtList = [
     label: 'LLUSCO',
     subTitle: '-',
     type: 'account',
-    value: '00080706',
+    value: 'LLUSCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13062,7 +13062,7 @@ export const districtList = [
     label: 'QUIÑOTA',
     subTitle: '-',
     type: 'account',
-    value: '00080707',
+    value: 'QUIÑOTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13076,7 +13076,7 @@ export const districtList = [
     label: 'VELILLE',
     subTitle: '-',
     type: 'account',
-    value: '00080708',
+    value: 'VELILLE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13090,7 +13090,7 @@ export const districtList = [
     label: 'ESPINAR',
     subTitle: '-',
     type: 'account',
-    value: '00080801',
+    value: 'ESPINAR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13104,7 +13104,7 @@ export const districtList = [
     label: 'CONDOROMA',
     subTitle: '-',
     type: 'account',
-    value: '00080802',
+    value: 'CONDOROMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13118,7 +13118,7 @@ export const districtList = [
     label: 'COPORAQUE',
     subTitle: '-',
     type: 'account',
-    value: '00080803',
+    value: 'COPORAQUE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13132,7 +13132,7 @@ export const districtList = [
     label: 'OCORURO',
     subTitle: '-',
     type: 'account',
-    value: '00080804',
+    value: 'OCORURO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13146,7 +13146,7 @@ export const districtList = [
     label: 'PALLPATA',
     subTitle: '-',
     type: 'account',
-    value: '00080805',
+    value: 'PALLPATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13160,7 +13160,7 @@ export const districtList = [
     label: 'PICHIGUA',
     subTitle: '-',
     type: 'account',
-    value: '00080806',
+    value: 'PICHIGUA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13174,7 +13174,7 @@ export const districtList = [
     label: 'SUYCKUTAMBO',
     subTitle: '-',
     type: 'account',
-    value: '00080807',
+    value: 'SUYCKUTAMBO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13188,7 +13188,7 @@ export const districtList = [
     label: 'ALTO PICHIGUA',
     subTitle: '-',
     type: 'account',
-    value: '00080808',
+    value: 'ALTO PICHIGUA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13202,7 +13202,7 @@ export const districtList = [
     label: 'SANTA ANA',
     subTitle: '-',
     type: 'account',
-    value: '00080901',
+    value: 'SANTA ANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13216,7 +13216,7 @@ export const districtList = [
     label: 'ECHARATE',
     subTitle: '-',
     type: 'account',
-    value: '00080902',
+    value: 'ECHARATE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13230,7 +13230,7 @@ export const districtList = [
     label: 'HUAYOPATA',
     subTitle: '-',
     type: 'account',
-    value: '00080903',
+    value: 'HUAYOPATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13244,7 +13244,7 @@ export const districtList = [
     label: 'MARANURA',
     subTitle: '-',
     type: 'account',
-    value: '00080904',
+    value: 'MARANURA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13258,7 +13258,7 @@ export const districtList = [
     label: 'OCOBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00080905',
+    value: 'OCOBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13272,7 +13272,7 @@ export const districtList = [
     label: 'QUELLOUNO',
     subTitle: '-',
     type: 'account',
-    value: '00080906',
+    value: 'QUELLOUNO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13286,7 +13286,7 @@ export const districtList = [
     label: 'KIMBIRI',
     subTitle: '-',
     type: 'account',
-    value: '00080907',
+    value: 'KIMBIRI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13300,7 +13300,7 @@ export const districtList = [
     label: 'SANTA TERESA',
     subTitle: '-',
     type: 'account',
-    value: '00080908',
+    value: 'SANTA TERESA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13314,7 +13314,7 @@ export const districtList = [
     label: 'VILCABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00080909',
+    value: 'VILCABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13328,7 +13328,7 @@ export const districtList = [
     label: 'PICHARI',
     subTitle: '-',
     type: 'account',
-    value: '00080910',
+    value: 'PICHARI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13342,7 +13342,7 @@ export const districtList = [
     label: 'PARURO',
     subTitle: '-',
     type: 'account',
-    value: '00081001',
+    value: 'PARURO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13356,7 +13356,7 @@ export const districtList = [
     label: 'ACCHA',
     subTitle: '-',
     type: 'account',
-    value: '00081002',
+    value: 'ACCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13370,7 +13370,7 @@ export const districtList = [
     label: 'CCAPI',
     subTitle: '-',
     type: 'account',
-    value: '00081003',
+    value: 'CCAPI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13384,7 +13384,7 @@ export const districtList = [
     label: 'COLCHA',
     subTitle: '-',
     type: 'account',
-    value: '00081004',
+    value: 'COLCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13398,7 +13398,7 @@ export const districtList = [
     label: 'HUANOQUITE',
     subTitle: '-',
     type: 'account',
-    value: '00081005',
+    value: 'HUANOQUITE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13412,7 +13412,7 @@ export const districtList = [
     label: 'OMACHA',
     subTitle: '-',
     type: 'account',
-    value: '00081006',
+    value: 'OMACHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13426,7 +13426,7 @@ export const districtList = [
     label: 'PACCARITAMBO',
     subTitle: '-',
     type: 'account',
-    value: '00081007',
+    value: 'PACCARITAMBO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13440,7 +13440,7 @@ export const districtList = [
     label: 'PILLPINTO',
     subTitle: '-',
     type: 'account',
-    value: '00081008',
+    value: 'PILLPINTO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13454,7 +13454,7 @@ export const districtList = [
     label: 'YAURISQUE',
     subTitle: '-',
     type: 'account',
-    value: '00081009',
+    value: 'YAURISQUE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13468,7 +13468,7 @@ export const districtList = [
     label: 'PAUCARTAMBO',
     subTitle: '-',
     type: 'account',
-    value: '00081101',
+    value: 'PAUCARTAMBO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13482,7 +13482,7 @@ export const districtList = [
     label: 'CAICAY',
     subTitle: '-',
     type: 'account',
-    value: '00081102',
+    value: 'CAICAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13496,7 +13496,7 @@ export const districtList = [
     label: 'CHALLABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00081103',
+    value: 'CHALLABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13510,7 +13510,7 @@ export const districtList = [
     label: 'COLQUEPATA',
     subTitle: '-',
     type: 'account',
-    value: '00081104',
+    value: 'COLQUEPATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13524,7 +13524,7 @@ export const districtList = [
     label: 'HUANCARANI',
     subTitle: '-',
     type: 'account',
-    value: '00081105',
+    value: 'HUANCARANI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13538,7 +13538,7 @@ export const districtList = [
     label: 'KOSÑIPATA',
     subTitle: '-',
     type: 'account',
-    value: '00081106',
+    value: 'KOSÑIPATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13552,7 +13552,7 @@ export const districtList = [
     label: 'URCOS',
     subTitle: '-',
     type: 'account',
-    value: '00081201',
+    value: 'URCOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13566,7 +13566,7 @@ export const districtList = [
     label: 'ANDAHUAYLILLAS',
     subTitle: '-',
     type: 'account',
-    value: '00081202',
+    value: 'ANDAHUAYLILLAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13580,7 +13580,7 @@ export const districtList = [
     label: 'CAMANTI',
     subTitle: '-',
     type: 'account',
-    value: '00081203',
+    value: 'CAMANTI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13594,7 +13594,7 @@ export const districtList = [
     label: 'CCARHUAYO',
     subTitle: '-',
     type: 'account',
-    value: '00081204',
+    value: 'CCARHUAYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13608,7 +13608,7 @@ export const districtList = [
     label: 'CCATCA',
     subTitle: '-',
     type: 'account',
-    value: '00081205',
+    value: 'CCATCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13622,7 +13622,7 @@ export const districtList = [
     label: 'CUSIPATA',
     subTitle: '-',
     type: 'account',
-    value: '00081206',
+    value: 'CUSIPATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13636,7 +13636,7 @@ export const districtList = [
     label: 'HUARO',
     subTitle: '-',
     type: 'account',
-    value: '00081207',
+    value: 'HUARO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13650,7 +13650,7 @@ export const districtList = [
     label: 'LUCRE',
     subTitle: '-',
     type: 'account',
-    value: '00081208',
+    value: 'LUCRE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13664,7 +13664,7 @@ export const districtList = [
     label: 'MARCAPATA',
     subTitle: '-',
     type: 'account',
-    value: '00081209',
+    value: 'MARCAPATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13678,7 +13678,7 @@ export const districtList = [
     label: 'OCONGATE',
     subTitle: '-',
     type: 'account',
-    value: '00081210',
+    value: 'OCONGATE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13692,7 +13692,7 @@ export const districtList = [
     label: 'OROPESA',
     subTitle: '-',
     type: 'account',
-    value: '00081211',
+    value: 'OROPESA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13706,7 +13706,7 @@ export const districtList = [
     label: 'QUIQUIJANA',
     subTitle: '-',
     type: 'account',
-    value: '00081212',
+    value: 'QUIQUIJANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13720,7 +13720,7 @@ export const districtList = [
     label: 'URUBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00081301',
+    value: 'URUBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13734,7 +13734,7 @@ export const districtList = [
     label: 'CHINCHERO',
     subTitle: '-',
     type: 'account',
-    value: '00081302',
+    value: 'CHINCHERO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13748,7 +13748,7 @@ export const districtList = [
     label: 'HUAYLLABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00081303',
+    value: 'HUAYLLABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13762,7 +13762,7 @@ export const districtList = [
     label: 'MACHUPICCHU',
     subTitle: '-',
     type: 'account',
-    value: '00081304',
+    value: 'MACHUPICCHU',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13776,7 +13776,7 @@ export const districtList = [
     label: 'MARAS',
     subTitle: '-',
     type: 'account',
-    value: '00081305',
+    value: 'MARAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13790,7 +13790,7 @@ export const districtList = [
     label: 'OLLANTAYTAMBO',
     subTitle: '-',
     type: 'account',
-    value: '00081306',
+    value: 'OLLANTAYTAMBO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13804,7 +13804,7 @@ export const districtList = [
     label: 'YUCAY',
     subTitle: '-',
     type: 'account',
-    value: '00081307',
+    value: 'YUCAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '08',
@@ -13818,7 +13818,7 @@ export const districtList = [
     label: 'HUANCAVELICA',
     subTitle: '-',
     type: 'account',
-    value: '00090101',
+    value: 'HUANCAVELICA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -13832,7 +13832,7 @@ export const districtList = [
     label: 'ACOBAMBILLA',
     subTitle: '-',
     type: 'account',
-    value: '00090102',
+    value: 'ACOBAMBILLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -13846,7 +13846,7 @@ export const districtList = [
     label: 'ACORIA',
     subTitle: '-',
     type: 'account',
-    value: '00090103',
+    value: 'ACORIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -13860,7 +13860,7 @@ export const districtList = [
     label: 'CONAYCA',
     subTitle: '-',
     type: 'account',
-    value: '00090104',
+    value: 'CONAYCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -13874,7 +13874,7 @@ export const districtList = [
     label: 'CUENCA',
     subTitle: '-',
     type: 'account',
-    value: '00090105',
+    value: 'CUENCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -13888,7 +13888,7 @@ export const districtList = [
     label: 'HUACHOCOLPA',
     subTitle: '-',
     type: 'account',
-    value: '00090106',
+    value: 'HUACHOCOLPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -13902,7 +13902,7 @@ export const districtList = [
     label: 'HUAYLLAHUARA',
     subTitle: '-',
     type: 'account',
-    value: '00090107',
+    value: 'HUAYLLAHUARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -13916,7 +13916,7 @@ export const districtList = [
     label: 'IZCUCHACA',
     subTitle: '-',
     type: 'account',
-    value: '00090108',
+    value: 'IZCUCHACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -13930,7 +13930,7 @@ export const districtList = [
     label: 'LARIA',
     subTitle: '-',
     type: 'account',
-    value: '00090109',
+    value: 'LARIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -13944,7 +13944,7 @@ export const districtList = [
     label: 'MANTA',
     subTitle: '-',
     type: 'account',
-    value: '00090110',
+    value: 'MANTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -13958,7 +13958,7 @@ export const districtList = [
     label: 'MARISCAL CACERES',
     subTitle: '-',
     type: 'account',
-    value: '00090111',
+    value: 'MARISCAL CACERES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -13972,7 +13972,7 @@ export const districtList = [
     label: 'MOYA',
     subTitle: '-',
     type: 'account',
-    value: '00090112',
+    value: 'MOYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -13986,7 +13986,7 @@ export const districtList = [
     label: 'NUEVO OCCORO',
     subTitle: '-',
     type: 'account',
-    value: '00090113',
+    value: 'NUEVO OCCORO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14000,7 +14000,7 @@ export const districtList = [
     label: 'PALCA',
     subTitle: '-',
     type: 'account',
-    value: '00090114',
+    value: 'PALCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14014,7 +14014,7 @@ export const districtList = [
     label: 'PILCHACA',
     subTitle: '-',
     type: 'account',
-    value: '00090115',
+    value: 'PILCHACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14028,7 +14028,7 @@ export const districtList = [
     label: 'VILCA',
     subTitle: '-',
     type: 'account',
-    value: '00090116',
+    value: 'VILCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14042,7 +14042,7 @@ export const districtList = [
     label: 'YAULI',
     subTitle: '-',
     type: 'account',
-    value: '00090117',
+    value: 'YAULI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14056,7 +14056,7 @@ export const districtList = [
     label: 'ASCENSION',
     subTitle: '-',
     type: 'account',
-    value: '00090118',
+    value: 'ASCENSION',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14070,7 +14070,7 @@ export const districtList = [
     label: 'HUANDO',
     subTitle: '-',
     type: 'account',
-    value: '00090119',
+    value: 'HUANDO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14084,7 +14084,7 @@ export const districtList = [
     label: 'ACOBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00090201',
+    value: 'ACOBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14098,7 +14098,7 @@ export const districtList = [
     label: 'ANDABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00090202',
+    value: 'ANDABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14112,7 +14112,7 @@ export const districtList = [
     label: 'ANTA',
     subTitle: '-',
     type: 'account',
-    value: '00090203',
+    value: 'ANTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14126,7 +14126,7 @@ export const districtList = [
     label: 'CAJA',
     subTitle: '-',
     type: 'account',
-    value: '00090204',
+    value: 'CAJA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14140,7 +14140,7 @@ export const districtList = [
     label: 'MARCAS',
     subTitle: '-',
     type: 'account',
-    value: '00090205',
+    value: 'MARCAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14154,7 +14154,7 @@ export const districtList = [
     label: 'PAUCARA',
     subTitle: '-',
     type: 'account',
-    value: '00090206',
+    value: 'PAUCARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14168,7 +14168,7 @@ export const districtList = [
     label: 'POMACOCHA',
     subTitle: '-',
     type: 'account',
-    value: '00090207',
+    value: 'POMACOCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14182,7 +14182,7 @@ export const districtList = [
     label: 'ROSARIO',
     subTitle: '-',
     type: 'account',
-    value: '00090208',
+    value: 'ROSARIO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14196,7 +14196,7 @@ export const districtList = [
     label: 'LIRCAY',
     subTitle: '-',
     type: 'account',
-    value: '00090301',
+    value: 'LIRCAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14210,7 +14210,7 @@ export const districtList = [
     label: 'ANCHONGA',
     subTitle: '-',
     type: 'account',
-    value: '00090302',
+    value: 'ANCHONGA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14224,7 +14224,7 @@ export const districtList = [
     label: 'CALLANMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00090303',
+    value: 'CALLANMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14238,7 +14238,7 @@ export const districtList = [
     label: 'CCOCHACCASA',
     subTitle: '-',
     type: 'account',
-    value: '00090304',
+    value: 'CCOCHACCASA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14252,7 +14252,7 @@ export const districtList = [
     label: 'CHINCHO',
     subTitle: '-',
     type: 'account',
-    value: '00090305',
+    value: 'CHINCHO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14266,7 +14266,7 @@ export const districtList = [
     label: 'CONGALLA',
     subTitle: '-',
     type: 'account',
-    value: '00090306',
+    value: 'CONGALLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14280,7 +14280,7 @@ export const districtList = [
     label: 'HUANCA-HUANCA',
     subTitle: '-',
     type: 'account',
-    value: '00090307',
+    value: 'HUANCA-HUANCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14294,7 +14294,7 @@ export const districtList = [
     label: 'HUAYLLAY GRANDE',
     subTitle: '-',
     type: 'account',
-    value: '00090308',
+    value: 'HUAYLLAY GRANDE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14308,7 +14308,7 @@ export const districtList = [
     label: 'JULCAMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00090309',
+    value: 'JULCAMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14322,7 +14322,7 @@ export const districtList = [
     label: 'SAN ANTONIO DE ANTAPARCO',
     subTitle: '-',
     type: 'account',
-    value: '00090310',
+    value: 'SAN ANTONIO DE ANTAPARCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14336,7 +14336,7 @@ export const districtList = [
     label: 'SANTO TOMAS DE PATA',
     subTitle: '-',
     type: 'account',
-    value: '00090311',
+    value: 'SANTO TOMAS DE PATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14350,7 +14350,7 @@ export const districtList = [
     label: 'SECCLLA',
     subTitle: '-',
     type: 'account',
-    value: '00090312',
+    value: 'SECCLLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14364,7 +14364,7 @@ export const districtList = [
     label: 'CASTROVIRREYNA',
     subTitle: '-',
     type: 'account',
-    value: '00090401',
+    value: 'CASTROVIRREYNA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14378,7 +14378,7 @@ export const districtList = [
     label: 'ARMA',
     subTitle: '-',
     type: 'account',
-    value: '00090402',
+    value: 'ARMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14392,7 +14392,7 @@ export const districtList = [
     label: 'AURAHUA',
     subTitle: '-',
     type: 'account',
-    value: '00090403',
+    value: 'AURAHUA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14406,7 +14406,7 @@ export const districtList = [
     label: 'CAPILLAS',
     subTitle: '-',
     type: 'account',
-    value: '00090404',
+    value: 'CAPILLAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14420,7 +14420,7 @@ export const districtList = [
     label: 'CHUPAMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00090405',
+    value: 'CHUPAMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14434,7 +14434,7 @@ export const districtList = [
     label: 'COCAS',
     subTitle: '-',
     type: 'account',
-    value: '00090406',
+    value: 'COCAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14448,7 +14448,7 @@ export const districtList = [
     label: 'HUACHOS',
     subTitle: '-',
     type: 'account',
-    value: '00090407',
+    value: 'HUACHOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14462,7 +14462,7 @@ export const districtList = [
     label: 'HUAMATAMBO',
     subTitle: '-',
     type: 'account',
-    value: '00090408',
+    value: 'HUAMATAMBO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14476,7 +14476,7 @@ export const districtList = [
     label: 'MOLLEPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00090409',
+    value: 'MOLLEPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14490,7 +14490,7 @@ export const districtList = [
     label: 'SAN JUAN',
     subTitle: '-',
     type: 'account',
-    value: '00090410',
+    value: 'SAN  ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14504,7 +14504,7 @@ export const districtList = [
     label: 'SANTA ANA',
     subTitle: '-',
     type: 'account',
-    value: '00090411',
+    value: 'SANTA ANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14518,7 +14518,7 @@ export const districtList = [
     label: 'TANTARA',
     subTitle: '-',
     type: 'account',
-    value: '00090412',
+    value: 'TANTARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14532,7 +14532,7 @@ export const districtList = [
     label: 'TICRAPO',
     subTitle: '-',
     type: 'account',
-    value: '00090413',
+    value: 'TICRAPO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14546,7 +14546,7 @@ export const districtList = [
     label: 'CHURCAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00090501',
+    value: 'CHURCAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14560,7 +14560,7 @@ export const districtList = [
     label: 'ANCO',
     subTitle: '-',
     type: 'account',
-    value: '00090502',
+    value: 'ANCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14574,7 +14574,7 @@ export const districtList = [
     label: 'CHINCHIHUASI',
     subTitle: '-',
     type: 'account',
-    value: '00090503',
+    value: 'CHINCHIHUASI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14588,7 +14588,7 @@ export const districtList = [
     label: 'EL CARMEN',
     subTitle: '-',
     type: 'account',
-    value: '00090504',
+    value: 'EL CARMEN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14602,7 +14602,7 @@ export const districtList = [
     label: 'LA MERCED',
     subTitle: '-',
     type: 'account',
-    value: '00090505',
+    value: 'LA MERCED',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14616,7 +14616,7 @@ export const districtList = [
     label: 'LOCROJA',
     subTitle: '-',
     type: 'account',
-    value: '00090506',
+    value: 'LOCROJA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14630,7 +14630,7 @@ export const districtList = [
     label: 'PAUCARBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00090507',
+    value: 'PAUCARBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14644,7 +14644,7 @@ export const districtList = [
     label: 'SAN MIGUEL DE MAYOCC',
     subTitle: '-',
     type: 'account',
-    value: '00090508',
+    value: 'SAN MIGUEL DE MAYOCC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14658,7 +14658,7 @@ export const districtList = [
     label: 'SAN PEDRO DE CORIS',
     subTitle: '-',
     type: 'account',
-    value: '00090509',
+    value: 'SAN PEDRO DE CORIS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14672,7 +14672,7 @@ export const districtList = [
     label: 'PACHAMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00090510',
+    value: 'PACHAMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14686,7 +14686,7 @@ export const districtList = [
     label: 'HUAYTARA',
     subTitle: '-',
     type: 'account',
-    value: '00090601',
+    value: 'HUAYTARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14700,7 +14700,7 @@ export const districtList = [
     label: 'AYAVI',
     subTitle: '-',
     type: 'account',
-    value: '00090602',
+    value: 'AYAVI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14714,7 +14714,7 @@ export const districtList = [
     label: 'CORDOVA',
     subTitle: '-',
     type: 'account',
-    value: '00090603',
+    value: 'CORDOVA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14728,7 +14728,7 @@ export const districtList = [
     label: 'HUAYACUNDO ARMA',
     subTitle: '-',
     type: 'account',
-    value: '00090604',
+    value: 'HUAYACUNDO ARMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14742,7 +14742,7 @@ export const districtList = [
     label: 'LARAMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00090605',
+    value: 'LARAMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14756,7 +14756,7 @@ export const districtList = [
     label: 'OCOYO',
     subTitle: '-',
     type: 'account',
-    value: '00090606',
+    value: 'OCOYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14770,7 +14770,7 @@ export const districtList = [
     label: 'PILPICHACA',
     subTitle: '-',
     type: 'account',
-    value: '00090607',
+    value: 'PILPICHACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14784,7 +14784,7 @@ export const districtList = [
     label: 'QUERCO',
     subTitle: '-',
     type: 'account',
-    value: '00090608',
+    value: 'QUERCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14798,7 +14798,7 @@ export const districtList = [
     label: 'QUITO-ARMA',
     subTitle: '-',
     type: 'account',
-    value: '00090609',
+    value: 'QUITO-ARMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14812,7 +14812,7 @@ export const districtList = [
     label: 'SAN ANTONIO DE CUSICANCHA',
     subTitle: '-',
     type: 'account',
-    value: '00090610',
+    value: 'SAN ANTONIO DE CUSICANCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14826,7 +14826,7 @@ export const districtList = [
     label: 'SAN FRANCISCO DE SANGAYAICO',
     subTitle: '-',
     type: 'account',
-    value: '00090611',
+    value: 'SAN FRANCISCO DE SANGAYAICO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14840,7 +14840,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00090612',
+    value: 'SAN ISIDRO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14854,7 +14854,7 @@ export const districtList = [
     label: 'SANTIAGO DE CHOCORVOS',
     subTitle: '-',
     type: 'account',
-    value: '00090613',
+    value: 'SANTIAGO DE CHOCORVOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14868,7 +14868,7 @@ export const districtList = [
     label: 'SANTIAGO DE QUIRAHUARA',
     subTitle: '-',
     type: 'account',
-    value: '00090614',
+    value: 'SANTIAGO DE QUIRAHUARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14882,7 +14882,7 @@ export const districtList = [
     label: 'SANTO DOMINGO DE CAPILLAS',
     subTitle: '-',
     type: 'account',
-    value: '00090615',
+    value: 'SANTO DOMINGO DE CAPILLAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14896,7 +14896,7 @@ export const districtList = [
     label: 'TAMBO',
     subTitle: '-',
     type: 'account',
-    value: '00090616',
+    value: 'TAMBO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14910,7 +14910,7 @@ export const districtList = [
     label: 'PAMPAS',
     subTitle: '-',
     type: 'account',
-    value: '00090701',
+    value: 'PAMPAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14924,7 +14924,7 @@ export const districtList = [
     label: 'ACOSTAMBO',
     subTitle: '-',
     type: 'account',
-    value: '00090702',
+    value: 'ACOSTAMBO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14938,7 +14938,7 @@ export const districtList = [
     label: 'ACRAQUIA',
     subTitle: '-',
     type: 'account',
-    value: '00090703',
+    value: 'ACRAQUIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14952,7 +14952,7 @@ export const districtList = [
     label: 'AHUAYCHA',
     subTitle: '-',
     type: 'account',
-    value: '00090704',
+    value: 'AHUAYCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14966,7 +14966,7 @@ export const districtList = [
     label: 'COLCABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00090705',
+    value: 'COLCABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14980,7 +14980,7 @@ export const districtList = [
     label: 'DANIEL HERNANDEZ',
     subTitle: '-',
     type: 'account',
-    value: '00090706',
+    value: 'DANIEL HERNANDEZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -14994,7 +14994,7 @@ export const districtList = [
     label: 'HUACHOCOLPA',
     subTitle: '-',
     type: 'account',
-    value: '00090707',
+    value: 'HUACHOCOLPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -15008,7 +15008,7 @@ export const districtList = [
     label: 'HUARIBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00090709',
+    value: 'HUARIBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -15022,7 +15022,7 @@ export const districtList = [
     label: 'ÑAHUIMPUQUIO',
     subTitle: '-',
     type: 'account',
-    value: '00090710',
+    value: 'ÑAHUIMPUQUIO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -15036,7 +15036,7 @@ export const districtList = [
     label: 'PAZOS',
     subTitle: '-',
     type: 'account',
-    value: '00090711',
+    value: 'PAZOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -15050,7 +15050,7 @@ export const districtList = [
     label: 'QUISHUAR',
     subTitle: '-',
     type: 'account',
-    value: '00090713',
+    value: 'QUISHUAR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -15064,7 +15064,7 @@ export const districtList = [
     label: 'SALCABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00090714',
+    value: 'SALCABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -15078,7 +15078,7 @@ export const districtList = [
     label: 'SALCAHUASI',
     subTitle: '-',
     type: 'account',
-    value: '00090715',
+    value: 'SALCAHUASI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -15092,7 +15092,7 @@ export const districtList = [
     label: 'SAN MARCOS DE ROCCHAC',
     subTitle: '-',
     type: 'account',
-    value: '00090716',
+    value: 'SAN MARCOS DE ROCCHAC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -15106,7 +15106,7 @@ export const districtList = [
     label: 'SURCUBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00090717',
+    value: 'SURCUBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -15120,7 +15120,7 @@ export const districtList = [
     label: 'TINTAY PUNCU',
     subTitle: '-',
     type: 'account',
-    value: '00090718',
+    value: 'TINTAY PUNCU',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '09',
@@ -15134,7 +15134,7 @@ export const districtList = [
     label: 'HUANUCO',
     subTitle: '-',
     type: 'account',
-    value: '00100101',
+    value: 'HUANUCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15148,7 +15148,7 @@ export const districtList = [
     label: 'AMARILIS',
     subTitle: '-',
     type: 'account',
-    value: '00100102',
+    value: 'AMARILIS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15162,7 +15162,7 @@ export const districtList = [
     label: 'CHINCHAO',
     subTitle: '-',
     type: 'account',
-    value: '00100103',
+    value: 'CHINCHAO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15176,7 +15176,7 @@ export const districtList = [
     label: 'CHURUBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00100104',
+    value: 'CHURUBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15190,7 +15190,7 @@ export const districtList = [
     label: 'MARGOS',
     subTitle: '-',
     type: 'account',
-    value: '00100105',
+    value: 'MARGOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15204,7 +15204,7 @@ export const districtList = [
     label: 'QUISQUI',
     subTitle: '-',
     type: 'account',
-    value: '00100106',
+    value: 'QUISQUI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15218,7 +15218,7 @@ export const districtList = [
     label: 'SAN FRANCISCO DE CAYRAN',
     subTitle: '-',
     type: 'account',
-    value: '00100107',
+    value: 'SAN FRANCISCO DE CAYRAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15232,7 +15232,7 @@ export const districtList = [
     label: 'SAN PEDRO DE CHAULAN',
     subTitle: '-',
     type: 'account',
-    value: '00100108',
+    value: 'SAN PEDRO DE CHAULAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15246,7 +15246,7 @@ export const districtList = [
     label: 'SANTA MARIA DEL VALLE',
     subTitle: '-',
     type: 'account',
-    value: '00100109',
+    value: 'SANTA MARIA DEL VALLE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15260,7 +15260,7 @@ export const districtList = [
     label: 'YARUMAYO',
     subTitle: '-',
     type: 'account',
-    value: '00100110',
+    value: 'YARUMAYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15274,7 +15274,7 @@ export const districtList = [
     label: 'PILLCO MARCA',
     subTitle: '-',
     type: 'account',
-    value: '00100111',
+    value: 'PILLCO MARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15288,7 +15288,7 @@ export const districtList = [
     label: 'AMBO',
     subTitle: '-',
     type: 'account',
-    value: '00100201',
+    value: 'AMBO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15302,7 +15302,7 @@ export const districtList = [
     label: 'CAYNA',
     subTitle: '-',
     type: 'account',
-    value: '00100202',
+    value: 'CAYNA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15316,7 +15316,7 @@ export const districtList = [
     label: 'COLPAS',
     subTitle: '-',
     type: 'account',
-    value: '00100203',
+    value: 'COLPAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15330,7 +15330,7 @@ export const districtList = [
     label: 'CONCHAMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00100204',
+    value: 'CONCHAMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15344,7 +15344,7 @@ export const districtList = [
     label: 'HUACAR',
     subTitle: '-',
     type: 'account',
-    value: '00100205',
+    value: 'HUACAR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15358,7 +15358,7 @@ export const districtList = [
     label: 'SAN FRANCISCO',
     subTitle: '-',
     type: 'account',
-    value: '00100206',
+    value: 'SAN FRANCISCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15372,7 +15372,7 @@ export const districtList = [
     label: 'SAN RAFAEL',
     subTitle: '-',
     type: 'account',
-    value: '00100207',
+    value: 'SAN RAFAEL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15386,7 +15386,7 @@ export const districtList = [
     label: 'TOMAY KICHWA',
     subTitle: '-',
     type: 'account',
-    value: '00100208',
+    value: 'TOMAY KICHWA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15400,7 +15400,7 @@ export const districtList = [
     label: 'LA UNION',
     subTitle: '-',
     type: 'account',
-    value: '00100301',
+    value: 'LA UNION',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15414,7 +15414,7 @@ export const districtList = [
     label: 'CHUQUIS',
     subTitle: '-',
     type: 'account',
-    value: '00100307',
+    value: 'CHUQUIS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15428,7 +15428,7 @@ export const districtList = [
     label: 'MARIAS',
     subTitle: '-',
     type: 'account',
-    value: '00100311',
+    value: 'MARIAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15442,7 +15442,7 @@ export const districtList = [
     label: 'PACHAS',
     subTitle: '-',
     type: 'account',
-    value: '00100313',
+    value: 'PACHAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15456,7 +15456,7 @@ export const districtList = [
     label: 'QUIVILLA',
     subTitle: '-',
     type: 'account',
-    value: '00100316',
+    value: 'QUIVILLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15470,7 +15470,7 @@ export const districtList = [
     label: 'RIPAN',
     subTitle: '-',
     type: 'account',
-    value: '00100317',
+    value: 'RIPAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15484,7 +15484,7 @@ export const districtList = [
     label: 'SHUNQUI',
     subTitle: '-',
     type: 'account',
-    value: '00100321',
+    value: 'SHUNQUI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15498,7 +15498,7 @@ export const districtList = [
     label: 'SILLAPATA',
     subTitle: '-',
     type: 'account',
-    value: '00100322',
+    value: 'SILLAPATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15512,7 +15512,7 @@ export const districtList = [
     label: 'YANAS',
     subTitle: '-',
     type: 'account',
-    value: '00100323',
+    value: 'YANAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15526,7 +15526,7 @@ export const districtList = [
     label: 'HUACAYBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00100401',
+    value: 'HUACAYBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15540,7 +15540,7 @@ export const districtList = [
     label: 'CANCHABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00100402',
+    value: 'CANCHABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15554,7 +15554,7 @@ export const districtList = [
     label: 'COCHABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00100403',
+    value: 'COCHABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15568,7 +15568,7 @@ export const districtList = [
     label: 'PINRA',
     subTitle: '-',
     type: 'account',
-    value: '00100404',
+    value: 'PINRA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15582,7 +15582,7 @@ export const districtList = [
     label: 'LLATA',
     subTitle: '-',
     type: 'account',
-    value: '00100501',
+    value: 'LLATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15596,7 +15596,7 @@ export const districtList = [
     label: 'ARANCAY',
     subTitle: '-',
     type: 'account',
-    value: '00100502',
+    value: 'ARANCAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15610,7 +15610,7 @@ export const districtList = [
     label: 'CHAVIN',
     subTitle: '-',
     type: 'account',
-    value: '00100503',
+    value: 'CHAVIN DE PARIARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15624,7 +15624,7 @@ export const districtList = [
     label: 'JACAS',
     subTitle: '-',
     type: 'account',
-    value: '00100504',
+    value: 'JACAS GRANDE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15638,7 +15638,7 @@ export const districtList = [
     label: 'JIRCAN',
     subTitle: '-',
     type: 'account',
-    value: '00100505',
+    value: 'JIRCAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15652,7 +15652,7 @@ export const districtList = [
     label: 'MIRAFLORES',
     subTitle: '-',
     type: 'account',
-    value: '00100506',
+    value: 'MIRAFLORES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15666,7 +15666,7 @@ export const districtList = [
     label: 'MONZON',
     subTitle: '-',
     type: 'account',
-    value: '00100507',
+    value: 'MONZON',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15680,7 +15680,7 @@ export const districtList = [
     label: 'PUNCHAO',
     subTitle: '-',
     type: 'account',
-    value: '00100508',
+    value: 'PUNCHAO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15694,7 +15694,7 @@ export const districtList = [
     label: 'PUÑOS',
     subTitle: '-',
     type: 'account',
-    value: '00100509',
+    value: 'PUÑOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15708,7 +15708,7 @@ export const districtList = [
     label: 'SINGA',
     subTitle: '-',
     type: 'account',
-    value: '00100510',
+    value: 'SINGA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15722,7 +15722,7 @@ export const districtList = [
     label: 'TANTAMAYO',
     subTitle: '-',
     type: 'account',
-    value: '00100511',
+    value: 'TANTAMAYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15736,7 +15736,7 @@ export const districtList = [
     label: 'RUPA',
     subTitle: '-',
     type: 'account',
-    value: '00100601',
+    value: 'RUPA-RUPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15750,7 +15750,7 @@ export const districtList = [
     label: 'DANIEL',
     subTitle: '-',
     type: 'account',
-    value: '00100602',
+    value: 'DANIEL ALOMIAS ROBLES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15764,7 +15764,7 @@ export const districtList = [
     label: 'HERMILIO',
     subTitle: '-',
     type: 'account',
-    value: '00100603',
+    value: 'HERMILIO VALDIZAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15778,7 +15778,7 @@ export const districtList = [
     label: 'JOSE',
     subTitle: '-',
     type: 'account',
-    value: '00100604',
+    value: 'JOSE CRESPO Y CASTILLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15792,7 +15792,7 @@ export const districtList = [
     label: 'LUYANDO',
     subTitle: '-',
     type: 'account',
-    value: '00100605',
+    value: 'LUYANDO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15806,7 +15806,7 @@ export const districtList = [
     label: 'MARIANO',
     subTitle: '-',
     type: 'account',
-    value: '00100606',
+    value: 'MARIANO DAMASO BERAUN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15820,7 +15820,7 @@ export const districtList = [
     label: 'HUACRACHUCO',
     subTitle: '-',
     type: 'account',
-    value: '00100701',
+    value: 'HUACRACHUCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15834,7 +15834,7 @@ export const districtList = [
     label: 'CHOLON',
     subTitle: '-',
     type: 'account',
-    value: '00100702',
+    value: 'CHOLON',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15848,7 +15848,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00100703',
+    value: 'SAN BUENAVENTURA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15862,7 +15862,7 @@ export const districtList = [
     label: 'PANAO',
     subTitle: '-',
     type: 'account',
-    value: '00100801',
+    value: 'PANAO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15876,7 +15876,7 @@ export const districtList = [
     label: 'CHAGLLA',
     subTitle: '-',
     type: 'account',
-    value: '00100802',
+    value: 'CHAGLLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15890,7 +15890,7 @@ export const districtList = [
     label: 'MOLINO',
     subTitle: '-',
     type: 'account',
-    value: '00100803',
+    value: 'MOLINO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15904,7 +15904,7 @@ export const districtList = [
     label: 'UMARI',
     subTitle: '-',
     type: 'account',
-    value: '00100804',
+    value: 'UMARI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15918,7 +15918,7 @@ export const districtList = [
     label: 'PUERTO',
     subTitle: '-',
     type: 'account',
-    value: '00100901',
+    value: 'PUERTO INCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15932,7 +15932,7 @@ export const districtList = [
     label: 'CODO',
     subTitle: '-',
     type: 'account',
-    value: '00100902',
+    value: 'CODO DEL POZUZO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15946,7 +15946,7 @@ export const districtList = [
     label: 'HONORIA',
     subTitle: '-',
     type: 'account',
-    value: '00100903',
+    value: 'HONORIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15960,7 +15960,7 @@ export const districtList = [
     label: 'TOURNAVISTA',
     subTitle: '-',
     type: 'account',
-    value: '00100904',
+    value: 'TOURNAVISTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15974,7 +15974,7 @@ export const districtList = [
     label: 'YUYAPICHIS',
     subTitle: '-',
     type: 'account',
-    value: '00100905',
+    value: 'YUYAPICHIS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -15988,7 +15988,7 @@ export const districtList = [
     label: 'JESUS',
     subTitle: '-',
     type: 'account',
-    value: '00101001',
+    value: 'JESUS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -16002,7 +16002,7 @@ export const districtList = [
     label: 'BAÑOS',
     subTitle: '-',
     type: 'account',
-    value: '00101002',
+    value: 'BAÑOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -16016,7 +16016,7 @@ export const districtList = [
     label: 'JIVIA',
     subTitle: '-',
     type: 'account',
-    value: '00101003',
+    value: 'JIVIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -16030,7 +16030,7 @@ export const districtList = [
     label: 'QUEROPALCA',
     subTitle: '-',
     type: 'account',
-    value: '00101004',
+    value: 'QUEROPALCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -16044,7 +16044,7 @@ export const districtList = [
     label: 'RONDOS',
     subTitle: '-',
     type: 'account',
-    value: '00101005',
+    value: 'RONDOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -16058,7 +16058,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00101006',
+    value: 'SAN FRANCISCO DE ASIS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -16072,7 +16072,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00101007',
+    value: 'SAN MIGUEL DE CAURI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -16086,7 +16086,7 @@ export const districtList = [
     label: 'CHAVINILLO',
     subTitle: '-',
     type: 'account',
-    value: '00101101',
+    value: 'CHAVINILLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -16100,7 +16100,7 @@ export const districtList = [
     label: 'CAHUAC',
     subTitle: '-',
     type: 'account',
-    value: '00101102',
+    value: 'CAHUAC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -16114,7 +16114,7 @@ export const districtList = [
     label: 'CHACABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00101103',
+    value: 'CHACABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -16128,7 +16128,7 @@ export const districtList = [
     label: 'APARICIO',
     subTitle: '-',
     type: 'account',
-    value: '00101104',
+    value: 'APARICIO POMARES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -16142,7 +16142,7 @@ export const districtList = [
     label: 'JACAS',
     subTitle: '-',
     type: 'account',
-    value: '00101105',
+    value: 'JACAS CHICO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -16156,7 +16156,7 @@ export const districtList = [
     label: 'OBAS',
     subTitle: '-',
     type: 'account',
-    value: '00101106',
+    value: 'OBAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -16170,7 +16170,7 @@ export const districtList = [
     label: 'PAMPAMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00101107',
+    value: 'PAMPAMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -16184,7 +16184,7 @@ export const districtList = [
     label: 'CHORAS',
     subTitle: '-',
     type: 'account',
-    value: '00101108',
+    value: 'CHORAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '10',
@@ -16198,7 +16198,7 @@ export const districtList = [
     label: 'ICA',
     subTitle: '-',
     type: 'account',
-    value: '00110101',
+    value: 'ICA',,
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16212,7 +16212,7 @@ export const districtList = [
     label: 'LA',
     subTitle: '-',
     type: 'account',
-    value: '00110102',
+    value: 'LA TINGUIÑA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16226,7 +16226,7 @@ export const districtList = [
     label: 'LOS',
     subTitle: '-',
     type: 'account',
-    value: '00110103',
+    value: 'LOS AQUIJES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16240,7 +16240,7 @@ export const districtList = [
     label: 'OCUCAJE',
     subTitle: '-',
     type: 'account',
-    value: '00110104',
+    value: 'OCUCAJE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16254,7 +16254,7 @@ export const districtList = [
     label: 'PACHACUTEC',
     subTitle: '-',
     type: 'account',
-    value: '00110105',
+    value: 'PACHACUTEC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16268,7 +16268,7 @@ export const districtList = [
     label: 'PARCONA',
     subTitle: '-',
     type: 'account',
-    value: '00110106',
+    value: 'PARCONA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16282,7 +16282,7 @@ export const districtList = [
     label: 'PUEBLO',
     subTitle: '-',
     type: 'account',
-    value: '00110107',
+    value: 'PUEBLO NUEVO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16296,7 +16296,7 @@ export const districtList = [
     label: 'SALAS',
     subTitle: '-',
     type: 'account',
-    value: '00110108',
+    value: 'SALAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16310,7 +16310,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00110109',
+    value: 'SAN JOSE DE LOS MOLINOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16324,7 +16324,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00110110',
+    value: 'SAN JUAN BAUTISTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16338,7 +16338,7 @@ export const districtList = [
     label: 'SANTIAGO',
     subTitle: '-',
     type: 'account',
-    value: '00110111',
+    value: 'SANTIAGO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16352,7 +16352,7 @@ export const districtList = [
     label: 'SUBTANJALLA',
     subTitle: '-',
     type: 'account',
-    value: '00110112',
+    value: 'SUBTANJALLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16366,7 +16366,7 @@ export const districtList = [
     label: 'TATE',
     subTitle: '-',
     type: 'account',
-    value: '00110113',
+    value: 'TATE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16380,7 +16380,7 @@ export const districtList = [
     label: 'YAUCA',
     subTitle: '-',
     type: 'account',
-    value: '00110114',
+    value: 'YAUCA DEL ROSARIO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16394,7 +16394,7 @@ export const districtList = [
     label: 'CHINCHA',
     subTitle: '-',
     type: 'account',
-    value: '00110201',
+    value: 'CHINCHA ALTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16408,7 +16408,7 @@ export const districtList = [
     label: 'ALTO',
     subTitle: '-',
     type: 'account',
-    value: '00110202',
+    value: 'ALTO LARAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16422,7 +16422,7 @@ export const districtList = [
     label: 'CHAVIN',
     subTitle: '-',
     type: 'account',
-    value: '00110203',
+    value: 'CHAVIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16436,7 +16436,7 @@ export const districtList = [
     label: 'CHINCHA',
     subTitle: '-',
     type: 'account',
-    value: '00110204',
+    value: 'CHINCHA BAJA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16450,7 +16450,7 @@ export const districtList = [
     label: 'EL',
     subTitle: '-',
     type: 'account',
-    value: '00110205',
+    value: 'EL CARMEN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16464,7 +16464,7 @@ export const districtList = [
     label: 'GROCIO',
     subTitle: '-',
     type: 'account',
-    value: '00110206',
+    value: 'GROCIO PRADO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16478,7 +16478,7 @@ export const districtList = [
     label: 'PUEBLO',
     subTitle: '-',
     type: 'account',
-    value: '00110207',
+    value: 'PUEBLO NUEVO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16492,7 +16492,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00110208',
+    value: 'SAN JUAN DE YANAC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16506,7 +16506,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00110209',
+    value: 'SAN PEDRO DE HUACARPANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16520,7 +16520,7 @@ export const districtList = [
     label: 'SUNAMPE',
     subTitle: '-',
     type: 'account',
-    value: '00110210',
+    value: 'SUNAMPE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16534,7 +16534,7 @@ export const districtList = [
     label: 'TAMBO',
     subTitle: '-',
     type: 'account',
-    value: '00110211',
+    value: 'TAMBO DE MORA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16548,7 +16548,7 @@ export const districtList = [
     label: 'NAZCA',
     subTitle: '-',
     type: 'account',
-    value: '00110301',
+    value: 'NAZCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16562,7 +16562,7 @@ export const districtList = [
     label: 'CHANGUILLO',
     subTitle: '-',
     type: 'account',
-    value: '00110302',
+    value: 'CHANGUILLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16576,7 +16576,7 @@ export const districtList = [
     label: 'EL',
     subTitle: '-',
     type: 'account',
-    value: '00110303',
+    value: 'EL INGENIO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16590,7 +16590,7 @@ export const districtList = [
     label: 'MARCONA',
     subTitle: '-',
     type: 'account',
-    value: '00110304',
+    value: 'MARCONA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16604,7 +16604,7 @@ export const districtList = [
     label: 'VISTA',
     subTitle: '-',
     type: 'account',
-    value: '00110305',
+    value: 'VISTA ALEGRE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16618,7 +16618,7 @@ export const districtList = [
     label: 'PALPA',
     subTitle: '-',
     type: 'account',
-    value: '00110401',
+    value: 'PALPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16632,7 +16632,7 @@ export const districtList = [
     label: 'LLIPATA',
     subTitle: '-',
     type: 'account',
-    value: '00110402',
+    value: 'LLIPATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16646,7 +16646,7 @@ export const districtList = [
     label: 'RIO',
     subTitle: '-',
     type: 'account',
-    value: '00110403',
+    value: 'RIO GRANDE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16660,7 +16660,7 @@ export const districtList = [
     label: 'SANTA',
     subTitle: '-',
     type: 'account',
-    value: '00110404',
+    value: 'SANTA CRUZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16674,7 +16674,7 @@ export const districtList = [
     label: 'TIBILLO',
     subTitle: '-',
     type: 'account',
-    value: '00110405',
+    value: 'TIBILLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16688,7 +16688,7 @@ export const districtList = [
     label: 'PISCO',
     subTitle: '-',
     type: 'account',
-    value: '00110501',
+    value: 'PISCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16702,7 +16702,7 @@ export const districtList = [
     label: 'HUANCANO',
     subTitle: '-',
     type: 'account',
-    value: '00110502',
+    value: 'HUANCANO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16716,7 +16716,7 @@ export const districtList = [
     label: 'HUMAY',
     subTitle: '-',
     type: 'account',
-    value: '00110503',
+    value: 'HUMAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16730,7 +16730,7 @@ export const districtList = [
     label: 'INDEPENDENCIA',
     subTitle: '-',
     type: 'account',
-    value: '00110504',
+    value: 'INDEPENDENCIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16744,7 +16744,7 @@ export const districtList = [
     label: 'PARACAS',
     subTitle: '-',
     type: 'account',
-    value: '00110505',
+    value: 'PARACAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16758,7 +16758,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00110506',
+    value: 'SAN ANDRES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16772,7 +16772,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00110507',
+    value: 'SAN CLEMENTE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16786,7 +16786,7 @@ export const districtList = [
     label: 'TUPAC',
     subTitle: '-',
     type: 'account',
-    value: '00110508',
+    value: 'TUPAC AMARU INCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '11',
@@ -16800,7 +16800,7 @@ export const districtList = [
     label: 'HUANCAYO',
     subTitle: '-',
     type: 'account',
-    value: '00120101',
+    value: 'HUANCAYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -16814,7 +16814,7 @@ export const districtList = [
     label: 'CARHUACALLANGA',
     subTitle: '-',
     type: 'account',
-    value: '00120104',
+    value: 'CARHUACALLANGA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -16828,7 +16828,7 @@ export const districtList = [
     label: 'CHACAPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00120105',
+    value: 'CHACAPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -16842,7 +16842,7 @@ export const districtList = [
     label: 'CHICCHE',
     subTitle: '-',
     type: 'account',
-    value: '00120106',
+    value: 'CHICCHE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -16856,7 +16856,7 @@ export const districtList = [
     label: 'CHILCA',
     subTitle: '-',
     type: 'account',
-    value: '00120107',
+    value: 'CHILCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -16870,7 +16870,7 @@ export const districtList = [
     label: 'CHONGOS',
     subTitle: '-',
     type: 'account',
-    value: '00120108',
+    value: 'CHONGOS ALTO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -16884,7 +16884,7 @@ export const districtList = [
     label: 'CHUPURO',
     subTitle: '-',
     type: 'account',
-    value: '00120111',
+    value: 'CHUPURO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -16898,7 +16898,7 @@ export const districtList = [
     label: 'COLCA',
     subTitle: '-',
     type: 'account',
-    value: '00120112',
+    value: 'COLCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -16912,7 +16912,7 @@ export const districtList = [
     label: 'CULLHUAS',
     subTitle: '-',
     type: 'account',
-    value: '00120113',
+    value: 'CULLHUAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -16926,7 +16926,7 @@ export const districtList = [
     label: 'EL',
     subTitle: '-',
     type: 'account',
-    value: '00120114',
+    value: 'EL TAMBO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -16940,7 +16940,7 @@ export const districtList = [
     label: 'HUACRAPUQUIO',
     subTitle: '-',
     type: 'account',
-    value: '00120116',
+    value: 'HUACRAPUQUIO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -16954,7 +16954,7 @@ export const districtList = [
     label: 'HUALHUAS',
     subTitle: '-',
     type: 'account',
-    value: '00120117',
+    value: 'HUALHUAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -16968,7 +16968,7 @@ export const districtList = [
     label: 'HUANCAN',
     subTitle: '-',
     type: 'account',
-    value: '00120119',
+    value: 'HUANCAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -16982,7 +16982,7 @@ export const districtList = [
     label: 'HUASICANCHA',
     subTitle: '-',
     type: 'account',
-    value: '00120120',
+    value: 'HUASICANCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -16996,7 +16996,7 @@ export const districtList = [
     label: 'HUAYUCACHI',
     subTitle: '-',
     type: 'account',
-    value: '00120121',
+    value: 'HUAYUCACHI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17010,7 +17010,7 @@ export const districtList = [
     label: 'INGENIO',
     subTitle: '-',
     type: 'account',
-    value: '00120122',
+    value: 'INGENIO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17024,7 +17024,7 @@ export const districtList = [
     label: 'PARIAHUANCA',
     subTitle: '-',
     type: 'account',
-    value: '00120124',
+    value: 'PARIAHUANCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17038,7 +17038,7 @@ export const districtList = [
     label: 'PILCOMAYO',
     subTitle: '-',
     type: 'account',
-    value: '00120125',
+    value: 'PILCOMAYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17052,7 +17052,7 @@ export const districtList = [
     label: 'PUCARA',
     subTitle: '-',
     type: 'account',
-    value: '00120126',
+    value: 'PUCARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17066,7 +17066,7 @@ export const districtList = [
     label: 'QUICHUAY',
     subTitle: '-',
     type: 'account',
-    value: '00120127',
+    value: 'QUICHUAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17080,7 +17080,7 @@ export const districtList = [
     label: 'QUILCAS',
     subTitle: '-',
     type: 'account',
-    value: '00120128',
+    value: 'QUILCAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17094,7 +17094,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00120129',
+    value: 'SAN AGUSTIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17108,7 +17108,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00120130',
+    value: 'SAN JERONIMO DE TUNAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17122,7 +17122,7 @@ export const districtList = [
     label: 'SAÑO',
     subTitle: '-',
     type: 'account',
-    value: '00120132',
+    value: 'SAÑO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17136,7 +17136,7 @@ export const districtList = [
     label: 'SAPALLANGA',
     subTitle: '-',
     type: 'account',
-    value: '00120133',
+    value: 'SAPALLANGA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17150,7 +17150,7 @@ export const districtList = [
     label: 'SICAYA',
     subTitle: '-',
     type: 'account',
-    value: '00120134',
+    value: 'SICAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17164,7 +17164,7 @@ export const districtList = [
     label: 'SANTO',
     subTitle: '-',
     type: 'account',
-    value: '00120135',
+    value: 'SANTO DOMINGO DE ACOBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17178,7 +17178,7 @@ export const districtList = [
     label: 'VIQUES',
     subTitle: '-',
     type: 'account',
-    value: '00120136',
+    value: 'VIQUES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17192,7 +17192,7 @@ export const districtList = [
     label: 'CONCEPCION',
     subTitle: '-',
     type: 'account',
-    value: '00120201',
+    value: 'CONCEPCION',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17206,7 +17206,7 @@ export const districtList = [
     label: 'ACO',
     subTitle: '-',
     type: 'account',
-    value: '00120202',
+    value: 'ACO',,
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17220,7 +17220,7 @@ export const districtList = [
     label: 'ANDAMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00120203',
+    value: 'ANDAMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17234,7 +17234,7 @@ export const districtList = [
     label: 'CHAMBARA',
     subTitle: '-',
     type: 'account',
-    value: '00120204',
+    value: 'CHAMBARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17248,7 +17248,7 @@ export const districtList = [
     label: 'COCHAS',
     subTitle: '-',
     type: 'account',
-    value: '00120205',
+    value: 'COCHAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17262,7 +17262,7 @@ export const districtList = [
     label: 'COMAS',
     subTitle: '-',
     type: 'account',
-    value: '00120206',
+    value: 'COMAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17276,7 +17276,7 @@ export const districtList = [
     label: 'HEROINAS',
     subTitle: '-',
     type: 'account',
-    value: '00120207',
+    value: 'HEROINAS TOLEDO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17290,7 +17290,7 @@ export const districtList = [
     label: 'MANZANARES',
     subTitle: '-',
     type: 'account',
-    value: '00120208',
+    value: 'MANZANARES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17304,7 +17304,7 @@ export const districtList = [
     label: 'MARISCAL',
     subTitle: '-',
     type: 'account',
-    value: '00120209',
+    value: 'MARISCAL CASTILLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17318,7 +17318,7 @@ export const districtList = [
     label: 'MATAHUASI',
     subTitle: '-',
     type: 'account',
-    value: '00120210',
+    value: 'MATAHUASI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17332,7 +17332,7 @@ export const districtList = [
     label: 'MITO',
     subTitle: '-',
     type: 'account',
-    value: '00120211',
+    value: 'MITO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17346,7 +17346,7 @@ export const districtList = [
     label: 'NUEVE',
     subTitle: '-',
     type: 'account',
-    value: '00120212',
+    value: 'NUEVE DE JULIO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17360,7 +17360,7 @@ export const districtList = [
     label: 'ORCOTUNA',
     subTitle: '-',
     type: 'account',
-    value: '00120213',
+    value: 'ORCOTUNA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17374,7 +17374,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00120214',
+    value: 'SAN JOSE DE QUERO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17388,7 +17388,7 @@ export const districtList = [
     label: 'SANTA',
     subTitle: '-',
     type: 'account',
-    value: '00120215',
+    value: 'SANTA ROSA DE OCOPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17402,7 +17402,7 @@ export const districtList = [
     label: 'CHANCHAMAYO',
     subTitle: '-',
     type: 'account',
-    value: '00120301',
+    value: 'CHANCHAMAYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17416,7 +17416,7 @@ export const districtList = [
     label: 'PERENE',
     subTitle: '-',
     type: 'account',
-    value: '00120302',
+    value: 'PERENE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17430,7 +17430,7 @@ export const districtList = [
     label: 'PICHANAQUI',
     subTitle: '-',
     type: 'account',
-    value: '00120303',
+    value: 'PICHANAQUI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17444,7 +17444,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00120304',
+    value: 'SAN LUIS DE SHUARO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17458,7 +17458,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00120305',
+    value: 'SAN RAMON',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17472,7 +17472,7 @@ export const districtList = [
     label: 'VITOC',
     subTitle: '-',
     type: 'account',
-    value: '00120306',
+    value: 'VITOC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17486,7 +17486,7 @@ export const districtList = [
     label: 'JAUJA',
     subTitle: '-',
     type: 'account',
-    value: '00120401',
+    value: 'JAUJA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17500,7 +17500,7 @@ export const districtList = [
     label: 'ACOLLA',
     subTitle: '-',
     type: 'account',
-    value: '00120402',
+    value: 'ACOLLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17514,7 +17514,7 @@ export const districtList = [
     label: 'APATA',
     subTitle: '-',
     type: 'account',
-    value: '00120403',
+    value: 'APATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17528,7 +17528,7 @@ export const districtList = [
     label: 'ATAURA',
     subTitle: '-',
     type: 'account',
-    value: '00120404',
+    value: 'ATAURA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17542,7 +17542,7 @@ export const districtList = [
     label: 'CANCHAYLLO',
     subTitle: '-',
     type: 'account',
-    value: '00120405',
+    value: 'CANCHAYLLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17556,7 +17556,7 @@ export const districtList = [
     label: 'CURICACA',
     subTitle: '-',
     type: 'account',
-    value: '00120406',
+    value: 'CURICACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17570,7 +17570,7 @@ export const districtList = [
     label: 'EL',
     subTitle: '-',
     type: 'account',
-    value: '00120407',
+    value: 'EL MANTARO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17584,7 +17584,7 @@ export const districtList = [
     label: 'HUAMALI',
     subTitle: '-',
     type: 'account',
-    value: '00120408',
+    value: 'HUAMALI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17598,7 +17598,7 @@ export const districtList = [
     label: 'HUARIPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00120409',
+    value: 'HUARIPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17612,7 +17612,7 @@ export const districtList = [
     label: 'HUERTAS',
     subTitle: '-',
     type: 'account',
-    value: '00120410',
+    value: 'HUERTAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17626,7 +17626,7 @@ export const districtList = [
     label: 'JANJAILLO',
     subTitle: '-',
     type: 'account',
-    value: '00120411',
+    value: 'JANJAILLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17640,7 +17640,7 @@ export const districtList = [
     label: 'JULCAN',
     subTitle: '-',
     type: 'account',
-    value: '00120412',
+    value: 'JULCAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17654,7 +17654,7 @@ export const districtList = [
     label: 'LEONOR',
     subTitle: '-',
     type: 'account',
-    value: '00120413',
+    value: 'LEONOR ORDOÑEZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17668,7 +17668,7 @@ export const districtList = [
     label: 'LLOCLLAPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00120414',
+    value: 'LLOCLLAPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17682,7 +17682,7 @@ export const districtList = [
     label: 'MARCO',
     subTitle: '-',
     type: 'account',
-    value: '00120415',
+    value: 'MARCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17696,7 +17696,7 @@ export const districtList = [
     label: 'MASMA',
     subTitle: '-',
     type: 'account',
-    value: '00120416',
+    value: 'MASMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17710,7 +17710,7 @@ export const districtList = [
     label: 'MASMA',
     subTitle: '-',
     type: 'account',
-    value: '00120417',
+    value: 'MASMA CHICCHE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17724,7 +17724,7 @@ export const districtList = [
     label: 'MOLINOS',
     subTitle: '-',
     type: 'account',
-    value: '00120418',
+    value: 'MOLINOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17738,7 +17738,7 @@ export const districtList = [
     label: 'MONOBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00120419',
+    value: 'MONOBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17752,7 +17752,7 @@ export const districtList = [
     label: 'MUQUI',
     subTitle: '-',
     type: 'account',
-    value: '00120420',
+    value: 'MUQUI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17766,7 +17766,7 @@ export const districtList = [
     label: 'MUQUIYAUYO',
     subTitle: '-',
     type: 'account',
-    value: '00120421',
+    value: 'MUQUIYAUYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17780,7 +17780,7 @@ export const districtList = [
     label: 'PACA',
     subTitle: '-',
     type: 'account',
-    value: '00120422',
+    value: 'PACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17794,7 +17794,7 @@ export const districtList = [
     label: 'PACCHA',
     subTitle: '-',
     type: 'account',
-    value: '00120423',
+    value: 'PACCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17808,7 +17808,7 @@ export const districtList = [
     label: 'PANCAN',
     subTitle: '-',
     type: 'account',
-    value: '00120424',
+    value: 'PANCAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17822,7 +17822,7 @@ export const districtList = [
     label: 'PARCO',
     subTitle: '-',
     type: 'account',
-    value: '00120425',
+    value: 'PARCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17836,7 +17836,7 @@ export const districtList = [
     label: 'POMACANCHA',
     subTitle: '-',
     type: 'account',
-    value: '00120426',
+    value: 'POMACANCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17850,7 +17850,7 @@ export const districtList = [
     label: 'RICRAN',
     subTitle: '-',
     type: 'account',
-    value: '00120427',
+    value: 'RICRAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17864,7 +17864,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00120428',
+    value: 'SAN LORENZO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17878,7 +17878,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00120429',
+    value: 'SAN PEDRO DE CHUNAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17892,7 +17892,7 @@ export const districtList = [
     label: 'SAUSA',
     subTitle: '-',
     type: 'account',
-    value: '00120430',
+    value: 'SAUSA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17906,7 +17906,7 @@ export const districtList = [
     label: 'SINCOS',
     subTitle: '-',
     type: 'account',
-    value: '00120431',
+    value: 'SINCOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17920,7 +17920,7 @@ export const districtList = [
     label: 'TUNAN',
     subTitle: '-',
     type: 'account',
-    value: '00120432',
+    value: 'TUNAN MARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17934,7 +17934,7 @@ export const districtList = [
     label: 'YAULI',
     subTitle: '-',
     type: 'account',
-    value: '00120433',
+    value: 'YAULI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17948,7 +17948,7 @@ export const districtList = [
     label: 'YAUYOS',
     subTitle: '-',
     type: 'account',
-    value: '00120434',
+    value: 'YAUYOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17962,7 +17962,7 @@ export const districtList = [
     label: 'JUNIN',
     subTitle: '-',
     type: 'account',
-    value: '00120501',
+    value: 'JUNIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17976,7 +17976,7 @@ export const districtList = [
     label: 'CARHUAMAYO',
     subTitle: '-',
     type: 'account',
-    value: '00120502',
+    value: 'CARHUAMAYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -17990,7 +17990,7 @@ export const districtList = [
     label: 'ONDORES',
     subTitle: '-',
     type: 'account',
-    value: '00120503',
+    value: 'ONDORES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18004,7 +18004,7 @@ export const districtList = [
     label: 'ULCUMAYO',
     subTitle: '-',
     type: 'account',
-    value: '00120504',
+    value: 'ULCUMAYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18018,7 +18018,7 @@ export const districtList = [
     label: 'SATIPO',
     subTitle: '-',
     type: 'account',
-    value: '00120601',
+    value: 'SATIPO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18032,7 +18032,7 @@ export const districtList = [
     label: 'COVIRIALI',
     subTitle: '-',
     type: 'account',
-    value: '00120602',
+    value: 'COVIRIALI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18046,7 +18046,7 @@ export const districtList = [
     label: 'LLAYLLA',
     subTitle: '-',
     type: 'account',
-    value: '00120603',
+    value: 'LLAYLLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18060,7 +18060,7 @@ export const districtList = [
     label: 'MAZAMARI',
     subTitle: '-',
     type: 'account',
-    value: '00120604',
+    value: 'MAZAMARI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18074,7 +18074,7 @@ export const districtList = [
     label: 'PAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00120605',
+    value: 'PAMPA HERMOSA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18088,7 +18088,7 @@ export const districtList = [
     label: 'PANGOA',
     subTitle: '-',
     type: 'account',
-    value: '00120606',
+    value: 'PANGOA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18102,7 +18102,7 @@ export const districtList = [
     label: 'RIO',
     subTitle: '-',
     type: 'account',
-    value: '00120607',
+    value: 'RIO NEGRO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18116,7 +18116,7 @@ export const districtList = [
     label: 'RIO',
     subTitle: '-',
     type: 'account',
-    value: '00120608',
+    value: 'RIO TAMBO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18130,7 +18130,7 @@ export const districtList = [
     label: 'TARMA',
     subTitle: '-',
     type: 'account',
-    value: '00120701',
+    value: 'TARMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18144,7 +18144,7 @@ export const districtList = [
     label: 'ACOBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00120702',
+    value: 'ACOBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18158,7 +18158,7 @@ export const districtList = [
     label: 'HUARICOLCA',
     subTitle: '-',
     type: 'account',
-    value: '00120703',
+    value: 'HUARICOLCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18172,7 +18172,7 @@ export const districtList = [
     label: 'HUASAHUASI',
     subTitle: '-',
     type: 'account',
-    value: '00120704',
+    value: 'HUASAHUASI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18186,7 +18186,7 @@ export const districtList = [
     label: 'LA',
     subTitle: '-',
     type: 'account',
-    value: '00120705',
+    value: 'LA UNION',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18200,7 +18200,7 @@ export const districtList = [
     label: 'PALCA',
     subTitle: '-',
     type: 'account',
-    value: '00120706',
+    value: 'PALCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18214,7 +18214,7 @@ export const districtList = [
     label: 'PALCAMAYO',
     subTitle: '-',
     type: 'account',
-    value: '00120707',
+    value: 'PALCAMAYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18228,7 +18228,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00120708',
+    value: 'SAN PEDRO DE CAJAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18242,7 +18242,7 @@ export const districtList = [
     label: 'TAPO',
     subTitle: '-',
     type: 'account',
-    value: '00120709',
+    value: 'TAPO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18256,7 +18256,7 @@ export const districtList = [
     label: 'LA',
     subTitle: '-',
     type: 'account',
-    value: '00120801',
+    value: 'LA OROYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18270,7 +18270,7 @@ export const districtList = [
     label: 'CHACAPALPA',
     subTitle: '-',
     type: 'account',
-    value: '00120802',
+    value: 'CHACAPALPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18284,7 +18284,7 @@ export const districtList = [
     label: 'HUAY',
     subTitle: '-',
     type: 'account',
-    value: '00120803',
+    value: 'HUAY-HUAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18298,7 +18298,7 @@ export const districtList = [
     label: 'MARCAPOMACOCHA',
     subTitle: '-',
     type: 'account',
-    value: '00120804',
+    value: 'MARCAPOMACOCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18312,7 +18312,7 @@ export const districtList = [
     label: 'MOROCOCHA',
     subTitle: '-',
     type: 'account',
-    value: '00120805',
+    value: 'MOROCOCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18326,7 +18326,7 @@ export const districtList = [
     label: 'PACCHA',
     subTitle: '-',
     type: 'account',
-    value: '00120806',
+    value: 'PACCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18340,7 +18340,7 @@ export const districtList = [
     label: 'SANTA',
     subTitle: '-',
     type: 'account',
-    value: '00120807',
+    value: 'SANTA BARBARA DE CARHUACAYAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18354,7 +18354,7 @@ export const districtList = [
     label: 'SANTA',
     subTitle: '-',
     type: 'account',
-    value: '00120808',
+    value: 'SANTA ROSA DE SACCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18368,7 +18368,7 @@ export const districtList = [
     label: 'SUITUCANCHA',
     subTitle: '-',
     type: 'account',
-    value: '00120809',
+    value: 'SUITUCANCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18382,7 +18382,7 @@ export const districtList = [
     label: 'YAULI',
     subTitle: '-',
     type: 'account',
-    value: '00120810',
+    value: 'YAULI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18396,7 +18396,7 @@ export const districtList = [
     label: 'CHUPACA',
     subTitle: '-',
     type: 'account',
-    value: '00120901',
+    value: 'CHUPACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18410,7 +18410,7 @@ export const districtList = [
     label: 'AHUAC',
     subTitle: '-',
     type: 'account',
-    value: '00120902',
+    value: 'AHUAC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18424,7 +18424,7 @@ export const districtList = [
     label: 'CHONGOS',
     subTitle: '-',
     type: 'account',
-    value: '00120903',
+    value: 'CHONGOS BAJO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18438,7 +18438,7 @@ export const districtList = [
     label: 'HUACHAC',
     subTitle: '-',
     type: 'account',
-    value: '00120904',
+    value: 'HUACHAC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18452,7 +18452,7 @@ export const districtList = [
     label: 'HUAMANCACA',
     subTitle: '-',
     type: 'account',
-    value: '00120905',
+    value: 'HUAMANCACA CHICO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18466,7 +18466,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00120906',
+    value: 'SAN JUAN DE YSCOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18480,7 +18480,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00120907',
+    value: 'SAN JUAN DE JARPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18494,7 +18494,7 @@ export const districtList = [
     label: 'TRES',
     subTitle: '-',
     type: 'account',
-    value: '00120908',
+    value: 'TRES DE DICIEMBRE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18508,7 +18508,7 @@ export const districtList = [
     label: 'YANACANCHA',
     subTitle: '-',
     type: 'account',
-    value: '00120909',
+    value: 'YANACANCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '12',
@@ -18522,7 +18522,7 @@ export const districtList = [
     label: 'TRUJILLO',
     subTitle: '-',
     type: 'account',
-    value: '00130101',
+    value: 'TRUJILLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18536,7 +18536,7 @@ export const districtList = [
     label: 'EL',
     subTitle: '-',
     type: 'account',
-    value: '00130102',
+    value: 'EL PORVENIR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18550,7 +18550,7 @@ export const districtList = [
     label: 'FLORENCIA',
     subTitle: '-',
     type: 'account',
-    value: '00130103',
+    value: 'FLORENCIA DE MORA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18564,7 +18564,7 @@ export const districtList = [
     label: 'HUANCHACO',
     subTitle: '-',
     type: 'account',
-    value: '00130104',
+    value: 'HUANCHACO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18578,7 +18578,7 @@ export const districtList = [
     label: 'LA',
     subTitle: '-',
     type: 'account',
-    value: '00130105',
+    value: 'LA ESPERANZA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18592,7 +18592,7 @@ export const districtList = [
     label: 'LAREDO',
     subTitle: '-',
     type: 'account',
-    value: '00130106',
+    value: 'LAREDO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18606,7 +18606,7 @@ export const districtList = [
     label: 'MOCHE',
     subTitle: '-',
     type: 'account',
-    value: '00130107',
+    value: 'MOCHE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18620,7 +18620,7 @@ export const districtList = [
     label: 'POROTO',
     subTitle: '-',
     type: 'account',
-    value: '00130108',
+    value: 'POROTO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18634,7 +18634,7 @@ export const districtList = [
     label: 'SALAVERRY',
     subTitle: '-',
     type: 'account',
-    value: '00130109',
+    value: 'SALAVERRY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18648,7 +18648,7 @@ export const districtList = [
     label: 'SIMBAL',
     subTitle: '-',
     type: 'account',
-    value: '00130110',
+    value: 'SIMBAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18662,7 +18662,7 @@ export const districtList = [
     label: 'VICTOR',
     subTitle: '-',
     type: 'account',
-    value: '00130111',
+    value: 'VICTOR LARCO HERRERA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18676,7 +18676,7 @@ export const districtList = [
     label: 'ASCOPE',
     subTitle: '-',
     type: 'account',
-    value: '00130201',
+    value: 'ASCOPE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18690,7 +18690,7 @@ export const districtList = [
     label: 'CHICAMA',
     subTitle: '-',
     type: 'account',
-    value: '00130202',
+    value: 'CHICAMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18704,7 +18704,7 @@ export const districtList = [
     label: 'CHOCOPE',
     subTitle: '-',
     type: 'account',
-    value: '00130203',
+    value: 'CHOCOPE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18718,7 +18718,7 @@ export const districtList = [
     label: 'MAGDALENA',
     subTitle: '-',
     type: 'account',
-    value: '00130204',
+    value: 'MAGDALENA DE CAO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18732,7 +18732,7 @@ export const districtList = [
     label: 'PAIJAN',
     subTitle: '-',
     type: 'account',
-    value: '00130205',
+    value: 'PAIJAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18746,7 +18746,7 @@ export const districtList = [
     label: 'RAZURI',
     subTitle: '-',
     type: 'account',
-    value: '00130206',
+    value: 'RAZURI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18760,7 +18760,7 @@ export const districtList = [
     label: 'SANTIAGO',
     subTitle: '-',
     type: 'account',
-    value: '00130207',
+    value: 'SANTIAGO DE CAO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18774,7 +18774,7 @@ export const districtList = [
     label: 'CASA',
     subTitle: '-',
     type: 'account',
-    value: '00130208',
+    value: 'CASA GRANDE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18788,7 +18788,7 @@ export const districtList = [
     label: 'BOLIVAR',
     subTitle: '-',
     type: 'account',
-    value: '00130301',
+    value: 'BOLIVAR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18802,7 +18802,7 @@ export const districtList = [
     label: 'BAMBAMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00130302',
+    value: 'BAMBAMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18816,7 +18816,7 @@ export const districtList = [
     label: 'CONDORMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00130303',
+    value: 'CONDORMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18830,7 +18830,7 @@ export const districtList = [
     label: 'LONGOTEA',
     subTitle: '-',
     type: 'account',
-    value: '00130304',
+    value: 'LONGOTEA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18844,7 +18844,7 @@ export const districtList = [
     label: 'UCHUMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00130305',
+    value: 'UCHUMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18858,7 +18858,7 @@ export const districtList = [
     label: 'UCUNCHA',
     subTitle: '-',
     type: 'account',
-    value: '00130306',
+    value: 'UCUNCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18872,7 +18872,7 @@ export const districtList = [
     label: 'CHEPEN',
     subTitle: '-',
     type: 'account',
-    value: '00130401',
+    value: 'CHEPEN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18886,7 +18886,7 @@ export const districtList = [
     label: 'PACANGA',
     subTitle: '-',
     type: 'account',
-    value: '00130402',
+    value: 'PACANGA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18900,7 +18900,7 @@ export const districtList = [
     label: 'PUEBLO',
     subTitle: '-',
     type: 'account',
-    value: '00130403',
+    value: 'PUEBLO NUEVO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18914,7 +18914,7 @@ export const districtList = [
     label: 'JULCAN',
     subTitle: '-',
     type: 'account',
-    value: '00130501',
+    value: 'JULCAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18928,7 +18928,7 @@ export const districtList = [
     label: 'CALAMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00130502',
+    value: 'CALAMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18942,7 +18942,7 @@ export const districtList = [
     label: 'CARABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00130503',
+    value: 'CARABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18956,7 +18956,7 @@ export const districtList = [
     label: 'HUASO',
     subTitle: '-',
     type: 'account',
-    value: '00130504',
+    value: 'HUASO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18970,7 +18970,7 @@ export const districtList = [
     label: 'OTUZCO',
     subTitle: '-',
     type: 'account',
-    value: '00130601',
+    value: 'OTUZCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18984,7 +18984,7 @@ export const districtList = [
     label: 'AGALLPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00130602',
+    value: 'AGALLPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -18998,7 +18998,7 @@ export const districtList = [
     label: 'CHARAT',
     subTitle: '-',
     type: 'account',
-    value: '00130604',
+    value: 'CHARAT',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19012,7 +19012,7 @@ export const districtList = [
     label: 'HUARANCHAL',
     subTitle: '-',
     type: 'account',
-    value: '00130605',
+    value: 'HUARANCHAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19026,7 +19026,7 @@ export const districtList = [
     label: 'LA',
     subTitle: '-',
     type: 'account',
-    value: '00130606',
+    value: 'LA CUESTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19040,7 +19040,7 @@ export const districtList = [
     label: 'MACHE',
     subTitle: '-',
     type: 'account',
-    value: '00130608',
+    value: 'MACHE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19054,7 +19054,7 @@ export const districtList = [
     label: 'PARANDAY',
     subTitle: '-',
     type: 'account',
-    value: '00130610',
+    value: 'PARANDAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19068,7 +19068,7 @@ export const districtList = [
     label: 'SALPO',
     subTitle: '-',
     type: 'account',
-    value: '00130611',
+    value: 'SALPO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19082,7 +19082,7 @@ export const districtList = [
     label: 'SINSICAP',
     subTitle: '-',
     type: 'account',
-    value: '00130613',
+    value: 'SINSICAP',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19096,7 +19096,7 @@ export const districtList = [
     label: 'USQUIL',
     subTitle: '-',
     type: 'account',
-    value: '00130614',
+    value: 'USQUIL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19110,7 +19110,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00130701',
+    value: 'SAN PEDRO DE LLOC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19124,7 +19124,7 @@ export const districtList = [
     label: 'GUADALUPE',
     subTitle: '-',
     type: 'account',
-    value: '00130702',
+    value: 'GUADALUPE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19138,7 +19138,7 @@ export const districtList = [
     label: 'JEQUETEPEQUE',
     subTitle: '-',
     type: 'account',
-    value: '00130703',
+    value: 'JEQUETEPEQUE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19152,7 +19152,7 @@ export const districtList = [
     label: 'PACASMAYO',
     subTitle: '-',
     type: 'account',
-    value: '00130704',
+    value: 'PACASMAYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19166,7 +19166,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00130705',
+    value: 'SAN JOSE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19180,7 +19180,7 @@ export const districtList = [
     label: 'TAYABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00130801',
+    value: 'TAYABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19194,7 +19194,7 @@ export const districtList = [
     label: 'BULDIBUYO',
     subTitle: '-',
     type: 'account',
-    value: '00130802',
+    value: 'BULDIBUYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19208,7 +19208,7 @@ export const districtList = [
     label: 'CHILLIA',
     subTitle: '-',
     type: 'account',
-    value: '00130803',
+    value: 'CHILLIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19222,7 +19222,7 @@ export const districtList = [
     label: 'HUANCASPATA',
     subTitle: '-',
     type: 'account',
-    value: '00130804',
+    value: 'HUANCASPATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19236,7 +19236,7 @@ export const districtList = [
     label: 'HUAYLILLAS',
     subTitle: '-',
     type: 'account',
-    value: '00130805',
+    value: 'HUAYLILLAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19250,7 +19250,7 @@ export const districtList = [
     label: 'HUAYO',
     subTitle: '-',
     type: 'account',
-    value: '00130806',
+    value: 'HUAYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19264,7 +19264,7 @@ export const districtList = [
     label: 'ONGON',
     subTitle: '-',
     type: 'account',
-    value: '00130807',
+    value: 'ONGON',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19278,7 +19278,7 @@ export const districtList = [
     label: 'PARCOY',
     subTitle: '-',
     type: 'account',
-    value: '00130808',
+    value: 'PARCOY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19292,7 +19292,7 @@ export const districtList = [
     label: 'PATAZ',
     subTitle: '-',
     type: 'account',
-    value: '00130809',
+    value: 'PATAZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19306,7 +19306,7 @@ export const districtList = [
     label: 'PIAS',
     subTitle: '-',
     type: 'account',
-    value: '00130810',
+    value: 'PIAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19320,7 +19320,7 @@ export const districtList = [
     label: 'SANTIAGO',
     subTitle: '-',
     type: 'account',
-    value: '00130811',
+    value: 'SANTIAGO DE CHALLAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19334,7 +19334,7 @@ export const districtList = [
     label: 'TAURIJA',
     subTitle: '-',
     type: 'account',
-    value: '00130812',
+    value: 'TAURIJA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19348,7 +19348,7 @@ export const districtList = [
     label: 'URPAY',
     subTitle: '-',
     type: 'account',
-    value: '00130813',
+    value: 'URPAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19362,7 +19362,7 @@ export const districtList = [
     label: 'HUAMACHUCO',
     subTitle: '-',
     type: 'account',
-    value: '00130901',
+    value: 'HUAMACHUCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19376,7 +19376,7 @@ export const districtList = [
     label: 'CHUGAY',
     subTitle: '-',
     type: 'account',
-    value: '00130902',
+    value: 'CHUGAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19390,7 +19390,7 @@ export const districtList = [
     label: 'COCHORCO',
     subTitle: '-',
     type: 'account',
-    value: '00130903',
+    value: 'COCHORCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19404,7 +19404,7 @@ export const districtList = [
     label: 'CURGOS',
     subTitle: '-',
     type: 'account',
-    value: '00130904',
+    value: 'CURGOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19418,7 +19418,7 @@ export const districtList = [
     label: 'MARCABAL',
     subTitle: '-',
     type: 'account',
-    value: '00130905',
+    value: 'MARCABAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19432,7 +19432,7 @@ export const districtList = [
     label: 'SANAGORAN',
     subTitle: '-',
     type: 'account',
-    value: '00130906',
+    value: 'SANAGORAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19446,7 +19446,7 @@ export const districtList = [
     label: 'SARIN',
     subTitle: '-',
     type: 'account',
-    value: '00130907',
+    value: 'SARIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19460,7 +19460,7 @@ export const districtList = [
     label: 'SARTIMBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00130908',
+    value: 'SARTIMBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19474,7 +19474,7 @@ export const districtList = [
     label: 'SANTIAGO',
     subTitle: '-',
     type: 'account',
-    value: '00131001',
+    value: 'SANTIAGO DE CHUCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19488,7 +19488,7 @@ export const districtList = [
     label: 'ANGASMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00131002',
+    value: 'ANGASMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19502,7 +19502,7 @@ export const districtList = [
     label: 'CACHICADAN',
     subTitle: '-',
     type: 'account',
-    value: '00131003',
+    value: 'CACHICADAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19516,7 +19516,7 @@ export const districtList = [
     label: 'MOLLEBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00131004',
+    value: 'MOLLEBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19530,7 +19530,7 @@ export const districtList = [
     label: 'MOLLEPATA',
     subTitle: '-',
     type: 'account',
-    value: '00131005',
+    value: 'MOLLEPATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19544,7 +19544,7 @@ export const districtList = [
     label: 'QUIRUVILCA',
     subTitle: '-',
     type: 'account',
-    value: '00131006',
+    value: 'QUIRUVILCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19558,7 +19558,7 @@ export const districtList = [
     label: 'SANTA',
     subTitle: '-',
     type: 'account',
-    value: '00131007',
+    value: 'SANTA CRUZ DE CHUCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19572,7 +19572,7 @@ export const districtList = [
     label: 'SITABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00131008',
+    value: 'SITABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19586,7 +19586,7 @@ export const districtList = [
     label: 'CASCAS',
     subTitle: '-',
     type: 'account',
-    value: '00131101',
+    value: 'CASCAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19600,7 +19600,7 @@ export const districtList = [
     label: 'LUCMA',
     subTitle: '-',
     type: 'account',
-    value: '00131102',
+    value: 'LUCMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19614,7 +19614,7 @@ export const districtList = [
     label: 'COMPIN',
     subTitle: '-',
     type: 'account',
-    value: '00131103',
+    value: 'COMPIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19628,7 +19628,7 @@ export const districtList = [
     label: 'SAYAPULLO',
     subTitle: '-',
     type: 'account',
-    value: '00131104',
+    value: 'SAYAPULLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19642,7 +19642,7 @@ export const districtList = [
     label: 'VIRU',
     subTitle: '-',
     type: 'account',
-    value: '00131201',
+    value: 'VIRU',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19656,7 +19656,7 @@ export const districtList = [
     label: 'CHAO',
     subTitle: '-',
     type: 'account',
-    value: '00131202',
+    value: 'CHAO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19670,7 +19670,7 @@ export const districtList = [
     label: 'GUADALUPITO',
     subTitle: '-',
     type: 'account',
-    value: '00131203',
+    value: 'GUADALUPITO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '13',
@@ -19684,7 +19684,7 @@ export const districtList = [
     label: 'CHICLAYO',
     subTitle: '-',
     type: 'account',
-    value: '00140101',
+    value: 'CHICLAYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19698,7 +19698,7 @@ export const districtList = [
     label: 'CHONGOYAPE',
     subTitle: '-',
     type: 'account',
-    value: '00140102',
+    value: 'CHONGOYAPE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19712,7 +19712,7 @@ export const districtList = [
     label: 'ETEN',
     subTitle: '-',
     type: 'account',
-    value: '00140103',
+    value: 'ETEN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19726,7 +19726,7 @@ export const districtList = [
     label: 'ETEN',
     subTitle: '-',
     type: 'account',
-    value: '00140104',
+    value: 'ETEN PUERTO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19740,7 +19740,7 @@ export const districtList = [
     label: 'JOSE',
     subTitle: '-',
     type: 'account',
-    value: '00140105',
+    value: 'JOSE LEONARDO ORTIZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19754,7 +19754,7 @@ export const districtList = [
     label: 'LA',
     subTitle: '-',
     type: 'account',
-    value: '00140106',
+    value: 'LA VICTORIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19768,7 +19768,7 @@ export const districtList = [
     label: 'LAGUNAS',
     subTitle: '-',
     type: 'account',
-    value: '00140107',
+    value: 'LAGUNAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19782,7 +19782,7 @@ export const districtList = [
     label: 'MONSEFU',
     subTitle: '-',
     type: 'account',
-    value: '00140108',
+    value: 'MONSEFU',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19796,7 +19796,7 @@ export const districtList = [
     label: 'NUEVA',
     subTitle: '-',
     type: 'account',
-    value: '00140109',
+    value: 'NUEVA ARICA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19810,7 +19810,7 @@ export const districtList = [
     label: 'OYOTUN',
     subTitle: '-',
     type: 'account',
-    value: '00140110',
+    value: 'OYOTUN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19824,7 +19824,7 @@ export const districtList = [
     label: 'PICSI',
     subTitle: '-',
     type: 'account',
-    value: '00140111',
+    value: 'PICSI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19838,7 +19838,7 @@ export const districtList = [
     label: 'PIMENTEL',
     subTitle: '-',
     type: 'account',
-    value: '00140112',
+    value: 'PIMENTEL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19852,7 +19852,7 @@ export const districtList = [
     label: 'REQUE',
     subTitle: '-',
     type: 'account',
-    value: '00140113',
+    value: 'REQUE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19866,7 +19866,7 @@ export const districtList = [
     label: 'SANTA',
     subTitle: '-',
     type: 'account',
-    value: '00140114',
+    value: 'SANTA ROSA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19880,7 +19880,7 @@ export const districtList = [
     label: 'SAÑA',
     subTitle: '-',
     type: 'account',
-    value: '00140115',
+    value: 'SAÑA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19894,7 +19894,7 @@ export const districtList = [
     label: 'CAYALTI',
     subTitle: '-',
     type: 'account',
-    value: '00140116',
+    value: 'CAYALTI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19908,7 +19908,7 @@ export const districtList = [
     label: 'PATAPO',
     subTitle: '-',
     type: 'account',
-    value: '00140117',
+    value: 'PATAPO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19922,7 +19922,7 @@ export const districtList = [
     label: 'POMALCA',
     subTitle: '-',
     type: 'account',
-    value: '00140118',
+    value: 'POMALCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19936,7 +19936,7 @@ export const districtList = [
     label: 'PUCALA',
     subTitle: '-',
     type: 'account',
-    value: '00140119',
+    value: 'PUCALA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19950,7 +19950,7 @@ export const districtList = [
     label: 'TUMAN',
     subTitle: '-',
     type: 'account',
-    value: '00140120',
+    value: 'TUMAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19964,7 +19964,7 @@ export const districtList = [
     label: 'FERREÑAFE',
     subTitle: '-',
     type: 'account',
-    value: '00140201',
+    value: 'FERREÑAFE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19978,7 +19978,7 @@ export const districtList = [
     label: 'CAÑARIS',
     subTitle: '-',
     type: 'account',
-    value: '00140202',
+    value: 'CAÑARIS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -19992,7 +19992,7 @@ export const districtList = [
     label: 'INCAHUASI',
     subTitle: '-',
     type: 'account',
-    value: '00140203',
+    value: 'INCAHUASI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -20006,7 +20006,7 @@ export const districtList = [
     label: 'MANUEL',
     subTitle: '-',
     type: 'account',
-    value: '00140204',
+    value: 'MANUEL ANTONIO MESONES MURO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -20020,7 +20020,7 @@ export const districtList = [
     label: 'PITIPO',
     subTitle: '-',
     type: 'account',
-    value: '00140205',
+    value: 'PITIPO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -20034,7 +20034,7 @@ export const districtList = [
     label: 'PUEBLO',
     subTitle: '-',
     type: 'account',
-    value: '00140206',
+    value: 'PUEBLO NUEVO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -20048,7 +20048,7 @@ export const districtList = [
     label: 'LAMBAYEQUE',
     subTitle: '-',
     type: 'account',
-    value: '00140301',
+    value: 'LAMBAYEQUE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -20062,7 +20062,7 @@ export const districtList = [
     label: 'CHOCHOPE',
     subTitle: '-',
     type: 'account',
-    value: '00140302',
+    value: 'CHOCHOPE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -20076,7 +20076,7 @@ export const districtList = [
     label: 'ILLIMO',
     subTitle: '-',
     type: 'account',
-    value: '00140303',
+    value: 'ILLIMO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -20090,7 +20090,7 @@ export const districtList = [
     label: 'JAYANCA',
     subTitle: '-',
     type: 'account',
-    value: '00140304',
+    value: 'JAYANCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -20104,7 +20104,7 @@ export const districtList = [
     label: 'MOCHUMI',
     subTitle: '-',
     type: 'account',
-    value: '00140305',
+    value: 'MOCHUMI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -20118,7 +20118,7 @@ export const districtList = [
     label: 'MORROPE',
     subTitle: '-',
     type: 'account',
-    value: '00140306',
+    value: 'MORROPE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -20132,7 +20132,7 @@ export const districtList = [
     label: 'MOTUPE',
     subTitle: '-',
     type: 'account',
-    value: '00140307',
+    value: 'MOTUPE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -20146,7 +20146,7 @@ export const districtList = [
     label: 'OLMOS',
     subTitle: '-',
     type: 'account',
-    value: '00140308',
+    value: 'OLMOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -20160,7 +20160,7 @@ export const districtList = [
     label: 'PACORA',
     subTitle: '-',
     type: 'account',
-    value: '00140309',
+    value: 'PACORA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -20174,7 +20174,7 @@ export const districtList = [
     label: 'SALAS',
     subTitle: '-',
     type: 'account',
-    value: '00140310',
+    value: 'SALAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -20188,7 +20188,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00140311',
+    value: 'SAN JOSE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -20202,7 +20202,7 @@ export const districtList = [
     label: 'TUCUME',
     subTitle: '-',
     type: 'account',
-    value: '00140312',
+    value: 'TUCUME',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '14',
@@ -20216,7 +20216,7 @@ export const districtList = [
     label: 'LIMA',
     subTitle: '-',
     type: 'account',
-    value: '00150101',
+    value: 'LIMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20230,7 +20230,7 @@ export const districtList = [
     label: 'ANCON',
     subTitle: '-',
     type: 'account',
-    value: '00150102',
+    value: 'ANCON',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20244,7 +20244,7 @@ export const districtList = [
     label: 'ATE',
     subTitle: '-',
     type: 'account',
-    value: '00150103',
+    value: 'ATE',,
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20258,7 +20258,7 @@ export const districtList = [
     label: 'BARRANCO',
     subTitle: '-',
     type: 'account',
-    value: '00150104',
+    value: 'BARRANCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20272,7 +20272,7 @@ export const districtList = [
     label: 'BREÑA',
     subTitle: '-',
     type: 'account',
-    value: '00150105',
+    value: 'BREÑA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20286,7 +20286,7 @@ export const districtList = [
     label: 'CARABAYLLO',
     subTitle: '-',
     type: 'account',
-    value: '00150106',
+    value: 'CARABAYLLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20300,7 +20300,7 @@ export const districtList = [
     label: 'CHACLACAYO',
     subTitle: '-',
     type: 'account',
-    value: '00150107',
+    value: 'CHACLACAYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20314,7 +20314,7 @@ export const districtList = [
     label: 'CHORRILLOS',
     subTitle: '-',
     type: 'account',
-    value: '00150108',
+    value: 'CHORRILLOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20328,7 +20328,7 @@ export const districtList = [
     label: 'CIENEGUILLA',
     subTitle: '-',
     type: 'account',
-    value: '00150109',
+    value: 'CIENEGUILLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20342,7 +20342,7 @@ export const districtList = [
     label: 'COMAS',
     subTitle: '-',
     type: 'account',
-    value: '00150110',
+    value: 'COMAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20356,7 +20356,7 @@ export const districtList = [
     label: 'EL',
     subTitle: '-',
     type: 'account',
-    value: '00150111',
+    value: 'EL AGUSTINO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20370,7 +20370,7 @@ export const districtList = [
     label: 'INDEPENDENCIA',
     subTitle: '-',
     type: 'account',
-    value: '00150112',
+    value: 'INDEPENDENCIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20384,7 +20384,7 @@ export const districtList = [
     label: 'JESUS',
     subTitle: '-',
     type: 'account',
-    value: '00150113',
+    value: 'JESUS MARIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20398,7 +20398,7 @@ export const districtList = [
     label: 'LA',
     subTitle: '-',
     type: 'account',
-    value: '00150114',
+    value: 'LA MOLINA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20412,7 +20412,7 @@ export const districtList = [
     label: 'LA',
     subTitle: '-',
     type: 'account',
-    value: '00150115',
+    value: 'LA VICTORIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20426,7 +20426,7 @@ export const districtList = [
     label: 'LINCE',
     subTitle: '-',
     type: 'account',
-    value: '00150116',
+    value: 'LINCE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20440,7 +20440,7 @@ export const districtList = [
     label: 'LOS',
     subTitle: '-',
     type: 'account',
-    value: '00150117',
+    value: 'LOS OLIVOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20454,7 +20454,7 @@ export const districtList = [
     label: 'LURIGANCHO',
     subTitle: '-',
     type: 'account',
-    value: '00150118',
+    value: 'LURIGANCHO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20468,7 +20468,7 @@ export const districtList = [
     label: 'LURIN',
     subTitle: '-',
     type: 'account',
-    value: '00150119',
+    value: 'LURIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20482,7 +20482,7 @@ export const districtList = [
     label: 'MAGDALENA',
     subTitle: '-',
     type: 'account',
-    value: '00150120',
+    value: 'MAGDALENA DEL MAR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20496,7 +20496,7 @@ export const districtList = [
     label: 'PUEBLO',
     subTitle: '-',
     type: 'account',
-    value: '00150121',
+    value: 'PUEBLO LIBRE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20510,7 +20510,7 @@ export const districtList = [
     label: 'MIRAFLORES',
     subTitle: '-',
     type: 'account',
-    value: '00150122',
+    value: 'MIRAFLORES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20524,7 +20524,7 @@ export const districtList = [
     label: 'PACHACAMAC',
     subTitle: '-',
     type: 'account',
-    value: '00150123',
+    value: 'PACHACAMAC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20538,7 +20538,7 @@ export const districtList = [
     label: 'PUCUSANA',
     subTitle: '-',
     type: 'account',
-    value: '00150124',
+    value: 'PUCUSANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20552,7 +20552,7 @@ export const districtList = [
     label: 'PUENTE',
     subTitle: '-',
     type: 'account',
-    value: '00150125',
+    value: 'PUENTE PIEDRA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20566,7 +20566,7 @@ export const districtList = [
     label: 'PUNTA',
     subTitle: '-',
     type: 'account',
-    value: '00150126',
+    value: 'PUNTA HERMOSA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20580,7 +20580,7 @@ export const districtList = [
     label: 'PUNTA',
     subTitle: '-',
     type: 'account',
-    value: '00150127',
+    value: 'PUNTA NEGRA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20594,7 +20594,7 @@ export const districtList = [
     label: 'RIMAC',
     subTitle: '-',
     type: 'account',
-    value: '00150128',
+    value: 'RIMAC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20608,7 +20608,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00150129',
+    value: 'SAN BARTOLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20622,7 +20622,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00150130',
+    value: 'SAN BORJA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20636,7 +20636,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00150131',
+    value: 'SAN ISIDRO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20650,7 +20650,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00150132',
+    value: 'SAN JUAN DE LURIGANCHO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20664,7 +20664,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00150133',
+    value: 'SAN JUAN DE MIRAFLORES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20678,7 +20678,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00150134',
+    value: 'SAN LUIS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20692,7 +20692,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00150135',
+    value: 'SAN MARTIN DE PORRES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20706,7 +20706,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00150136',
+    value: 'SAN MIGUEL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20720,7 +20720,7 @@ export const districtList = [
     label: 'SANTA',
     subTitle: '-',
     type: 'account',
-    value: '00150137',
+    value: 'SANTA ANITA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20734,7 +20734,7 @@ export const districtList = [
     label: 'SANTA',
     subTitle: '-',
     type: 'account',
-    value: '00150138',
+    value: 'SANTA MARIA DEL MAR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20748,7 +20748,7 @@ export const districtList = [
     label: 'SANTA',
     subTitle: '-',
     type: 'account',
-    value: '00150139',
+    value: 'SANTA ROSA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20762,7 +20762,7 @@ export const districtList = [
     label: 'SANTIAGO',
     subTitle: '-',
     type: 'account',
-    value: '00150140',
+    value: 'SANTIAGO DE SURCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20776,7 +20776,7 @@ export const districtList = [
     label: 'SURQUILLO',
     subTitle: '-',
     type: 'account',
-    value: '00150141',
+    value: 'SURQUILLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20790,7 +20790,7 @@ export const districtList = [
     label: 'VILLA',
     subTitle: '-',
     type: 'account',
-    value: '00150142',
+    value: 'VILLA EL SALVADOR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20804,7 +20804,7 @@ export const districtList = [
     label: 'VILLA MARIA DEL TRIUNFO',
     subTitle: '-',
     type: 'account',
-    value: '00150143',
+    value: 'VILLA MARIA DEL TRIUNFO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20818,7 +20818,7 @@ export const districtList = [
     label: 'BARRANCA',
     subTitle: '-',
     type: 'account',
-    value: '00150201',
+    value: 'BARRANCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20832,7 +20832,7 @@ export const districtList = [
     label: 'PARAMONGA',
     subTitle: '-',
     type: 'account',
-    value: '00150202',
+    value: 'PARAMONGA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20846,7 +20846,7 @@ export const districtList = [
     label: 'PATIVILCA',
     subTitle: '-',
     type: 'account',
-    value: '00150203',
+    value: 'PATIVILCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20860,7 +20860,7 @@ export const districtList = [
     label: 'SUPE',
     subTitle: '-',
     type: 'account',
-    value: '00150204',
+    value: 'SUPE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20874,7 +20874,7 @@ export const districtList = [
     label: 'SUPE PUERTO',
     subTitle: '-',
     type: 'account',
-    value: '00150205',
+    value: 'SUPE PUERTO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20888,7 +20888,7 @@ export const districtList = [
     label: 'CAJATAMBO',
     subTitle: '-',
     type: 'account',
-    value: '00150301',
+    value: 'CAJATAMBO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20902,7 +20902,7 @@ export const districtList = [
     label: 'COPA',
     subTitle: '-',
     type: 'account',
-    value: '00150302',
+    value: 'COPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20916,7 +20916,7 @@ export const districtList = [
     label: 'GORGOR',
     subTitle: '-',
     type: 'account',
-    value: '00150303',
+    value: 'GORGOR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20930,7 +20930,7 @@ export const districtList = [
     label: 'HUANCAPON',
     subTitle: '-',
     type: 'account',
-    value: '00150304',
+    value: 'HUANCAPON',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20944,7 +20944,7 @@ export const districtList = [
     label: 'MANAS',
     subTitle: '-',
     type: 'account',
-    value: '00150305',
+    value: 'MANAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20958,7 +20958,7 @@ export const districtList = [
     label: 'CANTA',
     subTitle: '-',
     type: 'account',
-    value: '00150401',
+    value: 'CANTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20972,7 +20972,7 @@ export const districtList = [
     label: 'ARAHUAY',
     subTitle: '-',
     type: 'account',
-    value: '00150402',
+    value: 'ARAHUAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -20986,7 +20986,7 @@ export const districtList = [
     label: 'HUAMANTANGA',
     subTitle: '-',
     type: 'account',
-    value: '00150403',
+    value: 'HUAMANTANGA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21000,7 +21000,7 @@ export const districtList = [
     label: 'HUAROS',
     subTitle: '-',
     type: 'account',
-    value: '00150404',
+    value: 'HUAROS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21014,7 +21014,7 @@ export const districtList = [
     label: 'LACHAQUI',
     subTitle: '-',
     type: 'account',
-    value: '00150405',
+    value: 'LACHAQUI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21028,7 +21028,7 @@ export const districtList = [
     label: 'SAN BUENAVENTURA',
     subTitle: '-',
     type: 'account',
-    value: '00150406',
+    value: 'SAN BUENAVENTURA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21042,7 +21042,7 @@ export const districtList = [
     label: 'SANTA ROSA DE QUIVES',
     subTitle: '-',
     type: 'account',
-    value: '00150407',
+    value: 'SANTA ROSA DE QUIVES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21056,7 +21056,7 @@ export const districtList = [
     label: 'SAN VICENTE DE CAÑETE',
     subTitle: '-',
     type: 'account',
-    value: '00150501',
+    value: 'SAN VICENTE DE CAÑETE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21070,7 +21070,7 @@ export const districtList = [
     label: 'ASIA',
     subTitle: '-',
     type: 'account',
-    value: '00150502',
+    value: 'ASIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21084,7 +21084,7 @@ export const districtList = [
     label: 'CALANGO',
     subTitle: '-',
     type: 'account',
-    value: '00150503',
+    value: 'CALANGO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21098,7 +21098,7 @@ export const districtList = [
     label: 'CERRO AZUL',
     subTitle: '-',
     type: 'account',
-    value: '00150504',
+    value: 'CERRO AZUL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21112,7 +21112,7 @@ export const districtList = [
     label: 'CHILCA',
     subTitle: '-',
     type: 'account',
-    value: '00150505',
+    value: 'CHILCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21126,7 +21126,7 @@ export const districtList = [
     label: 'COAYLLO',
     subTitle: '-',
     type: 'account',
-    value: '00150506',
+    value: 'COAYLLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21140,7 +21140,7 @@ export const districtList = [
     label: 'IMPERIAL',
     subTitle: '-',
     type: 'account',
-    value: '00150507',
+    value: 'IMPERIAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21154,7 +21154,7 @@ export const districtList = [
     label: 'LUNAHUANA',
     subTitle: '-',
     type: 'account',
-    value: '00150508',
+    value: 'LUNAHUANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21168,7 +21168,7 @@ export const districtList = [
     label: 'MALA',
     subTitle: '-',
     type: 'account',
-    value: '00150509',
+    value: 'MALA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21182,7 +21182,7 @@ export const districtList = [
     label: 'NUEVO IMPERIAL',
     subTitle: '-',
     type: 'account',
-    value: '00150510',
+    value: 'NUEVO IMPERIAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21196,7 +21196,7 @@ export const districtList = [
     label: 'PACARAN',
     subTitle: '-',
     type: 'account',
-    value: '00150511',
+    value: 'PACARAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21210,7 +21210,7 @@ export const districtList = [
     label: 'QUILMANA',
     subTitle: '-',
     type: 'account',
-    value: '00150512',
+    value: 'QUILMANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21224,7 +21224,7 @@ export const districtList = [
     label: 'SAN ANTONIO',
     subTitle: '-',
     type: 'account',
-    value: '00150513',
+    value: 'SAN ANTONIO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21238,7 +21238,7 @@ export const districtList = [
     label: 'SAN LUIS',
     subTitle: '-',
     type: 'account',
-    value: '00150514',
+    value: 'SAN LUIS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21252,7 +21252,7 @@ export const districtList = [
     label: 'SANTA CRUZ DE FLORES',
     subTitle: '-',
     type: 'account',
-    value: '00150515',
+    value: 'SANTA CRUZ DE FLORES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21266,7 +21266,7 @@ export const districtList = [
     label: 'ZUÑIGA',
     subTitle: '-',
     type: 'account',
-    value: '00150516',
+    value: 'ZUÑIGA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21280,7 +21280,7 @@ export const districtList = [
     label: 'HUARAL',
     subTitle: '-',
     type: 'account',
-    value: '00150601',
+    value: 'HUARAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21294,7 +21294,7 @@ export const districtList = [
     label: 'ATAVILLOS ALTO',
     subTitle: '-',
     type: 'account',
-    value: '00150602',
+    value: 'ATAVILLOS ALTO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21308,7 +21308,7 @@ export const districtList = [
     label: 'ATAVILLOS BAJO',
     subTitle: '-',
     type: 'account',
-    value: '00150603',
+    value: 'ATAVILLOS BAJO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21322,7 +21322,7 @@ export const districtList = [
     label: 'AUCALLAMA',
     subTitle: '-',
     type: 'account',
-    value: '00150604',
+    value: 'AUCALLAMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21336,7 +21336,7 @@ export const districtList = [
     label: 'CHANCAY',
     subTitle: '-',
     type: 'account',
-    value: '00150605',
+    value: 'CHANCAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21350,7 +21350,7 @@ export const districtList = [
     label: 'IHUARI',
     subTitle: '-',
     type: 'account',
-    value: '00150606',
+    value: 'IHUARI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21364,7 +21364,7 @@ export const districtList = [
     label: 'LAMPIAN',
     subTitle: '-',
     type: 'account',
-    value: '00150607',
+    value: 'LAMPIAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21378,7 +21378,7 @@ export const districtList = [
     label: 'PACARAOS',
     subTitle: '-',
     type: 'account',
-    value: '00150608',
+    value: 'PACARAOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21392,7 +21392,7 @@ export const districtList = [
     label: 'SAN MIGUEL DE ACOS',
     subTitle: '-',
     type: 'account',
-    value: '00150609',
+    value: 'SAN MIGUEL DE ACOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21406,7 +21406,7 @@ export const districtList = [
     label: 'SANTA CRUZ DE ANDAMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00150610',
+    value: 'SANTA CRUZ DE ANDAMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21420,7 +21420,7 @@ export const districtList = [
     label: 'SUMBILCA',
     subTitle: '-',
     type: 'account',
-    value: '00150611',
+    value: 'SUMBILCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21434,7 +21434,7 @@ export const districtList = [
     label: 'VEINTISIETE DE NOVIEMBRE',
     subTitle: '-',
     type: 'account',
-    value: '00150612',
+    value: 'VEINTISIETE DE NOVIEMBRE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21448,7 +21448,7 @@ export const districtList = [
     label: 'MATUCANA',
     subTitle: '-',
     type: 'account',
-    value: '00150701',
+    value: 'MATUCANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21462,7 +21462,7 @@ export const districtList = [
     label: 'ANTIOQUIA',
     subTitle: '-',
     type: 'account',
-    value: '00150702',
+    value: 'ANTIOQUIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21476,7 +21476,7 @@ export const districtList = [
     label: 'CALLAHUANCA',
     subTitle: '-',
     type: 'account',
-    value: '00150703',
+    value: 'CALLAHUANCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21490,7 +21490,7 @@ export const districtList = [
     label: 'CARAMPOMA',
     subTitle: '-',
     type: 'account',
-    value: '00150704',
+    value: 'CARAMPOMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21504,7 +21504,7 @@ export const districtList = [
     label: 'CHICLA',
     subTitle: '-',
     type: 'account',
-    value: '00150705',
+    value: 'CHICLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21518,7 +21518,7 @@ export const districtList = [
     label: 'CUENCA',
     subTitle: '-',
     type: 'account',
-    value: '00150706',
+    value: 'CUENCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21532,7 +21532,7 @@ export const districtList = [
     label: 'HUACHUPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00150707',
+    value: 'HUACHUPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21546,7 +21546,7 @@ export const districtList = [
     label: 'HUANZA',
     subTitle: '-',
     type: 'account',
-    value: '00150708',
+    value: 'HUANZA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21560,7 +21560,7 @@ export const districtList = [
     label: 'HUAROCHIRI',
     subTitle: '-',
     type: 'account',
-    value: '00150709',
+    value: 'HUAROCHIRI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21574,7 +21574,7 @@ export const districtList = [
     label: 'LAHUAYTAMBO',
     subTitle: '-',
     type: 'account',
-    value: '00150710',
+    value: 'LAHUAYTAMBO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21588,7 +21588,7 @@ export const districtList = [
     label: 'LANGA',
     subTitle: '-',
     type: 'account',
-    value: '00150711',
+    value: 'LANGA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21602,7 +21602,7 @@ export const districtList = [
     label: 'LARAOS',
     subTitle: '-',
     type: 'account',
-    value: '00150712',
+    value: 'LARAOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21616,7 +21616,7 @@ export const districtList = [
     label: 'MARIATANA',
     subTitle: '-',
     type: 'account',
-    value: '00150713',
+    value: 'MARIATANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21630,7 +21630,7 @@ export const districtList = [
     label: 'RICARDO PALMA',
     subTitle: '-',
     type: 'account',
-    value: '00150714',
+    value: 'RICARDO PALMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21644,7 +21644,7 @@ export const districtList = [
     label: 'SAN ANDRES DE TUPICOCH',
     subTitle: '-',
     type: 'account',
-    value: '00150715',
+    value: 'SAN ANDRES DE TUPICOCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21658,7 +21658,7 @@ export const districtList = [
     label: 'SAN ANTONIO',
     subTitle: '-',
     type: 'account',
-    value: '00150716',
+    value: 'SAN ANTONIO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21672,7 +21672,7 @@ export const districtList = [
     label: 'SAN BARTOLOME',
     subTitle: '-',
     type: 'account',
-    value: '00150717',
+    value: 'SAN BARTOLOME',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21686,7 +21686,7 @@ export const districtList = [
     label: 'SAN DAMIAN',
     subTitle: '-',
     type: 'account',
-    value: '00150718',
+    value: 'SAN DAMIAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21700,7 +21700,7 @@ export const districtList = [
     label: 'SAN JUAN DE IRIS',
     subTitle: '-',
     type: 'account',
-    value: '00150719',
+    value: 'SAN JUAN DE IRIS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21714,7 +21714,7 @@ export const districtList = [
     label: 'SAN JUAN DE TANTARANCHE',
     subTitle: '-',
     type: 'account',
-    value: '00150720',
+    value: 'SAN JUAN DE TANTARANCHE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21728,7 +21728,7 @@ export const districtList = [
     label: 'SAN LORENZO DE QUINTI',
     subTitle: '-',
     type: 'account',
-    value: '00150721',
+    value: 'SAN LORENZO DE QUINTI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21742,7 +21742,7 @@ export const districtList = [
     label: 'SAN MATEO',
     subTitle: '-',
     type: 'account',
-    value: '00150722',
+    value: 'SAN MATEO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21756,7 +21756,7 @@ export const districtList = [
     label: 'SAN MATEO DE OTAO',
     subTitle: '-',
     type: 'account',
-    value: '00150723',
+    value: 'SAN MATEO DE OTAO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21770,7 +21770,7 @@ export const districtList = [
     label: 'SAN PEDRO DE CASTA',
     subTitle: '-',
     type: 'account',
-    value: '00150724',
+    value: 'SAN PEDRO DE CASTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21784,7 +21784,7 @@ export const districtList = [
     label: 'SAN PEDRO DE HUANCAYRE',
     subTitle: '-',
     type: 'account',
-    value: '00150725',
+    value: 'SAN PEDRO DE HUANCAYRE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21798,7 +21798,7 @@ export const districtList = [
     label: 'SANGALLAYA',
     subTitle: '-',
     type: 'account',
-    value: '00150726',
+    value: 'SANGALLAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21812,7 +21812,7 @@ export const districtList = [
     label: 'SANTA CRUZ DE COCACHACRA',
     subTitle: '-',
     type: 'account',
-    value: '00150727',
+    value: 'SANTA CRUZ DE COCACHACRA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21826,7 +21826,7 @@ export const districtList = [
     label: 'SANTA EULALIA',
     subTitle: '-',
     type: 'account',
-    value: '00150728',
+    value: 'SANTA EULALIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21840,7 +21840,7 @@ export const districtList = [
     label: 'SANTIAGO DE ANCHUCAYA',
     subTitle: '-',
     type: 'account',
-    value: '00150729',
+    value: 'SANTIAGO DE ANCHUCAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21854,7 +21854,7 @@ export const districtList = [
     label: 'SANTIAGO DE TUNA',
     subTitle: '-',
     type: 'account',
-    value: '00150730',
+    value: 'SANTIAGO DE TUNA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21868,7 +21868,7 @@ export const districtList = [
     label: 'SANTO DOMINGO DE LOS OLLEROS',
     subTitle: '-',
     type: 'account',
-    value: '00150731',
+    value: 'SANTO DOMINGO DE LOS OLLEROS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21882,7 +21882,7 @@ export const districtList = [
     label: 'SURCO',
     subTitle: '-',
     type: 'account',
-    value: '00150732',
+    value: 'SURCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21896,7 +21896,7 @@ export const districtList = [
     label: 'HUACHO',
     subTitle: '-',
     type: 'account',
-    value: '00150801',
+    value: 'HUACHO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21910,7 +21910,7 @@ export const districtList = [
     label: 'AMBAR',
     subTitle: '-',
     type: 'account',
-    value: '00150802',
+    value: 'AMBAR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21924,7 +21924,7 @@ export const districtList = [
     label: 'CALETA DE CARQUIN',
     subTitle: '-',
     type: 'account',
-    value: '00150803',
+    value: 'CALETA DE CARQUIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21938,7 +21938,7 @@ export const districtList = [
     label: 'CHECRAS',
     subTitle: '-',
     type: 'account',
-    value: '00150804',
+    value: 'CHECRAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21952,7 +21952,7 @@ export const districtList = [
     label: 'HUALMAY',
     subTitle: '-',
     type: 'account',
-    value: '00150805',
+    value: 'HUALMAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21966,7 +21966,7 @@ export const districtList = [
     label: 'HUAURA',
     subTitle: '-',
     type: 'account',
-    value: '00150806',
+    value: 'HUAURA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21980,7 +21980,7 @@ export const districtList = [
     label: 'LEONCIO PRADO',
     subTitle: '-',
     type: 'account',
-    value: '00150807',
+    value: 'LEONCIO PRADO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -21994,7 +21994,7 @@ export const districtList = [
     label: 'PACCHO',
     subTitle: '-',
     type: 'account',
-    value: '00150808',
+    value: 'PACCHO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22008,7 +22008,7 @@ export const districtList = [
     label: 'SANTA LEONOR',
     subTitle: '-',
     type: 'account',
-    value: '00150809',
+    value: 'SANTA LEONOR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22022,7 +22022,7 @@ export const districtList = [
     label: 'SANTA MARIA',
     subTitle: '-',
     type: 'account',
-    value: '00150810',
+    value: 'SANTA MARIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22036,7 +22036,7 @@ export const districtList = [
     label: 'SAYAN',
     subTitle: '-',
     type: 'account',
-    value: '00150811',
+    value: 'SAYAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22050,7 +22050,7 @@ export const districtList = [
     label: 'VEGUETA',
     subTitle: '-',
     type: 'account',
-    value: '00150812',
+    value: 'VEGUETA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22064,7 +22064,7 @@ export const districtList = [
     label: 'OYON',
     subTitle: '-',
     type: 'account',
-    value: '00150901',
+    value: 'OYON',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22078,7 +22078,7 @@ export const districtList = [
     label: 'ANDAJES',
     subTitle: '-',
     type: 'account',
-    value: '00150902',
+    value: 'ANDAJES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22092,7 +22092,7 @@ export const districtList = [
     label: 'CAUJUL',
     subTitle: '-',
     type: 'account',
-    value: '00150903',
+    value: 'CAUJUL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22106,7 +22106,7 @@ export const districtList = [
     label: 'COCHAMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00150904',
+    value: 'COCHAMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22120,7 +22120,7 @@ export const districtList = [
     label: 'NAVAN',
     subTitle: '-',
     type: 'account',
-    value: '00150905',
+    value: 'NAVAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22134,7 +22134,7 @@ export const districtList = [
     label: 'PACHANGARA',
     subTitle: '-',
     type: 'account',
-    value: '00150906',
+    value: 'PACHANGARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22148,7 +22148,7 @@ export const districtList = [
     label: 'YAUYOS',
     subTitle: '-',
     type: 'account',
-    value: '00151001',
+    value: 'YAUYOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22162,7 +22162,7 @@ export const districtList = [
     label: 'ALIS',
     subTitle: '-',
     type: 'account',
-    value: '00151002',
+    value: 'ALIS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22176,7 +22176,7 @@ export const districtList = [
     label: 'AYAUCA',
     subTitle: '-',
     type: 'account',
-    value: '00151003',
+    value: 'AYAUCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22190,7 +22190,7 @@ export const districtList = [
     label: 'AYAVIRI',
     subTitle: '-',
     type: 'account',
-    value: '00151004',
+    value: 'AYAVIRI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22204,7 +22204,7 @@ export const districtList = [
     label: 'AZANGARO',
     subTitle: '-',
     type: 'account',
-    value: '00151005',
+    value: 'AZANGARO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22218,7 +22218,7 @@ export const districtList = [
     label: 'CACRA',
     subTitle: '-',
     type: 'account',
-    value: '00151006',
+    value: 'CACRA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22232,7 +22232,7 @@ export const districtList = [
     label: 'CARANIA',
     subTitle: '-',
     type: 'account',
-    value: '00151007',
+    value: 'CARANIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22246,7 +22246,7 @@ export const districtList = [
     label: 'CATAHUASI',
     subTitle: '-',
     type: 'account',
-    value: '00151008',
+    value: 'CATAHUASI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22260,7 +22260,7 @@ export const districtList = [
     label: 'CHOCOS',
     subTitle: '-',
     type: 'account',
-    value: '00151009',
+    value: 'CHOCOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22274,7 +22274,7 @@ export const districtList = [
     label: 'COCHAS',
     subTitle: '-',
     type: 'account',
-    value: '00151010',
+    value: 'COCHAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22288,7 +22288,7 @@ export const districtList = [
     label: 'COLONIA',
     subTitle: '-',
     type: 'account',
-    value: '00151011',
+    value: 'COLONIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22302,7 +22302,7 @@ export const districtList = [
     label: 'HONGOS',
     subTitle: '-',
     type: 'account',
-    value: '00151012',
+    value: 'HONGOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22316,7 +22316,7 @@ export const districtList = [
     label: 'HUAMPARA',
     subTitle: '-',
     type: 'account',
-    value: '00151013',
+    value: 'HUAMPARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22330,7 +22330,7 @@ export const districtList = [
     label: 'HUANCAYA',
     subTitle: '-',
     type: 'account',
-    value: '00151014',
+    value: 'HUANCAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22344,7 +22344,7 @@ export const districtList = [
     label: 'HUANGASCAR',
     subTitle: '-',
     type: 'account',
-    value: '00151015',
+    value: 'HUANGASCAR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22358,7 +22358,7 @@ export const districtList = [
     label: 'HUANTAN',
     subTitle: '-',
     type: 'account',
-    value: '00151016',
+    value: 'HUANTAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22372,7 +22372,7 @@ export const districtList = [
     label: 'HUAÑEC',
     subTitle: '-',
     type: 'account',
-    value: '00151017',
+    value: 'HUAÑEC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22386,7 +22386,7 @@ export const districtList = [
     label: 'LARAOS',
     subTitle: '-',
     type: 'account',
-    value: '00151018',
+    value: 'LARAOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22400,7 +22400,7 @@ export const districtList = [
     label: 'LINCHA',
     subTitle: '-',
     type: 'account',
-    value: '00151019',
+    value: 'LINCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22414,7 +22414,7 @@ export const districtList = [
     label: 'MADEAN',
     subTitle: '-',
     type: 'account',
-    value: '00151020',
+    value: 'MADEAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22428,7 +22428,7 @@ export const districtList = [
     label: 'MIRAFLORES',
     subTitle: '-',
     type: 'account',
-    value: '00151021',
+    value: 'MIRAFLORES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22442,7 +22442,7 @@ export const districtList = [
     label: 'OMAS',
     subTitle: '-',
     type: 'account',
-    value: '00151022',
+    value: 'OMAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22456,7 +22456,7 @@ export const districtList = [
     label: 'PUTINZA',
     subTitle: '-',
     type: 'account',
-    value: '00151023',
+    value: 'PUTINZA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22470,7 +22470,7 @@ export const districtList = [
     label: 'QUINCHES',
     subTitle: '-',
     type: 'account',
-    value: '00151024',
+    value: 'QUINCHES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22484,7 +22484,7 @@ export const districtList = [
     label: 'QUINOCAY',
     subTitle: '-',
     type: 'account',
-    value: '00151025',
+    value: 'QUINOCAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22498,7 +22498,7 @@ export const districtList = [
     label: 'SAN',
     subTitle: '-',
     type: 'account',
-    value: '00151026',
+    value: 'SAN JOAQUIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22512,7 +22512,7 @@ export const districtList = [
     label: 'SAN PEDRO DE PILAS',
     subTitle: '-',
     type: 'account',
-    value: '00151027',
+    value: 'SAN PEDRO DE PILAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22526,7 +22526,7 @@ export const districtList = [
     label: 'TANTA',
     subTitle: '-',
     type: 'account',
-    value: '00151028',
+    value: 'TANTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22540,7 +22540,7 @@ export const districtList = [
     label: 'TAURIPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00151029',
+    value: 'TAURIPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22554,7 +22554,7 @@ export const districtList = [
     label: 'TOMAS',
     subTitle: '-',
     type: 'account',
-    value: '00151030',
+    value: 'TOMAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22568,7 +22568,7 @@ export const districtList = [
     label: 'TUPE',
     subTitle: '-',
     type: 'account',
-    value: '00151031',
+    value: 'TUPE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22582,7 +22582,7 @@ export const districtList = [
     label: 'VIÑAC',
     subTitle: '-',
     type: 'account',
-    value: '00151032',
+    value: 'VIÑAC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22596,7 +22596,7 @@ export const districtList = [
     label: 'VITIS',
     subTitle: '-',
     type: 'account',
-    value: '00151033',
+    value: 'VITIS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '15',
@@ -22610,7 +22610,7 @@ export const districtList = [
     label: 'IQUITOS',
     subTitle: '-',
     type: 'account',
-    value: '00160101',
+    value: 'IQUITOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22624,7 +22624,7 @@ export const districtList = [
     label: 'ALTO NANAY',
     subTitle: '-',
     type: 'account',
-    value: '00160102',
+    value: 'ALTO NANAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22638,7 +22638,7 @@ export const districtList = [
     label: 'FERNANDO LORES',
     subTitle: '-',
     type: 'account',
-    value: '00160103',
+    value: 'FERNANDO LORES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22652,7 +22652,7 @@ export const districtList = [
     label: 'INDIANA',
     subTitle: '-',
     type: 'account',
-    value: '00160104',
+    value: 'INDIANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22666,7 +22666,7 @@ export const districtList = [
     label: 'LAS AMAZONAS',
     subTitle: '-',
     type: 'account',
-    value: '00160105',
+    value: 'LAS AMAZONAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22680,7 +22680,7 @@ export const districtList = [
     label: 'MAZAN',
     subTitle: '-',
     type: 'account',
-    value: '00160106',
+    value: 'MAZAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22694,7 +22694,7 @@ export const districtList = [
     label: 'NAPO',
     subTitle: '-',
     type: 'account',
-    value: '00160107',
+    value: 'NAPO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22708,7 +22708,7 @@ export const districtList = [
     label: 'PUNCHANA',
     subTitle: '-',
     type: 'account',
-    value: '00160108',
+    value: 'PUNCHANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22722,7 +22722,7 @@ export const districtList = [
     label: 'PUTUMAYO',
     subTitle: '-',
     type: 'account',
-    value: '00160109',
+    value: 'PUTUMAYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22736,7 +22736,7 @@ export const districtList = [
     label: 'TORRES CAUSANA',
     subTitle: '-',
     type: 'account',
-    value: '00160110',
+    value: 'TORRES CAUSANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22750,7 +22750,7 @@ export const districtList = [
     label: 'BELEN',
     subTitle: '-',
     type: 'account',
-    value: '00160112',
+    value: 'BELEN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22764,7 +22764,7 @@ export const districtList = [
     label: 'SAN JUAN BAUTISTA',
     subTitle: '-',
     type: 'account',
-    value: '00160113',
+    value: 'SAN JUAN BAUTISTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22778,7 +22778,7 @@ export const districtList = [
     label: 'TENIENTE MANUEL CLAVERO',
     subTitle: '-',
     type: 'account',
-    value: '00160114',
+    value: 'TENIENTE MANUEL CLAVERO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22792,7 +22792,7 @@ export const districtList = [
     label: 'YURIMAGUAS',
     subTitle: '-',
     type: 'account',
-    value: '00160201',
+    value: 'YURIMAGUAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22806,7 +22806,7 @@ export const districtList = [
     label: 'BALSAPUERTO',
     subTitle: '-',
     type: 'account',
-    value: '00160202',
+    value: 'BALSAPUERTO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22820,7 +22820,7 @@ export const districtList = [
     label: 'JEBEROS',
     subTitle: '-',
     type: 'account',
-    value: '00160205',
+    value: 'JEBEROS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22834,7 +22834,7 @@ export const districtList = [
     label: 'LAGUNAS',
     subTitle: '-',
     type: 'account',
-    value: '00160206',
+    value: 'LAGUNAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22848,7 +22848,7 @@ export const districtList = [
     label: 'SANTA CRUZ',
     subTitle: '-',
     type: 'account',
-    value: '00160210',
+    value: 'SANTA CRUZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22862,7 +22862,7 @@ export const districtList = [
     label: 'TENIENTE CESAR LOPEZ ROJAS',
     subTitle: '-',
     type: 'account',
-    value: '00160211',
+    value: 'TENIENTE CESAR LOPEZ ROJAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22876,7 +22876,7 @@ export const districtList = [
     label: 'NAUTA',
     subTitle: '-',
     type: 'account',
-    value: '00160301',
+    value: 'NAUTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22890,7 +22890,7 @@ export const districtList = [
     label: 'PARINARI',
     subTitle: '-',
     type: 'account',
-    value: '00160302',
+    value: 'PARINARI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22904,7 +22904,7 @@ export const districtList = [
     label: 'TIGRE',
     subTitle: '-',
     type: 'account',
-    value: '00160303',
+    value: 'TIGRE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22918,7 +22918,7 @@ export const districtList = [
     label: 'TROMPETEROS',
     subTitle: '-',
     type: 'account',
-    value: '00160304',
+    value: 'TROMPETEROS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22932,7 +22932,7 @@ export const districtList = [
     label: 'URARINAS',
     subTitle: '-',
     type: 'account',
-    value: '00160305',
+    value: 'URARINAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22946,7 +22946,7 @@ export const districtList = [
     label: 'RAMON CASTILLA',
     subTitle: '-',
     type: 'account',
-    value: '00160401',
+    value: 'RAMON CASTILLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22960,7 +22960,7 @@ export const districtList = [
     label: 'PEBAS',
     subTitle: '-',
     type: 'account',
-    value: '00160402',
+    value: 'PEBAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22974,7 +22974,7 @@ export const districtList = [
     label: 'YAVARI',
     subTitle: '-',
     type: 'account',
-    value: '00160403',
+    value: 'YAVARI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -22988,7 +22988,7 @@ export const districtList = [
     label: 'SAN PABLO',
     subTitle: '-',
     type: 'account',
-    value: '00160404',
+    value: 'SAN PABLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23002,7 +23002,7 @@ export const districtList = [
     label: 'REQUENA',
     subTitle: '-',
     type: 'account',
-    value: '00160501',
+    value: 'REQUENA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23016,7 +23016,7 @@ export const districtList = [
     label: 'ALTO TAPICHE',
     subTitle: '-',
     type: 'account',
-    value: '00160502',
+    value: 'ALTO TAPICHE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23030,7 +23030,7 @@ export const districtList = [
     label: 'CAPELO',
     subTitle: '-',
     type: 'account',
-    value: '00160503',
+    value: 'CAPELO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23044,7 +23044,7 @@ export const districtList = [
     label: 'EMILIO SAN MARTIN',
     subTitle: '-',
     type: 'account',
-    value: '00160504',
+    value: 'EMILIO SAN MARTIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23058,7 +23058,7 @@ export const districtList = [
     label: 'MAQUIA',
     subTitle: '-',
     type: 'account',
-    value: '00160505',
+    value: 'MAQUIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23072,7 +23072,7 @@ export const districtList = [
     label: 'PUINAHUA',
     subTitle: '-',
     type: 'account',
-    value: '00160506',
+    value: 'PUINAHUA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23086,7 +23086,7 @@ export const districtList = [
     label: 'SAQUENA',
     subTitle: '-',
     type: 'account',
-    value: '00160507',
+    value: 'SAQUENA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23100,7 +23100,7 @@ export const districtList = [
     label: 'SOPLIN',
     subTitle: '-',
     type: 'account',
-    value: '00160508',
+    value: 'SOPLIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23114,7 +23114,7 @@ export const districtList = [
     label: 'TAPICHE',
     subTitle: '-',
     type: 'account',
-    value: '00160509',
+    value: 'TAPICHE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23128,7 +23128,7 @@ export const districtList = [
     label: 'JENARO HERRERA',
     subTitle: '-',
     type: 'account',
-    value: '00160510',
+    value: 'JENARO HERRERA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23142,7 +23142,7 @@ export const districtList = [
     label: 'YAQUERANA',
     subTitle: '-',
     type: 'account',
-    value: '00160511',
+    value: 'YAQUERANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23156,7 +23156,7 @@ export const districtList = [
     label: 'CONTAMANA',
     subTitle: '-',
     type: 'account',
-    value: '00160601',
+    value: 'CONTAMANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23170,7 +23170,7 @@ export const districtList = [
     label: 'INAHUAYA',
     subTitle: '-',
     type: 'account',
-    value: '00160602',
+    value: 'INAHUAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23184,7 +23184,7 @@ export const districtList = [
     label: 'PADRE MARQUEZ',
     subTitle: '-',
     type: 'account',
-    value: '00160603',
+    value: 'PADRE MARQUEZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23198,7 +23198,7 @@ export const districtList = [
     label: 'PAMPA HERMOSA',
     subTitle: '-',
     type: 'account',
-    value: '00160604',
+    value: 'PAMPA HERMOSA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23212,7 +23212,7 @@ export const districtList = [
     label: 'SARAYACU',
     subTitle: '-',
     type: 'account',
-    value: '00160605',
+    value: 'SARAYACU',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23226,7 +23226,7 @@ export const districtList = [
     label: 'VARGAS GUERRA',
     subTitle: '-',
     type: 'account',
-    value: '00160606',
+    value: 'VARGAS GUERRA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23240,7 +23240,7 @@ export const districtList = [
     label: 'BARRANCA',
     subTitle: '-',
     type: 'account',
-    value: '00160701',
+    value: 'BARRANCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23254,7 +23254,7 @@ export const districtList = [
     label: 'CAHUAPANAS',
     subTitle: '-',
     type: 'account',
-    value: '00160702',
+    value: 'CAHUAPANAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23268,7 +23268,7 @@ export const districtList = [
     label: 'MANSERICHE',
     subTitle: '-',
     type: 'account',
-    value: '00160703',
+    value: 'MANSERICHE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23282,7 +23282,7 @@ export const districtList = [
     label: 'MORONA',
     subTitle: '-',
     type: 'account',
-    value: '00160704',
+    value: 'MORONA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23296,7 +23296,7 @@ export const districtList = [
     label: 'PASTAZA',
     subTitle: '-',
     type: 'account',
-    value: '00160705',
+    value: 'PASTAZA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23310,7 +23310,7 @@ export const districtList = [
     label: 'ANDOAS',
     subTitle: '-',
     type: 'account',
-    value: '00160706',
+    value: 'ANDOAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '16',
@@ -23324,7 +23324,7 @@ export const districtList = [
     label: 'TAMBOPATA',
     subTitle: '-',
     type: 'account',
-    value: '00170101',
+    value: 'TAMBOPATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '17',
@@ -23338,7 +23338,7 @@ export const districtList = [
     label: 'INAMBARI',
     subTitle: '-',
     type: 'account',
-    value: '00170102',
+    value: 'INAMBARI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '17',
@@ -23352,7 +23352,7 @@ export const districtList = [
     label: 'LAS PIEDRAS',
     subTitle: '-',
     type: 'account',
-    value: '00170103',
+    value: 'LAS PIEDRAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '17',
@@ -23366,7 +23366,7 @@ export const districtList = [
     label: 'LABERINTO',
     subTitle: '-',
     type: 'account',
-    value: '00170104',
+    value: 'LABERINTO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '17',
@@ -23380,7 +23380,7 @@ export const districtList = [
     label: 'MANU',
     subTitle: '-',
     type: 'account',
-    value: '00170201',
+    value: 'MANU',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '17',
@@ -23394,7 +23394,7 @@ export const districtList = [
     label: 'FITZCARRALD',
     subTitle: '-',
     type: 'account',
-    value: '00170202',
+    value: 'FITZCARRALD',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '17',
@@ -23408,7 +23408,7 @@ export const districtList = [
     label: 'MADRE DE DIOS',
     subTitle: '-',
     type: 'account',
-    value: '00170203',
+    value: 'MADRE DE DIOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '17',
@@ -23422,7 +23422,7 @@ export const districtList = [
     label: 'HUEPETUHE',
     subTitle: '-',
     type: 'account',
-    value: '00170204',
+    value: 'HUEPETUHE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '17',
@@ -23436,7 +23436,7 @@ export const districtList = [
     label: 'IÑAPARI',
     subTitle: '-',
     type: 'account',
-    value: '00170301',
+    value: 'IÑAPARI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '17',
@@ -23450,7 +23450,7 @@ export const districtList = [
     label: 'IBERIA',
     subTitle: '-',
     type: 'account',
-    value: '00170302',
+    value: 'IBERIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '17',
@@ -23464,7 +23464,7 @@ export const districtList = [
     label: 'TAHUAMANU',
     subTitle: '-',
     type: 'account',
-    value: '00170303',
+    value: 'TAHUAMANU',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '17',
@@ -23478,7 +23478,7 @@ export const districtList = [
     label: 'MOQUEGUA',
     subTitle: '-',
     type: 'account',
-    value: '00180101',
+    value: 'MOQUEGUA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -23492,7 +23492,7 @@ export const districtList = [
     label: 'CARUMAS',
     subTitle: '-',
     type: 'account',
-    value: '00180102',
+    value: 'CARUMAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -23506,7 +23506,7 @@ export const districtList = [
     label: 'CUCHUMBAYA',
     subTitle: '-',
     type: 'account',
-    value: '00180103',
+    value: 'CUCHUMBAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -23520,7 +23520,7 @@ export const districtList = [
     label: 'SAMEGUA',
     subTitle: '-',
     type: 'account',
-    value: '00180104',
+    value: 'SAMEGUA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -23534,7 +23534,7 @@ export const districtList = [
     label: 'SAN CRISTOBAL',
     subTitle: '-',
     type: 'account',
-    value: '00180105',
+    value: 'SAN CRISTOBAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -23548,7 +23548,7 @@ export const districtList = [
     label: 'TORATA',
     subTitle: '-',
     type: 'account',
-    value: '00180106',
+    value: 'TORATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -23562,7 +23562,7 @@ export const districtList = [
     label: 'OMATE',
     subTitle: '-',
     type: 'account',
-    value: '00180201',
+    value: 'OMATE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -23576,7 +23576,7 @@ export const districtList = [
     label: 'CHOJATA',
     subTitle: '-',
     type: 'account',
-    value: '00180202',
+    value: 'CHOJATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -23590,7 +23590,7 @@ export const districtList = [
     label: 'COALAQUE',
     subTitle: '-',
     type: 'account',
-    value: '00180203',
+    value: 'COALAQUE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -23604,7 +23604,7 @@ export const districtList = [
     label: 'ICHUÑA',
     subTitle: '-',
     type: 'account',
-    value: '00180204',
+    value: 'ICHUÑA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -23618,7 +23618,7 @@ export const districtList = [
     label: 'LA CAPILLA',
     subTitle: '-',
     type: 'account',
-    value: '00180205',
+    value: 'LA CAPILLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -23632,7 +23632,7 @@ export const districtList = [
     label: 'LLOQUE',
     subTitle: '-',
     type: 'account',
-    value: '00180206',
+    value: 'LLOQUE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -23646,7 +23646,7 @@ export const districtList = [
     label: 'MATALAQUE',
     subTitle: '-',
     type: 'account',
-    value: '00180207',
+    value: 'MATALAQUE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -23660,7 +23660,7 @@ export const districtList = [
     label: 'PUQUINA',
     subTitle: '-',
     type: 'account',
-    value: '00180208',
+    value: 'PUQUINA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -23674,7 +23674,7 @@ export const districtList = [
     label: 'QUINISTAQUILLAS',
     subTitle: '-',
     type: 'account',
-    value: '00180209',
+    value: 'QUINISTAQUILLAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -23688,7 +23688,7 @@ export const districtList = [
     label: 'UBINAS',
     subTitle: '-',
     type: 'account',
-    value: '00180210',
+    value: 'UBINAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -23702,7 +23702,7 @@ export const districtList = [
     label: 'YUNGA',
     subTitle: '-',
     type: 'account',
-    value: '00180211',
+    value: 'YUNGA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -23716,7 +23716,7 @@ export const districtList = [
     label: 'ILO',
     subTitle: '-',
     type: 'account',
-    value: '00180301',
+    value: 'ILO',,
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -23730,7 +23730,7 @@ export const districtList = [
     label: 'EL ALGARROBAL',
     subTitle: '-',
     type: 'account',
-    value: '00180302',
+    value: 'EL ALGARROBAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -23744,7 +23744,7 @@ export const districtList = [
     label: 'PACOCHA',
     subTitle: '-',
     type: 'account',
-    value: '00180303',
+    value: 'PACOCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '18',
@@ -23758,7 +23758,7 @@ export const districtList = [
     label: 'CHAUPIMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00190101',
+    value: 'CHAUPIMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -23772,7 +23772,7 @@ export const districtList = [
     label: 'HUACHON',
     subTitle: '-',
     type: 'account',
-    value: '00190102',
+    value: 'HUACHON',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -23786,7 +23786,7 @@ export const districtList = [
     label: 'HUARIACA',
     subTitle: '-',
     type: 'account',
-    value: '00190103',
+    value: 'HUARIACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -23800,7 +23800,7 @@ export const districtList = [
     label: 'HUAYLLAY',
     subTitle: '-',
     type: 'account',
-    value: '00190104',
+    value: 'HUAYLLAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -23814,7 +23814,7 @@ export const districtList = [
     label: 'NINACACA',
     subTitle: '-',
     type: 'account',
-    value: '00190105',
+    value: 'NINACACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -23828,7 +23828,7 @@ export const districtList = [
     label: 'PALLANCHACRA',
     subTitle: '-',
     type: 'account',
-    value: '00190106',
+    value: 'PALLANCHACRA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -23842,7 +23842,7 @@ export const districtList = [
     label: 'PAUCARTAMBO',
     subTitle: '-',
     type: 'account',
-    value: '00190107',
+    value: 'PAUCARTAMBO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -23856,7 +23856,7 @@ export const districtList = [
     label: 'SAN FRANCISCO DE ASIS DE YARUSYACAN',
     subTitle: '-',
     type: 'account',
-    value: '00190108',
+    value: 'SAN FRANCISCO DE ASIS DE YARUSYACAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -23870,7 +23870,7 @@ export const districtList = [
     label: 'SIMON BOLIVAR',
     subTitle: '-',
     type: 'account',
-    value: '00190109',
+    value: 'SIMON BOLIVAR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -23884,7 +23884,7 @@ export const districtList = [
     label: 'TICLACAYAN',
     subTitle: '-',
     type: 'account',
-    value: '00190110',
+    value: 'TICLACAYAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -23898,7 +23898,7 @@ export const districtList = [
     label: 'TINYAHUARCO',
     subTitle: '-',
     type: 'account',
-    value: '00190111',
+    value: 'TINYAHUARCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -23912,7 +23912,7 @@ export const districtList = [
     label: 'VICCO',
     subTitle: '-',
     type: 'account',
-    value: '00190112',
+    value: 'VICCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -23926,7 +23926,7 @@ export const districtList = [
     label: 'YANACANCHA',
     subTitle: '-',
     type: 'account',
-    value: '00190113',
+    value: 'YANACANCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -23940,7 +23940,7 @@ export const districtList = [
     label: 'YANAHUANCA',
     subTitle: '-',
     type: 'account',
-    value: '00190201',
+    value: 'YANAHUANCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -23954,7 +23954,7 @@ export const districtList = [
     label: 'CHACAYAN',
     subTitle: '-',
     type: 'account',
-    value: '00190202',
+    value: 'CHACAYAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -23968,7 +23968,7 @@ export const districtList = [
     label: 'GOYLLARISQUIZGA',
     subTitle: '-',
     type: 'account',
-    value: '00190203',
+    value: 'GOYLLARISQUIZGA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -23982,7 +23982,7 @@ export const districtList = [
     label: 'PAUCAR',
     subTitle: '-',
     type: 'account',
-    value: '00190204',
+    value: 'PAUCAR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -23996,7 +23996,7 @@ export const districtList = [
     label: 'SAN PEDRO DE PILLAO',
     subTitle: '-',
     type: 'account',
-    value: '00190205',
+    value: 'SAN PEDRO DE PILLAO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -24010,7 +24010,7 @@ export const districtList = [
     label: 'SANTA ANA DE TUSI',
     subTitle: '-',
     type: 'account',
-    value: '00190206',
+    value: 'SANTA ANA DE TUSI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -24024,7 +24024,7 @@ export const districtList = [
     label: 'TAPUC',
     subTitle: '-',
     type: 'account',
-    value: '00190207',
+    value: 'TAPUC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -24038,7 +24038,7 @@ export const districtList = [
     label: 'VILCABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00190208',
+    value: 'VILCABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -24052,7 +24052,7 @@ export const districtList = [
     label: 'OXAPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00190301',
+    value: 'OXAPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -24066,7 +24066,7 @@ export const districtList = [
     label: 'CHONTABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00190302',
+    value: 'CHONTABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -24080,7 +24080,7 @@ export const districtList = [
     label: 'HUANCABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00190303',
+    value: 'HUANCABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -24094,7 +24094,7 @@ export const districtList = [
     label: 'PALCAZU',
     subTitle: '-',
     type: 'account',
-    value: '00190304',
+    value: 'PALCAZU',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -24108,7 +24108,7 @@ export const districtList = [
     label: 'POZUZO',
     subTitle: '-',
     type: 'account',
-    value: '00190305',
+    value: 'POZUZO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -24122,7 +24122,7 @@ export const districtList = [
     label: 'PUERTO BERMUDEZ',
     subTitle: '-',
     type: 'account',
-    value: '00190306',
+    value: 'PUERTO BERMUDEZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -24136,7 +24136,7 @@ export const districtList = [
     label: 'VILLA RICA',
     subTitle: '-',
     type: 'account',
-    value: '00190307',
+    value: 'VILLA RICA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '19',
@@ -24150,7 +24150,7 @@ export const districtList = [
     label: 'PIURA',
     subTitle: '-',
     type: 'account',
-    value: '00200101',
+    value: 'PIURA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24164,7 +24164,7 @@ export const districtList = [
     label: 'CASTILLA',
     subTitle: '-',
     type: 'account',
-    value: '00200104',
+    value: 'CASTILLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24178,7 +24178,7 @@ export const districtList = [
     label: 'CATACAOS',
     subTitle: '-',
     type: 'account',
-    value: '00200105',
+    value: 'CATACAOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24192,7 +24192,7 @@ export const districtList = [
     label: 'CURA MORI',
     subTitle: '-',
     type: 'account',
-    value: '00200107',
+    value: 'CURA MORI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24206,7 +24206,7 @@ export const districtList = [
     label: 'EL TALLAN',
     subTitle: '-',
     type: 'account',
-    value: '00200108',
+    value: 'EL TALLAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24220,7 +24220,7 @@ export const districtList = [
     label: 'LA ARENA',
     subTitle: '-',
     type: 'account',
-    value: '00200109',
+    value: 'LA ARENA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24234,7 +24234,7 @@ export const districtList = [
     label: 'LA UNION',
     subTitle: '-',
     type: 'account',
-    value: '00200110',
+    value: 'LA UNION',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24248,7 +24248,7 @@ export const districtList = [
     label: 'LAS LOMAS',
     subTitle: '-',
     type: 'account',
-    value: '00200111',
+    value: 'LAS LOMAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24262,7 +24262,7 @@ export const districtList = [
     label: 'TAMBO GRANDE',
     subTitle: '-',
     type: 'account',
-    value: '00200114',
+    value: 'TAMBO GRANDE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24276,7 +24276,7 @@ export const districtList = [
     label: 'AYABACA',
     subTitle: '-',
     type: 'account',
-    value: '00200201',
+    value: 'AYABACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24290,7 +24290,7 @@ export const districtList = [
     label: 'FRIAS',
     subTitle: '-',
     type: 'account',
-    value: '00200202',
+    value: 'FRIAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24304,7 +24304,7 @@ export const districtList = [
     label: 'JILILI',
     subTitle: '-',
     type: 'account',
-    value: '00200203',
+    value: 'JILILI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24318,7 +24318,7 @@ export const districtList = [
     label: 'LAGUNAS',
     subTitle: '-',
     type: 'account',
-    value: '00200204',
+    value: 'LAGUNAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24332,7 +24332,7 @@ export const districtList = [
     label: 'MONTERO',
     subTitle: '-',
     type: 'account',
-    value: '00200205',
+    value: 'MONTERO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24346,7 +24346,7 @@ export const districtList = [
     label: 'PACAIPAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00200206',
+    value: 'PACAIPAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24360,7 +24360,7 @@ export const districtList = [
     label: 'PAIMAS',
     subTitle: '-',
     type: 'account',
-    value: '00200207',
+    value: 'PAIMAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24374,7 +24374,7 @@ export const districtList = [
     label: 'SAPILLICA',
     subTitle: '-',
     type: 'account',
-    value: '00200208',
+    value: 'SAPILLICA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24388,7 +24388,7 @@ export const districtList = [
     label: 'SICCHEZ',
     subTitle: '-',
     type: 'account',
-    value: '00200209',
+    value: 'SICCHEZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24402,7 +24402,7 @@ export const districtList = [
     label: 'SUYO',
     subTitle: '-',
     type: 'account',
-    value: '00200210',
+    value: 'SUYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24416,7 +24416,7 @@ export const districtList = [
     label: 'HUANCABAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00200301',
+    value: 'HUANCABAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24430,7 +24430,7 @@ export const districtList = [
     label: 'CANCHAQUE',
     subTitle: '-',
     type: 'account',
-    value: '00200302',
+    value: 'CANCHAQUE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24444,7 +24444,7 @@ export const districtList = [
     label: 'EL CARMEN DE LA FRONTERA',
     subTitle: '-',
     type: 'account',
-    value: '00200303',
+    value: 'EL CARMEN DE LA FRONTERA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24458,7 +24458,7 @@ export const districtList = [
     label: 'HUARMACA',
     subTitle: '-',
     type: 'account',
-    value: '00200304',
+    value: 'HUARMACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24472,7 +24472,7 @@ export const districtList = [
     label: 'LALAQUIZ',
     subTitle: '-',
     type: 'account',
-    value: '00200305',
+    value: 'LALAQUIZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24486,7 +24486,7 @@ export const districtList = [
     label: 'SAN MIGUEL DE EL FAIQUE',
     subTitle: '-',
     type: 'account',
-    value: '00200306',
+    value: 'SAN MIGUEL DE EL FAIQUE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24500,7 +24500,7 @@ export const districtList = [
     label: 'SONDOR',
     subTitle: '-',
     type: 'account',
-    value: '00200307',
+    value: 'SONDOR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24514,7 +24514,7 @@ export const districtList = [
     label: 'SONDORILLO',
     subTitle: '-',
     type: 'account',
-    value: '00200308',
+    value: 'SONDORILLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24528,7 +24528,7 @@ export const districtList = [
     label: 'CHULUCANAS',
     subTitle: '-',
     type: 'account',
-    value: '00200401',
+    value: 'CHULUCANAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24542,7 +24542,7 @@ export const districtList = [
     label: 'BUENOS AIRES',
     subTitle: '-',
     type: 'account',
-    value: '00200402',
+    value: 'BUENOS AIRES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24556,7 +24556,7 @@ export const districtList = [
     label: 'CHALACO',
     subTitle: '-',
     type: 'account',
-    value: '00200403',
+    value: 'CHALACO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24570,7 +24570,7 @@ export const districtList = [
     label: 'LA MATANZA',
     subTitle: '-',
     type: 'account',
-    value: '00200404',
+    value: 'LA MATANZA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24584,7 +24584,7 @@ export const districtList = [
     label: 'MORROPON',
     subTitle: '-',
     type: 'account',
-    value: '00200405',
+    value: 'MORROPON',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24598,7 +24598,7 @@ export const districtList = [
     label: 'SALITRAL',
     subTitle: '-',
     type: 'account',
-    value: '00200406',
+    value: 'SALITRAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24612,7 +24612,7 @@ export const districtList = [
     label: 'SAN JUAN DE BIGOTE',
     subTitle: '-',
     type: 'account',
-    value: '00200407',
+    value: 'SAN JUAN DE BIGOTE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24626,7 +24626,7 @@ export const districtList = [
     label: 'SANTA CATALINA DE MOSSA',
     subTitle: '-',
     type: 'account',
-    value: '00200408',
+    value: 'SANTA CATALINA DE MOSSA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24640,7 +24640,7 @@ export const districtList = [
     label: 'SANTO DOMINGO',
     subTitle: '-',
     type: 'account',
-    value: '00200409',
+    value: 'SANTO DOMINGO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24654,7 +24654,7 @@ export const districtList = [
     label: 'YAMANGO',
     subTitle: '-',
     type: 'account',
-    value: '00200410',
+    value: 'YAMANGO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24668,7 +24668,7 @@ export const districtList = [
     label: 'PAITA',
     subTitle: '-',
     type: 'account',
-    value: '00200501',
+    value: 'PAITA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24682,7 +24682,7 @@ export const districtList = [
     label: 'AMOTAPE',
     subTitle: '-',
     type: 'account',
-    value: '00200502',
+    value: 'AMOTAPE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24696,7 +24696,7 @@ export const districtList = [
     label: 'ARENAL',
     subTitle: '-',
     type: 'account',
-    value: '00200503',
+    value: 'ARENAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24710,7 +24710,7 @@ export const districtList = [
     label: 'COLAN',
     subTitle: '-',
     type: 'account',
-    value: '00200504',
+    value: 'COLAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24724,7 +24724,7 @@ export const districtList = [
     label: 'LA HUACA',
     subTitle: '-',
     type: 'account',
-    value: '00200505',
+    value: 'LA HUACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24738,7 +24738,7 @@ export const districtList = [
     label: 'TAMARINDO',
     subTitle: '-',
     type: 'account',
-    value: '00200506',
+    value: 'TAMARINDO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24752,7 +24752,7 @@ export const districtList = [
     label: 'VICHAYAL',
     subTitle: '-',
     type: 'account',
-    value: '00200507',
+    value: 'VICHAYAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24766,7 +24766,7 @@ export const districtList = [
     label: 'SULLANA',
     subTitle: '-',
     type: 'account',
-    value: '00200601',
+    value: 'SULLANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24780,7 +24780,7 @@ export const districtList = [
     label: 'BELLAVISTA',
     subTitle: '-',
     type: 'account',
-    value: '00200602',
+    value: 'BELLAVISTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24794,7 +24794,7 @@ export const districtList = [
     label: 'IGNACIO ESCUDERO',
     subTitle: '-',
     type: 'account',
-    value: '00200603',
+    value: 'IGNACIO ESCUDERO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24808,7 +24808,7 @@ export const districtList = [
     label: 'LANCONES',
     subTitle: '-',
     type: 'account',
-    value: '00200604',
+    value: 'LANCONES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24822,7 +24822,7 @@ export const districtList = [
     label: 'MARCAVELICA',
     subTitle: '-',
     type: 'account',
-    value: '00200605',
+    value: 'MARCAVELICA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24836,7 +24836,7 @@ export const districtList = [
     label: 'MIGUEL CHECA',
     subTitle: '-',
     type: 'account',
-    value: '00200606',
+    value: 'MIGUEL CHECA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24850,7 +24850,7 @@ export const districtList = [
     label: 'QUERECOTILLO',
     subTitle: '-',
     type: 'account',
-    value: '00200607',
+    value: 'QUERECOTILLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24864,7 +24864,7 @@ export const districtList = [
     label: 'SALITRAL',
     subTitle: '-',
     type: 'account',
-    value: '00200608',
+    value: 'SALITRAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24878,7 +24878,7 @@ export const districtList = [
     label: 'PARIÑAS',
     subTitle: '-',
     type: 'account',
-    value: '00200701',
+    value: 'PARIÑAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24892,7 +24892,7 @@ export const districtList = [
     label: 'EL',
     subTitle: '-',
     type: 'account',
-    value: '00200702',
+    value: 'EL ALTO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24906,7 +24906,7 @@ export const districtList = [
     label: 'LA BREA',
     subTitle: '-',
     type: 'account',
-    value: '00200703',
+    value: 'LA BREA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24920,7 +24920,7 @@ export const districtList = [
     label: 'LOBITOS',
     subTitle: '-',
     type: 'account',
-    value: '00200704',
+    value: 'LOBITOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24934,7 +24934,7 @@ export const districtList = [
     label: 'LOS ORGANOS',
     subTitle: '-',
     type: 'account',
-    value: '00200705',
+    value: 'LOS ORGANOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24948,7 +24948,7 @@ export const districtList = [
     label: 'MANCORA',
     subTitle: '-',
     type: 'account',
-    value: '00200706',
+    value: 'MANCORA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24962,7 +24962,7 @@ export const districtList = [
     label: 'SECHURA',
     subTitle: '-',
     type: 'account',
-    value: '00200801',
+    value: 'SECHURA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24976,7 +24976,7 @@ export const districtList = [
     label: 'BELLAVISTA DE LA UNION',
     subTitle: '-',
     type: 'account',
-    value: '00200802',
+    value: 'BELLAVISTA DE LA UNION',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -24990,7 +24990,7 @@ export const districtList = [
     label: 'BERNAL',
     subTitle: '-',
     type: 'account',
-    value: '00200803',
+    value: 'BERNAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -25004,7 +25004,7 @@ export const districtList = [
     label: 'CRISTO NOS VALGA',
     subTitle: '-',
     type: 'account',
-    value: '00200804',
+    value: 'CRISTO NOS VALGA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -25018,7 +25018,7 @@ export const districtList = [
     label: 'VICE',
     subTitle: '-',
     type: 'account',
-    value: '00200805',
+    value: 'VICE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -25032,7 +25032,7 @@ export const districtList = [
     label: 'RINCONADA LLICUAR',
     subTitle: '-',
     type: 'account',
-    value: '00200806',
+    value: 'RINCONADA LLICUAR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '20',
@@ -25046,7 +25046,7 @@ export const districtList = [
     label: 'PUNO',
     subTitle: '-',
     type: 'account',
-    value: '00210101',
+    value: 'PUNO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25060,7 +25060,7 @@ export const districtList = [
     label: 'ACORA',
     subTitle: '-',
     type: 'account',
-    value: '00210102',
+    value: 'ACORA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25074,7 +25074,7 @@ export const districtList = [
     label: 'AMANTANI',
     subTitle: '-',
     type: 'account',
-    value: '00210103',
+    value: 'AMANTANI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25088,7 +25088,7 @@ export const districtList = [
     label: 'ATUNCOLLA',
     subTitle: '-',
     type: 'account',
-    value: '00210104',
+    value: 'ATUNCOLLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25102,7 +25102,7 @@ export const districtList = [
     label: 'CAPACHICA',
     subTitle: '-',
     type: 'account',
-    value: '00210105',
+    value: 'CAPACHICA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25116,7 +25116,7 @@ export const districtList = [
     label: 'CHUCUITO',
     subTitle: '-',
     type: 'account',
-    value: '00210106',
+    value: 'CHUCUITO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25130,7 +25130,7 @@ export const districtList = [
     label: 'COATA',
     subTitle: '-',
     type: 'account',
-    value: '00210107',
+    value: 'COATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25144,7 +25144,7 @@ export const districtList = [
     label: 'HUATA',
     subTitle: '-',
     type: 'account',
-    value: '00210108',
+    value: 'HUATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25158,7 +25158,7 @@ export const districtList = [
     label: 'MAÑAZO',
     subTitle: '-',
     type: 'account',
-    value: '00210109',
+    value: 'MAÑAZO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25172,7 +25172,7 @@ export const districtList = [
     label: 'PAUCARCOLLA',
     subTitle: '-',
     type: 'account',
-    value: '00210110',
+    value: 'PAUCARCOLLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25186,7 +25186,7 @@ export const districtList = [
     label: 'PICHACANI',
     subTitle: '-',
     type: 'account',
-    value: '00210111',
+    value: 'PICHACANI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25200,7 +25200,7 @@ export const districtList = [
     label: 'PLATERIA',
     subTitle: '-',
     type: 'account',
-    value: '00210112',
+    value: 'PLATERIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25214,7 +25214,7 @@ export const districtList = [
     label: 'SAN ANTONIO',
     subTitle: '-',
     type: 'account',
-    value: '00210113',
+    value: 'SAN ANTONIO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25228,7 +25228,7 @@ export const districtList = [
     label: 'TIQUILLACA',
     subTitle: '-',
     type: 'account',
-    value: '00210114',
+    value: 'TIQUILLACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25242,7 +25242,7 @@ export const districtList = [
     label: 'VILQUE',
     subTitle: '-',
     type: 'account',
-    value: '00210115',
+    value: 'VILQUE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25256,7 +25256,7 @@ export const districtList = [
     label: 'AZANGARO',
     subTitle: '-',
     type: 'account',
-    value: '00210201',
+    value: 'AZANGARO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25270,7 +25270,7 @@ export const districtList = [
     label: 'ACHAYA',
     subTitle: '-',
     type: 'account',
-    value: '00210202',
+    value: 'ACHAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25284,7 +25284,7 @@ export const districtList = [
     label: 'ARAPA',
     subTitle: '-',
     type: 'account',
-    value: '00210203',
+    value: 'ARAPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25298,7 +25298,7 @@ export const districtList = [
     label: 'ASILLO',
     subTitle: '-',
     type: 'account',
-    value: '00210204',
+    value: 'ASILLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25312,7 +25312,7 @@ export const districtList = [
     label: 'CAMINACA',
     subTitle: '-',
     type: 'account',
-    value: '00210205',
+    value: 'CAMINACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25326,7 +25326,7 @@ export const districtList = [
     label: 'CHUPA',
     subTitle: '-',
     type: 'account',
-    value: '00210206',
+    value: 'CHUPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25340,7 +25340,7 @@ export const districtList = [
     label: 'JOSE DOMINGO CHOQUEHUANCA',
     subTitle: '-',
     type: 'account',
-    value: '00210207',
+    value: 'JOSE DOMINGO CHOQUEHUANCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25354,7 +25354,7 @@ export const districtList = [
     label: 'MUÑANI',
     subTitle: '-',
     type: 'account',
-    value: '00210208',
+    value: 'MUÑANI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25368,7 +25368,7 @@ export const districtList = [
     label: 'POTONI',
     subTitle: '-',
     type: 'account',
-    value: '00210209',
+    value: 'POTONI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25382,7 +25382,7 @@ export const districtList = [
     label: 'SAMAN',
     subTitle: '-',
     type: 'account',
-    value: '00210210',
+    value: 'SAMAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25396,7 +25396,7 @@ export const districtList = [
     label: 'SAN ANTON',
     subTitle: '-',
     type: 'account',
-    value: '00210211',
+    value: 'SAN ANTON',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25410,7 +25410,7 @@ export const districtList = [
     label: 'SAN JOSE',
     subTitle: '-',
     type: 'account',
-    value: '00210212',
+    value: 'SAN JOSE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25424,7 +25424,7 @@ export const districtList = [
     label: 'SAN JUAN DE SALINAS',
     subTitle: '-',
     type: 'account',
-    value: '00210213',
+    value: 'SAN JUAN DE SALINAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25438,7 +25438,7 @@ export const districtList = [
     label: 'SANTIAGO DE PUPUJA',
     subTitle: '-',
     type: 'account',
-    value: '00210214',
+    value: 'SANTIAGO DE PUPUJA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25452,7 +25452,7 @@ export const districtList = [
     label: 'TIRAPATA',
     subTitle: '-',
     type: 'account',
-    value: '00210215',
+    value: 'TIRAPATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25466,7 +25466,7 @@ export const districtList = [
     label: 'MACUSANI',
     subTitle: '-',
     type: 'account',
-    value: '00210301',
+    value: 'MACUSANI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25480,7 +25480,7 @@ export const districtList = [
     label: 'AJOYANI',
     subTitle: '-',
     type: 'account',
-    value: '00210302',
+    value: 'AJOYANI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25494,7 +25494,7 @@ export const districtList = [
     label: 'AYAPATA',
     subTitle: '-',
     type: 'account',
-    value: '00210303',
+    value: 'AYAPATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25508,7 +25508,7 @@ export const districtList = [
     label: 'COASA',
     subTitle: '-',
     type: 'account',
-    value: '00210304',
+    value: 'COASA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25522,7 +25522,7 @@ export const districtList = [
     label: 'CORANI',
     subTitle: '-',
     type: 'account',
-    value: '00210305',
+    value: 'CORANI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25536,7 +25536,7 @@ export const districtList = [
     label: 'CRUCERO',
     subTitle: '-',
     type: 'account',
-    value: '00210306',
+    value: 'CRUCERO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25550,7 +25550,7 @@ export const districtList = [
     label: 'ITUATA',
     subTitle: '-',
     type: 'account',
-    value: '00210307',
+    value: 'ITUATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25564,7 +25564,7 @@ export const districtList = [
     label: 'OLLACHEA',
     subTitle: '-',
     type: 'account',
-    value: '00210308',
+    value: 'OLLACHEA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25578,7 +25578,7 @@ export const districtList = [
     label: 'SAN GABAN',
     subTitle: '-',
     type: 'account',
-    value: '00210309',
+    value: 'SAN GABAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25592,7 +25592,7 @@ export const districtList = [
     label: 'USICAYOS',
     subTitle: '-',
     type: 'account',
-    value: '00210310',
+    value: 'USICAYOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25606,7 +25606,7 @@ export const districtList = [
     label: 'JULI',
     subTitle: '-',
     type: 'account',
-    value: '00210401',
+    value: 'JULI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25620,7 +25620,7 @@ export const districtList = [
     label: 'DESAGUADERO',
     subTitle: '-',
     type: 'account',
-    value: '00210402',
+    value: 'DESAGUADERO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25634,7 +25634,7 @@ export const districtList = [
     label: 'HUACULLANI',
     subTitle: '-',
     type: 'account',
-    value: '00210403',
+    value: 'HUACULLANI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25648,7 +25648,7 @@ export const districtList = [
     label: 'KELLUYO',
     subTitle: '-',
     type: 'account',
-    value: '00210404',
+    value: 'KELLUYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25662,7 +25662,7 @@ export const districtList = [
     label: 'PISACOMA',
     subTitle: '-',
     type: 'account',
-    value: '00210405',
+    value: 'PISACOMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25676,7 +25676,7 @@ export const districtList = [
     label: 'POMATA',
     subTitle: '-',
     type: 'account',
-    value: '00210406',
+    value: 'POMATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25690,7 +25690,7 @@ export const districtList = [
     label: 'ZEPITA',
     subTitle: '-',
     type: 'account',
-    value: '00210407',
+    value: 'ZEPITA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25704,7 +25704,7 @@ export const districtList = [
     label: 'ILAVE',
     subTitle: '-',
     type: 'account',
-    value: '00210501',
+    value: 'ILAVE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25718,7 +25718,7 @@ export const districtList = [
     label: 'CAPAZO',
     subTitle: '-',
     type: 'account',
-    value: '00210502',
+    value: 'CAPAZO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25732,7 +25732,7 @@ export const districtList = [
     label: 'PILCUYO',
     subTitle: '-',
     type: 'account',
-    value: '00210503',
+    value: 'PILCUYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25746,7 +25746,7 @@ export const districtList = [
     label: 'SANTA ROSA',
     subTitle: '-',
     type: 'account',
-    value: '00210504',
+    value: 'SANTA ROSA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25760,7 +25760,7 @@ export const districtList = [
     label: 'CONDURIRI',
     subTitle: '-',
     type: 'account',
-    value: '00210505',
+    value: 'CONDURIRI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25774,7 +25774,7 @@ export const districtList = [
     label: 'HUANCANE',
     subTitle: '-',
     type: 'account',
-    value: '00210601',
+    value: 'HUANCANE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25788,7 +25788,7 @@ export const districtList = [
     label: 'COJATA',
     subTitle: '-',
     type: 'account',
-    value: '00210602',
+    value: 'COJATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25802,7 +25802,7 @@ export const districtList = [
     label: 'HUATASANI',
     subTitle: '-',
     type: 'account',
-    value: '00210603',
+    value: 'HUATASANI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25816,7 +25816,7 @@ export const districtList = [
     label: 'INCHUPALLA',
     subTitle: '-',
     type: 'account',
-    value: '00210604',
+    value: 'INCHUPALLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25830,7 +25830,7 @@ export const districtList = [
     label: 'PUSI',
     subTitle: '-',
     type: 'account',
-    value: '00210605',
+    value: 'PUSI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25844,7 +25844,7 @@ export const districtList = [
     label: 'ROSASPATA',
     subTitle: '-',
     type: 'account',
-    value: '00210606',
+    value: 'ROSASPATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25858,7 +25858,7 @@ export const districtList = [
     label: 'TARACO',
     subTitle: '-',
     type: 'account',
-    value: '00210607',
+    value: 'TARACO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25872,7 +25872,7 @@ export const districtList = [
     label: 'VILQUE CHICO',
     subTitle: '-',
     type: 'account',
-    value: '00210608',
+    value: 'VILQUE CHICO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25886,7 +25886,7 @@ export const districtList = [
     label: 'LAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00210701',
+    value: 'LAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25900,7 +25900,7 @@ export const districtList = [
     label: 'CABANILLA',
     subTitle: '-',
     type: 'account',
-    value: '00210702',
+    value: 'CABANILLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25914,7 +25914,7 @@ export const districtList = [
     label: 'CALAPUJA',
     subTitle: '-',
     type: 'account',
-    value: '00210703',
+    value: 'CALAPUJA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25928,7 +25928,7 @@ export const districtList = [
     label: 'NICASIO',
     subTitle: '-',
     type: 'account',
-    value: '00210704',
+    value: 'NICASIO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25942,7 +25942,7 @@ export const districtList = [
     label: 'OCUVIRI',
     subTitle: '-',
     type: 'account',
-    value: '00210705',
+    value: 'OCUVIRI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25956,7 +25956,7 @@ export const districtList = [
     label: 'PALCA',
     subTitle: '-',
     type: 'account',
-    value: '00210706',
+    value: 'PALCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25970,7 +25970,7 @@ export const districtList = [
     label: 'PARATIA',
     subTitle: '-',
     type: 'account',
-    value: '00210707',
+    value: 'PARATIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25984,7 +25984,7 @@ export const districtList = [
     label: 'PUCARA',
     subTitle: '-',
     type: 'account',
-    value: '00210708',
+    value: 'PUCARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -25998,7 +25998,7 @@ export const districtList = [
     label: 'SANTA LUCIA',
     subTitle: '-',
     type: 'account',
-    value: '00210709',
+    value: 'SANTA LUCIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26012,7 +26012,7 @@ export const districtList = [
     label: 'VILAVILA',
     subTitle: '-',
     type: 'account',
-    value: '00210710',
+    value: 'VILAVILA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26026,7 +26026,7 @@ export const districtList = [
     label: 'AYAVIRI',
     subTitle: '-',
     type: 'account',
-    value: '00210801',
+    value: 'AYAVIRI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26040,7 +26040,7 @@ export const districtList = [
     label: 'ANTAUTA',
     subTitle: '-',
     type: 'account',
-    value: '00210802',
+    value: 'ANTAUTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26054,7 +26054,7 @@ export const districtList = [
     label: 'CUPI',
     subTitle: '-',
     type: 'account',
-    value: '00210803',
+    value: 'CUPI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26068,7 +26068,7 @@ export const districtList = [
     label: 'LLALLI',
     subTitle: '-',
     type: 'account',
-    value: '00210804',
+    value: 'LLALLI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26082,7 +26082,7 @@ export const districtList = [
     label: 'MACARI',
     subTitle: '-',
     type: 'account',
-    value: '00210805',
+    value: 'MACARI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26096,7 +26096,7 @@ export const districtList = [
     label: 'NUÑOA',
     subTitle: '-',
     type: 'account',
-    value: '00210806',
+    value: 'NUÑOA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26110,7 +26110,7 @@ export const districtList = [
     label: 'ORURILLO',
     subTitle: '-',
     type: 'account',
-    value: '00210807',
+    value: 'ORURILLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26124,7 +26124,7 @@ export const districtList = [
     label: 'SANTA ROSA',
     subTitle: '-',
     type: 'account',
-    value: '00210808',
+    value: 'SANTA ROSA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26138,7 +26138,7 @@ export const districtList = [
     label: 'UMACHIRI',
     subTitle: '-',
     type: 'account',
-    value: '00210809',
+    value: 'UMACHIRI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26152,7 +26152,7 @@ export const districtList = [
     label: 'MOHO',
     subTitle: '-',
     type: 'account',
-    value: '00210901',
+    value: 'MOHO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26166,7 +26166,7 @@ export const districtList = [
     label: 'CONIMA',
     subTitle: '-',
     type: 'account',
-    value: '00210902',
+    value: 'CONIMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26180,7 +26180,7 @@ export const districtList = [
     label: 'HUAYRAPATA',
     subTitle: '-',
     type: 'account',
-    value: '00210903',
+    value: 'HUAYRAPATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26194,7 +26194,7 @@ export const districtList = [
     label: 'TILALI',
     subTitle: '-',
     type: 'account',
-    value: '00210904',
+    value: 'TILALI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26208,7 +26208,7 @@ export const districtList = [
     label: 'PUTINA',
     subTitle: '-',
     type: 'account',
-    value: '00211001',
+    value: 'PUTINA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26222,7 +26222,7 @@ export const districtList = [
     label: 'ANANEA',
     subTitle: '-',
     type: 'account',
-    value: '00211002',
+    value: 'ANANEA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26236,7 +26236,7 @@ export const districtList = [
     label: 'PEDRO VILCA APAZA',
     subTitle: '-',
     type: 'account',
-    value: '00211003',
+    value: 'PEDRO VILCA APAZA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26250,7 +26250,7 @@ export const districtList = [
     label: 'QUILCAPUNCU',
     subTitle: '-',
     type: 'account',
-    value: '00211004',
+    value: 'QUILCAPUNCU',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26264,7 +26264,7 @@ export const districtList = [
     label: 'SINA',
     subTitle: '-',
     type: 'account',
-    value: '00211005',
+    value: 'SINA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26278,7 +26278,7 @@ export const districtList = [
     label: 'JULIACA',
     subTitle: '-',
     type: 'account',
-    value: '00211101',
+    value: 'JULIACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26292,7 +26292,7 @@ export const districtList = [
     label: 'CABANA',
     subTitle: '-',
     type: 'account',
-    value: '00211102',
+    value: 'CABANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26306,7 +26306,7 @@ export const districtList = [
     label: 'CABANILLAS',
     subTitle: '-',
     type: 'account',
-    value: '00211103',
+    value: 'CABANILLAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26320,7 +26320,7 @@ export const districtList = [
     label: 'CARACOTO',
     subTitle: '-',
     type: 'account',
-    value: '00211104',
+    value: 'CARACOTO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26334,7 +26334,7 @@ export const districtList = [
     label: 'SANDIA',
     subTitle: '-',
     type: 'account',
-    value: '00211201',
+    value: 'SANDIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26348,7 +26348,7 @@ export const districtList = [
     label: 'CUYOCUYO',
     subTitle: '-',
     type: 'account',
-    value: '00211202',
+    value: 'CUYOCUYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26362,7 +26362,7 @@ export const districtList = [
     label: 'LIMBANI',
     subTitle: '-',
     type: 'account',
-    value: '00211203',
+    value: 'LIMBANI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26376,7 +26376,7 @@ export const districtList = [
     label: 'PATAMBUCO',
     subTitle: '-',
     type: 'account',
-    value: '00211204',
+    value: 'PATAMBUCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26390,7 +26390,7 @@ export const districtList = [
     label: 'PHARA',
     subTitle: '-',
     type: 'account',
-    value: '00211205',
+    value: 'PHARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26404,7 +26404,7 @@ export const districtList = [
     label: 'QUIACA',
     subTitle: '-',
     type: 'account',
-    value: '00211206',
+    value: 'QUIACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26418,7 +26418,7 @@ export const districtList = [
     label: 'SAN JUAN DEL ORO',
     subTitle: '-',
     type: 'account',
-    value: '00211207',
+    value: 'SAN JUAN DEL ORO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26432,7 +26432,7 @@ export const districtList = [
     label: 'YANAHUAYA',
     subTitle: '-',
     type: 'account',
-    value: '00211208',
+    value: 'YANAHUAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26446,7 +26446,7 @@ export const districtList = [
     label: 'ALTO INAMBARI',
     subTitle: '-',
     type: 'account',
-    value: '00211209',
+    value: 'ALTO INAMBARI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26460,7 +26460,7 @@ export const districtList = [
     label: 'SAN PEDRO DE PUTINA PUNCO',
     subTitle: '-',
     type: 'account',
-    value: '00211210',
+    value: 'SAN PEDRO DE PUTINA PUNCO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26474,7 +26474,7 @@ export const districtList = [
     label: 'YUNGUYO',
     subTitle: '-',
     type: 'account',
-    value: '00211301',
+    value: 'YUNGUYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26488,7 +26488,7 @@ export const districtList = [
     label: 'ANAPIA',
     subTitle: '-',
     type: 'account',
-    value: '00211302',
+    value: 'ANAPIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26502,7 +26502,7 @@ export const districtList = [
     label: 'COPANI',
     subTitle: '-',
     type: 'account',
-    value: '00211303',
+    value: 'COPANI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26516,7 +26516,7 @@ export const districtList = [
     label: 'CUTURAPI',
     subTitle: '-',
     type: 'account',
-    value: '00211304',
+    value: 'CUTURAPI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26530,7 +26530,7 @@ export const districtList = [
     label: 'OLLARAYA',
     subTitle: '-',
     type: 'account',
-    value: '00211305',
+    value: 'OLLARAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26544,7 +26544,7 @@ export const districtList = [
     label: 'TINICACHI',
     subTitle: '-',
     type: 'account',
-    value: '00211306',
+    value: 'TINICACHI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26558,7 +26558,7 @@ export const districtList = [
     label: 'UNICACHI',
     subTitle: '-',
     type: 'account',
-    value: '00211307',
+    value: 'UNICACHI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '21',
@@ -26572,7 +26572,7 @@ export const districtList = [
     label: 'MOYOBAMBA',
     subTitle: '-',
     type: 'account',
-    value: '00220101',
+    value: 'MOYOBAMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26586,7 +26586,7 @@ export const districtList = [
     label: 'CALZADA',
     subTitle: '-',
     type: 'account',
-    value: '00220102',
+    value: 'CALZADA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26600,7 +26600,7 @@ export const districtList = [
     label: 'HABANA',
     subTitle: '-',
     type: 'account',
-    value: '00220103',
+    value: 'HABANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26614,7 +26614,7 @@ export const districtList = [
     label: 'JEPELACIO',
     subTitle: '-',
     type: 'account',
-    value: '00220104',
+    value: 'JEPELACIO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26628,7 +26628,7 @@ export const districtList = [
     label: 'SORITOR',
     subTitle: '-',
     type: 'account',
-    value: '00220105',
+    value: 'SORITOR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26642,7 +26642,7 @@ export const districtList = [
     label: 'YANTALO',
     subTitle: '-',
     type: 'account',
-    value: '00220106',
+    value: 'YANTALO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26656,7 +26656,7 @@ export const districtList = [
     label: 'BELLAVISTA',
     subTitle: '-',
     type: 'account',
-    value: '00220201',
+    value: 'BELLAVISTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26670,7 +26670,7 @@ export const districtList = [
     label: 'ALTO BIAVO',
     subTitle: '-',
     type: 'account',
-    value: '00220202',
+    value: 'ALTO BIAVO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26684,7 +26684,7 @@ export const districtList = [
     label: 'BAJO BIAVO',
     subTitle: '-',
     type: 'account',
-    value: '00220203',
+    value: 'BAJO BIAVO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26698,7 +26698,7 @@ export const districtList = [
     label: 'HUALLAGA',
     subTitle: '-',
     type: 'account',
-    value: '00220204',
+    value: 'HUALLAGA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26712,7 +26712,7 @@ export const districtList = [
     label: 'SAN PABLO',
     subTitle: '-',
     type: 'account',
-    value: '00220205',
+    value: 'SAN PABLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26726,7 +26726,7 @@ export const districtList = [
     label: 'SAN RAFAEL',
     subTitle: '-',
     type: 'account',
-    value: '00220206',
+    value: 'SAN RAFAEL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26740,7 +26740,7 @@ export const districtList = [
     label: 'SAN JOSE DE SISA',
     subTitle: '-',
     type: 'account',
-    value: '00220301',
+    value: 'SAN JOSE DE SISA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26754,7 +26754,7 @@ export const districtList = [
     label: 'AGUA BLANCA',
     subTitle: '-',
     type: 'account',
-    value: '00220302',
+    value: 'AGUA BLANCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26768,7 +26768,7 @@ export const districtList = [
     label: 'SAN MARTIN',
     subTitle: '-',
     type: 'account',
-    value: '00220303',
+    value: 'SAN MARTIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26782,7 +26782,7 @@ export const districtList = [
     label: 'SANTA ROSA',
     subTitle: '-',
     type: 'account',
-    value: '00220304',
+    value: 'SANTA ROSA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26796,7 +26796,7 @@ export const districtList = [
     label: 'SHATOJA',
     subTitle: '-',
     type: 'account',
-    value: '00220305',
+    value: 'SHATOJA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26810,7 +26810,7 @@ export const districtList = [
     label: 'SAPOSOA',
     subTitle: '-',
     type: 'account',
-    value: '00220401',
+    value: 'SAPOSOA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26824,7 +26824,7 @@ export const districtList = [
     label: 'ALTO SAPOSOA',
     subTitle: '-',
     type: 'account',
-    value: '00220402',
+    value: 'ALTO SAPOSOA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26838,7 +26838,7 @@ export const districtList = [
     label: 'EL ESLABON',
     subTitle: '-',
     type: 'account',
-    value: '00220403',
+    value: 'EL ESLABON',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26852,7 +26852,7 @@ export const districtList = [
     label: 'PISCOYACU',
     subTitle: '-',
     type: 'account',
-    value: '00220404',
+    value: 'PISCOYACU',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26866,7 +26866,7 @@ export const districtList = [
     label: 'SACANCHE',
     subTitle: '-',
     type: 'account',
-    value: '00220405',
+    value: 'SACANCHE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26880,7 +26880,7 @@ export const districtList = [
     label: 'TINGO DE SAPOSOA',
     subTitle: '-',
     type: 'account',
-    value: '00220406',
+    value: 'TINGO DE SAPOSOA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26894,7 +26894,7 @@ export const districtList = [
     label: 'LAMAS',
     subTitle: '-',
     type: 'account',
-    value: '00220501',
+    value: 'LAMAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26908,7 +26908,7 @@ export const districtList = [
     label: 'ALONSO DE ALVARADO',
     subTitle: '-',
     type: 'account',
-    value: '00220502',
+    value: 'ALONSO DE ALVARADO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26922,7 +26922,7 @@ export const districtList = [
     label: 'BARRANQUITA',
     subTitle: '-',
     type: 'account',
-    value: '00220503',
+    value: 'BARRANQUITA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26936,7 +26936,7 @@ export const districtList = [
     label: 'CAYNARACHI',
     subTitle: '-',
     type: 'account',
-    value: '00220504',
+    value: 'CAYNARACHI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26950,7 +26950,7 @@ export const districtList = [
     label: 'CUÑUMBUQUI',
     subTitle: '-',
     type: 'account',
-    value: '00220505',
+    value: 'CUÑUMBUQUI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26964,7 +26964,7 @@ export const districtList = [
     label: 'PINTO RECODO',
     subTitle: '-',
     type: 'account',
-    value: '00220506',
+    value: 'PINTO RECODO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26978,7 +26978,7 @@ export const districtList = [
     label: 'RUMISAPA',
     subTitle: '-',
     type: 'account',
-    value: '00220507',
+    value: 'RUMISAPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -26992,7 +26992,7 @@ export const districtList = [
     label: 'SAN ROQUE DE CUMBAZA',
     subTitle: '-',
     type: 'account',
-    value: '00220508',
+    value: 'SAN ROQUE DE CUMBAZA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27006,7 +27006,7 @@ export const districtList = [
     label: 'SHANAO',
     subTitle: '-',
     type: 'account',
-    value: '00220509',
+    value: 'SHANAO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27020,7 +27020,7 @@ export const districtList = [
     label: 'TABALOSOS',
     subTitle: '-',
     type: 'account',
-    value: '00220510',
+    value: 'TABALOSOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27034,7 +27034,7 @@ export const districtList = [
     label: 'ZAPATERO',
     subTitle: '-',
     type: 'account',
-    value: '00220511',
+    value: 'ZAPATERO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27048,7 +27048,7 @@ export const districtList = [
     label: 'JUANJUI',
     subTitle: '-',
     type: 'account',
-    value: '00220601',
+    value: 'JUANJUI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27062,7 +27062,7 @@ export const districtList = [
     label: 'CAMPANILLA',
     subTitle: '-',
     type: 'account',
-    value: '00220602',
+    value: 'CAMPANILLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27076,7 +27076,7 @@ export const districtList = [
     label: 'HUICUNGO',
     subTitle: '-',
     type: 'account',
-    value: '00220603',
+    value: 'HUICUNGO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27090,7 +27090,7 @@ export const districtList = [
     label: 'PACHIZA',
     subTitle: '-',
     type: 'account',
-    value: '00220604',
+    value: 'PACHIZA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27104,7 +27104,7 @@ export const districtList = [
     label: 'PAJARILLO',
     subTitle: '-',
     type: 'account',
-    value: '00220605',
+    value: 'PAJARILLO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27118,7 +27118,7 @@ export const districtList = [
     label: 'PICOTA',
     subTitle: '-',
     type: 'account',
-    value: '00220701',
+    value: 'PICOTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27132,7 +27132,7 @@ export const districtList = [
     label: 'BUENOS AIRES',
     subTitle: '-',
     type: 'account',
-    value: '00220702',
+    value: 'BUENOS AIRES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27146,7 +27146,7 @@ export const districtList = [
     label: 'CASPISAPA',
     subTitle: '-',
     type: 'account',
-    value: '00220703',
+    value: 'CASPISAPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27160,7 +27160,7 @@ export const districtList = [
     label: 'PILLUANA',
     subTitle: '-',
     type: 'account',
-    value: '00220704',
+    value: 'PILLUANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27174,7 +27174,7 @@ export const districtList = [
     label: 'PUCACACA',
     subTitle: '-',
     type: 'account',
-    value: '00220705',
+    value: 'PUCACACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27188,7 +27188,7 @@ export const districtList = [
     label: 'SAN CRISTOBAL',
     subTitle: '-',
     type: 'account',
-    value: '00220706',
+    value: 'SAN CRISTOBAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27202,7 +27202,7 @@ export const districtList = [
     label: 'SAN HILARION',
     subTitle: '-',
     type: 'account',
-    value: '00220707',
+    value: 'SAN HILARION',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27216,7 +27216,7 @@ export const districtList = [
     label: 'SHAMBOYACU',
     subTitle: '-',
     type: 'account',
-    value: '00220708',
+    value: 'SHAMBOYACU',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27230,7 +27230,7 @@ export const districtList = [
     label: 'TINGO DE PONASA',
     subTitle: '-',
     type: 'account',
-    value: '00220709',
+    value: 'TINGO DE PONASA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27244,7 +27244,7 @@ export const districtList = [
     label: 'TRES UNIDOS',
     subTitle: '-',
     type: 'account',
-    value: '00220710',
+    value: 'TRES UNIDOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27258,7 +27258,7 @@ export const districtList = [
     label: 'RIOJA',
     subTitle: '-',
     type: 'account',
-    value: '00220801',
+    value: 'RIOJA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27272,7 +27272,7 @@ export const districtList = [
     label: 'AWAJUN',
     subTitle: '-',
     type: 'account',
-    value: '00220802',
+    value: 'AWAJUN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27286,7 +27286,7 @@ export const districtList = [
     label: 'ELIAS SOPLIN VARGAS',
     subTitle: '-',
     type: 'account',
-    value: '00220803',
+    value: 'ELIAS SOPLIN VARGAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27300,7 +27300,7 @@ export const districtList = [
     label: 'NUEVA CAJAMARCA',
     subTitle: '-',
     type: 'account',
-    value: '00220804',
+    value: 'NUEVA CAJAMARCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27314,7 +27314,7 @@ export const districtList = [
     label: 'PARDO MIGUEL',
     subTitle: '-',
     type: 'account',
-    value: '00220805',
+    value: 'PARDO MIGUEL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27328,7 +27328,7 @@ export const districtList = [
     label: 'POSIC',
     subTitle: '-',
     type: 'account',
-    value: '00220806',
+    value: 'POSIC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27342,7 +27342,7 @@ export const districtList = [
     label: 'SAN FERNANDO',
     subTitle: '-',
     type: 'account',
-    value: '00220807',
+    value: 'SAN FERNANDO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27356,7 +27356,7 @@ export const districtList = [
     label: 'YORONGOS',
     subTitle: '-',
     type: 'account',
-    value: '00220808',
+    value: 'YORONGOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27370,7 +27370,7 @@ export const districtList = [
     label: 'YURACYACU',
     subTitle: '-',
     type: 'account',
-    value: '00220809',
+    value: 'YURACYACU',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27384,7 +27384,7 @@ export const districtList = [
     label: 'TARAPOTO',
     subTitle: '-',
     type: 'account',
-    value: '00220901',
+    value: 'TARAPOTO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27398,7 +27398,7 @@ export const districtList = [
     label: 'ALBERTO LEVEAU',
     subTitle: '-',
     type: 'account',
-    value: '00220902',
+    value: 'ALBERTO LEVEAU',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27412,7 +27412,7 @@ export const districtList = [
     label: 'CACATACHI',
     subTitle: '-',
     type: 'account',
-    value: '00220903',
+    value: 'CACATACHI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27426,7 +27426,7 @@ export const districtList = [
     label: 'CHAZUTA',
     subTitle: '-',
     type: 'account',
-    value: '00220904',
+    value: 'CHAZUTA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27440,7 +27440,7 @@ export const districtList = [
     label: 'CHIPURANA',
     subTitle: '-',
     type: 'account',
-    value: '00220905',
+    value: 'CHIPURANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27454,7 +27454,7 @@ export const districtList = [
     label: 'EL PORVENIR',
     subTitle: '-',
     type: 'account',
-    value: '00220906',
+    value: 'EL PORVENIR',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27468,7 +27468,7 @@ export const districtList = [
     label: 'HUIMBAYOC',
     subTitle: '-',
     type: 'account',
-    value: '00220907',
+    value: 'HUIMBAYOC',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27482,7 +27482,7 @@ export const districtList = [
     label: 'JUAN GUERRA',
     subTitle: '-',
     type: 'account',
-    value: '00220908',
+    value: 'JUAN GUERRA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27496,7 +27496,7 @@ export const districtList = [
     label: 'LA BANDA DE SHILCAYO',
     subTitle: '-',
     type: 'account',
-    value: '00220909',
+    value: 'LA BANDA DE SHILCAYO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27510,7 +27510,7 @@ export const districtList = [
     label: 'MORALES',
     subTitle: '-',
     type: 'account',
-    value: '00220910',
+    value: 'MORALES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27524,7 +27524,7 @@ export const districtList = [
     label: 'PAPAPLAYA',
     subTitle: '-',
     type: 'account',
-    value: '00220911',
+    value: 'PAPAPLAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27538,7 +27538,7 @@ export const districtList = [
     label: 'SAN ANTONIO',
     subTitle: '-',
     type: 'account',
-    value: '00220912',
+    value: 'SAN ANTONIO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27552,7 +27552,7 @@ export const districtList = [
     label: 'SAUCE',
     subTitle: '-',
     type: 'account',
-    value: '00220913',
+    value: 'SAUCE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27566,7 +27566,7 @@ export const districtList = [
     label: 'SHAPAJA',
     subTitle: '-',
     type: 'account',
-    value: '00220914',
+    value: 'SHAPAJA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27580,7 +27580,7 @@ export const districtList = [
     label: 'TOCACHE',
     subTitle: '-',
     type: 'account',
-    value: '00221001',
+    value: 'TOCACHE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27594,7 +27594,7 @@ export const districtList = [
     label: 'NUEVO PROGRESO',
     subTitle: '-',
     type: 'account',
-    value: '00221002',
+    value: 'NUEVO PROGRESO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27608,7 +27608,7 @@ export const districtList = [
     label: 'POLVORA',
     subTitle: '-',
     type: 'account',
-    value: '00221003',
+    value: 'POLVORA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27622,7 +27622,7 @@ export const districtList = [
     label: 'SHUNTE',
     subTitle: '-',
     type: 'account',
-    value: '00221004',
+    value: 'SHUNTE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27636,7 +27636,7 @@ export const districtList = [
     label: 'UCHIZA',
     subTitle: '-',
     type: 'account',
-    value: '00221005',
+    value: 'UCHIZA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '22',
@@ -27650,7 +27650,7 @@ export const districtList = [
     label: 'TACNA',
     subTitle: '-',
     type: 'account',
-    value: '00230101',
+    value: 'TACNA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27664,7 +27664,7 @@ export const districtList = [
     label: 'ALTO DE LA ALIANZA',
     subTitle: '-',
     type: 'account',
-    value: '00230102',
+    value: 'ALTO DE LA ALIANZA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27678,7 +27678,7 @@ export const districtList = [
     label: 'CALANA',
     subTitle: '-',
     type: 'account',
-    value: '00230103',
+    value: 'CALANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27692,7 +27692,7 @@ export const districtList = [
     label: 'CIUDAD NUEVA',
     subTitle: '-',
     type: 'account',
-    value: '00230104',
+    value: 'CIUDAD NUEVA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27706,7 +27706,7 @@ export const districtList = [
     label: 'INCLAN',
     subTitle: '-',
     type: 'account',
-    value: '00230105',
+    value: 'INCLAN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27720,7 +27720,7 @@ export const districtList = [
     label: 'PACHIA',
     subTitle: '-',
     type: 'account',
-    value: '00230106',
+    value: 'PACHIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27734,7 +27734,7 @@ export const districtList = [
     label: 'PALCA',
     subTitle: '-',
     type: 'account',
-    value: '00230107',
+    value: 'PALCA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27748,7 +27748,7 @@ export const districtList = [
     label: 'POCOLLAY',
     subTitle: '-',
     type: 'account',
-    value: '00230108',
+    value: 'POCOLLAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27762,7 +27762,7 @@ export const districtList = [
     label: 'SAMA',
     subTitle: '-',
     type: 'account',
-    value: '00230109',
+    value: 'SAMA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27776,7 +27776,7 @@ export const districtList = [
     label: 'CORONEL GREGORIO ALBARRACIN LANCHIPA',
     subTitle: '-',
     type: 'account',
-    value: '00230110',
+    value: 'CORONEL GREGORIO ALBARRACIN LANCHIPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27790,7 +27790,7 @@ export const districtList = [
     label: 'CANDARAVE',
     subTitle: '-',
     type: 'account',
-    value: '00230201',
+    value: 'CANDARAVE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27804,7 +27804,7 @@ export const districtList = [
     label: 'CAIRANI',
     subTitle: '-',
     type: 'account',
-    value: '00230202',
+    value: 'CAIRANI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27818,7 +27818,7 @@ export const districtList = [
     label: 'CAMILACA',
     subTitle: '-',
     type: 'account',
-    value: '00230203',
+    value: 'CAMILACA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27832,7 +27832,7 @@ export const districtList = [
     label: 'CURIBAYA',
     subTitle: '-',
     type: 'account',
-    value: '00230204',
+    value: 'CURIBAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27846,7 +27846,7 @@ export const districtList = [
     label: 'HUANUARA',
     subTitle: '-',
     type: 'account',
-    value: '00230205',
+    value: 'HUANUARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27860,7 +27860,7 @@ export const districtList = [
     label: 'QUILAHUANI',
     subTitle: '-',
     type: 'account',
-    value: '00230206',
+    value: 'QUILAHUANI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27874,7 +27874,7 @@ export const districtList = [
     label: 'LOCUMBA',
     subTitle: '-',
     type: 'account',
-    value: '00230301',
+    value: 'LOCUMBA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27888,7 +27888,7 @@ export const districtList = [
     label: 'ILABAYA',
     subTitle: '-',
     type: 'account',
-    value: '00230302',
+    value: 'ILABAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27902,7 +27902,7 @@ export const districtList = [
     label: 'ITE',
     subTitle: '-',
     type: 'account',
-    value: '00230303',
+    value: 'ITE',,
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27916,7 +27916,7 @@ export const districtList = [
     label: 'TARATA',
     subTitle: '-',
     type: 'account',
-    value: '00230401',
+    value: 'TARATA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27930,7 +27930,7 @@ export const districtList = [
     label: 'HEROES ALBARRACIN',
     subTitle: '-',
     type: 'account',
-    value: '00230402',
+    value: 'HEROES ALBARRACIN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27944,7 +27944,7 @@ export const districtList = [
     label: 'ESTIQUE',
     subTitle: '-',
     type: 'account',
-    value: '00230403',
+    value: 'ESTIQUE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27958,7 +27958,7 @@ export const districtList = [
     label: 'ESTIQUE-PAMPA',
     subTitle: '-',
     type: 'account',
-    value: '00230404',
+    value: 'ESTIQUE-PAMPA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27972,7 +27972,7 @@ export const districtList = [
     label: 'SITAJARA',
     subTitle: '-',
     type: 'account',
-    value: '00230405',
+    value: 'SITAJARA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -27986,7 +27986,7 @@ export const districtList = [
     label: 'SUSAPAYA',
     subTitle: '-',
     type: 'account',
-    value: '00230406',
+    value: 'SUSAPAYA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -28000,7 +28000,7 @@ export const districtList = [
     label: 'TARUCACHI',
     subTitle: '-',
     type: 'account',
-    value: '00230407',
+    value: 'TARUCACHI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -28014,7 +28014,7 @@ export const districtList = [
     label: 'TICACO',
     subTitle: '-',
     type: 'account',
-    value: '00230408',
+    value: 'TICACO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '23',
@@ -28028,7 +28028,7 @@ export const districtList = [
     label: 'TUMBES',
     subTitle: '-',
     type: 'account',
-    value: '00240101',
+    value: 'TUMBES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '24',
@@ -28042,7 +28042,7 @@ export const districtList = [
     label: 'CORRALES',
     subTitle: '-',
     type: 'account',
-    value: '00240102',
+    value: 'CORRALES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '24',
@@ -28056,7 +28056,7 @@ export const districtList = [
     label: 'LA CRUZ',
     subTitle: '-',
     type: 'account',
-    value: '00240103',
+    value: 'LA CRUZ',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '24',
@@ -28070,7 +28070,7 @@ export const districtList = [
     label: 'PAMPAS DE HOSPITAL',
     subTitle: '-',
     type: 'account',
-    value: '00240104',
+    value: 'PAMPAS DE HOSPITAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '24',
@@ -28084,7 +28084,7 @@ export const districtList = [
     label: 'SAN JACINTO',
     subTitle: '-',
     type: 'account',
-    value: '00240105',
+    value: 'SAN JACINTO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '24',
@@ -28098,7 +28098,7 @@ export const districtList = [
     label: 'SAN JUAN DE LA VIRGEN',
     subTitle: '-',
     type: 'account',
-    value: '00240106',
+    value: 'SAN JUAN DE LA VIRGEN',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '24',
@@ -28112,7 +28112,7 @@ export const districtList = [
     label: 'ZORRITOS',
     subTitle: '-',
     type: 'account',
-    value: '00240201',
+    value: 'ZORRITOS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '24',
@@ -28126,7 +28126,7 @@ export const districtList = [
     label: 'CASITAS',
     subTitle: '-',
     type: 'account',
-    value: '00240202',
+    value: 'CASITAS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '24',
@@ -28140,7 +28140,7 @@ export const districtList = [
     label: 'CANOAS DE PUNTA SAL',
     subTitle: '-',
     type: 'account',
-    value: '00240203',
+    value: 'CANOAS DE PUNTA SAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '24',
@@ -28154,7 +28154,7 @@ export const districtList = [
     label: 'ZARUMILLA',
     subTitle: '-',
     type: 'account',
-    value: '00240301',
+    value: 'ZARUMILLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '24',
@@ -28168,7 +28168,7 @@ export const districtList = [
     label: 'AGUAS VERDES',
     subTitle: '-',
     type: 'account',
-    value: '00240302',
+    value: 'AGUAS VERDES',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '24',
@@ -28182,7 +28182,7 @@ export const districtList = [
     label: 'MATAPALO',
     subTitle: '-',
     type: 'account',
-    value: '00240303',
+    value: 'MATAPALO',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '24',
@@ -28196,7 +28196,7 @@ export const districtList = [
     label: 'PAPAYAL',
     subTitle: '-',
     type: 'account',
-    value: '00240304',
+    value: 'PAPAYAL',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '24',
@@ -28210,7 +28210,7 @@ export const districtList = [
     label: 'CALLERIA',
     subTitle: '-',
     type: 'account',
-    value: '00250101',
+    value: 'CALLERIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '25',
@@ -28224,7 +28224,7 @@ export const districtList = [
     label: 'CAMPOVERDE',
     subTitle: '-',
     type: 'account',
-    value: '00250102',
+    value: 'CAMPOVERDE',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '25',
@@ -28238,7 +28238,7 @@ export const districtList = [
     label: 'IPARIA',
     subTitle: '-',
     type: 'account',
-    value: '00250103',
+    value: 'IPARIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '25',
@@ -28252,7 +28252,7 @@ export const districtList = [
     label: 'MASISEA',
     subTitle: '-',
     type: 'account',
-    value: '00250104',
+    value: 'MASISEA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '25',
@@ -28266,7 +28266,7 @@ export const districtList = [
     label: 'YARINACOCHA',
     subTitle: '-',
     type: 'account',
-    value: '00250105',
+    value: 'YARINACOCHA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '25',
@@ -28280,7 +28280,7 @@ export const districtList = [
     label: 'NUEVA REQUENA',
     subTitle: '-',
     type: 'account',
-    value: '00250106',
+    value: 'NUEVA REQUENA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '25',
@@ -28294,7 +28294,7 @@ export const districtList = [
     label: 'MANANTAY',
     subTitle: '-',
     type: 'account',
-    value: '00250107',
+    value: 'MANANTAY',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '25',
@@ -28308,7 +28308,7 @@ export const districtList = [
     label: 'RAYMONDI',
     subTitle: '-',
     type: 'account',
-    value: '00250201',
+    value: 'RAYMONDI',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '25',
@@ -28322,7 +28322,7 @@ export const districtList = [
     label: 'SEPAHUA',
     subTitle: '-',
     type: 'account',
-    value: '00250202',
+    value: 'SEPAHUA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '25',
@@ -28336,7 +28336,7 @@ export const districtList = [
     label: 'TAHUANIA',
     subTitle: '-',
     type: 'account',
-    value: '00250203',
+    value: 'TAHUANIA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '25',
@@ -28350,7 +28350,7 @@ export const districtList = [
     label: 'YURUA',
     subTitle: '-',
     type: 'account',
-    value: '00250204',
+    value: 'YURUA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '25',
@@ -28364,7 +28364,7 @@ export const districtList = [
     label: 'PADRE ABAD',
     subTitle: '-',
     type: 'account',
-    value: '00250301',
+    value: 'PADRE ABAD',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '25',
@@ -28378,7 +28378,7 @@ export const districtList = [
     label: 'IRAZOLA',
     subTitle: '-',
     type: 'account',
-    value: '00250302',
+    value: 'IRAZOLA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '25',
@@ -28392,7 +28392,7 @@ export const districtList = [
     label: 'CURIMANA',
     subTitle: '-',
     type: 'account',
-    value: '00250303',
+    value: 'CURIMANA',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '25',
@@ -28406,7 +28406,7 @@ export const districtList = [
     label: 'PURUS',
     subTitle: '-',
     type: 'account',
-    value: '00250401',
+    value: 'PURUS',
     // FROM SAP
     TRANSPZONE: null,
     REGION: '25',
