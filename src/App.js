@@ -133,7 +133,7 @@ const App = () => {
     title: 'Resumen del Pedido',
     open: false,
   });
-  // Simulate Sales Order
+  // Helpers
   const toItems = products =>
     lodash.map(products, (product, index) => {
       const { value, quantity: qty } = product;
@@ -148,6 +148,31 @@ const App = () => {
         TARGET_QTY,
       };
     });
+  const getFirstNameAndLastName = (fullName, size = 40) => {
+    if (fullName.length <= size) {
+      return [fullName, ''];
+    } else {
+      var firstName = [];
+      var lastName = [];
+      var splits = fullName.split(' ');
+      for (var i = 0; i < splits.length; i++) {
+        const firstNameSize =
+          lodash.reduce(
+            [...splits, splits[i]],
+            (acc, word) => acc + word.length,
+            0
+          ) + firstName.length;
+        if (firstNameSize <= size) {
+          firstName.push(splits[i]);
+        } else {
+          lastName.push(splits[i]);
+        }
+      }
+
+      return [firstName.join(' '), lastName.join(' ').substr(0, 40)];
+    }
+  };
+  // Simulate Sales Order
   const simulateSalesOrder = () => {
     if (!validateAllSteps()) {
       setNotifications(current => [
@@ -370,23 +395,23 @@ const App = () => {
           }));
         });
       } else {
+        const [firstName, lastName] = getFirstNameAndLastName(receiverName);
         const receiver = {
           PI_PERSONALDATA: {
-            FIRSTNAME: '',
-            LASTNAME: '',
-            CITY: receiverDepartment.selection[0].value,
+            FIRSTNAME: firstName,
+            LASTNAME: lastName,
+            CITY: receiverProvince.selection[0].value,
             DISTRICT: receiverDistrict.selection[0].value,
             STREET: receiverStreet,
             HOUSE_NO: receiverDoor,
             COUNTRY: 'PE',
-            REGION: receiverProvince.selection[0].code,
+            REGION: receiverDepartment.selection[0].value,
             LANGU_P: 'ES',
             CURRENCY: 'PEN',
           },
           PI_OPT_PERSONALDATA: {
-            TRANSPZONE: '',
+            TRANSPZONE: receiverDistrict.selection[0].TRANSPZONE,
           },
-          I_VTWEG: distributionChannel,
         };
 
         api.createReceiver(receiver).then(({ data: destinatarioID }) => {
