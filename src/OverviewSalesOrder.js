@@ -20,6 +20,7 @@ const OverviewOrder = props => {
     deliveryHour,
     advancePayments,
   } = props;
+
   const subTotal = lodash.reduce(
     products.options,
     (acc, product) => acc + product.amount,
@@ -37,203 +38,194 @@ const OverviewOrder = props => {
     0
   );
 
+  const purchaseOrderDesc = purchaseOrder;
+  const orderTypeDesc =
+    !!orderType.selection.length && orderType.selection[0].label;
+  const requesterDesc =
+    !!requester.selection.length && requester.selection[0].label;
+  const receiverDistrictDesc =
+    !!receiverDistrict.selection.length && receiverDistrict.selection[0].label;
+  const receiverProvinceDesc =
+    !!receiverProvince.selection.length && receiverProvince.selection[0].label;
+  const requesterAddressDesc =
+    !!requester.selection.length && requester.selection[0].subTitle;
+  const receiverDesc =
+    !!shippingCondition.selection.length &&
+    shippingCondition.selection[0].value === '01'
+      ? receiverCondition === '01'
+        ? requesterAddressDesc
+        : `${receiverStreet}, ${receiverDistrictDesc} - ${receiverProvinceDesc}`
+      : 'Piramide';
+  const paymentConditionDesc =
+    !!paymentCondition.selection.length && paymentCondition.selection[0].label;
+  const shippingConditionDesc =
+    !!shippingCondition.selection.length &&
+    shippingCondition.selection[0].label;
+  const deliveryDateDesc =
+    !!deliveryDate && moment(deliveryDate).format('DD/MM/YYYY');
+  const deliveryHourDesc =
+    !!deliveryHour && moment(deliveryHour).format('HH:mm');
+  const reasonTransferDesc =
+    !!reasonTransfer.selection.length && reasonTransfer.selection[0].label;
+
+  const advancePayment =
+    !!advancePayments.selection.length && advancePayments.selection[0];
+
+  const totalDesc = PEN(total);
+  const subTotalDesc = PEN(subTotal);
+  const igvDesc = PEN(igv);
+  const weightDesc = KG(weight);
+
   return (
     <>
-      <article className="slds-tile">
-        <h2
-          className="slds-tile__title slds-text-heading_small slds-truncate"
-          title="Salesforce UX"
-        >
-          <a href="#top">Datos Generales</a>
-        </h2>
-        <div className="slds-tile__detail">
-          <dl className="slds-list_horizontal slds-wrap">
-            <dt
-              className="slds-item_label slds-text-color_weak"
-              title="Valor de venta"
-            >
-              Ordén de Compra:
-            </dt>
-
-            <dd className="slds-item_detail">{purchaseOrder}</dd>
-            <dt className="slds-item_label slds-text-color_weak" title="IGV">
-              Clase de Pedido:
-            </dt>
-            <dd className="slds-item_detail">
-              {!!orderType.selection.length ? orderType.selection[0].label : ''}
-            </dd>
-            <dt
-              className="slds-item_label slds-text-color_weak"
-              title="Total de venta"
-            >
-              Solicitante:
-            </dt>
-            <dd className="slds-item_detail">
-              {!!requester.selection.length ? requester.selection[0].label : ''}
-            </dd>
-            <dt
-              className="slds-item_label slds-text-color_weak"
-              title="Total de venta"
-            >
-              Destinatario:
-            </dt>
-            <dd className="slds-item_detail">
-              {!!shippingCondition.selection.length
-                ? shippingCondition.selection[0].value === '01'
-                  ? receiverCondition === '01'
-                    ? !!requester.selection.length
-                      ? requester.selection[0].label
-                      : ''
-                    : `${receiverStreet}, ${
-                        !!receiverDistrict.selection.length
-                          ? receiverDistrict.selection[0].label
-                          : ''
-                      } - ${
-                        !!receiverProvince.selection.length
-                          ? receiverProvince.selection[0].label
-                          : ''
-                      }`
-                  : 'Piramide'
-                : ''}
-            </dd>
-            <dt
-              className="slds-item_label slds-text-color_weak"
-              title="Total de venta"
-            >
-              Condición de pago:
-            </dt>
-            <dd className="slds-item_detail">
-              {!!paymentCondition.selection.length
-                ? paymentCondition.selection[0].label
-                : ''}
-            </dd>
-            <dt
-              className="slds-item_label slds-text-color_weak"
-              title="Total de venta"
-            >
-              Fecha de entrega:
-            </dt>
-            <dd className="slds-item_detail">
-              {!!deliveryDate ? moment(deliveryDate).format('DD/MM/YYYY') : ''}
-            </dd>
-            <dt
-              className="slds-item_label slds-text-color_weak"
-              title="Total de venta"
-            >
-              Condición de expedición:
-            </dt>
-            <dd className="slds-item_detail">
-              {!!shippingCondition.selection.length
-                ? shippingCondition.selection[0].label
-                : ''}
-            </dd>
-            <dt
-              className="slds-item_label slds-text-color_weak"
-              title="Total de venta"
-            >
-              Motivo de traslado:
-            </dt>
-            <dd className="slds-item_detail">
-              {!!reasonTransfer.selection.length ? reasonTransfer.selection[0].label : ''}
-            </dd>
-            <dt
-              className="slds-item_label slds-text-color_weak"
-              title="Hora de Cita"
-            >
-              Hora de Cita:
-            </dt>
-            <dd className="slds-item_detail">
-              {!!deliveryHour ? moment(deliveryHour).format('HH:mm') : ''}
-            </dd>
-          </dl>
+      <section className="slds-p-around_medium">
+        {/* Info */}
+        <div className="slds-text-title_caps slds-m-bottom_x-small">
+          Información
         </div>
-      </article>
-      <article className="slds-tile">
-        <h2
-          className="slds-tile__title slds-text-heading_small slds-truncate"
-          title="Salesforce UX"
-        >
-          <a href="#top">Anticipo</a>
-        </h2>
-        {!!advancePayments.selection.length ? (
-          <div className="slds-tile__detail">
-            <dl className="slds-list_horizontal slds-wrap">
-              <dt
-                className="slds-item_label slds-text-color_weak"
-                title="Valor de venta"
-              >
-                Serie:
-              </dt>
-              <dd className="slds-item_detail">
-                {advancePayments.selection[0].serie}
-              </dd>
-              <dt className="slds-item_label slds-text-color_weak" title="IGV">
-                Importe:
-              </dt>
-              <dd className="slds-item_detail">
-                {advancePayments.selection[0].amount}
-              </dd>
-              <dt
-                className="slds-item_label slds-text-color_weak"
-                title="Total de venta"
-              >
-                Saldo:
-              </dt>
-              <dd className="slds-item_detail">
-                {advancePayments.selection[0].balance}
-              </dd>
-              <dt
-                className="slds-item_label slds-text-color_weak"
-                title="Total de venta"
-              >
-                Fecha:
-              </dt>
-              <dd className="slds-item_detail">
-                {advancePayments.selection[0].date}
-              </dd>
-            </dl>
+        <div className="slds-box slds-m-bottom_small">
+          <div className="slds-grid slds-wrap">
+            <span className="slds-truncate slds-text-title_bold">
+              Orden de Compra
+            </span>
+            <span className="slds-truncate slds-col_bump-left">
+              {purchaseOrderDesc}
+            </span>
           </div>
-        ) : (
-          <div>No se ha seleccionado ningún anticipo</div>
-        )}
-      </article>
-      <article className="slds-tile">
-        <h2
-          className="slds-tile__title slds-text-heading_small slds-truncate"
-          title="Salesforce UX"
-        >
-          <a href="#top">Pedido</a>
-        </h2>
-        <div className="slds-tile__detail">
-          <dl className="slds-list_horizontal slds-wrap">
-            <dt
-              className="slds-item_label slds-text-color_weak"
-              title="Valor de venta"
-            >
-              Subtotal:
-            </dt>
-            <dd className="slds-item_detail">{PEN(subTotal)}</dd>
-            <dt className="slds-item_label slds-text-color_weak" title="IGV">
-              IGV:
-            </dt>
-            <dd className="slds-item_detail">{PEN(igv)}</dd>
-            <dt
-              className="slds-item_label slds-text-color_weak"
-              title="Total de venta"
-            >
-              Total:
-            </dt>
-            <dd className="slds-item_detail">{PEN(total)}</dd>
-            <dt
-              className="slds-item_label slds-text-color_weak"
-              title="Total de venta"
-            >
-              Peso:
-            </dt>
-            <dd className="slds-item_detail">{KG(weight)}</dd>
-          </dl>
+          <div className="slds-grid slds-wrap">
+            <span className="slds-truncate slds-text-title_bold">
+              Clase de Pedido
+            </span>
+            <span className="slds-truncate slds-col_bump-left">
+              {orderTypeDesc}
+            </span>
+          </div>
+          <div className="slds-grid slds-wrap">
+            <span className="slds-truncate slds-text-title_bold">
+              Solicitante
+            </span>
+            <span className="slds-truncate slds-col_bump-left">
+              {requesterDesc}
+            </span>
+          </div>
+          <div className="slds-grid slds-wrap">
+            <span className="slds-truncate slds-text-title_bold">
+              Destinatario
+            </span>
+            <span className="slds-truncate slds-col_bump-left">
+              {receiverDesc}
+            </span>
+          </div>
+          <div className="slds-grid slds-wrap">
+            <span className="slds-truncate slds-text-title_bold">
+              Condición de Pago
+            </span>
+            <span className="slds-truncate slds-col_bump-left">
+              {paymentConditionDesc}
+            </span>
+          </div>
+          <div className="slds-grid slds-wrap">
+            <span className="slds-truncate slds-text-title_bold">
+              Condición de Expedición
+            </span>
+            <span className="slds-truncate slds-col_bump-left">
+              {shippingConditionDesc}
+            </span>
+          </div>
+          <div className="slds-grid slds-wrap">
+            <span className="slds-truncate slds-text-title_bold">
+              Fecha de entrega
+            </span>
+            <span className="slds-truncate slds-col_bump-left">
+              {deliveryDateDesc}
+            </span>
+          </div>
+          <div className="slds-grid slds-wrap">
+            <span className="slds-truncate slds-text-title_bold">
+              Hora de Cita
+            </span>
+            <span className="slds-truncate slds-col_bump-left">
+              {deliveryHourDesc}
+            </span>
+          </div>
+          <div className="slds-grid slds-wrap">
+            <span className="slds-truncate slds-text-title_bold">
+              Motivo de Traslado
+            </span>
+            <span className="slds-truncate slds-col_bump-left">
+              {reasonTransferDesc}
+            </span>
+          </div>
         </div>
-      </article>
+        {/* Anticipo */}
+        {advancePayment && (
+          <>
+            <div className="slds-text-title_caps slds-m-bottom_x-small">
+              Anticipo
+            </div>
+            <div className="slds-box slds-m-bottom_small">
+              <div className="slds-grid slds-wrap">
+                <span className="slds-truncate slds-text-title_bold">
+                  Serie
+                </span>
+                <span className="slds-truncate slds-col_bump-left">
+                  {advancePayment.serie}
+                </span>
+              </div>
+              <div className="slds-grid slds-wrap">
+                <span className="slds-truncate slds-text-title_bold">
+                  Importe
+                </span>
+                <span className="slds-truncate slds-col_bump-left">
+                  {PEN(advancePayment.amount)}
+                </span>
+              </div>
+              <div className="slds-grid slds-wrap">
+                <span className="slds-truncate slds-text-title_bold">
+                  Saldo
+                </span>
+                <span className="slds-truncate slds-col_bump-left">
+                  {PEN(advancePayment.balance)}
+                </span>
+              </div>
+              <div className="slds-grid slds-wrap">
+                <span className="slds-truncate slds-text-title_bold">
+                  Fecha de vencimiento
+                </span>
+                <span className="slds-truncate slds-col_bump-left">
+                  {moment(advancePayment).format()}
+                </span>
+              </div>
+            </div>
+          </>
+        )}
+        {/* Pedido */}
+        <div className="slds-text-title_caps slds-m-bottom_x-small">Pedido</div>
+        <div className="slds-box">
+          <div className="slds-grid slds-wrap">
+            <span className="slds-truncate slds-text-title_bold">SubTotal</span>
+            <span className="slds-truncate slds-col_bump-left">
+              {subTotalDesc}
+            </span>
+          </div>
+          <div className="slds-grid slds-wrap">
+            <span className="slds-truncate slds-text-title_bold">IGV</span>
+            <span className="slds-truncate slds-col_bump-left">{igvDesc}</span>
+          </div>
+          <div className="slds-grid slds-wrap">
+            <span className="slds-truncate slds-text-title_bold">Total</span>
+            <span className="slds-truncate slds-col_bump-left">
+              {totalDesc}
+            </span>
+          </div>
+          <div className="slds-grid slds-wrap">
+            <span className="slds-truncate slds-text-title_bold">Peso</span>
+            <span className="slds-truncate slds-col_bump-left">
+              {weightDesc}
+            </span>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
