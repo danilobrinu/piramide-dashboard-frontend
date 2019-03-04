@@ -150,7 +150,7 @@ const App = () => {
     });
   const getFirstNameAndLastName = (fullName, size = 40) => {
     if (fullName.length <= size) {
-      return [fullName, ''];
+      return fullName.split(' ');
     } else {
       var firstName = [];
       var lastName = [];
