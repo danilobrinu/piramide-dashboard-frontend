@@ -475,7 +475,7 @@ const App = () => {
         TARA: vehicleTare,
         MEINS: 'KG',
         TNDR_CRNM: vehicleDriver,
-        EXIT1: vehicleLicense,
+        EXTI1: vehicleLicense,
       };
       salesOrder.I_REQ_TIME = moment(deliveryHour).format('HH:mm:ss');
 
