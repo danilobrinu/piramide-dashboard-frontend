@@ -222,6 +222,9 @@ const App = () => {
         PURCH_NO_C: purchaseOrder,
         SOLICITANTE: requester.selection[0].value,
         DESTINATARIO: requester.selection[0].value,
+        SHIP_COND: shippingCondition.selection[0].value,
+        PMNTTRMS: paymentCondition.selection[0].value,
+        CUST_GRP2: reasonTransfer.selection[0].value,
       },
       IT_ITEMS: toItems(products.options),
     };
@@ -234,7 +237,8 @@ const App = () => {
           {
             id: uniqid(),
             title: 'La cotización tuvo algunos problemas.',
-            description: 'Los productos del pedido no tienen precio, stock o peso.',
+            description:
+              'Los productos del pedido no tienen precio, stock o peso.',
             type: 'first_non_empty',
           },
         ]);
@@ -357,6 +361,9 @@ const App = () => {
         PURCH_NO_C: purchaseOrder,
         SOLICITANTE: requester.selection[0].value,
         DESTINATARIO: requester.selection[0].value,
+        SHIP_COND: shippingCondition.selection[0].value,
+        PMNTTRMS: paymentCondition.selection[0].value,
+        CUST_GRP2: reasonTransfer.selection[0].value,
       },
       IT_ITEMS: toItems(products.options),
     };
@@ -365,7 +372,7 @@ const App = () => {
       paymentCondition.selection[0].value === 'C000' &&
       !!advancePayments.selection.length
     ) {
-      salesOrder['I_ANTICIPO'] = advancePayments.selection[0].value;
+      salesOrder.I_ANTICIPO = advancePayments.selection[0].value;
     }
 
     if (shippingCondition.selection[0].value === '01') {
@@ -411,6 +418,7 @@ const App = () => {
           PI_OPT_PERSONALDATA: {
             TRANSPZONE: receiverDistrict.selection[0].TRANSPZONE,
           },
+          PI_ADRS_REFERENCE: receiverReference,
         };
 
         api.createReceiver(receiver).then(({ data: receiverDoc }) => {
@@ -423,15 +431,16 @@ const App = () => {
             setFinishCreateOrderModal(current => ({
               ...current,
               promptType: 'error',
-              description: 'El pedido no se ha creado satisfactoriamente.' +
-                           'No se pudo crear el destinatario.',
+              description:
+                'El pedido no se ha creado satisfactoriamente.' +
+                'No se pudo crear el destinatario.',
               open: true,
             }));
 
             return;
           }
 
-          salesOrder['DESTINATARIO'] = receiverDoc;
+          salesOrder.I_HEADER.DESTINATARIO = receiverDoc;
 
           api.createSalesOrder(salesOrder).then(({ data: salesOrderDoc }) => {
             setStartCreateSalesOrderModal(current => ({
@@ -459,8 +468,8 @@ const App = () => {
         });
       }
     } else {
-      salesOrder['DESTINATARIO'] = '0020001841';
-      salesOrder['I_VEHICLE'] = {
+      salesOrder.I_HEADER.DESTINATARIO = '0020001841';
+      salesOrder.I_VEHICLE = {
         TNDR_TRKID: vehiclePlate,
         BRUTO: vehicleGrossWeight,
         TARA: vehicleTare,
@@ -468,7 +477,7 @@ const App = () => {
         TNDR_CRNM: vehicleDriver,
         EXIT1: vehicleLicense,
       };
-      salesOrder['I_REQ_TIME'] = moment(deliveryHour).format('HH:mm:ss');
+      salesOrder.I_REQ_TIME = moment(deliveryHour).format('HH:mm:ss');
 
       api.createSalesOrder(salesOrder).then(({ data: salesOrderDoc }) => {
         setStartCreateSalesOrderModal(current => ({
@@ -699,6 +708,7 @@ const App = () => {
   };
 
   useEffect(() => {
+    // Set reasonTransfer by shippingCondition and receiverCondition
     if (!shippingCondition.selection.length) return;
 
     switch (shippingCondition.selection[0].value) {
@@ -743,7 +753,7 @@ const App = () => {
   ]);
 
   useEffect(() => {
-    // Filter Province List
+    // Set receiverProvince by receiverDepartment
     if (!receiverDepartment.selection.length) return;
 
     const REGION = receiverDepartment.selection[0].REGIO;
@@ -763,7 +773,7 @@ const App = () => {
   ]);
 
   useEffect(() => {
-    // Filter District List
+    // Set receiverDistrict by receiverProvince
     if (!receiverProvince.selection.length) return;
 
     const CITY_CODE = receiverProvince.selection[0].CITY_CODE;
