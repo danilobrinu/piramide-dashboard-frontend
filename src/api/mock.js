@@ -364,8 +364,8 @@ export const changePassword = (
   input = {
     I_KUNNR: '4000000007',
     PASSWORD: '123456',
-    VERIFY_PASSWORD: '123456',
     NEW_PASSWORD: '654321',
+    VERIFY_PASSWORD: '654321',
   }
 ) => {
   return new Promise((resolve, _) => {

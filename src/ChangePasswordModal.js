@@ -62,22 +62,22 @@ export default class ChangePasswordModal extends Component {
           </div>
           <div className="slds-m-bottom_large">
             <Input
-              id="verify-password"
-              label="Verificar Contraseña"
-              placeholder="Ingrese su contraseña actual"
-              type="password"
-              value={verifyPassword}
-              onChange={(_, { value }) => setVerifyPassword(value)}
-            />
-          </div>
-          <div className="slds-m-bottom_large">
-            <Input
               id="new-password"
               label="Nueva Contraseña"
               placeholder="Ingrese su nueva contraseña"
               type="password"
               value={newPassword}
               onChange={(_, { value }) => setNewPassword(value)}
+            />
+          </div>
+          <div className="slds-m-bottom_large">
+            <Input
+              id="verify-password"
+              label="Verificar Nueva Contraseña"
+              placeholder="Ingrese su nueva contraseña para verificación"
+              type="password"
+              value={verifyPassword}
+              onChange={(_, { value }) => setVerifyPassword(value)}
             />
           </div>
         </section>

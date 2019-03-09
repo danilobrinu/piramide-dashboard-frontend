@@ -594,14 +594,14 @@ const App = () => {
       return;
     }
 
-    if (password !== verifyPassword) {
+    if (newPassword !== verifyPassword) {
       setNotifications(current => [
         ...current,
         {
           id: uniqid(),
           title: 'No se puede realizar el cambio de contraseña',
           description:
-            'La contraseña y la contraseña de verificación no coinciden',
+            'La nueva contraseña y la contraseña de verificación no coinciden',
           type: 'first_non_empty',
         },
       ]);
@@ -627,8 +627,8 @@ const App = () => {
     const data = {
       I_KUNNR: customer,
       PASSWORD: password,
-      VERIFY_PASSWORD: verifyPassword,
       NEW_PASSWORD: newPassword,
+      VERIFY_PASSWORD: verifyPassword,
     };
 
     api.changePassword(data).then(({ data: passwordChanged }) => {
