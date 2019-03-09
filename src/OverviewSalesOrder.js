@@ -140,14 +140,16 @@ const OverviewOrder = props => {
               {deliveryDateDesc}
             </span>
           </div>
-          <div className="slds-grid slds-wrap">
-            <span className="slds-truncate slds-text-title_bold">
-              Hora de Cita
-            </span>
-            <span className="slds-truncate slds-col_bump-left">
-              {deliveryHourDesc}
-            </span>
-          </div>
+          {!!deliveryHourDesc && (
+            <div className="slds-grid slds-wrap">
+              <span className="slds-truncate slds-text-title_bold">
+                Hora de Cita
+              </span>
+              <span className="slds-truncate slds-col_bump-left">
+                {deliveryHourDesc}
+              </span>
+            </div>
+          )}
           <div className="slds-grid slds-wrap">
             <span className="slds-truncate slds-text-title_bold">
               Motivo de Traslado
