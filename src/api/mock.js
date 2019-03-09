@@ -359,3 +359,22 @@ export const createReceiver = (
     console.log('createReceiver[mock]:', input, output);
   });
 };
+
+export const changePassword = (
+  input = {
+    I_KUNNR: '4000000007',
+    PASSWORD: '123456',
+    VERIFY_PASSWORD: '123456',
+    NEW_PASSWORD: '654321',
+  }
+) => {
+  return new Promise((resolve, _) => {
+    const output = {
+      data: true,
+      success: true,
+    };
+    setTimeout(() => resolve(output), Math.floor(Math.random() * 200 + 300));
+
+    console.log('changePassword[mock]:', input, output);
+  });
+};
