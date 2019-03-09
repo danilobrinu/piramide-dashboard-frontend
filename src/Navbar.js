@@ -5,7 +5,12 @@ const Navbar = props => {
   const { logo, handleMenuUser } = props;
   const menuOptions = [
     {
-      label: 'Cerrar Sesión',
+      label: 'Cambiar contraseña',
+      value: '01',
+    },
+    { type: 'divider' },
+    {
+      label: 'Cerrar sesión',
       value: '00',
     },
   ];
@@ -26,7 +31,7 @@ const Navbar = props => {
         iconSize="large"
         buttonVariant="icon"
         buttonClassName="slds-button_icon-size"
-        nubbinPosition="top right"
+        align="right"
         onSelect={handleMenuUser}
         options={menuOptions}
       />

@@ -13,12 +13,14 @@ import StartCreateSalesOrderModal from './StartCreateSalesOrderModal';
 import FinishCreateSalesOrderModal from './FinishCreateSalesOrderModal';
 import OverviewSalesOrderModal from './OverviewSalesOrderModal';
 import AddProductModal from './AddProductModal';
+import ChangePasswordModal from './ChangePasswordModal';
 import Notifications from './Notifications';
 // Resources
 import './App.css';
 import logo from './logo.svg';
 
 window.__INITIAL_STATE__ = window.__INITIAL_STATE__ || {
+  customer: '4000000007',
   steps: [
     {
       title: 'Solicitante',
@@ -76,6 +78,7 @@ window.__INITIAL_STATE__ = window.__INITIAL_STATE__ || {
 };
 
 const App = () => {
+  const customer = window.__INITIAL_STATE__.customer;
   const steps = window.__INITIAL_STATE__.steps;
   const abbreviatedWeekDays = window.__INITIAL_STATE__.abbreviatedWeekDays;
   const weekDays = window.__INITIAL_STATE__.weekDays;
@@ -191,6 +194,14 @@ const App = () => {
     title: 'Resumen del Pedido',
     open: false,
   });
+  // Chande Password Modal
+  const [changePasswordModal, setChangePasswordModal] = useState({
+    title: 'Cambiar contraseña',
+    open: false,
+  });
+  const [password, setPassword] = useState('');
+  const [verifyPassword, setVerifyPassword] = useState('');
+  const [newPassword, setNewPassword] = useState('');
   // Helpers
   const toItems = products =>
     lodash.map(products, (product, index) => {
@@ -477,6 +488,11 @@ const App = () => {
             TRANSPZONE: receiverDistrict.selection[0].TRANSPZONE,
           },
           PI_ADRS_REFERENCE: receiverReference,
+          I_VTWEG: distributionChannel,
+          I_KUNNR:
+            distributionChannel === '30'
+              ? requester.selection[0].value
+              : '0020001841',
         };
 
         api.createReceiver(receiver).then(({ data: receiverDoc }) => {
@@ -561,6 +577,90 @@ const App = () => {
         }
       });
     }
+  };
+  // Change Password
+  const changePassword = () => {
+    if (!password.length || !verifyPassword.length || !newPassword) {
+      setNotifications(current => [
+        ...current,
+        {
+          id: uniqid(),
+          title: 'No se puede realizar el cambio de contraseña',
+          description: 'Es necesario completar todos los campos',
+          type: 'first_non_empty',
+        },
+      ]);
+
+      return;
+    }
+
+    if (password !== verifyPassword) {
+      setNotifications(current => [
+        ...current,
+        {
+          id: uniqid(),
+          title: 'No se puede realizar el cambio de contraseña',
+          description:
+            'La contraseña y la contraseña de verificación no coinciden',
+          type: 'first_non_empty',
+        },
+      ]);
+
+      return;
+    }
+
+    setChangePasswordModal(current => ({
+      ...current,
+      open: false,
+    }));
+
+    setNotifications(current => [
+      ...current,
+      {
+        id: uniqid(),
+        title: 'Realizando cambio de contraseña',
+        description: 'Esta operación puede tomar unos minutos',
+        type: 'business_hours',
+      },
+    ]);
+
+    const data = {
+      I_KUNNR: customer,
+      PASSWORD: password,
+      VERIFY_PASSWORD: verifyPassword,
+      NEW_PASSWORD: newPassword,
+    };
+
+    api.changePassword(data).then(({ data: passwordChanged }) => {
+      if (!passwordChanged) {
+        setNotifications(current => [
+          ...current,
+          {
+            id: uniqid(),
+            title:
+              'El cambio de contraseña no se ha realizado ' +
+              'satisfactoriamente',
+            description:
+              'La contraseña es incorrecta o la contraseña ' +
+              ' y la contraseña de verificación no coinciden',
+            type: 'first_non_empty',
+          },
+        ]);
+      } else {
+        setNotifications(current => [
+          ...current,
+          {
+            id: uniqid(),
+            title: 'El cambio de contrañse se ha realizado satisfactoriamente',
+            description: 'Se cerrará la sesión. Vuelva a iniciar sesión.',
+            type: 'approval',
+          },
+        ]);
+        setTimeout(() => {
+          window.location.href = '/logout';
+        }, 1000);
+      }
+    });
   };
   // Check Steps
   const validateAllSteps = (notifications = false) => {
@@ -758,9 +858,16 @@ const App = () => {
 
   const handleMenuUser = option => {
     switch (option.value) {
+      case '01':
+        setChangePasswordModal(current => ({
+          ...current,
+          open: true,
+        }));
+        break;
       case '00':
-      default:
         window.location.href = '/logout';
+        break;
+      default:
         break;
     }
   };
@@ -984,6 +1091,17 @@ const App = () => {
         deliveryDate={deliveryDate}
         deliveryHour={deliveryHour}
         advancePayments={advancePayments}
+      />
+      <ChangePasswordModal
+        changePasswordModal={changePasswordModal}
+        setChangePasswordModal={setChangePasswordModal}
+        password={password}
+        setPassword={setPassword}
+        verifyPassword={verifyPassword}
+        setVerifyPassword={setVerifyPassword}
+        newPassword={newPassword}
+        setNewPassword={setNewPassword}
+        changePassword={changePassword}
       />
     </div>
   );

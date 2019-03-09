@@ -11,3 +11,6 @@ export const factoryDate = input =>
 
 export const createReceiver = input =>
   axios.post('/receiver/new', input).then(({ data }) => data);
+
+export const changePassword = input =>
+  axios.post('/client/password/change', input).then(({ data }) => data);
