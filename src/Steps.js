@@ -426,7 +426,7 @@ const Steps = props => {
                       <Input
                         id="vehicle-plate"
                         className="slds-text-color_default slds-size_1-of-2"
-                        maxLength="7"
+                        maxLength="6"
                         placeholder="Placa"
                         value={vehiclePlate}
                         onInput={({ target: { value } }) =>
