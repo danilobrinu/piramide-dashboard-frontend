@@ -184,6 +184,8 @@ const App = () => {
   };
   // Simulate Sales Order
   const simulateSalesOrder = () => {
+    setNotifications([]);
+
     if (!validateAllSteps()) {
       setNotifications(current => [
         ...current,
@@ -356,6 +358,8 @@ const App = () => {
   const createSalesOrder = () => {
     if (!orderIsEnabled) return;
 
+    setNotifications([]);
+
     setStartCreateSalesOrderModal(current => ({
       ...current,
       open: true,
@@ -521,6 +525,8 @@ const App = () => {
   };
   // Change Password
   const changePassword = () => {
+    setNotifications([]);
+
     if (!password.length || !verifyPassword.length || !newPassword) {
       setNotifications(current => [
         ...current,
@@ -605,6 +611,8 @@ const App = () => {
   };
   // Check Steps
   const validateAllSteps = (notifications = false) => {
+    setNotifications([]);
+
     const validateStep1 = () => {
       let valid = !!requester.selection.length;
 
@@ -666,8 +674,6 @@ const App = () => {
         case '02':
           valid =
             !!vehiclePlate.length &&
-            !!vehicleGrossWeight &&
-            !!vehicleTare.length &&
             !!vehicleDriver.length &&
             !!vehicleLicense.length;
           break;
@@ -897,6 +903,12 @@ const App = () => {
     (receiverProvince.selection.length || '') &&
       receiverProvince.selection[0].id,
   ]);
+
+  useEffect(() => {
+    if (!!notifications.length) {
+      setTimeout(() => setNotifications(([_, ...rest]) => rest), 1e3 * 5);
+    }
+  }, [notifications.length]);
 
   return (
     <div className="slds-grid" style={{ height: '100vh' }}>
