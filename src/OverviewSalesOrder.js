@@ -55,7 +55,7 @@ const OverviewOrder = props => {
       ? receiverCondition === '01'
         ? requesterAddressDesc
         : `${receiverStreet}, ${receiverDistrictDesc} - ${receiverProvinceDesc}`
-      : 'Piramide';
+      : 'PIRAMIDE';
   const paymentConditionDesc =
     !!paymentCondition.selection.length && paymentCondition.selection[0].label;
   const shippingConditionDesc =
