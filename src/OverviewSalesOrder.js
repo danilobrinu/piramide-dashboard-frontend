@@ -79,6 +79,11 @@ const OverviewOrder = props => {
   return (
     <>
       <section className="slds-p-around_medium">
+        {!!requester.selection.length && (
+          <div className="slds-text-heading_large slds-text-color_success slds-m-bottom_medium">
+            {requester.selection[0].label}
+          </div>
+        )}
         {/* Info */}
         <div className="slds-text-title_caps slds-m-bottom_x-small">
           Información
