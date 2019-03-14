@@ -722,8 +722,7 @@ const App = () => {
                 !!receiverDoor.length &&
                 !!receiverDepartment.selection.length &&
                 !!receiverProvince.selection.length &&
-                !!receiverDistrict.selection.length &&
-                !!receiverReference.length;
+                !!receiverDistrict.selection.length;
               break;
             default:
               valid = true;
@@ -861,7 +860,7 @@ const App = () => {
 
     return isValid;
   };
-
+  // Others
   const handleMenuUser = option => {
     switch (option.value) {
       case '01':

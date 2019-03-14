@@ -236,9 +236,10 @@ const Steps = props => {
                             maxLength="11"
                             placeholder="DNI o RUC"
                             value={receiverDocument}
-                            onInput={({ target: { value } }) =>
+                            onChange={(_, { value }) =>
                               setReceiverDocument(value)
                             }
+                            variant="counter"
                             required
                           />
                         </div>
@@ -248,9 +249,7 @@ const Steps = props => {
                             className="slds-text-color_default slds-size_1-of-1"
                             placeholder="Nombre"
                             value={receiverName}
-                            onInput={({ target: { value } }) =>
-                              setReceiverName(value)
-                            }
+                            onChange={(_, { value }) => setReceiverName(value)}
                             required
                           />
                         </div>
@@ -260,7 +259,7 @@ const Steps = props => {
                             className="slds-text-color_default slds-size_1-of-1"
                             placeholder="Calle"
                             value={receiverStreet}
-                            onInput={({ target: { value } }) =>
+                            onChange={(_, { value }) =>
                               setReceiverStreet(value)
                             }
                             required
@@ -272,9 +271,7 @@ const Steps = props => {
                             className="slds-text-color_default slds-size_1-of-1"
                             placeholder="Nro de puerta"
                             value={receiverDoor}
-                            onInput={({ target: { value } }) =>
-                              setReceiverDoor(value)
-                            }
+                            onChange={(_, { value }) => setReceiverDoor(value)}
                             required
                           />
                         </div>
@@ -404,10 +401,9 @@ const Steps = props => {
                             className="slds-text-color_default slds-size_1-of-1"
                             placeholder="Referencia"
                             value={receiverReference}
-                            onInput={({ target: { value } }) =>
+                            onChange={(_, { value }) =>
                               setReceiverReference(value)
                             }
-                            required
                           />
                         </div>
                       </div>
@@ -429,9 +425,7 @@ const Steps = props => {
                         maxLength="6"
                         placeholder="Placa"
                         value={vehiclePlate}
-                        onInput={({ target: { value } }) =>
-                          setVehiclePlate(value)
-                        }
+                        onChange={(_, { value }) => setVehiclePlate(value)}
                         required
                       />
                       <Input
@@ -467,9 +461,7 @@ const Steps = props => {
                         className="slds-text-color_default slds-size_1-of-1"
                         placeholder="Nombre del conductor"
                         value={vehicleDriver}
-                        onInput={({ target: { value } }) =>
-                          setVehicleDriver(value)
-                        }
+                        onChange={(_, { value }) => setVehicleDriver(value)}
                         required
                       />
                     </div>
@@ -478,10 +470,9 @@ const Steps = props => {
                         id="vehicle-license"
                         className="slds-text-color_default slds-size_1-of-1"
                         placeholder="Licencia del conductor"
+                        maxLength="11"
                         value={vehicleLicense}
-                        onInput={({ target: { value } }) =>
-                          setVehicleLicense(value)
-                        }
+                        onChange={(_, { value }) => setVehicleLicense(value)}
                         required
                       />
                     </div>
@@ -616,7 +607,7 @@ const Steps = props => {
                     maxLength="20"
                     placeholder="Order de Compra"
                     value={purchaseOrder}
-                    onInput={({ target: { value } }) => setPurchaseOrder(value)}
+                    onChange={(_, { value }) => setPurchaseOrder(value)}
                     required
                   />
                 </div>
