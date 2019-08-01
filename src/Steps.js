@@ -1,5 +1,6 @@
 import React from 'react';
 import moment from 'moment';
+import { useAppState } from './AppContext';
 import {
   Input,
   Combobox,
@@ -12,65 +13,16 @@ import {
 } from '@salesforce/design-system-react';
 import { optionsWithIcon } from './utils/helpers';
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
 import AdvancePayments from './AdvancePayments';
 
-const Steps = props => {
-  const {
-    steps,
-    currentStep,
-    requester,
-    setRequester,
-    shippingCondition,
-    setShippingCondition,
-    receiverCondition,
-    setReceiverCondition,
-    receiverDocument,
-    setReceiverDocument,
-    receiverName,
-    setReceiverName,
-    receiverStreet,
-    setReceiverStreet,
-    receiverDoor,
-    setReceiverDoor,
-    receiverDepartment,
-    setReceiverDepartment,
-    receiverProvince,
-    setReceiverProvince,
-    receiverDistrict,
-    setReceiverDistrict,
-    receiverReference,
-    setReceiverReference,
-    vehiclePlate,
-    setVehiclePlate,
-    vehicleGrossWeight,
-    setVehicleGrossWeight,
-    vehicleTare,
-    setVehicleTare,
-    vehicleDriver,
-    setVehicleDriver,
-    vehicleLicense,
-    setVehicleLicense,
-    orderType,
-    setOrderType,
-    paymentCondition,
-    setPaymentCondition,
-    advancePayments,
-    setAdvancePayments,
-    purchaseOrder,
-    setPurchaseOrder,
-    deliveryDate,
-    deliveryDateValidation,
-    setDeliveryDate,
-    deliveryHour,
-    setDeliveryHour,
-    prevStep,
-    nextStep,
-    validateAllSteps,
-    abbreviatedWeekDays,
-    weekDays,
-    months,
-    today,
-  } = props;
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function Steps() {
+  const [state, dispatch] = useAppState();
+  const validateAllSteps = () => true;
+  const deliveryDateValidation = () => true;
 
   return (
     <section
@@ -81,40 +33,52 @@ const Steps = props => {
         <h2 className="slds-text-heading_medium">Información del Pedido</h2>
       </header>
       <div className="slds-popover__body">
-        {currentStep === 0 && (
+        {state.currentStep === 0 && (
           <fieldset className="slds-form-element slds-form_compound">
             <legend className="slds-form-element__legend slds-form-element__label slds-text-color_inverse">
-              {steps[currentStep].title}
+              {state.steps[state.currentStep].title}
             </legend>
             <div className="slds-form-element__control">
               <div className="slds-form-element__row">
                 <div className="slds-size_1-of-1">
                   <Combobox
-                    id="requester"
+                    id="state.requester"
                     classNameContainer="slds-text-color_default"
                     events={{
                       onChange: (_, { value: inputValue }) =>
-                        setRequester({ ...requester, inputValue }),
+                        dispatch({
+                          type: 'SET_REQUESTER',
+                          payload: { ...state.requester, inputValue },
+                        }),
                       onRequestRemoveSelectedOption: () =>
-                        setRequester({
-                          ...requester,
-                          inputValue: '',
-                          selection: [],
+                        dispatch({
+                          type: 'SET_REQUESTER',
+                          payload: {
+                            ...state.requester,
+                            inputValue: '',
+                            selection: [],
+                          },
                         }),
                       onSelect: (_, { selection }) =>
-                        setRequester({ ...requester, selection }),
+                        dispatch({
+                          type: 'SET_REQUESTER',
+                          payload: {
+                            ...state.requester,
+                            selection,
+                          },
+                        }),
                     }}
                     labels={{
                       placeholder: 'Buscar Solicitante',
                       noOptionsFound: 'No se encontraron coincidencias',
                     }}
                     options={comboboxFilterAndLimit({
-                      inputValue: requester.inputValue,
-                      options: optionsWithIcon(requester.options),
-                      selection: requester.selection,
+                      inputValue: state.requester.inputValue,
+                      options: optionsWithIcon(state.requester.options),
+                      selection: state.requester.selection,
                     })}
-                    selection={requester.selection}
-                    value={requester.inputValue}
+                    selection={state.requester.selection}
+                    value={state.requester.inputValue}
                     variant="inline-listbox"
                     menuPosition="overflowBoundaryElement"
                     required
@@ -124,11 +88,11 @@ const Steps = props => {
             </div>
           </fieldset>
         )}
-        {currentStep === 1 && (
+        {state.currentStep === 1 && (
           <>
             <fieldset className="slds-form-element slds-form_compound">
               <legend className="slds-form-element__legend slds-form-element__label slds-text-color_inverse">
-                {steps[currentStep].title}
+                {state.steps[state.currentStep].title}
               </legend>
               <div className="slds-form-element__control">
                 <div className="slds-form-element__row">
@@ -138,20 +102,29 @@ const Steps = props => {
                       classNameContainer="slds-text-color_default"
                       events={{
                         onChange: (_, { value: inputValue }) =>
-                          setShippingCondition({
-                            ...shippingCondition,
-                            inputValue,
+                          dispatch({
+                            type: 'SET_SHIPPING_CONDITION',
+                            payload: {
+                              ...state.shippingCondition,
+                              inputValue,
+                            },
                           }),
                         onRequestRemoveSelectedOption: () =>
-                          setShippingCondition({
-                            ...shippingCondition,
-                            inputValue: '',
-                            selection: [],
+                          dispatch({
+                            type: 'SET_SHIPPING_CONDITION',
+                            payload: {
+                              ...state.shippingCondition,
+                              inputValue: '',
+                              selection: [],
+                            },
                           }),
                         onSelect: (_, { selection }) =>
-                          setShippingCondition({
-                            ...shippingCondition,
-                            selection,
+                          dispatch({
+                            type: 'SET_SHIPPING_CONDITION',
+                            payload: {
+                              ...state.shippingCondition,
+                              selection,
+                            },
                           }),
                       }}
                       labels={{
@@ -159,12 +132,12 @@ const Steps = props => {
                         noOptionsFound: 'No se encontraron coincidencias',
                       }}
                       options={comboboxFilterAndLimit({
-                        inputValue: shippingCondition.inputValue,
-                        options: optionsWithIcon(shippingCondition.options),
-                        selection: shippingCondition.selection,
+                        inputValue: state.shippingCondition.inputValue,
+                        options: optionsWithIcon(state.shippingCondition.options),
+                        selection: state.shippingCondition.selection,
                       })}
-                      selection={shippingCondition.selection}
-                      value={shippingCondition.inputValue}
+                      selection={state.shippingCondition.selection}
+                      value={state.shippingCondition.inputValue}
                       variant="inline-listbox"
                       menuPosition="overflowBoundaryElement"
                       required
@@ -173,8 +146,8 @@ const Steps = props => {
                 </div>
               </div>
             </fieldset>
-            {!!shippingCondition.selection.length &&
-              shippingCondition.selection[0].value === '01' && (
+            {!!state.shippingCondition.selection.length &&
+              state.shippingCondition.selection[0].value === '01' && (
                 <>
                   <fieldset className="slds-form-element slds-form_compound">
                     <legend className="slds-form-element__legend slds-form-element__label slds-text-color_inverse">
@@ -184,26 +157,26 @@ const Steps = props => {
                       <div className="slds-form-element__row">
                         <RadioButtonGroup
                           onChange={({ target: { value } }) =>
-                            setReceiverCondition(value)
+                            dispatch({ type: 'SET_RECEIVER_CONDITION', payload: value })
                           }
                         >
                           <Radio
                             label="Dirección del solicitante"
                             value="01"
-                            checked={receiverCondition === '01'}
+                            checked={state.receiverCondition === '01'}
                             variant="button-group"
                           />
                           <Radio
                             label="Otra dirección"
                             value="02"
-                            checked={receiverCondition === '02'}
+                            checked={state.receiverCondition === '02'}
                             variant="button-group"
                           />
                         </RadioButtonGroup>
                       </div>
                     </div>
                   </fieldset>
-                  {receiverCondition === '01' && (
+                  {state.receiverCondition === '01' && (
                     <fieldset className="slds-form-element slds-form_compound">
                       <legend className="slds-form-element__legend slds-form-element__label slds-text-color_inverse">
                         Dirección del Solicitante
@@ -213,8 +186,8 @@ const Steps = props => {
                           <div className="slds-form-element">
                             <div className="slds-form-element__control">
                               <span className="slds-form-element__static slds-text-color_inverse">
-                                {!!requester.selection.length
-                                  ? requester.selection[0].subTitle
+                                {!!state.requester.selection.length
+                                  ? state.requester.selection[0].subTitle
                                   : 'No ha seleccionado ningun Solicitante'}
                               </span>
                             </div>
@@ -223,7 +196,7 @@ const Steps = props => {
                       </div>
                     </fieldset>
                   )}
-                  {receiverCondition === '02' && (
+                  {state.receiverCondition === '02' && (
                     <fieldset className="slds-form-element slds-form_compound">
                       <legend className="slds-form-element__legend slds-form-element__label slds-text-color_inverse">
                         Dirección
@@ -235,9 +208,9 @@ const Steps = props => {
                             className="slds-text-color_default slds-size_1-of-1"
                             maxLength="11"
                             placeholder="DNI o RUC"
-                            value={receiverDocument}
+                            value={state.receiverDocument}
                             onChange={(_, { value }) =>
-                              setReceiverDocument(value)
+                              dispatch({ type: 'SET_RECEIVER_DOCUMENT', payload: value })
                             }
                             variant="counter"
                             required
@@ -248,8 +221,10 @@ const Steps = props => {
                             id="receiver-name"
                             className="slds-text-color_default slds-size_1-of-1"
                             placeholder="Nombre"
-                            value={receiverName}
-                            onChange={(_, { value }) => setReceiverName(value)}
+                            value={state.receiverName}
+                            onChange={(_, { value }) =>
+                              dispatch({ type: 'SET_RECEIVER_NAME', payload: value })
+                            }
                             required
                           />
                         </div>
@@ -258,20 +233,22 @@ const Steps = props => {
                             id="receiver-street"
                             className="slds-text-color_default slds-size_1-of-1"
                             placeholder="Calle"
-                            value={receiverStreet}
+                            value={state.receiverStreet}
                             onChange={(_, { value }) =>
-                              setReceiverStreet(value)
+                              dispatch({ type: 'SET_RECEIVER_STREET', payload: value })
                             }
                             required
                           />
                         </div>
                         <div className="slds-form-element__row">
                           <Input
-                            id="receiver-document"
+                            id="receiver-door"
                             className="slds-text-color_default slds-size_1-of-1"
                             placeholder="Nro de puerta"
-                            value={receiverDoor}
-                            onChange={(_, { value }) => setReceiverDoor(value)}
+                            value={state.receiverDoor}
+                            onChange={(_, { value }) =>
+                              dispatch({ type: 'SET_RECEIVER_DOOR', payload: value })
+                            }
                             required
                           />
                         </div>
@@ -281,20 +258,29 @@ const Steps = props => {
                             classNameContainer="slds-text-color_default slds-size_1-of-1"
                             events={{
                               onChange: (_, { value: inputValue }) =>
-                                setReceiverDepartment({
-                                  ...receiverDepartment,
-                                  inputValue,
+                                dispatch({
+                                  type: 'SET_RECEIVER_DEPARTMENT',
+                                  payload: {
+                                    ...state.receiverDepartment,
+                                    inputValue,
+                                  },
                                 }),
                               onRequestRemoveSelectedOption: () =>
-                                setReceiverDepartment({
-                                  ...receiverDepartment,
-                                  inputValue: '',
-                                  selection: [],
+                                dispatch({
+                                  type: 'SET_RECEIVER_DEPARTMENT',
+                                  payload: {
+                                    ...state.receiverDepartment,
+                                    inputValue: '',
+                                    selection: [],
+                                  },
                                 }),
                               onSelect: (_, { selection }) =>
-                                setReceiverDepartment({
-                                  ...receiverDepartment,
-                                  selection,
+                                dispatch({
+                                  type: 'SET_RECEIVER_DEPARTMENT',
+                                  payload: {
+                                    ...state.receiverDepartment,
+                                    selection,
+                                  },
                                 }),
                             }}
                             labels={{
@@ -302,14 +288,12 @@ const Steps = props => {
                               noOptionsFound: 'No se encontraron coincidencias',
                             }}
                             options={comboboxFilterAndLimit({
-                              inputValue: receiverDepartment.inputValue,
-                              options: optionsWithIcon(
-                                receiverDepartment.options
-                              ),
-                              selection: receiverDepartment.selection,
+                              inputValue: state.receiverDepartment.inputValue,
+                              options: optionsWithIcon(state.receiverDepartment.options),
+                              selection: state.receiverDepartment.selection,
                             })}
-                            selection={receiverDepartment.selection}
-                            value={receiverDepartment.inputValue}
+                            selection={state.receiverDepartment.selection}
+                            value={state.receiverDepartment.inputValue}
                             variant="inline-listbox"
                             menuPosition="overflowBoundaryElement"
                             required
@@ -321,20 +305,29 @@ const Steps = props => {
                             classNameContainer="slds-text-color_default slds-size_1-of-1"
                             events={{
                               onChange: (_, { value: inputValue }) =>
-                                setReceiverProvince({
-                                  ...receiverProvince,
-                                  inputValue,
+                                dispatch({
+                                  type: 'SET_RECEIVER_PROVINCE',
+                                  payload: {
+                                    ...state.receiverProvince,
+                                    inputValue,
+                                  },
                                 }),
                               onRequestRemoveSelectedOption: () =>
-                                setReceiverProvince({
-                                  ...receiverProvince,
-                                  inputValue: '',
-                                  selection: [],
+                                dispatch({
+                                  type: 'SET_RECEIVER_PROVINCE',
+                                  payload: {
+                                    ...state.receiverProvince,
+                                    inputValue: '',
+                                    selection: [],
+                                  },
                                 }),
                               onSelect: (_, { selection }) =>
-                                setReceiverProvince({
-                                  ...receiverProvince,
-                                  selection,
+                                dispatch({
+                                  type: 'SET_RECEIVER_PROVINCE',
+                                  payload: {
+                                    ...state.receiverProvince,
+                                    selection,
+                                  },
                                 }),
                             }}
                             labels={{
@@ -342,14 +335,12 @@ const Steps = props => {
                               noOptionsFound: 'No se encontraron coincidencias',
                             }}
                             options={comboboxFilterAndLimit({
-                              inputValue: receiverProvince.inputValue,
-                              options: optionsWithIcon(
-                                receiverProvince.options
-                              ),
-                              selection: receiverProvince.selection,
+                              inputValue: state.receiverProvince.inputValue,
+                              options: optionsWithIcon(state.receiverProvince.options),
+                              selection: state.receiverProvince.selection,
                             })}
-                            selection={receiverProvince.selection}
-                            value={receiverProvince.inputValue}
+                            selection={state.receiverProvince.selection}
+                            value={state.receiverProvince.inputValue}
                             variant="inline-listbox"
                             menuPosition="overflowBoundaryElement"
                             required
@@ -361,20 +352,29 @@ const Steps = props => {
                             classNameContainer="slds-text-color_default slds-size_1-of-1"
                             events={{
                               onChange: (_, { value: inputValue }) =>
-                                setReceiverDistrict({
-                                  ...receiverDistrict,
-                                  inputValue,
+                                dispatch({
+                                  type: 'SET_RECEIVER_DISTRICT',
+                                  payload: {
+                                    ...state.receiverDistrict,
+                                    inputValue,
+                                  },
                                 }),
                               onRequestRemoveSelectedOption: () =>
-                                setReceiverDistrict({
-                                  ...receiverDistrict,
-                                  inputValue: '',
-                                  selection: [],
+                                dispatch({
+                                  type: 'SET_RECEIVER_DISTRICT',
+                                  payload: {
+                                    ...state.receiverDistrict,
+                                    inputValue: '',
+                                    selection: [],
+                                  },
                                 }),
                               onSelect: (_, { selection }) =>
-                                setReceiverDistrict({
-                                  ...receiverDistrict,
-                                  selection,
+                                dispatch({
+                                  type: 'SET_RECEIVER_DISTRICT',
+                                  payload: {
+                                    ...state.receiverDistrict,
+                                    selection,
+                                  },
                                 }),
                             }}
                             labels={{
@@ -382,14 +382,12 @@ const Steps = props => {
                               noOptionsFound: 'No se encontraron coincidencias',
                             }}
                             options={comboboxFilterAndLimit({
-                              inputValue: receiverDistrict.inputValue,
-                              options: optionsWithIcon(
-                                receiverDistrict.options
-                              ),
-                              selection: receiverDistrict.selection,
+                              inputValue: state.receiverDistrict.inputValue,
+                              options: optionsWithIcon(state.receiverDistrict.options),
+                              selection: state.receiverDistrict.selection,
                             })}
-                            selection={receiverDistrict.selection}
-                            value={receiverDistrict.inputValue}
+                            selection={state.receiverDistrict.selection}
+                            value={state.receiverDistrict.inputValue}
                             variant="inline-listbox"
                             menuPosition="overflowBoundaryElement"
                             required
@@ -400,9 +398,9 @@ const Steps = props => {
                             id="receiver-reference"
                             className="slds-text-color_default slds-size_1-of-1"
                             placeholder="Referencia"
-                            value={receiverReference}
+                            value={state.receiverReference}
                             onChange={(_, { value }) =>
-                              setReceiverReference(value)
+                              dispatch({ type: 'SET_RECEIVER_REFERENCE', payload: value })
                             }
                           />
                         </div>
@@ -411,8 +409,8 @@ const Steps = props => {
                   )}
                 </>
               )}
-            {!!shippingCondition.selection.length &&
-              shippingCondition.selection[0].value === '02' && (
+            {!!state.shippingCondition.selection.length &&
+              state.shippingCondition.selection[0].value === '02' && (
                 <fieldset className="slds-form-element slds-form_compound">
                   <legend className="slds-form-element__legend slds-form-element__label slds-text-color_inverse">
                     Vehículo
@@ -424,8 +422,10 @@ const Steps = props => {
                         className="slds-text-color_default slds-size_1-of-2"
                         maxLength="6"
                         placeholder="Placa"
-                        value={vehiclePlate}
-                        onChange={(_, { value }) => setVehiclePlate(value)}
+                        value={state.vehiclePlate}
+                        onChange={(_, { value }) =>
+                          dispatch({ type: 'SET_VEHICLE_PLATE', payload: value })
+                        }
                         required
                       />
                       <Input
@@ -435,9 +435,9 @@ const Steps = props => {
                         minValue={1}
                         maxValue={30000}
                         onChange={(_, { value }) =>
-                          setVehicleGrossWeight(value)
+                          dispatch({ type: 'SET_VEHICLE_GROSS_WEIGHT', payload: value })
                         }
-                        value={vehicleGrossWeight}
+                        value={state.vehicleGrossWeight}
                         variant="counter"
                         required
                       />
@@ -449,8 +449,10 @@ const Steps = props => {
                         placeholder="Tara"
                         minValue={1}
                         maxValue={30000}
-                        onChange={(_, { value }) => setVehicleTare(value)}
-                        value={vehicleTare}
+                        onChange={(_, { value }) =>
+                          dispatch({ type: 'SET_VEHICLE_TARE', payload: value })
+                        }
+                        value={state.vehicleTare}
                         variant="counter"
                         required
                       />
@@ -460,8 +462,10 @@ const Steps = props => {
                         id="vehicle-driver"
                         className="slds-text-color_default slds-size_1-of-1"
                         placeholder="Nombre del conductor"
-                        value={vehicleDriver}
-                        onChange={(_, { value }) => setVehicleDriver(value)}
+                        value={state.vehicleDriver}
+                        onChange={(_, { value }) =>
+                          dispatch({ type: 'SET_VEHICLE_DRIVER', payload: value })
+                        }
                         required
                       />
                     </div>
@@ -471,8 +475,10 @@ const Steps = props => {
                         className="slds-text-color_default slds-size_1-of-1"
                         placeholder="Licencia del conductor"
                         maxLength="11"
-                        value={vehicleLicense}
-                        onChange={(_, { value }) => setVehicleLicense(value)}
+                        value={state.vehicleLicense}
+                        onChange={(_, { value }) =>
+                          dispatch({ type: 'SET_VEHICLE_LICENSE', payload: value })
+                        }
                         required
                       />
                     </div>
@@ -481,10 +487,10 @@ const Steps = props => {
               )}
           </>
         )}
-        {currentStep === 2 && (
+        {state.currentStep === 2 && (
           <fieldset className="slds-form-element slds-form_compound">
             <legend className="slds-form-element__legend slds-form-element__label slds-text-color_inverse">
-              {steps[currentStep].title}
+              {state.steps[state.currentStep].title}
             </legend>
             <div className="slds-form-element__control">
               <div className="slds-form-element__row">
@@ -494,27 +500,42 @@ const Steps = props => {
                     classNameContainer="slds-text-color_default"
                     events={{
                       onChange: (_, { value: inputValue }) =>
-                        setOrderType({ ...orderType, inputValue }),
+                        dispatch({
+                          type: 'SET_ORDER_TYPE',
+                          payload: {
+                            ...state.orderType,
+                            inputValue,
+                          },
+                        }),
                       onRequestRemoveSelectedOption: () =>
-                        setOrderType({
-                          ...orderType,
-                          inputValue: '',
-                          selection: [],
+                        dispatch({
+                          type: 'SET_ORDER_TYPE',
+                          payload: {
+                            ...state.orderType,
+                            inputValue: '',
+                            selection: [],
+                          },
                         }),
                       onSelect: (_, { selection }) =>
-                        setOrderType({ ...orderType, selection }),
+                        dispatch({
+                          type: 'SET_ORDER_TYPE',
+                          payload: {
+                            ...state.orderType,
+                            selection,
+                          },
+                        }),
                     }}
                     labels={{
                       placeholder: 'Buscar Clase de Pedido',
                       noOptionsFound: 'No se encontraron coincidencias',
                     }}
                     options={comboboxFilterAndLimit({
-                      inputValue: orderType.inputValue,
-                      options: optionsWithIcon(orderType.options),
-                      selection: orderType.selection,
+                      inputValue: state.orderType.inputValue,
+                      options: optionsWithIcon(state.orderType.options),
+                      selection: state.orderType.selection,
                     })}
-                    selection={orderType.selection}
-                    value={orderType.inputValue}
+                    selection={state.orderType.selection}
+                    value={state.orderType.inputValue}
                     variant="inline-listbox"
                     menuPosition="overflowBoundaryElement"
                     required
@@ -524,11 +545,11 @@ const Steps = props => {
             </div>
           </fieldset>
         )}
-        {currentStep === 3 && (
+        {state.currentStep === 3 && (
           <>
             <fieldset className="slds-form-element slds-form_compound">
               <legend className="slds-form-element__legend slds-form-element__label slds-text-color_inverse">
-                {steps[currentStep].title}
+                {state.steps[state.currentStep].title}
               </legend>
               <div className="slds-form-element__control">
                 <div className="slds-form-element__row">
@@ -538,19 +559,19 @@ const Steps = props => {
                       classNameContainer="slds-text-color_default"
                       events={{
                         onChange: (_, { value: inputValue }) =>
-                          setPaymentCondition({
-                            ...paymentCondition,
+                          dispatch({
+                            ...state.paymentCondition,
                             inputValue,
                           }),
                         onRequestRemoveSelectedOption: () =>
-                          setPaymentCondition({
-                            ...paymentCondition,
+                          dispatch({
+                            ...state.paymentCondition,
                             inputValue: '',
                             selection: [],
                           }),
                         onSelect: (_, { selection }) =>
-                          setPaymentCondition({
-                            ...paymentCondition,
+                          dispatch({
+                            ...state.paymentCondition,
                             selection,
                           }),
                       }}
@@ -559,12 +580,12 @@ const Steps = props => {
                         noOptionsFound: 'No se encontraron coincidencias',
                       }}
                       options={comboboxFilterAndLimit({
-                        inputValue: paymentCondition.inputValue,
-                        options: optionsWithIcon(paymentCondition.options),
-                        selection: paymentCondition.selection,
+                        inputValue: state.paymentCondition.inputValue,
+                        options: optionsWithIcon(state.paymentCondition.options),
+                        selection: state.paymentCondition.selection,
                       })}
-                      selection={paymentCondition.selection}
-                      value={paymentCondition.inputValue}
+                      selection={state.paymentCondition.selection}
+                      value={state.paymentCondition.inputValue}
                       variant="inline-listbox"
                       menuPosition="overflowBoundaryElement"
                       required
@@ -573,8 +594,8 @@ const Steps = props => {
                 </div>
               </div>
             </fieldset>
-            {!!paymentCondition.selection.length &&
-              paymentCondition.selection[0].value === 'C000' && (
+            {!!state.paymentCondition.selection.length &&
+              state.paymentCondition.selection[0].value === 'C000' && (
                 <fieldset className="slds-form-element slds-form_compound">
                   <legend className="slds-form-element__legend slds-form-element__label slds-text-color_inverse">
                     Anticipos
@@ -582,10 +603,7 @@ const Steps = props => {
                   <div className="slds-form-element__control">
                     <div className="slds-form-element__row">
                       <div className="slds-size_1-of-1">
-                        <AdvancePayments
-                          advancePayments={advancePayments}
-                          setAdvancePayments={setAdvancePayments}
-                        />
+                        <AdvancePayments advancePayments={[]} setAdvancePayments={() => {}} />
                       </div>
                     </div>
                   </div>
@@ -593,7 +611,7 @@ const Steps = props => {
               )}
           </>
         )}
-        {currentStep === 4 && (
+        {state.currentStep === 4 && (
           <>
             <fieldset className="slds-form-element slds-form_compound">
               <legend className="slds-form-element__legend slds-form-element__label slds-text-color_inverse">
@@ -606,8 +624,10 @@ const Steps = props => {
                     className="slds-text-color_default slds-size_1-of-1"
                     maxLength="20"
                     placeholder="Order de Compra"
-                    value={purchaseOrder}
-                    onChange={(_, { value }) => setPurchaseOrder(value)}
+                    value={state.purchaseOrder}
+                    onChange={(_, { value }) =>
+                      dispatch({ type: 'SET_PURCHASE_ORDER', payload: value })
+                    }
                     required
                   />
                 </div>
@@ -623,26 +643,26 @@ const Steps = props => {
                     id="delivery-date"
                     labels={{
                       placeholder: 'Seleccione una Fecha',
-                      abbreviatedWeekDays,
-                      weekDays,
-                      months,
-                      today,
+                      abbreviatedWeekDays: state.abbreviatedWeekDays,
+                      weekDays: state.weekDays,
+                      months: state.months,
+                      today: state.today,
                     }}
                     triggerClassName="slds-form-element slds-text-color_default slds-size_1-of-1"
-                    formatter={(date = '') =>
-                      date && moment(date).format('DD/MM/YYYY')
-                    }
+                    formatter={(date = '') => date && moment(date).format('DD/MM/YYYY')}
                     parser={str => moment(str, 'DD/MM/YYYY').toDate()}
-                    onChange={(_, { date }) => setDeliveryDate(date)}
-                    value={deliveryDate}
+                    onChange={(_, { date }) =>
+                      dispatch({ type: 'SET_DELIVERY_DATE', payload: date })
+                    }
+                    value={state.deliveryDate}
                     dateDisabled={deliveryDateValidation}
                     required
                   />
                 </div>
               </div>
             </fieldset>
-            {!!shippingCondition.selection.length &&
-              shippingCondition.selection[0].value === '02' && (
+            {!!state.shippingCondition.selection.length &&
+              state.shippingCondition.selection[0].value === '02' && (
                 <fieldset className="slds-form-element slds-form_compound">
                   <legend className="slds-form-element__legend slds-form-element__label slds-text-color_inverse">
                     Hora de Cita
@@ -653,12 +673,13 @@ const Steps = props => {
                         <Timepicker
                           id="delivery-hour"
                           placeholder="Seleccione una hora"
-                          onDateChange={date => setDeliveryHour(date)}
-                          strValue={
-                            deliveryHour &&
-                            moment(deliveryHour).format('HH:mm A')
+                          onDateChange={date =>
+                            dispatch({ type: 'SET_DELIVERY_HOUR', payload: date })
                           }
-                          value={deliveryHour}
+                          strValue={
+                            state.deliveryHour && moment(state.deliveryHour).format('HH:mm A')
+                          }
+                          value={state.deliveryHour}
                         />
                       </div>
                     </div>
@@ -671,25 +692,29 @@ const Steps = props => {
       <footer className="slds-popover__footer">
         <div className="slds-grid slds-grid_vertical-align-center">
           <span className="slds-text-title">
-            {currentStep + 1} de {steps.length}
+            {state.currentStep + 1} de {state.steps.length}
           </span>
-          {currentStep > 0 && (
+          {state.currentStep > 0 && (
             <Button
               className="slds-button_inverse slds-col_bump-left"
               label="Volver"
               variant={null}
-              onClick={prevStep}
+              onClick={() =>
+                dispatch(current => ({ type: 'SET_CURRENT_STEP', payload: current.step - 1 }))
+              }
             />
           )}
-          {currentStep < steps.length - 1 && (
+          {state.currentStep < state.steps.length - 1 && (
             <Button
               className="slds-col_bump-left"
               label="Siguiente"
               variant="brand"
-              onClick={nextStep}
+              onClick={() =>
+                dispatch(current => ({ type: 'SET_CURRENT_STEP', payload: current.step + 1 }))
+              }
             />
           )}
-          {currentStep === steps.length - 1 && (
+          {state.currentStep === state.steps.length - 1 && (
             <Button
               className="slds-col_bump-left"
               label="Validar"
@@ -701,6 +726,6 @@ const Steps = props => {
       </footer>
     </section>
   );
-};
+}
 
 export default Steps;
