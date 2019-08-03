@@ -1,55 +1,34 @@
 import React from 'react';
+import { useAppState } from './AppContext';
 import { Modal } from '@salesforce/design-system-react';
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 import OverviewSalesOrder from './OverviewSalesOrder';
 
-const OverviewSalesOrderModal = props => {
-  const {
-    overviewSalesOrderModal,
-    setOverviewSalesOrderModal,
-    products,
-    purchaseOrder,
-    orderType,
-    requester,
-    receiverCondition,
-    receiverStreet,
-    receiverDistrict,
-    receiverProvince,
-    paymentCondition,
-    shippingCondition,
-    reasonTransfer,
-    deliveryDate,
-    deliveryHour,
-    advancePayments,
-  } = props;
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function OverviewSalesOrderModal() {
+  const [state, dispatch] = useAppState();
   const handleClose = () =>
-    setOverviewSalesOrderModal({ ...overviewSalesOrderModal, open: false });
+    dispatch({
+      type: 'SET_OVERVIEW_SALES_ORDER_MODAL',
+      payload: {
+        ...state.overviewSalesOrderModal,
+        open: false,
+      },
+    });
 
   return (
     <Modal
       onRequestClose={handleClose}
-      isOpen={overviewSalesOrderModal.open}
+      isOpen={state.overviewSalesOrderModal.open}
       size="medium"
-      title={overviewSalesOrderModal.title}
+      title={state.overviewSalesOrderModal.title}
     >
-      <OverviewSalesOrder
-        products={products}
-        purchaseOrder={purchaseOrder}
-        orderType={orderType}
-        requester={requester}
-        receiverStreet={receiverStreet}
-        receiverDistrict={receiverDistrict}
-        receiverProvince={receiverProvince}
-        paymentCondition={paymentCondition}
-        shippingCondition={shippingCondition}
-        receiverCondition={receiverCondition}
-        reasonTransfer={reasonTransfer}
-        deliveryDate={deliveryDate}
-        deliveryHour={deliveryHour}
-        advancePayments={advancePayments}
-      />
+      <OverviewSalesOrder />
     </Modal>
   );
-};
+}
 
 export default OverviewSalesOrderModal;

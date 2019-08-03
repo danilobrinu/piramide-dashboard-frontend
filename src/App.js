@@ -131,6 +131,7 @@ const initialAppState = {
   },
   orderIsEnabled: false,
   showAddProductModal: false,
+  showSidebarInfo: false,
   // Vehicle
   vehiclePlate: '',
   vehicleGrossWeight: 0,
@@ -256,6 +257,42 @@ const appStateReducer = (state = {}, action) => {
     case 'SET_DELIVERY_HOUR': {
       return { ...state, deliveryHour: action.payload };
     }
+    case 'SET_MATERIALS': {
+      return { ...state, materials: action.payload };
+    }
+    case 'SET_SHOW_ADD_PRODUCT_MODAL': {
+      return { ...state, showAddProductModal: action.payload };
+    }
+    case 'SET_MATERIAL_QUANTITY': {
+      return { ...state, materialQuantity: action.payload };
+    }
+    case 'SET_PRODUCTS': {
+      return { ...state, products: action.payload };
+    }
+    case 'SET_ORDER_IS_ENABLED': {
+      return { ...state, orderIsEnabled: action.payload };
+    }
+    case 'SET_START_CREATE_SALES_ORDER_MODAL': {
+      return { ...state, startCreateSalesOrderModal: action.payload };
+    }
+    case 'SET_FINISH_CREATE_SALES_ORDER_MODAL': {
+      return { ...state, finishCreateSalesOrderModal: action.payload };
+    }
+    case 'SET_OVERVIEW_SALES_ORDER_MODAL': {
+      return { ...state, overviewSalesOrderModal: action.payload };
+    }
+    case 'SET_PASSWORD': {
+      return { ...state, password: action.payload };
+    }
+    case 'SET_NEW_PASSWORD': {
+      return { ...state, newPassword: action.payload };
+    }
+    case 'SET_VERIFY_PASSWORD': {
+      return { ...state, verifyPassword: action.payload };
+    }
+    case 'SET_SHOW_SIDEBAR_INFO': {
+      return { ...state, showSidebarInfo: action.payload };
+    }
     default: {
       return state;
     }
@@ -266,7 +303,7 @@ function Dashboard() {
   return (
     <div className="slds-grid" style={{ height: '100vh' }}>
       <div className="slds-col">
-        <Navbar logo={<img src={Logo} alt="Piramide Logo" />} handleMenuUser={() => {}} />
+        <Navbar logo={<Logo />} handleMenuUser={() => {}} />
         <div className="slds-m-around_small">
           <Steps />
           <Order />

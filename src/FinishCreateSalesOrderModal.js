@@ -1,32 +1,20 @@
 import React from 'react';
+import { useAppState } from './AppContext';
 import { Button, Modal } from '@salesforce/design-system-react';
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 import OverviewSalesOrder from './OverviewSalesOrder';
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
 const FinishCreateSalesOrderModal = props => {
-  const {
-    finishCreateOrderModal,
-    setFinishCreateOrderModal,
-    products,
-    purchaseOrder,
-    orderType,
-    requester,
-    receiverStreet,
-    receiverDistrict,
-    receiverProvince,
-    paymentCondition,
-    shippingCondition,
-    receiverCondition,
-    reasonTransfer,
-    deliveryDate,
-    deliveryHour,
-    advancePayments,
-  } = props;
+  const [state, dispatch] = useAppState();
   const handleClose = () =>
-    setFinishCreateOrderModal(current => ({
-      ...current,
-      open: false,
-    }));
+    dispatch({
+      type: 'SET_FINISH_CREATE_SALES_ORDER_MODAL',
+      payload: { ...state.finishCreateSalesOrderModal, open: false },
+    });
   const handleNewSalesOrder = () => {
     handleClose();
     setTimeout(() => window.location.reload(), 300);
@@ -37,41 +25,21 @@ const FinishCreateSalesOrderModal = props => {
       dismissible={false}
       onRequestClose={handleClose}
       footer={
-        finishCreateOrderModal.promptType === 'success' ? (
-          <Button
-            label="Click para realizar otro pedido"
-            onClick={handleNewSalesOrder}
-          />
+        state.finishCreateSalesOrderModal.promptType === 'success' ? (
+          <Button label="Click para realizar otro pedido" onClick={handleNewSalesOrder} />
         ) : (
           <Button label="Cerrar" onClick={handleClose} />
         )
       }
-      isOpen={finishCreateOrderModal.open}
-      prompt={finishCreateOrderModal.promptType}
+      isOpen={state.finishCreateSalesOrderModal.open}
+      prompt={state.finishCreateSalesOrderModal.promptType}
       size="medium"
-      title={finishCreateOrderModal.title}
+      title={state.finishCreateSalesOrderModal.title}
     >
       <div className="slds-m-around_medium">
-        {finishCreateOrderModal.promptType !== 'success' &&
-          finishCreateOrderModal.description}
-        {finishCreateOrderModal.promptType === 'success' && (
-          <OverviewSalesOrder
-            products={products}
-            purchaseOrder={purchaseOrder}
-            orderType={orderType}
-            requester={requester}
-            receiverStreet={receiverStreet}
-            receiverDistrict={receiverDistrict}
-            receiverProvince={receiverProvince}
-            paymentCondition={paymentCondition}
-            shippingCondition={shippingCondition}
-            receiverCondition={receiverCondition}
-            reasonTransfer={reasonTransfer}
-            deliveryDate={deliveryDate}
-            deliveryHour={deliveryHour}
-            advancePayments={advancePayments}
-          />
-        )}
+        {state.finishCreateSalesOrderModal.promptType !== 'success' &&
+          state.finishCreateSalesOrderModal.description}
+        {state.finishCreateSalesOrderModal.promptType === 'success' && <OverviewSalesOrder />}
       </div>
     </Modal>
   );

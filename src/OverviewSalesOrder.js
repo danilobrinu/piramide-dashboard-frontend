@@ -1,75 +1,44 @@
 import React from 'react';
 import lodash from 'lodash';
 import moment from 'moment';
+import { useAppState } from './AppContext';
 import { PEN, KG } from './utils/formats';
 
-const OverviewOrder = props => {
-  const {
-    products,
-    purchaseOrder,
-    orderType,
-    requester,
-    receiverCondition,
-    receiverStreet,
-    receiverDistrict,
-    receiverProvince,
-    paymentCondition,
-    shippingCondition,
-    reasonTransfer,
-    deliveryDate,
-    deliveryHour,
-    advancePayments,
-  } = props;
+function OverviewOrder() {
+  const [state] = useAppState();
 
-  const subTotal = lodash.reduce(
-    products.options,
-    (acc, product) => acc + product.amount,
-    0
-  );
-  const igv = lodash.reduce(
-    products.options,
-    (acc, product) => acc + product.igv,
-    0
-  );
+  const subTotal = lodash.reduce(state.products.options, (acc, product) => acc + product.amount, 0);
+  const igv = lodash.reduce(state.products.options, (acc, product) => acc + product.igv, 0);
   const total = subTotal + igv;
-  const weight = lodash.reduce(
-    products.options,
-    (acc, product) => acc + product.weight,
-    0
-  );
+  const weight = lodash.reduce(state.products.options, (acc, product) => acc + product.weight, 0);
 
-  const purchaseOrderDesc = purchaseOrder;
-  const orderTypeDesc =
-    !!orderType.selection.length && orderType.selection[0].label;
-  const requesterDesc =
-    !!requester.selection.length && requester.selection[0].label;
+  const purchaseOrderDesc = state.purchaseOrder;
+  const orderTypeDesc = !!state.orderType.selection.length && state.orderType.selection[0].label;
+  const requesterDesc = !!state.requester.selection.length && state.requester.selection[0].label;
   const receiverDistrictDesc =
-    !!receiverDistrict.selection.length && receiverDistrict.selection[0].label;
+    !!state.receiverDistrict.selection.length && state.receiverDistrict.selection[0].label;
   const receiverProvinceDesc =
-    !!receiverProvince.selection.length && receiverProvince.selection[0].label;
+    !!state.receiverProvince.selection.length && state.receiverProvince.selection[0].label;
   const requesterAddressDesc =
-    !!requester.selection.length && requester.selection[0].subTitle;
+    !!state.requester.selection.length && state.requester.selection[0].subTitle;
   const receiverDesc =
-    !!shippingCondition.selection.length &&
-    shippingCondition.selection[0].value === '01'
-      ? receiverCondition === '01'
+    !!state.shippingCondition.selection.length &&
+    state.shippingCondition.selection[0].value === '01'
+      ? state.receiverCondition === '01'
         ? requesterAddressDesc
-        : `${receiverStreet}, ${receiverDistrictDesc} - ${receiverProvinceDesc}`
+        : `${state.receiverStreet}, ${receiverDistrictDesc} - ${receiverProvinceDesc}`
       : 'PIRAMIDE';
   const paymentConditionDesc =
-    !!paymentCondition.selection.length && paymentCondition.selection[0].label;
+    !!state.paymentCondition.selection.length && state.paymentCondition.selection[0].label;
   const shippingConditionDesc =
-    !!shippingCondition.selection.length &&
-    shippingCondition.selection[0].label;
-  const deliveryDateDesc =
-    !!deliveryDate && moment(deliveryDate).format('DD/MM/YYYY');
-  const deliveryHourDesc =
-    !!deliveryHour && moment(deliveryHour).format('HH:mm');
+    !!state.shippingCondition.selection.length && state.shippingCondition.selection[0].label;
+  const deliveryDateDesc = !!state.deliveryDate && moment(state.deliveryDate).format('DD/MM/YYYY');
+  const deliveryHourDesc = !!state.deliveryHour && moment(state.deliveryHour).format('HH:mm');
   const reasonTransferDesc =
-    !!reasonTransfer.selection.length && reasonTransfer.selection[0].label;
+    !!state.reasonTransfer.selection.length && state.reasonTransfer.selection[0].label;
 
   const advancePayment =
-    !!advancePayments.selection.length && advancePayments.selection[0];
+    !!state.advancePayments.selection.length && state.advancePayments.selection[0];
 
   const totalDesc = PEN(total);
   const subTotalDesc = PEN(subTotal);
@@ -79,126 +48,76 @@ const OverviewOrder = props => {
   return (
     <>
       <section className="slds-p-around_medium">
-        {!!requester.selection.length && (
+        {!!state.requester.selection.length && (
           <div className="slds-text-heading_large slds-text-color_success slds-m-bottom_medium">
-            {requester.selection[0].label}
+            {state.requester.selection[0].label}
           </div>
         )}
         {/* Info */}
-        <div className="slds-text-title_caps slds-m-bottom_x-small">
-          Información
-        </div>
+        <div className="slds-text-title_caps slds-m-bottom_x-small">Información</div>
         <div className="slds-box slds-m-bottom_small">
           <div className="slds-grid slds-wrap">
-            <span className="slds-truncate slds-text-title_bold">
-              Orden de Compra
-            </span>
-            <span className="slds-truncate slds-col_bump-left">
-              {purchaseOrderDesc}
-            </span>
+            <span className="slds-truncate slds-text-title_bold">Orden de Compra</span>
+            <span className="slds-truncate slds-col_bump-left">{purchaseOrderDesc}</span>
           </div>
           <div className="slds-grid slds-wrap">
-            <span className="slds-truncate slds-text-title_bold">
-              Clase de Pedido
-            </span>
-            <span className="slds-truncate slds-col_bump-left">
-              {orderTypeDesc}
-            </span>
+            <span className="slds-truncate slds-text-title_bold">Clase de Pedido</span>
+            <span className="slds-truncate slds-col_bump-left">{orderTypeDesc}</span>
           </div>
           <div className="slds-grid slds-wrap">
-            <span className="slds-truncate slds-text-title_bold">
-              Solicitante
-            </span>
-            <span className="slds-truncate slds-col_bump-left">
-              {requesterDesc}
-            </span>
+            <span className="slds-truncate slds-text-title_bold">Solicitante</span>
+            <span className="slds-truncate slds-col_bump-left">{requesterDesc}</span>
           </div>
           <div className="slds-grid slds-wrap">
-            <span className="slds-truncate slds-text-title_bold">
-              Destinatario
-            </span>
-            <span className="slds-truncate slds-col_bump-left">
-              {receiverDesc}
-            </span>
+            <span className="slds-truncate slds-text-title_bold">Destinatario</span>
+            <span className="slds-truncate slds-col_bump-left">{receiverDesc}</span>
           </div>
           <div className="slds-grid slds-wrap">
-            <span className="slds-truncate slds-text-title_bold">
-              Condición de Pago
-            </span>
-            <span className="slds-truncate slds-col_bump-left">
-              {paymentConditionDesc}
-            </span>
+            <span className="slds-truncate slds-text-title_bold">Condición de Pago</span>
+            <span className="slds-truncate slds-col_bump-left">{paymentConditionDesc}</span>
           </div>
           <div className="slds-grid slds-wrap">
-            <span className="slds-truncate slds-text-title_bold">
-              Condición de Entrega
-            </span>
-            <span className="slds-truncate slds-col_bump-left">
-              {shippingConditionDesc}
-            </span>
+            <span className="slds-truncate slds-text-title_bold">Condición de Entrega</span>
+            <span className="slds-truncate slds-col_bump-left">{shippingConditionDesc}</span>
           </div>
           <div className="slds-grid slds-wrap">
-            <span className="slds-truncate slds-text-title_bold">
-              Fecha de entrega
-            </span>
-            <span className="slds-truncate slds-col_bump-left">
-              {deliveryDateDesc}
-            </span>
+            <span className="slds-truncate slds-text-title_bold">Fecha de entrega</span>
+            <span className="slds-truncate slds-col_bump-left">{deliveryDateDesc}</span>
           </div>
           {!!deliveryHourDesc && (
             <div className="slds-grid slds-wrap">
-              <span className="slds-truncate slds-text-title_bold">
-                Hora de Cita
-              </span>
-              <span className="slds-truncate slds-col_bump-left">
-                {deliveryHourDesc}
-              </span>
+              <span className="slds-truncate slds-text-title_bold">Hora de Cita</span>
+              <span className="slds-truncate slds-col_bump-left">{deliveryHourDesc}</span>
             </div>
           )}
           <div className="slds-grid slds-wrap">
-            <span className="slds-truncate slds-text-title_bold">
-              Motivo de Traslado
-            </span>
-            <span className="slds-truncate slds-col_bump-left">
-              {reasonTransferDesc}
-            </span>
+            <span className="slds-truncate slds-text-title_bold">Motivo de Traslado</span>
+            <span className="slds-truncate slds-col_bump-left">{reasonTransferDesc}</span>
           </div>
         </div>
         {/* Anticipo */}
         {advancePayment && (
           <>
-            <div className="slds-text-title_caps slds-m-bottom_x-small">
-              Anticipo
-            </div>
+            <div className="slds-text-title_caps slds-m-bottom_x-small">Anticipo</div>
             <div className="slds-box slds-m-bottom_small">
               <div className="slds-grid slds-wrap">
-                <span className="slds-truncate slds-text-title_bold">
-                  Serie
-                </span>
-                <span className="slds-truncate slds-col_bump-left">
-                  {advancePayment.serie}
-                </span>
+                <span className="slds-truncate slds-text-title_bold">Serie</span>
+                <span className="slds-truncate slds-col_bump-left">{advancePayment.serie}</span>
               </div>
               <div className="slds-grid slds-wrap">
-                <span className="slds-truncate slds-text-title_bold">
-                  Importe
-                </span>
+                <span className="slds-truncate slds-text-title_bold">Importe</span>
                 <span className="slds-truncate slds-col_bump-left">
                   {PEN(advancePayment.amount)}
                 </span>
               </div>
               <div className="slds-grid slds-wrap">
-                <span className="slds-truncate slds-text-title_bold">
-                  Saldo
-                </span>
+                <span className="slds-truncate slds-text-title_bold">Saldo</span>
                 <span className="slds-truncate slds-col_bump-left">
                   {PEN(advancePayment.balance)}
                 </span>
               </div>
               <div className="slds-grid slds-wrap">
-                <span className="slds-truncate slds-text-title_bold">
-                  Fecha de vencimiento
-                </span>
+                <span className="slds-truncate slds-text-title_bold">Fecha de vencimiento</span>
                 <span className="slds-truncate slds-col_bump-left">
                   {moment(advancePayment).format()}
                 </span>
@@ -211,9 +130,7 @@ const OverviewOrder = props => {
         <div className="slds-box">
           <div className="slds-grid slds-wrap">
             <span className="slds-truncate slds-text-title_bold">SubTotal</span>
-            <span className="slds-truncate slds-col_bump-left">
-              {subTotalDesc}
-            </span>
+            <span className="slds-truncate slds-col_bump-left">{subTotalDesc}</span>
           </div>
           <div className="slds-grid slds-wrap">
             <span className="slds-truncate slds-text-title_bold">IGV</span>
@@ -221,20 +138,16 @@ const OverviewOrder = props => {
           </div>
           <div className="slds-grid slds-wrap">
             <span className="slds-truncate slds-text-title_bold">Total</span>
-            <span className="slds-truncate slds-col_bump-left">
-              {totalDesc}
-            </span>
+            <span className="slds-truncate slds-col_bump-left">{totalDesc}</span>
           </div>
           <div className="slds-grid slds-wrap">
             <span className="slds-truncate slds-text-title_bold">Peso</span>
-            <span className="slds-truncate slds-col_bump-left">
-              {weightDesc}
-            </span>
+            <span className="slds-truncate slds-col_bump-left">{weightDesc}</span>
           </div>
         </div>
       </section>
     </>
   );
-};
+}
 
 export default OverviewOrder;

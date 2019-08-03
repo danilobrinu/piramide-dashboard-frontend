@@ -699,9 +699,7 @@ function Steps() {
               className="slds-button_inverse slds-col_bump-left"
               label="Volver"
               variant={null}
-              onClick={() =>
-                dispatch(current => ({ type: 'SET_CURRENT_STEP', payload: current.step - 1 }))
-              }
+              onClick={() => dispatch({ type: 'SET_CURRENT_STEP', payload: state.currentStep - 1 })}
             />
           )}
           {state.currentStep < state.steps.length - 1 && (
@@ -709,9 +707,7 @@ function Steps() {
               className="slds-col_bump-left"
               label="Siguiente"
               variant="brand"
-              onClick={() =>
-                dispatch(current => ({ type: 'SET_CURRENT_STEP', payload: current.step + 1 }))
-              }
+              onClick={() => dispatch({ type: 'SET_CURRENT_STEP', payload: state.currentStep + 1 })}
             />
           )}
           {state.currentStep === state.steps.length - 1 && (

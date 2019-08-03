@@ -1,8 +1,8 @@
 import React from 'react';
 import { Dropdown, Button } from '@salesforce/design-system-react';
+import { ReactComponent as Logo } from './logo.svg';
 
-const Navbar = props => {
-  const { logo, handleMenuUser } = props;
+function Navbar() {
   const menuOptions = [
     {
       label: 'Cambiar contraseña',
@@ -14,6 +14,7 @@ const Navbar = props => {
       value: '00',
     },
   ];
+  const handleMenuUser = () => {};
 
   return (
     <div className="slds-grid slds-grid_align-spread navbar">
@@ -24,7 +25,9 @@ const Navbar = props => {
         iconSize="large"
         variant="icon"
       />
-      <div className="logo-container">{logo}</div>
+      <div className="logo-container">
+        <Logo />
+      </div>
       <Dropdown
         iconCategory="utility"
         iconName="user"
@@ -37,6 +40,6 @@ const Navbar = props => {
       />
     </div>
   );
-};
+}
 
 export default Navbar;
