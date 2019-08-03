@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import lodash from 'lodash';
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-import * as api from './api/mock';
 import * as data from './api/data';
-import { optionWithIcon } from './utils/helpers';
+import { optionWithIcon, optionsWithIcon } from './utils/helpers';
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -25,7 +25,7 @@ import { ReactComponent as Logo } from './logo.svg';
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-import { AppStateProvider } from './AppContext';
+import { AppStateProvider, useAppState } from './AppContext';
 
 window.__INITIAL_STATE__ = window.__INITIAL_STATE__ || {
   customer: '4000000007',
@@ -281,6 +281,9 @@ const appStateReducer = (state = {}, action) => {
     case 'SET_OVERVIEW_SALES_ORDER_MODAL': {
       return { ...state, overviewSalesOrderModal: action.payload };
     }
+    case 'SET_CHANGE_PASSWORD_MODAL': {
+      return { ...state, changePasswordModal: action.payload };
+    }
     case 'SET_PASSWORD': {
       return { ...state, password: action.payload };
     }
@@ -293,17 +296,131 @@ const appStateReducer = (state = {}, action) => {
     case 'SET_SHOW_SIDEBAR_INFO': {
       return { ...state, showSidebarInfo: action.payload };
     }
+    case 'SET_NOTIFICATIONS': {
+      return { ...state, notifications: action.payload };
+    }
     default: {
-      return state;
+      throw new Error(`The ${action.type} action not exists`);
     }
   }
 };
 
 function Dashboard() {
+  const [state, dispatch] = useAppState();
+
+  useEffect(() => {
+    // Set reasonTransfer by shippingCondition and receiverCondition
+    if (!state.shippingCondition.selection.length) return;
+
+    switch (state.shippingCondition.selection[0].value) {
+      case '01':
+        switch (state.receiverCondition) {
+          case '02':
+            dispatch({
+              type: 'SET_REASON_TRANSFER',
+              payload: {
+                ...state.reasonTransfer,
+                selection: lodash.filter(
+                  state.reasonTransfer.options,
+                  reason => reason.value === 'M'
+                ),
+              },
+            });
+            break;
+          case '01':
+          default:
+            dispatch({
+              type: 'SET_REASON_TRANSFER',
+              payload: {
+                ...state.reasonTransfer,
+                selection: lodash.filter(
+                  state.reasonTransfer.options,
+                  reason => reason.value === 'B'
+                ),
+              },
+            });
+            break;
+        }
+        break;
+      case '02':
+      default:
+        dispatch({
+          type: 'SET_REASON_TRANSFER',
+          payload: {
+            ...state.reasonTransfer,
+            selection: lodash.filter(state.reasonTransfer.options, reason => reason.value === 'A'),
+          },
+        });
+        break;
+    }
+  }, [
+    // (!!state.shippingCondition.selection.length || '') && state.shippingCondition.selection[0].id,
+    state.receiverCondition,
+    state.reasonTransfer,
+    state.shippingCondition.selection,
+    dispatch,
+  ]);
+
+  useEffect(() => {
+    // Set receiverProvince by receiverDepartment
+    if (!state.receiverDepartment.selection.length) return;
+
+    const REGION = state.receiverDepartment.selection[0].REGIO;
+    const inputValue = '';
+    const options = optionsWithIcon(
+      lodash.filter(window.__INITIAL_STATE__.provinceList, province => province.REGION === REGION)
+    );
+    const selection = [];
+
+    dispatch({ type: 'SET_RECEIVER_PROVINCE', payload: { inputValue, options, selection } });
+  }, [
+    // (!!state.receiverDepartment.selection.length || '') && state.receiverDepartment.selection[0].id,
+    state.receiverDepartment.selection,
+    dispatch,
+  ]);
+
+  useEffect(() => {
+    // Set receiverDistrict by receiverProvince
+    if (!state.receiverProvince.selection.length) return;
+
+    const CITY_CODE = state.receiverProvince.selection[0].CITY_CODE;
+    const inputValue = '';
+    const options = optionsWithIcon(
+      lodash.filter(
+        window.__INITIAL_STATE__.districtList,
+        district => district.CITY_CODE === CITY_CODE
+      )
+    );
+    const selection = [];
+
+    dispatch({ type: 'SET_RECEIVER_DISTRICT', payload: { inputValue, options, selection } });
+  }, [
+    // (state.receiverProvince.selection.length || '') && state.receiverProvince.selection[0].id,
+    state.receiverProvince.selection,
+    dispatch,
+  ]);
+
+  useEffect(() => {
+    if (!!state.notifications.length) {
+      setTimeout(
+        () =>
+          dispatch({
+            type: 'SET_NOTIFICATIONS',
+            payload: lodash.tail(state.notifications),
+          }),
+        1e3 * 5
+      );
+    }
+  }, [
+    // state.notifications.length,
+    state.notifications,
+    dispatch,
+  ]);
+
   return (
     <div className="slds-grid" style={{ height: '100vh' }}>
       <div className="slds-col">
-        <Navbar logo={<Logo />} handleMenuUser={() => {}} />
+        <Navbar logo={<Logo />} />
         <div className="slds-m-around_small">
           <Steps />
           <Order />

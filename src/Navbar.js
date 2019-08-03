@@ -1,8 +1,10 @@
 import React from 'react';
+import { useAppState } from './AppContext';
 import { Dropdown, Button } from '@salesforce/design-system-react';
 import { ReactComponent as Logo } from './logo.svg';
 
 function Navbar() {
+  const [state, dispatch] = useAppState();
   const menuOptions = [
     {
       label: 'Cambiar contraseña',
@@ -14,7 +16,24 @@ function Navbar() {
       value: '00',
     },
   ];
-  const handleMenuUser = () => {};
+  const handleMenuUser = option => {
+    switch (option.value) {
+      case '01':
+        dispatch({
+          type: 'SET_CHANGE_PASSWORD_MODAL',
+          payload: {
+            ...state.changePasswordModal,
+            open: true,
+          },
+        });
+        break;
+      case '00':
+        window.location.href = '/logout';
+        break;
+      default:
+        break;
+    }
+  };
 
   return (
     <div className="slds-grid slds-grid_align-spread navbar">

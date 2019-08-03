@@ -111,7 +111,7 @@ function Products() {
             value: '2',
           },
         ]}
-        onAction={this.handleRowAction}
+        onAction={handleRowAction}
         dropdown={<Dropdown length="5" menuPosition="relative" nubbinPosition="bottom right" />}
       />
     </DataTable>
