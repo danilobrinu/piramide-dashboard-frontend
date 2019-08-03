@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import lodash from 'lodash';
 import moment from 'moment';
 import currency from 'currency.js';

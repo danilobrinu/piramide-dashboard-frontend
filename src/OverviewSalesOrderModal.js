@@ -24,7 +24,7 @@ function OverviewSalesOrderModal() {
       onRequestClose={handleClose}
       isOpen={state.overviewSalesOrderModal.open}
       size="medium"
-      title={state.overviewSalesOrderModal.title}
+      heading={state.overviewSalesOrderModal.title}
     >
       <OverviewSalesOrder />
     </Modal>

@@ -68,7 +68,7 @@ function AddProductModal() {
         </>
       }
       onRequestClose={cancelOperation}
-      title="Agregar Producto"
+      heading="Agregar Producto"
     >
       <section className="slds-p-around_large">
         <fieldset className="slds-form slds-form_compound">

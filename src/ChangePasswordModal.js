@@ -123,7 +123,7 @@ function ChangePasswordModal() {
         <Button key="02" label="Save" variant="brand" onClick={saveOperation} />,
       ]}
       onRequestClose={cancelOperation}
-      title={state.changePasswordModal.title}
+      heading={state.changePasswordModal.title}
     >
       <section className="slds-p-around_large">
         <div className="slds-m-bottom_large">

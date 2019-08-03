@@ -7,11 +7,11 @@ function StartCreateSalesOrderModal() {
 
   return (
     <Modal
-      dismissible={false}
+      disableClose={false}
       isOpen={state.startCreateSalesOrderModal.open}
       prompt={state.startCreateSalesOrderModal.promptType}
       size="medium"
-      title={state.startCreateSalesOrderModal.title}
+      heading={state.startCreateSalesOrderModal.title}
     >
       <div className="slds-m-around_medium">
         {state.startCreateSalesOrderModal.description}

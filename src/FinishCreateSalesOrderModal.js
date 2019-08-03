@@ -22,7 +22,7 @@ const FinishCreateSalesOrderModal = props => {
 
   return (
     <Modal
-      dismissible={false}
+      disableClose={false}
       onRequestClose={handleClose}
       footer={
         state.finishCreateSalesOrderModal.promptType === 'success' ? (
@@ -34,7 +34,7 @@ const FinishCreateSalesOrderModal = props => {
       isOpen={state.finishCreateSalesOrderModal.open}
       prompt={state.finishCreateSalesOrderModal.promptType}
       size="medium"
-      title={state.finishCreateSalesOrderModal.title}
+      heading={state.finishCreateSalesOrderModal.title}
     >
       <div className="slds-m-around_medium">
         {state.finishCreateSalesOrderModal.promptType !== 'success' &&
