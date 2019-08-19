@@ -15,23 +15,20 @@ import Products from './Products';
 function Order() {
   const [state, dispatch] = useAppState();
   const validateAllSteps = (notifications = false) => {
-    dispatch({ type: 'SET_NOTIFICATIONS', payload: [] });
+    dispatch({ type: 'CLEAR_NOTIFICATIONS' });
 
     const validateStep1 = () => {
       let valid = !!state.requester.selection.length;
 
       if (!valid && notifications) {
         dispatch({
-          type: 'SET_NOTIFICATIONS',
-          payload: [
-            ...state.notifications,
-            {
-              id: uniqid(),
-              title: 'El paso 1 no se ha completado.',
-              description: 'Es necesario completar los campos.',
-              type: 'return_order',
-            },
-          ],
+          type: 'ADD_NOTIFICATION',
+          payload: {
+            id: uniqid(),
+            title: 'El paso 1 no se ha completado.',
+            description: 'Es necesario completar los campos.',
+            type: 'return_order',
+          },
         });
       }
 
@@ -41,16 +38,13 @@ function Order() {
       if (!state.shippingCondition.selection.length) {
         if (notifications) {
           dispatch({
-            type: 'SET_NOTIFICATIONS',
-            payload: [
-              ...state.notifications,
-              {
-                id: uniqid(),
-                title: 'El paso 2 no se ha completado.',
-                description: 'Es necesario completar los campos.',
-                type: 'return_order',
-              },
-            ],
+            type: 'ADD_NOTIFICATION',
+            payload: {
+              id: uniqid(),
+              title: 'El paso 2 no se ha completado.',
+              description: 'Es necesario completar los campos.',
+              type: 'return_order',
+            },
           });
         }
 
@@ -93,16 +87,13 @@ function Order() {
 
       if (!valid && notifications) {
         dispatch({
-          type: 'SET_NOTIFICATIONS',
-          payload: [
-            ...state.notifications,
-            {
-              id: uniqid(),
-              title: 'El paso 2 no se ha completado.',
-              description: 'Es necesario completar los campos.',
-              type: 'return_order',
-            },
-          ],
+          type: 'ADD_NOTIFICATION',
+          payload: {
+            id: uniqid(),
+            title: 'El paso 2 no se ha completado.',
+            description: 'Es necesario completar los campos.',
+            type: 'return_order',
+          },
         });
       }
 
@@ -113,16 +104,13 @@ function Order() {
 
       if (!valid && notifications) {
         dispatch({
-          type: 'SET_NOTIFICATIONS',
-          payload: [
-            ...state.notifications,
-            {
-              id: uniqid(),
-              title: 'El paso 3 no se ha completado.',
-              description: 'Es necesario completar los campos.',
-              type: 'return_order',
-            },
-          ],
+          type: 'ADD_NOTIFICATION',
+          payload: {
+            id: uniqid(),
+            title: 'El paso 3 no se ha completado.',
+            description: 'Es necesario completar los campos.',
+            type: 'return_order',
+          },
         });
       }
 
@@ -132,16 +120,13 @@ function Order() {
       if (!state.paymentCondition.selection.length) {
         if (notifications) {
           dispatch({
-            type: 'SET_NOTIFICATIONS',
-            payload: [
-              ...state.notifications,
-              {
-                id: uniqid(),
-                title: 'El paso 4 no se ha completado.',
-                description: 'Es necesario completar los campos.',
-                type: 'return_order',
-              },
-            ],
+            type: 'ADD_NOTIFICATION',
+            payload: {
+              id: uniqid(),
+              title: 'El paso 4 no se ha completado.',
+              description: 'Es necesario completar los campos.',
+              type: 'return_order',
+            },
           });
         }
 
@@ -161,16 +146,13 @@ function Order() {
 
       if (!valid && notifications) {
         dispatch({
-          type: 'SET_NOTIFICATIONS',
-          payload: [
-            ...state.notifications,
-            {
-              id: uniqid(),
-              title: 'El paso 4 no se ha completado.',
-              description: 'Es necesario completar los campos.',
-              type: 'return_order',
-            },
-          ],
+          type: 'ADD_NOTIFICATION',
+          payload: {
+            id: uniqid(),
+            title: 'El paso 4 no se ha completado.',
+            description: 'Es necesario completar los campos.',
+            type: 'return_order',
+          },
         });
       }
 
@@ -184,16 +166,13 @@ function Order() {
 
       if (!valid && notifications) {
         dispatch({
-          type: 'SET_NOTIFICATIONS',
-          payload: [
-            ...state.notifications,
-            {
-              id: uniqid(),
-              title: 'El paso 5 no se ha completado.',
-              description: 'Es necesario completar los campos.',
-              type: 'return_order',
-            },
-          ],
+          type: 'ADD_NOTIFICATION',
+          payload: {
+            id: uniqid(),
+            title: 'El paso 5 no se ha completado.',
+            description: 'Es necesario completar los campos.',
+            type: 'return_order',
+          },
         });
       }
 
@@ -209,7 +188,7 @@ function Order() {
 
     if (isValid && notifications) {
       dispatch({
-        type: 'SET_NOTIFICATIONS',
+        type: 'ADD_NOTIFICATION',
         payload: [
           ...state.notifications,
           {
@@ -261,11 +240,11 @@ function Order() {
   };
   // Simulate Sales Order
   const simulateSalesOrder = () => {
-    dispatch({ type: 'SET_NOTIFICATIONS', payload: [] });
+    dispatch({ type: 'CLEAR_NOTIFICATIONS' });
 
     if (!validateAllSteps()) {
       dispatch({
-        type: 'SET_NOTIFICATIONS',
+        type: 'ADD_NOTIFICATION',
         payload: [
           ...state.notifications,
           {
@@ -282,7 +261,7 @@ function Order() {
 
     if (!state.products.options.length) {
       dispatch({
-        type: 'SET_NOTIFICATIONS',
+        type: 'ADD_NOTIFICATION',
         payload: [
           ...state.notifications,
           {
@@ -298,7 +277,7 @@ function Order() {
     }
 
     dispatch({
-      type: 'SET_NOTIFICATIONS',
+      type: 'ADD_NOTIFICATION',
       payload: [
         ...state.notifications,
         {
@@ -331,7 +310,7 @@ function Order() {
     api.simulateSalesOrder(salesOrder).then(({ data }) => {
       if (!data['ET_CONDITION'].length || !data['ET_ITEM_WEIGTH'].length) {
         dispatch({
-          type: 'SET_NOTIFICATIONS',
+          type: 'ADD_NOTIFICATION',
           payload: [
             ...state.notifications,
             {
@@ -419,7 +398,7 @@ function Order() {
 
       if (hasErrors) {
         dispatch({
-          type: 'SET_NOTIFICATIONS',
+          type: 'ADD_NOTIFICATION',
           payload: [
             ...state.notifications,
             {
@@ -433,7 +412,7 @@ function Order() {
         });
       } else {
         dispatch({
-          type: 'SET_NOTIFICATIONS',
+          type: 'ADD_NOTIFICATION',
           payload: [
             ...state.notifications,
             {
@@ -453,7 +432,7 @@ function Order() {
   const createSalesOrder = () => {
     if (!state.orderIsEnabled) return;
 
-    dispatch({ type: 'SET_NOTIFICATIONS', payload: [] });
+    dispatch({ type: 'CLEAR_NOTIFICATIONS' });
 
     dispatch({
       type: 'SET_START_CREATE_SALES_ORDER_MODAL',

@@ -11,7 +11,7 @@ import {
   Radio,
   RadioButtonGroup,
 } from '@salesforce/design-system-react';
-import { optionsWithIcon } from './utils/helpers';
+import { uniqid, optionsWithIcon } from './utils/helpers';
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -21,8 +21,200 @@ import AdvancePayments from './AdvancePayments';
 
 function Steps() {
   const [state, dispatch] = useAppState();
-  const validateAllSteps = () => true;
-  const deliveryDateValidation = () => true;
+  const validateAllSteps = (notifications = false) => {
+    dispatch({ type: 'CLEAR_NOTIFICATIONS' });
+
+    const validateStep1 = () => {
+      const valid = !!state.requester.selection.length;
+
+      if (!valid && notifications) {
+        dispatch({
+          type: 'ADD_NOTIFICATION',
+          payload: {
+            id: uniqid(),
+            title: 'El paso 1 no se ha completado.',
+            description: 'Es necesario completar los campos.',
+            type: 'return_order',
+          },
+        });
+      }
+
+      return valid;
+    };
+    const validateStep2 = () => {
+      if (!state.shippingCondition.selection.length) {
+        if (notifications) {
+          dispatch({
+            type: 'ADD_NOTIFICATION',
+            payload: {
+              id: uniqid(),
+              title: 'El paso 2 no se ha completado.',
+              description: 'Es necesario completar los campos.',
+              type: 'return_order',
+            },
+          });
+        }
+
+        return false;
+      }
+
+      const validate = () => {
+        switch (state.shippingCondition.selection[0].value) {
+          case '01':
+            switch (state.receiverCondition) {
+              case '01':
+                return !!state.requester.selection.length;
+              case '02':
+                return (
+                  !!state.receiverDocument.length &&
+                  !!state.receiverName.length &&
+                  !!state.receiverStreet.length &&
+                  !!state.receiverDoor.length &&
+                  !!state.receiverDepartment.selection.length &&
+                  !!state.receiverProvince.selection.length &&
+                  !!state.receiverDistrict.selection.length
+                );
+
+              default:
+                return true;
+            }
+
+          case '02':
+            return (
+              !!state.vehiclePlate.length &&
+              !!state.vehicleDriver.length &&
+              !!state.vehicleLicense.length
+            );
+
+          default:
+            return true;
+        }
+      };
+
+      const valid = validate();
+
+      if (!valid && notifications) {
+        dispatch({
+          type: 'ADD_NOTIFICATION',
+          payload: {
+            id: uniqid(),
+            title: 'El paso 2 no se ha completado.',
+            description: 'Es necesario completar los campos.',
+            type: 'return_order',
+          },
+        });
+      }
+
+      return valid;
+    };
+    const validateStep3 = () => {
+      const valid = !!state.orderType.selection.length;
+
+      if (!valid && notifications) {
+        dispatch({
+          type: 'ADD_NOTIFICATION',
+          payload: {
+            id: uniqid(),
+            title: 'El paso 3 no se ha completado.',
+            description: 'Es necesario completar los campos.',
+            type: 'return_order',
+          },
+        });
+      }
+
+      return valid;
+    };
+    const validateStep4 = () => {
+      if (!state.paymentCondition.selection.length) {
+        if (notifications) {
+          dispatch({
+            type: 'ADD_NOTIFICATION',
+            payload: {
+              id: uniqid(),
+              title: 'El paso 4 no se ha completado.',
+              description: 'Es necesario completar los campos.',
+              type: 'return_order',
+            },
+          });
+        }
+
+        return false;
+      }
+
+      let valid = true;
+
+      switch (state.paymentCondition.selection[0].length) {
+        case 'C000':
+          valid = true;
+          break;
+        default:
+          valid = true;
+          break;
+      }
+
+      if (!valid && notifications) {
+        dispatch({
+          type: 'ADD_NOTIFICATION',
+          payload: {
+            id: uniqid(),
+            title: 'El paso 4 no se ha completado.',
+            description: 'Es necesario completar los campos.',
+            type: 'return_order',
+          },
+        });
+      }
+
+      return valid;
+    };
+    const validateStep5 = () => {
+      const valid =
+        !!state.purchaseOrder.length &&
+        !!state.deliveryDate &&
+        (state.shippingCondition.selection[0] === '02' ? !!state.deliveryHour : true);
+
+      if (!valid && notifications) {
+        dispatch({
+          type: 'ADD_NOTIFICATION',
+          payload: {
+            id: uniqid(),
+            title: 'El paso 5 no se ha completado.',
+            description: 'Es necesario completar los campos.',
+            type: 'return_order',
+          },
+        });
+      }
+
+      return valid;
+    };
+
+    const step1IsValid = validateStep1();
+    const step2IsValid = validateStep2();
+    const step3IsValid = validateStep3();
+    const step4IsValid = validateStep4();
+    const step5IsValid = validateStep5();
+    const isValid = step1IsValid && step2IsValid && step3IsValid && step4IsValid && step5IsValid;
+
+    if (isValid && notifications) {
+      dispatch({
+        type: 'ADD_NOTIFICATION',
+        payload: {
+          id: uniqid(),
+          title: 'Todo esta completo.',
+          description: 'Ya puede agregar productos a su pedido.',
+          type: 'reward',
+        },
+      });
+    }
+
+    return isValid;
+  };
+  const deliveryDateValidation = ({ date = new Date() }) => {
+    const current = moment(date);
+    const min = moment().add(1, 'days');
+    const max = moment().add(15, 'days');
+
+    return !current.isBetween(min, max);
+  };
 
   return (
     <section

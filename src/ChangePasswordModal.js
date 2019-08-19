@@ -7,20 +7,17 @@ import { uniqid } from './utils/helpers';
 function ChangePasswordModal() {
   const [state, dispatch] = useAppState();
   const changePassword = () => {
-    dispatch({ type: 'SET_NOTIFICATIONS', payload: [] });
+    dispatch({ type: 'CLEAR_NOTIFICATIONS' });
 
     if (!state.password.length || !state.verifyPassword.length || !state.newPassword) {
       dispatch({
-        type: 'SET_NOTIFICATIONS',
-        payload: [
-          ...state.notifications,
-          {
-            id: uniqid(),
-            title: 'No se puede realizar el cambio de contraseña',
-            description: 'Es necesario completar todos los campos',
-            type: 'first_non_empty',
-          },
-        ],
+        type: 'ADD_NOTIFICATION',
+        payload: {
+          id: uniqid(),
+          title: 'No se puede realizar el cambio de contraseña',
+          description: 'Es necesario completar todos los campos',
+          type: 'first_non_empty',
+        },
       });
 
       return;
@@ -28,16 +25,13 @@ function ChangePasswordModal() {
 
     if (state.newPassword !== state.verifyPassword) {
       dispatch({
-        type: 'SET_NOTIFICATIONS',
-        payload: [
-          ...state.notifications,
-          {
-            id: uniqid(),
-            title: 'No se puede realizar el cambio de contraseña',
-            description: 'La nueva contraseña y la contraseña de verificación no coinciden',
-            type: 'first_non_empty',
-          },
-        ],
+        type: 'ADD_NOTIFICATION',
+        payload: {
+          id: uniqid(),
+          title: 'No se puede realizar el cambio de contraseña',
+          description: 'La nueva contraseña y la contraseña de verificación no coinciden',
+          type: 'first_non_empty',
+        },
       });
 
       return;
@@ -52,16 +46,13 @@ function ChangePasswordModal() {
     });
 
     dispatch({
-      type: 'SET_NOTIFICATIONS',
-      payload: [
-        ...state.notifications,
-        {
-          id: uniqid(),
-          title: 'Realizando cambio de contraseña',
-          description: 'Esta operación puede tomar unos minutos',
-          type: 'business_hours',
-        },
-      ],
+      type: 'ADD_NOTIFICATION',
+      payload: {
+        id: uniqid(),
+        title: 'Realizando cambio de contraseña',
+        description: 'Esta operación puede tomar unos minutos',
+        type: 'business_hours',
+      },
     });
 
     const data = {
@@ -74,32 +65,25 @@ function ChangePasswordModal() {
     api.changePassword(data).then(({ data: passwordChanged }) => {
       if (!passwordChanged) {
         dispatch({
-          type: 'SET_NOTIFICATIONS',
-          payload: [
-            ...state.notifications,
-            {
-              id: uniqid(),
-              title: 'El cambio de contraseña no se ha realizado satisfactoriamente',
-              description:
-                'La contraseña es incorrecta o la contraseña ' +
-                ' y la contraseña de verificación no coinciden',
-              type: 'first_non_empty',
-            },
-          ],
+          type: 'ADD_NOTIFICATION',
+          payload: {
+            id: uniqid(),
+            title: 'El cambio de contraseña no se ha realizado satisfactoriamente',
+            description:
+              'La contraseña es incorrecta o la contraseña ' +
+              ' y la contraseña de verificación no coinciden',
+            type: 'first_non_empty',
+          },
         });
       } else {
         dispatch({
-          type: 'SET_NOTIFICATIONS',
-
-          payload: [
-            ...state.notifications,
-            {
-              id: uniqid(),
-              title: 'El cambio de contrañse se ha realizado satisfactoriamente',
-              description: 'Se cerrará la sesión. Vuelva a iniciar sesión.',
-              type: 'approval',
-            },
-          ],
+          type: 'ADD_NOTIFICATION',
+          payload: {
+            id: uniqid(),
+            title: 'El cambio de contrañse se ha realizado satisfactoriamente',
+            description: 'Se cerrará la sesión. Vuelva a iniciar sesión.',
+            type: 'approval',
+          },
         });
         setTimeout(() => {
           window.location.href = '/logout';

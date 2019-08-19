@@ -27,6 +27,7 @@ import { ReactComponent as Logo } from './logo.svg';
 
 import { AppStateProvider, useAppState } from './AppContext';
 
+// TODO: change to __INITIAL_DATA__ because now we use initialAppState
 window.__INITIAL_STATE__ = window.__INITIAL_STATE__ || {
   customer: '4000000007',
   steps: [
@@ -296,8 +297,22 @@ const appStateReducer = (state = {}, action) => {
     case 'SET_SHOW_SIDEBAR_INFO': {
       return { ...state, showSidebarInfo: action.payload };
     }
-    case 'SET_NOTIFICATIONS': {
-      return { ...state, notifications: action.payload };
+    case 'CLEAR_NOTIFICATIONS': {
+      return { ...state, notifications: [] };
+    }
+    case 'UNSTACK_NOTIFICATIONS': {
+      return { ...state, notifications: [...state.notifications].slice(1) };
+    }
+    case 'ADD_NOTIFICATION': {
+      return { ...state, notifications: [...state.notifications, action.payload] };
+    }
+    case 'REMOVE_NOTIFICATION': {
+      return {
+        ...state,
+        notifications: state.notifications.filter(
+          notification => notification.id !== action.payload.id
+        ),
+      };
     }
     default: {
       throw new Error(`The ${action.type} action not exists`);
@@ -401,16 +416,10 @@ function Dashboard() {
   ]);
 
   useEffect(() => {
-    if (!!state.notifications.length) {
-      setTimeout(
-        () =>
-          dispatch({
-            type: 'SET_NOTIFICATIONS',
-            payload: lodash.tail(state.notifications),
-          }),
-        1e3 * 5
-      );
-    }
+    if (!state.notifications.length) return () => 0;
+    const timer = setTimeout(() => dispatch({ type: 'UNSTACK_NOTIFICATIONS' }), 1e3 * 5);
+
+    return () => clearTimeout(timer);
   }, [
     // state.notifications.length,
     state.notifications,

@@ -33,8 +33,8 @@ function Notifications() {
               variant="icon"
               onClick={() =>
                 dispatch({
-                  type: 'SET_NOTIFICATIONS',
-                  payload: lodash.filter(state.notifications, item => item.id !== notification.id),
+                  type: 'REMOVE_NOTIFICATION',
+                  payload: notification,
                 })
               }
             />
