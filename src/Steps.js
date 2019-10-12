@@ -209,11 +209,11 @@ function Steps() {
     return isValid;
   };
   const deliveryDateValidation = ({ date = new Date() }) => {
-    const current = moment(date);
-    const min = moment().add(1, 'days');
-    const max = moment().add(15, 'days');
+    const deliveryDate = moment(date);
+    const min = moment().subtract(1, 'days');
+    const max = moment().add(14, 'days');
 
-    return !current.isBetween(min, max);
+    return !deliveryDate.isBetween(min, max);
   };
 
   return (
