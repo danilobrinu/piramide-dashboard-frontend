@@ -1,13 +1,14 @@
 import React from 'react';
 import lodash from 'lodash';
+import { useAppState } from './AppContext';
 import { Button, Icon } from '@salesforce/design-system-react';
 
-const Notifications = props => {
-  const { notifications, closeNotification } = props;
+function Notifications() {
+  const [state, dispatch] = useAppState();
 
   return (
     <div className="slds-notification-container">
-      {lodash.map(notifications, (notification, index) => (
+      {lodash.map(state.notifications, (notification, index) => (
         <section className="slds-notification" role="dialog" key={index}>
           <div className="slds-notification__body">
             <div className="slds-notification__target slds-media">
@@ -21,9 +22,7 @@ const Notifications = props => {
                 <h2 className="slds-text-heading_small slds-m-bottom_xx-small">
                   {notification.title}
                 </h2>
-                {!!notification.description && (
-                  <p>{notification.description}</p>
-                )}
+                {!!notification.description && <p>{notification.description}</p>}
               </div>
             </div>
             <Button
@@ -32,13 +31,18 @@ const Notifications = props => {
               iconName="close"
               iconVariant="container"
               variant="icon"
-              onClick={() => closeNotification(notification)}
+              onClick={() =>
+                dispatch({
+                  type: 'REMOVE_NOTIFICATION',
+                  payload: notification,
+                })
+              }
             />
           </div>
         </section>
       ))}
     </div>
   );
-};
+}
 
 export default Notifications;

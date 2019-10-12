@@ -152,14 +152,14 @@ export const orderTypeList = [
     label: 'ENTREGA EN PARIHUELA',
     subTitle: '-',
     type: 'account',
-    value: 'ZPNE',
+    value: 'ZPVN',
   },
   {
     id: uniqid(),
     label: 'ENTREGA A GRANEL O CON ZUNCHO',
     subTitle: '-',
     type: 'account',
-    value: 'ZPVN',
+    value: 'ZPNE',
   },
 ];
 

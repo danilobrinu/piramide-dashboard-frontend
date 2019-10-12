@@ -1,8 +1,10 @@
 import React from 'react';
+import { useAppState } from './AppContext';
 import { Dropdown, Button } from '@salesforce/design-system-react';
+import { ReactComponent as Logo } from './logo.svg';
 
-const Navbar = props => {
-  const { logo, handleMenuUser } = props;
+function Navbar() {
+  const [state, dispatch] = useAppState();
   const menuOptions = [
     {
       label: 'Cambiar contraseña',
@@ -14,6 +16,24 @@ const Navbar = props => {
       value: '00',
     },
   ];
+  const handleMenuUser = option => {
+    switch (option.value) {
+      case '01':
+        dispatch({
+          type: 'SET_CHANGE_PASSWORD_MODAL',
+          payload: {
+            ...state.changePasswordModal,
+            open: true,
+          },
+        });
+        break;
+      case '00':
+        window.location.href = '/logout';
+        break;
+      default:
+        break;
+    }
+  };
 
   return (
     <div className="slds-grid slds-grid_align-spread navbar">
@@ -24,7 +44,9 @@ const Navbar = props => {
         iconSize="large"
         variant="icon"
       />
-      <div className="logo-container">{logo}</div>
+      <div className="logo-container">
+        <Logo />
+      </div>
       <Dropdown
         iconCategory="utility"
         iconName="user"
@@ -37,6 +59,6 @@ const Navbar = props => {
       />
     </div>
   );
-};
+}
 
 export default Navbar;
