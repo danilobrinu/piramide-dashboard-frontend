@@ -353,13 +353,13 @@ function Steps() {
                           }
                         >
                           <Radio
-                            label="Dirección del solicitante"
+                            labels={{ label: 'Dirección del solicitante' }}
                             value="01"
                             checked={state.receiverCondition === '01'}
                             variant="button-group"
                           />
                           <Radio
-                            label="Otra dirección"
+                            labels={{ label: 'Otra dirección' }}
                             value="02"
                             checked={state.receiverCondition === '02'}
                             variant="button-group"
@@ -752,19 +752,28 @@ function Steps() {
                       events={{
                         onChange: (_, { value: inputValue }) =>
                           dispatch({
-                            ...state.paymentCondition,
-                            inputValue,
+                            type: 'SET_PAYMENT_CONDITION',
+                            payload: {
+                              ...state.paymentCondition,
+                              inputValue,
+                            },
                           }),
                         onRequestRemoveSelectedOption: () =>
                           dispatch({
-                            ...state.paymentCondition,
-                            inputValue: '',
-                            selection: [],
+                            type: 'SET_PAYMENT_CONDITION',
+                            payload: {
+                              ...state.paymentCondition,
+                              inputValue: '',
+                              selection: [],
+                            },
                           }),
                         onSelect: (_, { selection }) =>
                           dispatch({
-                            ...state.paymentCondition,
-                            selection,
+                            type: 'SET_PAYMENT_CONDITION',
+                            payload: {
+                              ...state.paymentCondition,
+                              selection,
+                            },
                           }),
                       }}
                       labels={{
