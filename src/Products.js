@@ -51,16 +51,18 @@ function Products() {
   const [state, dispatch] = useAppState();
 
   const handleRowAction = (product, action) => {
-    const { products, setProducts, setOrderIsEnabled } = this.props;
-
     switch (action.value) {
       case '2':
         // delete
-        setProducts({
-          ...products.options,
-          options: [...lodash.filter(products.options, p => p.id !== product.id)],
+        dispatch({
+          type: 'SET_PRODUCTS',
+          payload: {
+            ...state.products.options,
+            options: [...lodash.filter(state.products.options, p => p.id !== product.id)],
+          },
         });
-        setOrderIsEnabled(false);
+        dispatch({ type: 'SET_ORDER_IS_ENABLED', payload: false });
+
         break;
       default:
         break;
