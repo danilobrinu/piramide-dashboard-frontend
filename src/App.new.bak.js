@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import lodash from 'lodash';
 import moment from 'moment';
 // API Data and Helpers
-import * as api from './api/mock';
+import * as api from './api';
 import * as data from './api/data';
 import { uniqid, optionsWithIcon, optionWithIcon } from './utils/helpers';
 // Components
