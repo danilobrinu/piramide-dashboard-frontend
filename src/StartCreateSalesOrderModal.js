@@ -1,27 +1,26 @@
 import React from 'react';
+import { useAppState } from './AppContext';
 import { Modal, Spinner } from '@salesforce/design-system-react';
 
-const StartCreateSalesOrderModal = props => {
-  const {
-    startCreateSalesOrderModal: { open, promptType, title, description },
-  } = props;
+function StartCreateSalesOrderModal() {
+  const [state] = useAppState();
 
   return (
     <Modal
-      dismissible={false}
-      isOpen={open}
-      prompt={promptType}
+      disableClose={false}
+      isOpen={state.startCreateSalesOrderModal.open}
+      prompt={state.startCreateSalesOrderModal.promptType}
       size="medium"
-      title={title}
+      heading={state.startCreateSalesOrderModal.title}
     >
       <div className="slds-m-around_medium">
-        {description}
+        {state.startCreateSalesOrderModal.description}
         <div className="slds-is-relative slds-grid" style={{ height: 64 }}>
           <Spinner size="small" variant="base" />
         </div>
       </div>
     </Modal>
   );
-};
+}
 
 export default StartCreateSalesOrderModal;

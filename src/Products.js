@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import lodash from 'lodash';
+import { useAppState } from './AppContext';
 import {
   DataTable,
   DataTableCell,
@@ -39,98 +40,84 @@ class DataTableRowActionsResponsive extends DataTableRowActions {
     };
 
     return (
-      <td
-        data-label="Actions"
-        onClick={this.handleClick}
-        style={{ overflow: 'visible' }}
-      >
+      <td data-label="Actions" onClick={this.handleClick} style={{ overflow: 'visible' }}>
         <Dropdown {...dropdownProps} />
       </td>
     );
   }
 }
 
-export default class Products extends Component {
-  constructor(props) {
-    super(props);
+function Products() {
+  const [state, dispatch] = useAppState();
 
-    this.handleRowAction = this.handleRowAction.bind(this);
-  }
-
-  handleRowAction(product, action) {
-    const { products, setProducts, setOrderIsEnabled } = this.props;
-
+  const handleRowAction = (product, action) => {
     switch (action.value) {
       case '2':
         // delete
-        setProducts({
-          ...products.options,
-          options: [
-            ...lodash.filter(products.options, p => p.id !== product.id),
-          ],
+        dispatch({
+          type: 'SET_PRODUCTS',
+          payload: {
+            ...state.products.options,
+            options: [...lodash.filter(state.products.options, p => p.id !== product.id)],
+          },
         });
-        setOrderIsEnabled(false);
+        dispatch({ type: 'SET_ORDER_IS_ENABLED', payload: false });
+
         break;
       default:
         break;
     }
+  };
+
+  if (!state.products.options.length) {
+    return <div className="slds-p-around_small">No se han agregado productos al pedido.</div>;
   }
 
-  render() {
-    const { products, setProducts } = this.props;
-
-    if (!products.options.length) {
-      return (
-        <div className="slds-p-around_small">
-          No se han agregado productos al pedido.
-        </div>
-      );
-    }
-
-    return (
-      <DataTable
-        className="slds-max-medium-table_stacked-horizontal slds-text-color_default"
-        items={products.options}
-        onRowChange={(_, { selection }) =>
-          setProducts({ ...products, selection })
-        }
-        selection={products.selection}
-        selectRows="checkbox"
-        fixedLayout
-      >
-        <DataTableColumn label="Producto" primaryColumn property="name">
-          <DataTableCellResponsive />
-        </DataTableColumn>
-        <DataTableColumn label="Cantidad" property="quantity">
-          <DataTableCellResponsive />
-        </DataTableColumn>
-        <DataTableColumn label="Peso" property="weight">
-          <DataTableCellResponsive />
-        </DataTableColumn>
-        <DataTableColumn label="Unidad" property="unity">
-          <DataTableCellResponsive />
-        </DataTableColumn>
-        <DataTableColumn label="Monto" property="amount">
-          <DataTableCellResponsive />
-        </DataTableColumn>
-        <DataTableRowActionsResponsive
-          options={[
-            {
-              id: 1,
-              label: 'Eliminar',
-              value: '2',
-            },
-          ]}
-          onAction={this.handleRowAction}
-          dropdown={
-            <Dropdown
-              length="5"
-              menuPosition="relative"
-              nubbinPosition="bottom right"
-            />
-          }
-        />
-      </DataTable>
-    );
-  }
+  return (
+    <DataTable
+      className="slds-max-medium-table_stacked-horizontal slds-text-color_default"
+      items={state.products.options}
+      onRowChange={(_, { selection }) =>
+        dispatch({
+          type: 'SET_PRODUCTS',
+          payload: {
+            ...state.products,
+            selection,
+          },
+        })
+      }
+      selection={state.products.selection}
+      selectRows="checkbox"
+      fixedLayout
+    >
+      <DataTableColumn label="Producto" primaryColumn property="name">
+        <DataTableCellResponsive />
+      </DataTableColumn>
+      <DataTableColumn label="Cantidad" property="quantity">
+        <DataTableCellResponsive />
+      </DataTableColumn>
+      <DataTableColumn label="Peso" property="weight">
+        <DataTableCellResponsive />
+      </DataTableColumn>
+      <DataTableColumn label="Unidad" property="unity">
+        <DataTableCellResponsive />
+      </DataTableColumn>
+      <DataTableColumn label="Monto" property="amount">
+        <DataTableCellResponsive />
+      </DataTableColumn>
+      <DataTableRowActionsResponsive
+        options={[
+          {
+            id: 1,
+            label: 'Eliminar',
+            value: '2',
+          },
+        ]}
+        onAction={handleRowAction}
+        dropdown={<Dropdown length="5" menuPosition="relative" nubbinPosition="bottom right" />}
+      />
+    </DataTable>
+  );
 }
+
+export default Products;

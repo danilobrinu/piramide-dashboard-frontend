@@ -1,10 +1,6 @@
-import React, { Component } from 'react';
-
-import {
-  DataTable,
-  DataTableColumn,
-  DataTableCell,
-} from '@salesforce/design-system-react';
+import React from 'react';
+import { useAppState } from './AppContext';
+import { DataTable, DataTableColumn, DataTableCell } from '@salesforce/design-system-react';
 
 const DataTableCellResponsive = ({ children, ...props }) => (
   <td data-label={props.label}>{children}</td>
@@ -12,41 +8,47 @@ const DataTableCellResponsive = ({ children, ...props }) => (
 
 DataTableCellResponsive.displayName = DataTableCell.displayName;
 
-export default class AdvancePayments extends Component {
-  render() {
-    const { advancePayments, setAdvancePayments } = this.props;
+function AdvancePayments() {
+  const [state, dispatch] = useAppState();
 
-    if (!advancePayments.options.length) {
-      return (
-        <div className="slds-p-around_small">
-          No hay anticipos, pero puede realizar el pedido sin determinar el anticipo.
-        </div>
-      );
-    }
-
+  if (!state.advancePayments.options.length) {
     return (
-      <DataTable
-        className="slds-max-medium-table_stacked-horizontal slds-text-color_default"
-        items={advancePayments.options}
-        onRowChange={(_, { selection }) =>
-          setAdvancePayments({ ...advancePayments, selection })
-        }
-        selection={advancePayments.selection}
-        selectRows="radio"
-      >
-        <DataTableColumn label="Serie" primaryColumn property="serie">
-          <DataTableCellResponsive />
-        </DataTableColumn>
-        <DataTableColumn label="Importe" property="amount">
-          <DataTableCellResponsive />
-        </DataTableColumn>
-        <DataTableColumn label="Saldo" property="balance">
-          <DataTableCellResponsive />
-        </DataTableColumn>
-        <DataTableColumn label="Fecha" property="date">
-          <DataTableCellResponsive />
-        </DataTableColumn>
-      </DataTable>
+      <div className="slds-p-around_small">
+        No hay anticipos, pero puede realizar el pedido sin determinar el anticipo.
+      </div>
     );
   }
+
+  return (
+    <DataTable
+      className="slds-max-medium-table_stacked-horizontal slds-text-color_default"
+      items={state.advancePayments.options}
+      onRowChange={(_, { selection }) =>
+        dispatch({
+          type: 'SET_ADVANCE_PAYMENTS',
+          payload: {
+            ...state.advancePayments,
+            selection,
+          },
+        })
+      }
+      selection={state.advancePayments.selection}
+      selectRows="radio"
+    >
+      <DataTableColumn label="Serie" primaryColumn property="serie">
+        <DataTableCellResponsive />
+      </DataTableColumn>
+      <DataTableColumn label="Importe" property="amount">
+        <DataTableCellResponsive />
+      </DataTableColumn>
+      <DataTableColumn label="Saldo" property="balance">
+        <DataTableCellResponsive />
+      </DataTableColumn>
+      <DataTableColumn label="Fecha" property="date">
+        <DataTableCellResponsive />
+      </DataTableColumn>
+    </DataTable>
+  );
 }
+
+export default AdvancePayments;
