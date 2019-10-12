@@ -27,8 +27,7 @@ import { ReactComponent as Logo } from './logo.svg';
 
 import { AppStateProvider, useAppState } from './AppContext';
 
-// TODO: change to __INITIAL_DATA__ because now we use initialAppState
-window.__INITIAL_STATE__ = window.__INITIAL_STATE__ || {
+window.__INITIAL_DATA__ = window.__INITIAL_DATA__ || {
   customer: '4000000007',
   steps: [
     {
@@ -79,14 +78,14 @@ window.__INITIAL_STATE__ = window.__INITIAL_STATE__ || {
 };
 
 const initialAppState = {
-  customer: window.__INITIAL_STATE__.customer,
-  steps: window.__INITIAL_STATE__.steps,
-  abbreviatedWeekDays: window.__INITIAL_STATE__.abbreviatedWeekDays,
-  weekDays: window.__INITIAL_STATE__.weekDays,
-  months: window.__INITIAL_STATE__.months,
-  today: window.__INITIAL_STATE__.today,
-  distributionChannel: window.__INITIAL_STATE__.distributionChannel,
-  sapDateFormat: window.__INITIAL_STATE__.sapDateFormat,
+  customer: window.__INITIAL_DATA__.customer,
+  steps: window.__INITIAL_DATA__.steps,
+  abbreviatedWeekDays: window.__INITIAL_DATA__.abbreviatedWeekDays,
+  weekDays: window.__INITIAL_DATA__.weekDays,
+  months: window.__INITIAL_DATA__.months,
+  today: window.__INITIAL_DATA__.today,
+  distributionChannel: window.__INITIAL_DATA__.distributionChannel,
+  sapDateFormat: window.__INITIAL_DATA__.sapDateFormat,
   currentStep: 0,
   receiverCondition: '01',
   materialQuantity: 1,
@@ -95,35 +94,35 @@ const initialAppState = {
   deliveryHour: null,
   requester: {
     inputValue: '',
-    options: window.__INITIAL_STATE__.requesterList,
-    selection: [optionWithIcon(window.__INITIAL_STATE__.requesterList[0])],
+    options: window.__INITIAL_DATA__.requesterList,
+    selection: [optionWithIcon(window.__INITIAL_DATA__.requesterList[0])],
   },
   shippingCondition: {
     inputValue: '',
-    options: window.__INITIAL_STATE__.shippingConditionList,
+    options: window.__INITIAL_DATA__.shippingConditionList,
     selection: [],
   },
   orderType: {
     inputValue: '',
-    options: window.__INITIAL_STATE__.orderTypeList,
+    options: window.__INITIAL_DATA__.orderTypeList,
     selection: [],
   },
   paymentCondition: {
     inputValue: '',
-    options: window.__INITIAL_STATE__.paymentConditionList,
+    options: window.__INITIAL_DATA__.paymentConditionList,
     selection: [],
   },
   reasonTransfer: {
-    options: window.__INITIAL_STATE__.reasonTransferList,
+    options: window.__INITIAL_DATA__.reasonTransferList,
     selection: [],
   },
   advancePayments: {
-    options: window.__INITIAL_STATE__.advancePayments,
+    options: window.__INITIAL_DATA__.advancePayments,
     selection: [],
   },
   materials: {
     inputValue: '',
-    options: window.__INITIAL_STATE__.materialList,
+    options: window.__INITIAL_DATA__.materialList,
     selection: [],
   },
   products: {
@@ -135,7 +134,7 @@ const initialAppState = {
   showSidebarInfo: false,
   // Vehicle
   vehiclePlate: '',
-  vehicleGrossWeight: 0,
+  vehicleGrossWeight: '',
   vehicleTare: '',
   vehicleDriver: '',
   vehicleLicense: '',
@@ -146,7 +145,7 @@ const initialAppState = {
   receiverDoor: '',
   receiverDepartment: {
     inputValue: '',
-    options: window.__INITIAL_STATE__.departmentList,
+    options: window.__INITIAL_DATA__.departmentList,
     selection: [],
   },
   receiverProvince: {
@@ -246,6 +245,9 @@ const appStateReducer = (state = {}, action) => {
     case 'SET_ORDER_TYPE': {
       return { ...state, orderType: action.payload };
     }
+    case 'SET_REASON_TRANSFER': {
+      return { ...state, reasonTransfer: action.payload };
+    }
     case 'SET_PAYMENT_CONDITION': {
       return { ...state, paymentCondition: action.payload };
     }
@@ -306,6 +308,9 @@ const appStateReducer = (state = {}, action) => {
     case 'ADD_NOTIFICATION': {
       return { ...state, notifications: [...state.notifications, action.payload] };
     }
+    case 'ADD_NOTIFICATIONS': {
+      return { ...state, notifications: [...state.notifications, ...action.payload] };
+    }
     case 'REMOVE_NOTIFICATION': {
       return {
         ...state,
@@ -350,7 +355,7 @@ function Dashboard() {
                 ...state.reasonTransfer,
                 selection: lodash.filter(
                   state.reasonTransfer.options,
-                  reason => reason.value === 'B'
+                  reason => reason.value === 'A'
                 ),
               },
             });
@@ -363,18 +368,14 @@ function Dashboard() {
           type: 'SET_REASON_TRANSFER',
           payload: {
             ...state.reasonTransfer,
-            selection: lodash.filter(state.reasonTransfer.options, reason => reason.value === 'A'),
+            selection: lodash.filter(state.reasonTransfer.options, reason => reason.value === 'B'),
           },
         });
         break;
     }
-  }, [
-    // (!!state.shippingCondition.selection.length || '') && state.shippingCondition.selection[0].id,
-    state.receiverCondition,
-    state.reasonTransfer,
-    state.shippingCondition.selection,
-    dispatch,
-  ]);
+    // Don't put state.reasonTransfer in the deps (infinite loop)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [state.receiverCondition, state.shippingCondition.selection, dispatch]);
 
   useEffect(() => {
     // Set receiverProvince by receiverDepartment
@@ -383,16 +384,12 @@ function Dashboard() {
     const REGION = state.receiverDepartment.selection[0].REGIO;
     const inputValue = '';
     const options = optionsWithIcon(
-      lodash.filter(window.__INITIAL_STATE__.provinceList, province => province.REGION === REGION)
+      lodash.filter(window.__INITIAL_DATA__.provinceList, province => province.REGION === REGION)
     );
     const selection = [];
 
     dispatch({ type: 'SET_RECEIVER_PROVINCE', payload: { inputValue, options, selection } });
-  }, [
-    // (!!state.receiverDepartment.selection.length || '') && state.receiverDepartment.selection[0].id,
-    state.receiverDepartment.selection,
-    dispatch,
-  ]);
+  }, [state.receiverDepartment.selection, dispatch]);
 
   useEffect(() => {
     // Set receiverDistrict by receiverProvince
@@ -402,29 +399,21 @@ function Dashboard() {
     const inputValue = '';
     const options = optionsWithIcon(
       lodash.filter(
-        window.__INITIAL_STATE__.districtList,
+        window.__INITIAL_DATA__.districtList,
         district => district.CITY_CODE === CITY_CODE
       )
     );
     const selection = [];
 
     dispatch({ type: 'SET_RECEIVER_DISTRICT', payload: { inputValue, options, selection } });
-  }, [
-    // (state.receiverProvince.selection.length || '') && state.receiverProvince.selection[0].id,
-    state.receiverProvince.selection,
-    dispatch,
-  ]);
+  }, [state.receiverProvince.selection, dispatch]);
 
   useEffect(() => {
     if (!state.notifications.length) return () => 0;
     const timer = setTimeout(() => dispatch({ type: 'UNSTACK_NOTIFICATIONS' }), 1e3 * 5);
 
     return () => clearTimeout(timer);
-  }, [
-    // state.notifications.length,
-    state.notifications,
-    dispatch,
-  ]);
+  }, [state.notifications, dispatch]);
 
   return (
     <div className="slds-grid" style={{ height: '100vh' }}>
