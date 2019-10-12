@@ -25,7 +25,7 @@ function AdvancePayments() {
       items={state.advancePayments.options}
       onRowChange={(_, { selection }) =>
         dispatch({
-          type: 'setAdvancePayments',
+          type: 'SET_ADVANCE_PAYMENTS',
           payload: {
             ...state.advancePayments,
             selection,
