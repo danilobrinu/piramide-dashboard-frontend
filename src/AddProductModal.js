@@ -55,7 +55,7 @@ function AddProductModal() {
     });
     dispatch({ type: 'SET_MATERIAL_QUANTITY', payload: 1 });
     dispatch({ type: 'SET_SHOW_ADD_PRODUCT_MODAL', payload: false });
-    dispatch({ payload: false });
+    dispatch({ type: 'SET_ORDER_IS_ENABLED', payload: false });
   };
 
   return (
