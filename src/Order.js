@@ -245,15 +245,12 @@ function Order() {
     if (!validateAllSteps()) {
       dispatch({
         type: 'ADD_NOTIFICATION',
-        payload: [
-          ...state.notifications,
-          {
-            id: uniqid(),
-            title: 'La cotización no se ha realizado satisfactoriamente',
-            description: 'Para cotizar es necesario completar todos los pasos',
-            type: 'first_non_empty',
-          },
-        ],
+        payload: {
+          id: uniqid(),
+          title: 'La cotización no se ha realizado satisfactoriamente',
+          description: 'Para cotizar es necesario completar todos los pasos',
+          type: 'first_non_empty',
+        },
       });
 
       return;
@@ -262,15 +259,12 @@ function Order() {
     if (!state.products.options.length) {
       dispatch({
         type: 'ADD_NOTIFICATION',
-        payload: [
-          ...state.notifications,
-          {
-            id: uniqid(),
-            title: 'La cotización no se ha realizado satisfactoriamente',
-            description: 'No hay productos en el pedido',
-            type: 'first_non_empty',
-          },
-        ],
+        payload: {
+          id: uniqid(),
+          title: 'La cotización no se ha realizado satisfactoriamente',
+          description: 'No hay productos en el pedido',
+          type: 'first_non_empty',
+        },
       });
 
       return;
@@ -278,15 +272,12 @@ function Order() {
 
     dispatch({
       type: 'ADD_NOTIFICATION',
-      payload: [
-        ...state.notifications,
-        {
-          id: uniqid(),
-          title: 'Realizando cotización',
-          description: 'Esta operación puede tomar unos minutos',
-          type: 'business_hours',
-        },
-      ],
+      payload: {
+        id: uniqid(),
+        title: 'Realizando cotización',
+        description: 'Esta operación puede tomar unos minutos',
+        type: 'business_hours',
+      },
     });
 
     const salesOrder = {
@@ -308,99 +299,98 @@ function Order() {
     let errors = [];
 
     api.simulateSalesOrder(salesOrder).then(({ data }) => {
+      dispatch({ type: 'CLEAR_NOTIFICATIONS' });
+
       if (!data['ET_CONDITION'].length || !data['ET_ITEM_WEIGTH'].length) {
         dispatch({
           type: 'ADD_NOTIFICATION',
-          payload: [
-            ...state.notifications,
-            {
-              id: uniqid(),
-              title: 'La cotización tuvo algunos problemas.',
-              description: 'Los productos del pedido no tienen precio, stock o peso.',
-              type: 'first_non_empty',
-            },
-          ],
+          payload: {
+            id: uniqid(),
+            title: 'La cotización tuvo algunos problemas.',
+            description: 'Los productos del pedido no tienen precio, stock o peso.',
+            type: 'first_non_empty',
+          },
         });
         return;
       }
 
-      lodash.each(lodash.groupBy(data['ET_CONDITION'], 'ITM_NUMBER'), (info, ITM_NUMBER) => {
-        try {
-          const index = +ITM_NUMBER / 10 - 1;
-          const amount = +lodash.find(info, { COND_TYPE: 'ZPRB' }).CONDVALUE;
-          const igv = +lodash.find(info, { COND_TYPE: 'MWST' }).CONDVALUE;
+      const productsInfo = lodash.reduce(
+        lodash.groupBy(data['ET_CONDITION'], 'ITM_NUMBER'),
+        (accumulator, item, ITM_NUMBER) => {
+          try {
+            const index = +ITM_NUMBER / 10 - 1;
+            const amount = lodash.find(item, field => field.COND_TYPE === 'ZPRB').CONDVALUE;
+            const igv = lodash.find(item, field => field.COND_TYPE === 'MWST').CONDVALUE;
 
-          dispatch({
-            type: 'SET_PRODUCTS',
-            payload: {
-              ...state.products,
-              options: lodash.map(state.products.options, (product, key) => {
-                if (index !== key) return product;
+            accumulator[index] = { amount, igv };
 
-                return {
-                  ...product,
-                  amount,
-                  igv,
-                };
-              }),
-            },
-          });
-        } catch (e) {
-          const index = +ITM_NUMBER / 10;
-          errors = [
-            ...errors,
-            {
-              id: uniqid(),
-              title: `El producto Nro: ${index} no tiene stock o precio.`,
-              description: 'No se pudo determinar el monto e IGV.',
-              type: 'first_non_empty',
-            },
-          ];
-        }
-      });
+            return accumulator;
+          } catch (e) {
+            const itemNumber = +ITM_NUMBER / 10;
 
-      lodash.each(data['ET_ITEM_WEIGTH'], info => {
-        try {
-          const { ITM_NUMBER, BRGEW } = info;
-          const index = +ITM_NUMBER / 10 - 1;
-          const weight = +BRGEW;
+            errors = [
+              ...errors,
+              {
+                id: uniqid(),
+                title: `El producto Nro: ${itemNumber} no tiene stock o precio.`,
+                description: 'No se pudo determinar el monto e IGV.',
+                type: 'first_non_empty',
+              },
+            ];
 
-          dispatch({
-            type: 'SET_PRODUCTS',
-            payload: {
-              ...state.products,
-              options: lodash.map(state.products.options, (product, key) => {
-                if (index !== key) return product;
+            return accumulator;
+          }
+        },
+        {}
+      );
 
-                return {
-                  ...product,
-                  weight,
-                };
-              }),
-            },
-          });
-        } catch (e) {
-          const { ITM_NUMBER } = info;
-          const index = +ITM_NUMBER / 10 - 1;
-          errors = [
-            ...errors,
-            {
-              id: uniqid(),
-              title: `El producto Nro: ${index} no tiene peso.`,
-              description: 'No se pudo determinar el peso.',
-              type: 'first_non_empty',
-            },
-          ];
-        }
+      const productsWeight = lodash.reduce(
+        data['ET_ITEM_WEIGTH'],
+        (accumulator, { ITM_NUMBER, BRGEW }) => {
+          try {
+            const index = +ITM_NUMBER / 10 - 1;
+            const weight = +BRGEW;
+
+            accumulator[index] = { weight };
+
+            return accumulator;
+          } catch (e) {
+            const itemNumber = +ITM_NUMBER / 10;
+
+            errors = [
+              ...errors,
+              {
+                id: uniqid(),
+                title: `El producto Nro: ${itemNumber} no tiene stock o precio.`,
+                description: 'No se pudo determinar el monto e IGV.',
+                type: 'first_non_empty',
+              },
+            ];
+
+            return accumulator;
+          }
+        },
+        {}
+      );
+
+      dispatch({
+        type: 'SET_PRODUCTS',
+        payload: {
+          ...state.products,
+          options: state.products.options.map((product, index) => ({
+            ...product,
+            ...lodash.get(productsInfo, index, {}),
+            ...lodash.get(productsWeight, index, {}),
+          })),
+        },
       });
 
       const hasErrors = !!errors.length;
 
       if (hasErrors) {
         dispatch({
-          type: 'ADD_NOTIFICATION',
+          type: 'ADD_NOTIFICATIONS',
           payload: [
-            ...state.notifications,
             {
               id: uniqid(),
               title: 'La cotización no se ha realizado satisfactoriamente.',
@@ -413,15 +403,12 @@ function Order() {
       } else {
         dispatch({
           type: 'ADD_NOTIFICATION',
-          payload: [
-            ...state.notifications,
-            {
-              id: uniqid(),
-              title: 'La cotización se ha realizado satisfactoriamente.',
-              description: 'Ya puede proceder a crear el pedido.',
-              type: 'approval',
-            },
-          ],
+          payload: {
+            id: uniqid(),
+            title: 'La cotización se ha realizado satisfactoriamente.',
+            description: 'Ya puede proceder a crear el pedido.',
+            type: 'approval',
+          },
         });
       }
 
@@ -471,7 +458,7 @@ function Order() {
         api.createSalesOrder(salesOrder).then(({ data: salesOrderDoc }) => {
           if (salesOrderDoc) {
             dispatch({
-              type: 'SET_FINISH_CREATE_ORDER_MODAL',
+              type: 'SET_FINISH_CREATE_SALES_ORDER_MODAL',
               payload: {
                 ...state.finishCreateOrderModal,
                 title: `Pedido #${salesOrderDoc}`,
@@ -482,7 +469,7 @@ function Order() {
             });
           } else {
             dispatch({
-              type: 'SET_FINISH_CREATE_ORDER_MODAL',
+              type: 'SET_FINISH_CREATE_SALES_ORDER_MODAL',
               payload: {
                 ...state.finishCreateOrderModal,
                 promptType: 'error',
@@ -493,7 +480,7 @@ function Order() {
           }
 
           dispatch({
-            type: 'setStartCreateSalesOrderModal',
+            type: 'SET_START_CREATE_SALES_ORDER_MODAL',
             payload: {
               ...state.startCreateSalesOrderModal,
               open: false,
@@ -535,7 +522,7 @@ function Order() {
             });
 
             dispatch({
-              type: 'SET_FINISH_CREATE_ORDER_MODAL',
+              type: 'SET_FINISH_CREATE_SALES_ORDER_MODAL',
               payload: {
                 ...state.finishCreateOrderModal,
                 promptType: 'error',
@@ -562,7 +549,7 @@ function Order() {
 
             if (salesOrderDoc) {
               dispatch({
-                type: 'SET_FINISH_CREATE_ORDER_MODAL',
+                type: 'SET_FINISH_CREATE_SALES_ORDER_MODAL',
                 payload: {
                   ...state.finishCreateOrderModal,
 
@@ -574,7 +561,7 @@ function Order() {
               });
             } else {
               dispatch({
-                type: 'SET_FINISH_CREATE_ORDER_MODAL',
+                type: 'SET_FINISH_CREATE_SALES_ORDER_MODAL',
                 payload: {
                   ...state.finishCreateOrderModal,
 
@@ -610,7 +597,7 @@ function Order() {
 
         if (salesOrderDoc) {
           dispatch({
-            type: 'SET_FINISH_CREATE_ORDER_MODAL',
+            type: 'SET_FINISH_CREATE_SALES_ORDER_MODAL',
             payload: {
               ...state.finishCreateOrderModal,
               title: `Pedido #${salesOrderDoc}`,
@@ -621,7 +608,7 @@ function Order() {
           });
         } else {
           dispatch({
-            type: 'SET_FINISH_CREATE_ORDER_MODAL',
+            type: 'SET_FINISH_CREATE_SALES_ORDER_MODAL',
             payload: {
               ...state.finishCreateOrderModal,
               promptType: 'error',
