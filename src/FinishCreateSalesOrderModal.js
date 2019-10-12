@@ -23,6 +23,7 @@ const FinishCreateSalesOrderModal = props => {
   return (
     <Modal
       disableClose={false}
+      dismissOnClickOutside={false}
       onRequestClose={handleClose}
       footer={
         state.finishCreateSalesOrderModal.promptType === 'success' ? (
