@@ -139,6 +139,9 @@ const initialAppState = {
 };
 const appStateReducer = (state = {}, action) => {
   switch (action.type) {
+    case 'SET_ADVANCE_PAYMENTS': {
+      return { ...state, advancePayments: action.payload };
+    }
     case 'SET_CURRENT_STEP': {
       return { ...state, currentStep: action.payload };
     }
