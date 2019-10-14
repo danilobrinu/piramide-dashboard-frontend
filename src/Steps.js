@@ -795,8 +795,7 @@ function Steps() {
                 </div>
               </div>
             </fieldset>
-            {/* Advance Payments shoulb be added in the future */}
-            {/* {!!state.paymentCondition.selection.length &&
+            {!!state.paymentCondition.selection.length &&
               state.paymentCondition.selection[0].value === 'C000' && (
                 <fieldset className="slds-form-element slds-form_compound">
                   <legend className="slds-form-element__legend slds-form-element__label slds-text-color_inverse">
@@ -810,7 +809,7 @@ function Steps() {
                     </div>
                   </div>
                 </fieldset>
-              )} */}
+              )}
           </>
         )}
         {state.currentStep === 4 && (
