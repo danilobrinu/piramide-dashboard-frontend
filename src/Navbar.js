@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAppState } from './AppContext';
 import { Dropdown, Button } from '@salesforce/design-system-react';
-import { ReactComponent as Logo } from './logo.svg';
+import Logo from './Logo';
 
 function Navbar() {
   const [state, dispatch] = useAppState();
