@@ -165,32 +165,18 @@ export const orderTypeList = [
 
 export const advancePayments = [
   {
-    id: '001',
-    serie: '0100001',
-    amount: '120,000.00',
-    balance: '1,500.00',
-    date: '01.03.2019',
-  },
-  {
-    id: '002',
-    serie: '0100002',
-    amount: '85,000.00',
-    balance: '45,800.00',
-    date: '01.04.2019',
-  },
-  {
-    id: '003',
-    serie: '0100050',
-    amount: '25,000.00',
-    balance: '25,000.00',
-    date: '31.07.2019',
-  },
-  {
-    id: '004',
-    serie: '0100101',
-    amount: '135,500.00',
-    balance: '23,415.12',
-    date: '31.12.2019',
+    id: '5da5053379902',
+    amount: 153.7,
+    balance: 1.13,
+    effectiveDate: '20191031',
+    value: '0579001966',
+    // FROM SAP
+    FCVIG: '20191031',
+    FKART: 'ZFAN',
+    NETWR: 153.7,
+    SALDO: 1.13,
+    SELEC: null,
+    VBELN: '0579001966',
   },
 ];
 

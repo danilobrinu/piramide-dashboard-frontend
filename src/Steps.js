@@ -804,7 +804,7 @@ function Steps() {
                   <div className="slds-form-element__control">
                     <div className="slds-form-element__row">
                       <div className="slds-size_1-of-1">
-                        <AdvancePayments advancePayments={[]} setAdvancePayments={() => {}} />
+                        <AdvancePayments />
                       </div>
                     </div>
                   </div>
