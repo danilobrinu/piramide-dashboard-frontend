@@ -21,7 +21,6 @@ import Notifications from './Notifications';
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 import './App.css';
-import { ReactComponent as Logo } from './logo.svg';
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -418,7 +417,7 @@ function Dashboard() {
   return (
     <div className="slds-grid" style={{ height: '100vh' }}>
       <div className="slds-col">
-        <Navbar logo={<Logo />} />
+        <Navbar />
         <div className="slds-m-around_small">
           <Steps />
           <Order />
