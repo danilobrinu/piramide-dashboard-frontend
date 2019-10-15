@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAppState } from './AppContext';
 import { Input, Button, Modal } from '@salesforce/design-system-react';
-import * as api from './api/mock';
+import * as api from './api';
 import { uniqid } from './utils/helpers';
 
 function ChangePasswordModal() {

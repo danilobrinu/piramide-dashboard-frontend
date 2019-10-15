@@ -3,7 +3,7 @@ import lodash from 'lodash';
 import moment from 'moment';
 import { useAppState } from './AppContext';
 import { Button, Tooltip } from '@salesforce/design-system-react';
-import * as api from './api/mock';
+import * as api from './api';
 import { uniqid } from './utils/helpers';
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
